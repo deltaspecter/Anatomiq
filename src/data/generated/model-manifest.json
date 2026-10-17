@@ -33,9 +33,9 @@
   },
   "vessels": {
    "file": "/models/vessels.glb",
-   "bytes": 129448,
-   "hash": "7e0d3144a4",
-   "triangles": 20294
+   "bytes": 270504,
+   "hash": "8d8c5b8b67",
+   "triangles": 37742
   }
  },
  "structures": [
@@ -6445,17 +6445,17 @@
   {
    "id": "common-carotid-artery-r",
    "layer": "vessels",
-   "triangles": 794,
-   "sourceTriangles": 7726,
+   "triangles": 800,
+   "sourceTriangles": 884,
    "center": [
-    -0.0221,
-    1.528,
-    0.0127
+    -0.0143,
+    1.4295,
+    0.0107
    ],
    "size": [
-    0.043,
-    0.2407,
-    0.1036
+    0.0126,
+    0.044,
+    0.0122
    ],
    "concepts": [
     {
@@ -6464,30 +6464,23 @@
     }
    ],
    "elements": [
-    "FJ1654",
-    "FJ1658",
-    "FJ1662",
-    "FJ1663",
-    "FJ1682",
-    "FJ1692",
-    "FJ1695",
     "FJ3564"
    ]
   },
   {
    "id": "common-carotid-artery-l",
    "layer": "vessels",
-   "triangles": 800,
-   "sourceTriangles": 5722,
+   "triangles": 170,
+   "sourceTriangles": 170,
    "center": [
-    0.0131,
-    1.5063,
-    0.0128
+    0.0175,
+    1.4186,
+    0.0033
    ],
    "size": [
-    0.0499,
-    0.2416,
-    0.1035
+    0.0121,
+    0.0663,
+    0.0162
    ],
    "concepts": [
     {
@@ -6496,32 +6489,123 @@
     }
    ],
    "elements": [
-    "FJ1654M",
-    "FJ1655",
-    "FJ1658M",
-    "FJ1682M",
-    "FJ1695M",
-    "FJ1713",
-    "FJ1713M",
-    "FJ1723",
-    "FJ1723M",
     "FJ3483"
+   ]
+  },
+  {
+   "id": "internal-carotid-artery-r",
+   "layer": "vessels",
+   "triangles": 800,
+   "sourceTriangles": 1272,
+   "center": [
+    -0.023,
+    1.5642,
+    0.0035
+   ],
+   "size": [
+    0.0276,
+    0.1032,
+    0.0205
+   ],
+   "concepts": [
+    {
+     "fma": "FMA3949",
+     "name": "right internal carotid artery"
+    }
+   ],
+   "elements": [
+    "FJ1682"
+   ]
+  },
+  {
+   "id": "internal-carotid-artery-l",
+   "layer": "vessels",
+   "triangles": 800,
+   "sourceTriangles": 1272,
+   "center": [
+    0.0243,
+    1.5642,
+    0.0035
+   ],
+   "size": [
+    0.0276,
+    0.1032,
+    0.0205
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4062",
+     "name": "left internal carotid artery"
+    }
+   ],
+   "elements": [
+    "FJ1682M"
+   ]
+  },
+  {
+   "id": "vertebral-artery-r",
+   "layer": "vessels",
+   "triangles": 800,
+   "sourceTriangles": 800,
+   "center": [
+    -0.016,
+    1.5303,
+    -0.028
+   ],
+   "size": [
+    0.034,
+    0.1076,
+    0.0283
+   ],
+   "concepts": [
+    {
+     "fma": "FMA3958",
+     "name": "right vertebral artery"
+    }
+   ],
+   "elements": [
+    "FJ1725"
+   ]
+  },
+  {
+   "id": "vertebral-artery-l",
+   "layer": "vessels",
+   "triangles": 800,
+   "sourceTriangles": 800,
+   "center": [
+    0.0173,
+    1.5303,
+    -0.028
+   ],
+   "size": [
+    0.034,
+    0.1076,
+    0.0283
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4066",
+     "name": "left vertebral artery"
+    }
+   ],
+   "elements": [
+    "FJ1725M"
    ]
   },
   {
    "id": "subclavian-artery-r",
    "layer": "vessels",
-   "triangles": 698,
-   "sourceTriangles": 96622,
+   "triangles": 452,
+   "sourceTriangles": 452,
    "center": [
-    -0.1155,
-    1.2559,
-    -0.001
+    -0.0453,
+    1.4201,
+    0.0025
    ],
    "size": [
-    0.3268,
-    0.7887,
-    0.206
+    0.0724,
+    0.0221,
+    0.0179
    ],
    "concepts": [
     {
@@ -6530,101 +6614,23 @@
     }
    ],
    "elements": [
-    "FJ1656",
-    "FJ1656M",
-    "FJ1657",
-    "FJ1661",
-    "FJ1661M",
-    "FJ1672",
-    "FJ1675",
-    "FJ1675M",
-    "FJ1677",
-    "FJ1677M",
-    "FJ1678",
-    "FJ1678M",
-    "FJ1680",
-    "FJ1680M",
-    "FJ1684",
-    "FJ1684M",
-    "FJ1687",
-    "FJ1687M",
-    "FJ1689",
-    "FJ1689M",
-    "FJ1691",
-    "FJ1691M",
-    "FJ1700",
-    "FJ1701",
-    "FJ1702",
-    "FJ1703",
-    "FJ1704",
-    "FJ1705",
-    "FJ1706",
-    "FJ1707",
-    "FJ1708",
-    "FJ1709",
-    "FJ1710",
-    "FJ1711",
-    "FJ1715",
-    "FJ1720",
-    "FJ1720M",
-    "FJ1725",
-    "FJ1726",
-    "FJ1726M",
-    "FJ1727",
-    "FJ1727M",
-    "FJ1844",
-    "FJ1935",
-    "FJ1936",
-    "FJ1937",
-    "FJ1938",
-    "FJ1969",
-    "FJ2209",
-    "FJ2263",
-    "FJ2264",
-    "FJ2266",
-    "FJ2267",
-    "FJ2273",
-    "FJ2275",
-    "FJ2276",
-    "FJ2277",
-    "FJ2278",
-    "FJ2282",
-    "FJ2283",
-    "FJ2284",
-    "FJ2288",
-    "FJ2291",
-    "FJ2292",
-    "FJ2293",
-    "FJ2294",
-    "FJ2295",
-    "FJ2298",
-    "FJ2303",
-    "FJ2304",
-    "FJ2305",
-    "FJ2307",
-    "FJ2308",
-    "FJ2309",
-    "FJ2310",
-    "FJ2311",
-    "FJ2361",
-    "FJ2373",
     "FJ3579"
    ]
   },
   {
    "id": "subclavian-artery-l",
    "layer": "vessels",
-   "triangles": 774,
-   "sourceTriangles": 67062,
+   "triangles": 600,
+   "sourceTriangles": 646,
    "center": [
-    0.1403,
-    1.2229,
-    -0.0009
+    0.0528,
+    1.41,
+    -0.0045
    ],
    "size": [
-    0.2794,
-    0.7221,
-    0.2057
+    0.0689,
+    0.0491,
+    0.0188
    ],
    "concepts": [
     {
@@ -6633,72 +6639,324 @@
     }
    ],
    "elements": [
-    "FJ1700M",
-    "FJ1701M",
-    "FJ1702M",
-    "FJ1703M",
-    "FJ1704M",
-    "FJ1705M",
-    "FJ1706M",
-    "FJ1707M",
-    "FJ1708M",
-    "FJ1709M",
-    "FJ1710M",
-    "FJ1711M",
-    "FJ1715M",
-    "FJ1725M",
-    "FJ1970",
-    "FJ1971",
-    "FJ1972",
-    "FJ1976",
-    "FJ1979",
-    "FJ2210",
-    "FJ2211",
-    "FJ2212",
-    "FJ2214",
-    "FJ2215",
-    "FJ2221",
-    "FJ2223",
-    "FJ2224",
-    "FJ2225",
-    "FJ2226",
-    "FJ2230",
-    "FJ2231",
-    "FJ2232",
-    "FJ2236",
-    "FJ2239",
-    "FJ2240",
-    "FJ2241",
-    "FJ2242",
-    "FJ2243",
-    "FJ2246",
-    "FJ2251",
-    "FJ2252",
-    "FJ2253",
-    "FJ2255",
-    "FJ2256",
-    "FJ2257",
-    "FJ2258",
-    "FJ2259",
-    "FJ2330",
-    "FJ2374",
     "FJ3479"
+   ]
+  },
+  {
+   "id": "axillary-artery-r",
+   "layer": "vessels",
+   "triangles": 500,
+   "sourceTriangles": 1826,
+   "center": [
+    -0.1136,
+    1.3771,
+    -0.0075
+   ],
+   "size": [
+    0.0744,
+    0.0815,
+    0.0262
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22655",
+     "name": "right axillary artery"
+    }
+   ],
+   "elements": [
+    "FJ2268"
+   ]
+  },
+  {
+   "id": "axillary-artery-l",
+   "layer": "vessels",
+   "triangles": 500,
+   "sourceTriangles": 1800,
+   "center": [
+    0.1149,
+    1.3771,
+    -0.0075
+   ],
+   "size": [
+    0.0744,
+    0.0816,
+    0.0263
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22656",
+     "name": "left axillary artery"
+    }
+   ],
+   "elements": [
+    "FJ2216"
+   ]
+  },
+  {
+   "id": "brachial-artery-r",
+   "layer": "vessels",
+   "triangles": 700,
+   "sourceTriangles": 3112,
+   "center": [
+    -0.1796,
+    1.2256,
+    -0.0201
+   ],
+   "size": [
+    0.0743,
+    0.2537,
+    0.0166
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22691",
+     "name": "right brachial artery"
+    }
+   ],
+   "elements": [
+    "FJ2271"
+   ]
+  },
+  {
+   "id": "brachial-artery-l",
+   "layer": "vessels",
+   "triangles": 700,
+   "sourceTriangles": 3470,
+   "center": [
+    0.1809,
+    1.2256,
+    -0.0201
+   ],
+   "size": [
+    0.0744,
+    0.2537,
+    0.0166
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22692",
+     "name": "left brachial artery"
+    }
+   ],
+   "elements": [
+    "FJ2219"
+   ]
+  },
+  {
+   "id": "radial-artery-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 7472,
+   "center": [
+    -0.2459,
+    0.9859,
+    0.0043
+   ],
+   "size": [
+    0.0659,
+    0.2332,
+    0.0439
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22733",
+     "name": "right radial artery"
+    }
+   ],
+   "elements": [
+    "FJ2294"
+   ]
+  },
+  {
+   "id": "radial-artery-l",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 7764,
+   "center": [
+    0.2472,
+    0.986,
+    0.0043
+   ],
+   "size": [
+    0.0658,
+    0.2331,
+    0.0439
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22734",
+     "name": "left radial artery"
+    }
+   ],
+   "elements": [
+    "FJ2242"
+   ]
+  },
+  {
+   "id": "ulnar-artery-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 6876,
+   "center": [
+    -0.2267,
+    0.9877,
+    0.0032
+   ],
+   "size": [
+    0.0327,
+    0.2297,
+    0.054
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22797",
+     "name": "right ulnar artery"
+    }
+   ],
+   "elements": [
+    "FJ2310"
+   ]
+  },
+  {
+   "id": "ulnar-artery-l",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 7114,
+   "center": [
+    0.2281,
+    0.9877,
+    0.0032
+   ],
+   "size": [
+    0.0326,
+    0.2297,
+    0.054
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22798",
+     "name": "left ulnar artery"
+    }
+   ],
+   "elements": [
+    "FJ2258"
+   ]
+  },
+  {
+   "id": "celiac-trunk",
+   "layer": "vessels",
+   "triangles": 238,
+   "sourceTriangles": 238,
+   "center": [
+    0.0073,
+    1.1619,
+    0.0184
+   ],
+   "size": [
+    0.0111,
+    0.0122,
+    0.0232
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14812",
+     "name": "celiac trunk"
+    }
+   ],
+   "elements": [
+    "FJ3421"
+   ]
+  },
+  {
+   "id": "superior-mesenteric-artery",
+   "layer": "vessels",
+   "triangles": 792,
+   "sourceTriangles": 2046,
+   "center": [
+    -0.0256,
+    1.0602,
+    0.0309
+   ],
+   "size": [
+    0.0693,
+    0.1452,
+    0.0391
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14749",
+     "name": "superior mesenteric artery"
+    }
+   ],
+   "elements": [
+    "FJ1928",
+    "FJ2011"
+   ]
+  },
+  {
+   "id": "renal-artery-r",
+   "layer": "vessels",
+   "triangles": 206,
+   "sourceTriangles": 206,
+   "center": [
+    -0.0142,
+    1.1151,
+    0.0076
+   ],
+   "size": [
+    0.0551,
+    0.0235,
+    0.0223
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14752",
+     "name": "right renal artery"
+    }
+   ],
+   "elements": [
+    "FJ2038"
+   ]
+  },
+  {
+   "id": "renal-artery-l",
+   "layer": "vessels",
+   "triangles": 288,
+   "sourceTriangles": 288,
+   "center": [
+    0.0222,
+    1.1213,
+    0.0078
+   ],
+   "size": [
+    0.0358,
+    0.0132,
+    0.0235
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14753",
+     "name": "left renal artery"
+    }
+   ],
+   "elements": [
+    "FJ2046"
    ]
   },
   {
    "id": "common-iliac-artery-r",
    "layer": "vessels",
-   "triangles": 600,
-   "sourceTriangles": 62294,
+   "triangles": 220,
+   "sourceTriangles": 220,
    "center": [
-    -0.0525,
-    0.5622,
-    0.0061
+    -0.013,
+    1.0122,
+    0.0168
    ],
    "size": [
-    0.1266,
-    1.0928,
-    0.1567
+    0.0477,
+    0.0612,
+    0.025
    ],
    "concepts": [
     {
@@ -6707,36 +6965,23 @@
     }
    ],
    "elements": [
-    "FJ2055",
-    "FJ2130",
-    "FJ2133",
-    "FJ2159",
-    "FJ2163",
-    "FJ2164",
-    "FJ2169",
-    "FJ2170",
-    "FJ2172",
-    "FJ2179",
-    "FJ3565",
-    "FJ3567",
-    "FJ3569",
-    "FJ3604"
+    "FJ3565"
    ]
   },
   {
    "id": "common-iliac-artery-l",
    "layer": "vessels",
-   "triangles": 596,
-   "sourceTriangles": 62376,
+   "triangles": 248,
+   "sourceTriangles": 248,
    "center": [
-    0.0594,
-    0.5623,
-    -0.0022
+    0.0191,
+    1.0113,
+    0.0094
    ],
    "size": [
-    0.1155,
-    1.0924,
-    0.1736
+    0.0351,
+    0.0629,
+    0.0391
    ],
    "concepts": [
     {
@@ -6745,36 +6990,123 @@
     }
    ],
    "elements": [
-    "FJ2065",
-    "FJ2067",
-    "FJ2073",
-    "FJ2079",
-    "FJ2081",
-    "FJ2082",
-    "FJ2085",
-    "FJ2086",
-    "FJ2087",
-    "FJ2089",
-    "FJ3464",
-    "FJ3466",
-    "FJ3468",
-    "FJ3511"
+    "FJ3464"
+   ]
+  },
+  {
+   "id": "internal-iliac-artery-r",
+   "layer": "vessels",
+   "triangles": 276,
+   "sourceTriangles": 276,
+   "center": [
+    -0.031,
+    0.9587,
+    -0.0308
+   ],
+   "size": [
+    0.0088,
+    0.0604,
+    0.085
+   ],
+   "concepts": [
+    {
+     "fma": "FMA18809",
+     "name": "right internal iliac artery"
+    }
+   ],
+   "elements": [
+    "FJ3569"
+   ]
+  },
+  {
+   "id": "internal-iliac-artery-l",
+   "layer": "vessels",
+   "triangles": 270,
+   "sourceTriangles": 270,
+   "center": [
+    0.0286,
+    0.9557,
+    -0.0442
+   ],
+   "size": [
+    0.0113,
+    0.0645,
+    0.0897
+   ],
+   "concepts": [
+    {
+     "fma": "FMA18810",
+     "name": "left internal iliac artery"
+    }
+   ],
+   "elements": [
+    "FJ3468"
+   ]
+  },
+  {
+   "id": "external-iliac-artery-r",
+   "layer": "vessels",
+   "triangles": 396,
+   "sourceTriangles": 396,
+   "center": [
+    -0.0437,
+    0.9367,
+    0.0104
+   ],
+   "size": [
+    0.0338,
+    0.1099,
+    0.0667
+   ],
+   "concepts": [
+    {
+     "fma": "FMA18806",
+     "name": "right external iliac artery"
+    }
+   ],
+   "elements": [
+    "FJ3567"
+   ]
+  },
+  {
+   "id": "external-iliac-artery-l",
+   "layer": "vessels",
+   "triangles": 462,
+   "sourceTriangles": 462,
+   "center": [
+    0.0461,
+    0.9392,
+    0.0148
+   ],
+   "size": [
+    0.0399,
+    0.1025,
+    0.0748
+   ],
+   "concepts": [
+    {
+     "fma": "FMA18807",
+     "name": "left external iliac artery"
+    }
+   ],
+   "elements": [
+    "FJ3466"
    ]
   },
   {
    "id": "femoral-artery-r",
    "layer": "vessels",
-   "triangles": 1200,
-   "sourceTriangles": 11322,
+   "triangles": 752,
+   "sourceTriangles": 752,
    "center": [
-    -0.076,
-    0.7376,
-    0.0302
+    -0.0513,
+    0.7284,
+    0.0135
    ],
    "size": [
-    0.0874,
-    0.5982,
-    0.1385
+    0.0284,
+    0.3598,
+    0.0575
    ],
    "concepts": [
     {
@@ -6783,26 +7115,23 @@
     }
    ],
    "elements": [
-    "FJ2137",
-    "FJ2143",
-    "FJ2158",
-    "FJ3614"
+    "FJ2143"
    ]
   },
   {
    "id": "femoral-artery-l",
    "layer": "vessels",
-   "triangles": 1200,
-   "sourceTriangles": 10994,
+   "triangles": 740,
+   "sourceTriangles": 740,
    "center": [
-    0.0773,
-    0.7376,
-    0.0302
+    0.0525,
+    0.7285,
+    0.0134
    ],
    "size": [
-    0.0875,
-    0.5982,
-    0.1388
+    0.028,
+    0.36,
+    0.0576
    ],
    "concepts": [
     {
@@ -6811,10 +7140,157 @@
     }
    ],
    "elements": [
-    "FJ2069",
-    "FJ2074",
-    "FJ2078",
-    "FJ3529"
+    "FJ2074"
+   ]
+  },
+  {
+   "id": "popliteal-artery-r",
+   "layer": "vessels",
+   "triangles": 400,
+   "sourceTriangles": 16778,
+   "center": [
+    -0.0752,
+    0.4601,
+    -0.0266
+   ],
+   "size": [
+    0.0398,
+    0.1975,
+    0.0427
+   ],
+   "concepts": [
+    {
+     "fma": "FMA77380",
+     "name": "right popliteal artery"
+    }
+   ],
+   "elements": [
+    "FJ2170"
+   ]
+  },
+  {
+   "id": "popliteal-artery-l",
+   "layer": "vessels",
+   "triangles": 400,
+   "sourceTriangles": 16732,
+   "center": [
+    0.0765,
+    0.4602,
+    -0.0265
+   ],
+   "size": [
+    0.0399,
+    0.1972,
+    0.0429
+   ],
+   "concepts": [
+    {
+     "fma": "FMA77381",
+     "name": "left popliteal artery"
+    }
+   ],
+   "elements": [
+    "FJ2086"
+   ]
+  },
+  {
+   "id": "anterior-tibial-artery-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 17334,
+   "center": [
+    -0.0862,
+    0.2412,
+    -0.0167
+   ],
+   "size": [
+    0.0373,
+    0.3174,
+    0.0278
+   ],
+   "concepts": [
+    {
+     "fma": "FMA43896",
+     "name": "right anterior tibial artery"
+    }
+   ],
+   "elements": [
+    "FJ2130"
+   ]
+  },
+  {
+   "id": "anterior-tibial-artery-l",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 17412,
+   "center": [
+    0.0875,
+    0.2412,
+    -0.0167
+   ],
+   "size": [
+    0.0374,
+    0.3174,
+    0.0279
+   ],
+   "concepts": [
+    {
+     "fma": "FMA43897",
+     "name": "left anterior tibial artery"
+    }
+   ],
+   "elements": [
+    "FJ2065"
+   ]
+  },
+  {
+   "id": "posterior-tibial-artery-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 13130,
+   "center": [
+    -0.0671,
+    0.2023,
+    -0.0322
+   ],
+   "size": [
+    0.0466,
+    0.331,
+    0.0364
+   ],
+   "concepts": [
+    {
+     "fma": "FMA43898",
+     "name": "right posterior tibial artery"
+    }
+   ],
+   "elements": [
+    "FJ2172"
+   ]
+  },
+  {
+   "id": "posterior-tibial-artery-l",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 13218,
+   "center": [
+    0.0684,
+    0.2023,
+    -0.0322
+   ],
+   "size": [
+    0.0464,
+    0.3311,
+    0.0364
+   ],
+   "concepts": [
+    {
+     "fma": "FMA43899",
+     "name": "left posterior tibial artery"
+    }
+   ],
+   "elements": [
+    "FJ2087"
    ]
   },
   {
@@ -6869,6 +7345,56 @@
    ]
   },
   {
+   "id": "brachiocephalic-vein-r",
+   "layer": "vessels",
+   "triangles": 400,
+   "sourceTriangles": 546,
+   "center": [
+    -0.0205,
+    1.402,
+    0.0196
+   ],
+   "size": [
+    0.0217,
+    0.0518,
+    0.0219
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4751",
+     "name": "right brachiocephalic vein"
+    }
+   ],
+   "elements": [
+    "FJ3583"
+   ]
+  },
+  {
+   "id": "brachiocephalic-vein-l",
+   "layer": "vessels",
+   "triangles": 400,
+   "sourceTriangles": 748,
+   "center": [
+    0.0028,
+    1.4,
+    0.0207
+   ],
+   "size": [
+    0.0518,
+    0.052,
+    0.0218
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4761",
+     "name": "left brachiocephalic vein"
+    }
+   ],
+   "elements": [
+    "FJ3482"
+   ]
+  },
+  {
    "id": "internal-jugular-vein-r",
    "layer": "vessels",
    "triangles": 226,
@@ -6916,6 +7442,258 @@
    ],
    "elements": [
     "FJ3485"
+   ]
+  },
+  {
+   "id": "subclavian-vein-r",
+   "layer": "vessels",
+   "triangles": 300,
+   "sourceTriangles": 368,
+   "center": [
+    -0.0539,
+    1.4178,
+    0.0144
+   ],
+   "size": [
+    0.0645,
+    0.0238,
+    0.0133
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4755",
+     "name": "right subclavian vein"
+    }
+   ],
+   "elements": [
+    "FJ3587"
+   ]
+  },
+  {
+   "id": "subclavian-vein-l",
+   "layer": "vessels",
+   "triangles": 300,
+   "sourceTriangles": 434,
+   "center": [
+    0.0575,
+    1.4175,
+    0.0125
+   ],
+   "size": [
+    0.0749,
+    0.0282,
+    0.0156
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4763",
+     "name": "left subclavian vein"
+    }
+   ],
+   "elements": [
+    "FJ3486"
+   ]
+  },
+  {
+   "id": "cephalic-vein-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 22622,
+   "center": [
+    -0.1924,
+    1.1288,
+    0.004
+   ],
+   "size": [
+    0.172,
+    0.5523,
+    0.0539
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13325",
+     "name": "right cephalic vein"
+    }
+   ],
+   "elements": [
+    "FJ2272"
+   ]
+  },
+  {
+   "id": "cephalic-vein-l",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 22874,
+   "center": [
+    0.1936,
+    1.1288,
+    0.0039
+   ],
+   "size": [
+    0.172,
+    0.5522,
+    0.0538
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13326",
+     "name": "left cephalic vein"
+    }
+   ],
+   "elements": [
+    "FJ2220"
+   ]
+  },
+  {
+   "id": "basilic-vein-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 18150,
+   "center": [
+    -0.1926,
+    1.0912,
+    -0.012
+   ],
+   "size": [
+    0.0844,
+    0.4482,
+    0.0519
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22909",
+     "name": "right basilic vein"
+    }
+   ],
+   "elements": [
+    "FJ2270"
+   ]
+  },
+  {
+   "id": "basilic-vein-l",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 18338,
+   "center": [
+    0.1939,
+    1.0912,
+    -0.0119
+   ],
+   "size": [
+    0.0844,
+    0.4483,
+    0.0518
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22910",
+     "name": "left basilic vein"
+    }
+   ],
+   "elements": [
+    "FJ2218"
+   ]
+  },
+  {
+   "id": "renal-vein-r",
+   "layer": "vessels",
+   "triangles": 292,
+   "sourceTriangles": 5014,
+   "center": [
+    -0.0395,
+    1.0979,
+    -0.0028
+   ],
+   "size": [
+    0.0623,
+    0.077,
+    0.0384
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14335",
+     "name": "right renal vein"
+    }
+   ],
+   "elements": [
+    "FJ3577",
+    "FJ3578"
+   ]
+  },
+  {
+   "id": "renal-vein-l",
+   "layer": "vessels",
+   "triangles": 300,
+   "sourceTriangles": 4912,
+   "center": [
+    0.0333,
+    1.1141,
+    -0.001
+   ],
+   "size": [
+    0.0967,
+    0.0768,
+    0.064
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14336",
+     "name": "left renal vein"
+    }
+   ],
+   "elements": [
+    "FJ3477",
+    "FJ3478"
+   ]
+  },
+  {
+   "id": "common-iliac-vein-r",
+   "layer": "vessels",
+   "triangles": 358,
+   "sourceTriangles": 358,
+   "center": [
+    -0.0191,
+    1.0107,
+    0.0051
+   ],
+   "size": [
+    0.0323,
+    0.064,
+    0.0351
+   ],
+   "concepts": [
+    {
+     "fma": "FMA21387",
+     "name": "right common iliac vein"
+    }
+   ],
+   "elements": [
+    "FJ3566"
+   ]
+  },
+  {
+   "id": "common-iliac-vein-l",
+   "layer": "vessels",
+   "triangles": 400,
+   "sourceTriangles": 430,
+   "center": [
+    0.0062,
+    1.011,
+    -0.0007
+   ],
+   "size": [
+    0.0413,
+    0.0646,
+    0.0462
+   ],
+   "concepts": [
+    {
+     "fma": "FMA21388",
+     "name": "left common iliac vein"
+    }
+   ],
+   "elements": [
+    "FJ3465"
    ]
   },
   {
@@ -6971,7 +7749,7 @@
   {
    "id": "great-saphenous-vein-r",
    "layer": "vessels",
-   "triangles": 1500,
+   "triangles": 1200,
    "sourceTriangles": 30036,
    "center": [
     -0.0535,
@@ -6981,7 +7759,7 @@
    "size": [
     0.0814,
     0.8222,
-    0.1057
+    0.1058
    ],
    "concepts": [
     {
@@ -6996,7 +7774,7 @@
   {
    "id": "great-saphenous-vein-l",
    "layer": "vessels",
-   "triangles": 1500,
+   "triangles": 1200,
    "sourceTriangles": 30040,
    "center": [
     0.0548,
@@ -7019,19 +7797,69 @@
    ]
   },
   {
-   "id": "hepatic-portal-vein",
+   "id": "small-saphenous-vein-r",
    "layer": "vessels",
-   "triangles": 1450,
-   "sourceTriangles": 35982,
+   "triangles": 500,
+   "sourceTriangles": 16332,
    "center": [
-    -0.022,
-    1.1911,
-    0.0252
+    -0.0867,
+    0.2611,
+    -0.052
    ],
    "size": [
-    0.1574,
-    0.1004,
-    0.1468
+    0.05,
+    0.4544,
+    0.0753
+   ],
+   "concepts": [
+    {
+     "fma": "FMA44334",
+     "name": "right small saphenous vein"
+    }
+   ],
+   "elements": [
+    "FJ2176"
+   ]
+  },
+  {
+   "id": "small-saphenous-vein-l",
+   "layer": "vessels",
+   "triangles": 500,
+   "sourceTriangles": 16336,
+   "center": [
+    0.0881,
+    0.2612,
+    -0.0521
+   ],
+   "size": [
+    0.05,
+    0.4542,
+    0.0752
+   ],
+   "concepts": [
+    {
+     "fma": "FMA44335",
+     "name": "left small saphenous vein"
+    }
+   ],
+   "elements": [
+    "FJ2121"
+   ]
+  },
+  {
+   "id": "hepatic-portal-vein",
+   "layer": "vessels",
+   "triangles": 500,
+   "sourceTriangles": 3582,
+   "center": [
+    -0.0136,
+    1.1648,
+    0.0331
+   ],
+   "size": [
+    0.0143,
+    0.0488,
+    0.0206
    ],
    "concepts": [
     {
@@ -7040,24 +7868,82 @@
     }
    ],
    "elements": [
-    "FJ1853",
-    "FJ1893",
-    "FJ1913",
-    "FJ1914",
-    "FJ2404",
-    "FJ2405",
-    "FJ3073",
-    "FJ3074",
-    "FJ3102",
-    "FJ3111",
-    "FJ3112",
-    "FJ3113",
-    "FJ3122",
-    "FJ3124",
-    "FJ3125",
-    "FJ3126",
-    "FJ3127",
-    "FJ3128"
+    "FJ1853"
+   ]
+  },
+  {
+   "id": "splenic-vein",
+   "layer": "vessels",
+   "triangles": 400,
+   "sourceTriangles": 1144,
+   "center": [
+    0.0446,
+    1.1496,
+    0.0029
+   ],
+   "size": [
+    0.1119,
+    0.0405,
+    0.0409
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14331",
+     "name": "splenic vein"
+    }
+   ],
+   "elements": [
+    "FJ3641"
+   ]
+  },
+  {
+   "id": "superior-mesenteric-vein",
+   "layer": "vessels",
+   "triangles": 500,
+   "sourceTriangles": 702,
+   "center": [
+    -0.0331,
+    1.0666,
+    0.0286
+   ],
+   "size": [
+    0.0575,
+    0.1566,
+    0.0405
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14332",
+     "name": "superior mesenteric vein"
+    }
+   ],
+   "elements": [
+    "FJ3647"
+   ]
+  },
+  {
+   "id": "azygos-vein",
+   "layer": "vessels",
+   "triangles": 500,
+   "sourceTriangles": 18260,
+   "center": [
+    -0.0111,
+    1.2607,
+    -0.0143
+   ],
+   "size": [
+    0.0121,
+    0.2174,
+    0.053
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4838",
+     "name": "azygos vein"
+    }
+   ],
+   "elements": [
+    "FJ3416"
    ]
   }
  ]

@@ -116,7 +116,7 @@ export function InfoPanel() {
     <section
       ref={sheetRef}
       className="glass fade-in absolute inset-x-0 bottom-0 z-20 flex flex-col rounded-t-[28px] shadow-[0_-12px_40px_rgba(0,0,0,0.35)] transition-[height] duration-300 ease-out"
-      style={{ height: sheetHeight, paddingBottom: 'var(--safe-bottom)' }}
+      style={{ height: sheetHeight, paddingBottom: 'var(--safe-bottom)', background: full ? 'rgb(16 22 30 / 0.95)' : undefined }}
       aria-labelledby="panel-title"
     >
       <div

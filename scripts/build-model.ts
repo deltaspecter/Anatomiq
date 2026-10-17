@@ -95,7 +95,27 @@ function loadTables() {
   }
 }
 
+/** Spezifischstes Konzept je Element (kleinste Elementmenge; bei Gleichstand der kürzere, allgemeinere Name) */
+const mostSpecific = new Map<string, string>()
+function computeMostSpecific() {
+  for (const concept of concepts.values())
+    for (const element of concept.elements) {
+      const prev = mostSpecific.get(element)
+      const p = prev ? concepts.get(prev)! : null
+      if (!p || concept.elements.size < p.elements.size || (concept.elements.size === p.elements.size && concept.name.length < p.name.length)) mostSpecific.set(element, concept.name)
+    }
+}
+
 function resolveSource(source: Source): Concept[] {
+  if (typeof source === 'object' && !(source instanceof RegExp)) {
+    const own = concepts.get(source.own)
+    if (!own) throw new Error(`BodyParts3D-Konzept nicht gefunden: „${source.own}“`)
+    const within = source.within ? concepts.get(source.within) : null
+    if (source.within && !within) throw new Error(`BodyParts3D-Konzept nicht gefunden: „${source.within}“`)
+    const elements = new Set([...own.elements].filter((e) => mostSpecific.get(e) === own.name && (!within || within.elements.has(e))))
+    if (!elements.size) throw new Error(`Keine eigenen Elemente: ${JSON.stringify(source)}`)
+    return [{ fma: within?.fma ?? own.fma, name: within?.name ?? own.name, elements }]
+  }
   if (typeof source === 'string') {
     const concept = concepts.get(source)
     if (!concept) throw new Error(`BodyParts3D-Konzept nicht gefunden: „${source}“`)
@@ -228,6 +248,7 @@ function bounds(positions: Float32Array) {
 // ── 4. Ablauf ──────────────────────────────────────────────────
 await ensureRawData()
 loadTables()
+computeMostSpecific()
 await MeshoptSimplifier.ready
 await MeshoptEncoder.ready
 

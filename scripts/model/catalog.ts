@@ -11,7 +11,14 @@
  */
 import type { LayerId } from '../../src/data/layers.ts'
 
-export type Source = string | RegExp
+/**
+ * string: alle Elemente eines Konzepts (inklusive aller Unterteile)
+ * RegExp: alle Konzepte, deren Name passt
+ * { own, within }: nur die Elemente, die eigentlich zu „own“ gehören (dessen spezifischstes Konzept es ist),
+ *   optional eingeschränkt auf die Elemente von „within“ (z. B. die Körperseite). Nötig bei Gefäßen, deren
+ *   BodyParts3D-Konzept den gesamten nachgeschalteten Gefäßbaum einschließt.
+ */
+export type Source = string | RegExp | { own: string; within?: string }
 export type CatalogEntry = {
   id: string
   layer: LayerId
@@ -27,6 +34,7 @@ const SIDES = [
 
 function sideSource(source: Source, side: string): Source {
   if (typeof source === 'string') return source.replaceAll('{side}', side)
+  if (!(source instanceof RegExp)) return { own: source.own.replaceAll('{side}', side), within: source.within?.replaceAll('{side}', side) }
   return new RegExp(source.source.replaceAll('\\{side\\}', side).replaceAll('{side}', side), source.flags)
 }
 
@@ -168,17 +176,44 @@ export const CATALOG: CatalogEntry[] = [
   ...pair('optic-nerve', 'nervous', ['{side} optic nerve'], 400),
 
   // ── Gefäße ───────────────────────────────────────────────────
+  // Nur die Gefäße selbst, ohne ihren nachgeschalteten Gefäßbaum (siehe Source.own)
   ...one('aorta', 'vessels', ['aorta'], 4000),
   ...one('pulmonary-trunk', 'vessels', ['pulmonary trunk'], 1000),
-  ...one('brachiocephalic-trunk', 'vessels', ['brachiocephalic artery'], 600),
-  ...pair('common-carotid-artery', 'vessels', ['{side} common carotid artery'], 800),
-  ...pair('subclavian-artery', 'vessels', ['{side} subclavian artery'], 800),
-  ...pair('common-iliac-artery', 'vessels', ['{side} common iliac artery'], 600),
-  ...pair('femoral-artery', 'vessels', ['{side} femoral artery'], 1200),
+  ...one('brachiocephalic-trunk', 'vessels', [{ own: 'brachiocephalic artery' }], 600),
+  ...pair('common-carotid-artery', 'vessels', [{ own: 'common carotid artery', within: '{side} common carotid artery' }], 800),
+  ...pair('internal-carotid-artery', 'vessels', [{ own: 'internal carotid artery', within: '{side} internal carotid artery' }], 800),
+  ...pair('vertebral-artery', 'vessels', [{ own: 'vertebral artery', within: '{side} vertebral artery' }], 800),
+  ...pair('subclavian-artery', 'vessels', [{ own: 'subclavian artery', within: '{side} subclavian artery' }], 600),
+  ...pair('axillary-artery', 'vessels', [{ own: '{side} axillary artery' }], 500),
+  ...pair('brachial-artery', 'vessels', [{ own: '{side} brachial artery' }], 700),
+  ...pair('radial-artery', 'vessels', [{ own: 'radial artery', within: '{side} radial artery' }], 600),
+  ...pair('ulnar-artery', 'vessels', [{ own: 'ulnar artery', within: '{side} ulnar artery' }], 600),
+  ...one('celiac-trunk', 'vessels', [{ own: 'celiac trunk' }], 300),
+  ...one('superior-mesenteric-artery', 'vessels', [{ own: 'superior mesenteric artery' }], 800),
+  ...pair('renal-artery', 'vessels', [{ own: 'renal artery', within: '{side} renal artery' }], 400),
+  ...pair('common-iliac-artery', 'vessels', [{ own: 'common iliac artery', within: '{side} common iliac artery' }], 400),
+  ...pair('internal-iliac-artery', 'vessels', [{ own: '{side} internal iliac artery' }], 400),
+  ...pair('external-iliac-artery', 'vessels', [{ own: 'external iliac artery', within: '{side} external iliac artery' }], 500),
+  ...pair('femoral-artery', 'vessels', [{ own: 'femoral artery', within: '{side} femoral artery' }], 900),
+  ...pair('popliteal-artery', 'vessels', [{ own: '{side} popliteal artery' }], 400),
+  ...pair('anterior-tibial-artery', 'vessels', [{ own: 'anterior tibial artery', within: '{side} anterior tibial artery' }], 600),
+  ...pair('posterior-tibial-artery', 'vessels', [{ own: '{side} posterior tibial artery' }], 600),
   ...one('superior-vena-cava', 'vessels', ['superior vena cava'], 600),
-  ...one('inferior-vena-cava', 'vessels', ['inferior vena cava'], 1500),
-  ...pair('internal-jugular-vein', 'vessels', ['{side} internal jugular vein'], 800),
-  ...pair('femoral-vein', 'vessels', ['{side} femoral vein'], 1200),
-  ...pair('great-saphenous-vein', 'vessels', ['{side} great saphenous vein'], 1500),
-  ...one('hepatic-portal-vein', 'vessels', ['hepatic portal vein'], 1500),
+  ...one('inferior-vena-cava', 'vessels', [{ own: 'inferior vena cava' }], 1500),
+  // Rechts heißt das eigene Element allgemein „brachiocephalic vein“, links „left brachiocephalic vein“
+  ...one('brachiocephalic-vein-r', 'vessels', [{ own: 'brachiocephalic vein', within: 'right brachiocephalic vein' }], 400),
+  ...one('brachiocephalic-vein-l', 'vessels', [{ own: 'left brachiocephalic vein' }], 400),
+  ...pair('internal-jugular-vein', 'vessels', [{ own: '{side} internal jugular vein' }], 500),
+  ...pair('subclavian-vein', 'vessels', [{ own: '{side} subclavian vein' }], 300),
+  ...pair('cephalic-vein', 'vessels', [{ own: '{side} cephalic vein' }], 600),
+  ...pair('basilic-vein', 'vessels', [{ own: '{side} basilic vein' }], 600),
+  ...pair('renal-vein', 'vessels', [{ own: '{side} renal vein' }], 300),
+  ...pair('common-iliac-vein', 'vessels', [{ own: '{side} common iliac vein' }], 400),
+  ...pair('femoral-vein', 'vessels', [{ own: '{side} femoral vein' }], 700),
+  ...pair('great-saphenous-vein', 'vessels', [{ own: '{side} great saphenous vein' }], 1200),
+  ...pair('small-saphenous-vein', 'vessels', [{ own: '{side} small saphenous vein' }], 500),
+  ...one('hepatic-portal-vein', 'vessels', [{ own: 'hepatic portal vein' }], 500),
+  ...one('splenic-vein', 'vessels', [{ own: 'splenic vein' }], 400),
+  ...one('superior-mesenteric-vein', 'vessels', [{ own: 'superior mesenteric vein' }], 500),
+  ...one('azygos-vein', 'vessels', [{ own: 'azygos vein' }], 500),
 ]

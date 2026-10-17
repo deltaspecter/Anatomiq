@@ -7,6 +7,8 @@ export type Definition = Content & {
   nameLa: string
   system: SystemId
   region: RegionId
+  /** Seite bei einzeln definierten Strukturen einer Körperseite */
+  side?: Side
   /** Verwandte Strukturen; „~id“ meint bei paarigen Strukturen dieselbe Körperseite (z. B. ~ulna → ulna-r) */
   related?: string[]
   sources?: SourceId[]
@@ -27,8 +29,9 @@ function resolveRelated(related: string[] | undefined, side?: Side): string[] {
   })
 }
 
-function build(id: string, layer: LayerId, def: Definition, side?: Side): AnatomicalStructure {
-  const { related, sources, ...rest } = def
+function build(id: string, layer: LayerId, def: Definition, pairedSide?: Side): AnatomicalStructure {
+  const { related, sources, side: ownSide, ...rest } = def
+  const side = pairedSide ?? ownSide
   return {
     ...rest,
     id,

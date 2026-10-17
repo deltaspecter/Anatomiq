@@ -13,6 +13,7 @@ import { useFrame, useThree } from '@react-three/fiber'
 import { useEffect, useRef } from 'react'
 import { Box3, PerspectiveCamera, Vector3 } from 'three'
 import { modelMesh } from '@/data/model'
+import { setTestControls } from '@/debug/testHook'
 import { useViewer } from '@/state/viewer'
 import { BODY, fitDistance, focusDistance, VIEWS } from './views'
 
@@ -58,6 +59,8 @@ export function CameraRig({ panelOffset }: { panelOffset: { x: number; y: number
     c.touches.two = ACTION.TOUCH_DOLLY_TRUCK
     c.touches.three = ACTION.TOUCH_TRUCK
     reset(false)
+    setTestControls(c)
+    return () => setTestControls(null)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
