@@ -20,6 +20,7 @@ const ICONS: Record<LayerId, ComponentType<{ size?: number; 'aria-hidden'?: bool
 }
 
 const STATE_LABEL: Record<Visibility, string> = { visible: 'sichtbar', ghost: 'transparent', hidden: 'aus' }
+const STATE_SHORT: Record<Visibility, string> = { visible: 'an', ghost: 'transp.', hidden: 'aus' }
 const STATE_ICON: Record<Visibility, ComponentType<{ size?: number; 'aria-hidden'?: boolean }>> = { visible: Eye, ghost: Ghost, hidden: EyeOff }
 
 function LayerToggle({ id }: { id: LayerId }) {
@@ -35,7 +36,7 @@ function LayerToggle({ id }: { id: LayerId }) {
     <button
       type="button"
       onClick={() => (failed ? retryLayer(id) : useViewer.getState().setLayer(id, nextVisibility(v)))}
-      className={`relative flex w-[62px] shrink-0 flex-col items-center gap-1 rounded-2xl py-1.5 text-[11px] transition-colors ${v === 'hidden' ? 'text-faint' : 'text-ink'}`}
+      className={`relative flex w-[54px] shrink-0 flex-col items-center gap-1 rounded-2xl py-1.5 text-[11px] transition-colors ${v === 'hidden' ? 'text-faint' : 'text-ink'}`}
       aria-label={`${info.label}: ${failed ? 'Laden fehlgeschlagen – erneut versuchen' : STATE_LABEL[v]}. Antippen zum Umschalten.`}
     >
       <span
@@ -61,7 +62,7 @@ function LayerToggle({ id }: { id: LayerId }) {
       <span className="leading-none">{info.label}</span>
       <span className="flex items-center gap-0.5 text-[10px] leading-none text-muted">
         <StateIcon size={10} aria-hidden />
-        {loading ? `${Math.round(progress * 100)} %` : failed ? 'Fehler' : STATE_LABEL[v]}
+        {loading ? `${Math.round(progress * 100)} %` : failed ? 'Fehler' : STATE_SHORT[v]}
       </span>
     </button>
   )
@@ -80,7 +81,7 @@ export function LayerBar({ bottomOffset }: { bottomOffset: number }) {
       style={{ bottom: `calc(${bottomOffset}px + 12px + var(--safe-bottom))`, paddingLeft: 'calc(12px + var(--safe-left))' }}
     >
       {open && (
-        <div className="glass fade-in pointer-events-auto flex max-w-full items-stretch gap-0.5 overflow-x-auto rounded-3xl p-1.5" role="group" aria-label="Darstellungsebenen">
+        <div className="glass fade-in pointer-events-auto flex max-w-full items-stretch overflow-x-auto rounded-3xl p-1.5" role="group" aria-label="Darstellungsebenen">
           {LAYER_ORDER.map((id) => (
             <LayerToggle key={id} id={id} />
           ))}

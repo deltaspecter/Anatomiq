@@ -30,6 +30,22 @@ function applyFresnel(material: MeshStandardMaterial, strength: number) {
   material.customProgramCacheKey = () => `fresnel-${strength}`
 }
 
+/**
+ * Hervorhebung als leuchtender Rand: Die Eigenfarbe der Struktur bleibt erhalten,
+ * zum Rand hin (flacher Blickwinkel) leuchtet die Akzentfarbe auf.
+ */
+function applyRim(material: MeshStandardMaterial) {
+  material.onBeforeCompile = (shader) => {
+    shader.fragmentShader = shader.fragmentShader.replace(
+      '#include <emissivemap_fragment>',
+      `#include <emissivemap_fragment>
+      float rim = 1.0 - abs(dot(normalize(vViewPosition), normal));
+      totalEmissiveRadiance *= 0.07 + 1.5 * pow(rim, 2.4);`,
+    )
+  }
+  material.customProgramCacheKey = () => 'rim'
+}
+
 export function getMaterial(color: string, roughness: number, mode: MaterialMode, isSkin = false): MeshStandardMaterial {
   const key = `${color}|${roughness}|${mode}|${isSkin}`
   let material = cache.get(key)
@@ -43,9 +59,10 @@ export function getMaterial(color: string, roughness: number, mode: MaterialMode
     material.side = FrontSide
     applyFresnel(material, isSkin ? 0.15 : 0.3)
   } else if (mode === 'selected') {
-    material.color = base.clone().lerp(HIGHLIGHT, 0.55)
+    material.color = base.clone().lerp(HIGHLIGHT, 0.05)
     material.emissive = HIGHLIGHT.clone()
-    material.emissiveIntensity = 0.42
+    material.emissiveIntensity = 1
+    applyRim(material)
   } else if (mode === 'correct' || mode === 'wrong') {
     const tint = mode === 'correct' ? CORRECT : WRONG
     material.color = base.clone().lerp(tint, 0.6)

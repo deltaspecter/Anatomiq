@@ -34,6 +34,7 @@ export function App() {
   const { width, height } = useViewport()
   const panelOpen = useViewer((s) => s.panel !== 'closed' && !!s.selectedId)
   const panelFull = useViewer((s) => s.panel === 'full')
+  const layerBarOpen = useViewer((s) => s.layerBarOpen)
 
   if (!webgl)
     return (
@@ -57,7 +58,7 @@ export function App() {
       {!hideControls && (
         <>
           <LayerBar bottomOffset={bottomOffset} />
-          <CameraBar rightOffset={rightOffset} bottomOffset={bottomOffset} />
+          <CameraBar rightOffset={rightOffset} bottomOffset={bottomOffset + (!wide && layerBarOpen ? 100 : 0)} />
         </>
       )}
       <LearnOverlay />
