@@ -98,6 +98,13 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
             . Für Anatomiq vereinfacht, zu Strukturen zusammengefasst und neu eingefärbt.
           </p>
           <p>
+            <span className="text-ink/85">Lungenlappen:</span> Browne, K.; Schlehlein, H. (2024): 3D Reference Organ for Lung, Male v1.4, Human Reference Atlas,{' '}
+            <a className="underline" href="https://doi.org/10.48539/HBM532.KLZD.394" target="_blank" rel="noopener noreferrer">
+              doi:10.48539/HBM532.KLZD.394
+            </a>
+            , CC BY 4.0 – skaliert und auf das BodyParts3D-Modell eingepasst.
+          </p>
+          <p>
             <span className="text-ink/85">Texte:</span> Erstfassungen, KI-gestützt auf Grundlage anatomischer Standardwerke erstellt und noch nicht fachlich begutachtet. Kein Ersatz für Lehrbuch oder ärztlichen Rat.
           </p>
           <p>

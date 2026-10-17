@@ -245,6 +245,75 @@ function bounds(positions: Float32Array) {
   return { min, max }
 }
 
+// ── 3b. HRA-Referenzlunge ──────────────────────────────────────
+const HRA_LUNG_URL = 'https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/3d-vh-m-lung.glb'
+const HRA_CACHE = join(ROOT, '.cache/hra')
+type RawGeometry = { positions: number[]; indices: number[] }
+let hraNodes: Map<string, RawGeometry> | null = null
+
+/** Lädt die HRA-Lunge und liefert je Knoten die Geometrie in Weltkoordinaten (m; Achsen wie die App: rechts −X, vorn +Z, oben +Y) */
+async function loadHraLung(): Promise<Map<string, RawGeometry>> {
+  if (hraNodes) return hraNodes
+  mkdirSync(HRA_CACHE, { recursive: true })
+  const file = join(HRA_CACHE, '3d-vh-m-lung.glb')
+  if (!existsSync(file)) await download(HRA_LUNG_URL, file)
+  const doc = await new NodeIO().registerExtensions([EXTMeshoptCompression, KHRMeshQuantization]).read(file)
+  hraNodes = new Map()
+  for (const node of doc.getRoot().listNodes()) {
+    const mesh = node.getMesh()
+    if (!mesh) continue
+    const m = node.getWorldMatrix()
+    const geo: RawGeometry = { positions: [], indices: [] }
+    for (const prim of mesh.listPrimitives()) {
+      const pos = prim.getAttribute('POSITION')!
+      const base = geo.positions.length / 3
+      const v = [0, 0, 0]
+      for (let i = 0; i < pos.getCount(); i++) {
+        pos.getElement(i, v)
+        geo.positions.push(m[0] * v[0] + m[4] * v[1] + m[8] * v[2] + m[12], m[1] * v[0] + m[5] * v[1] + m[9] * v[2] + m[13], m[2] * v[0] + m[6] * v[1] + m[10] * v[2] + m[14])
+      }
+      const idx = prim.getIndices()
+      if (idx) for (let i = 0; i < idx.getCount(); i++) geo.indices.push(idx.getScalar(i) + base)
+      else for (let i = 0; i < pos.getCount(); i++) geo.indices.push(i + base)
+    }
+    hraNodes.set(node.getName(), geo)
+  }
+  return hraNodes
+}
+
+const rawBounds = (positions: number[]) => bounds(new Float32Array(positions))
+
+/**
+ * Einpassen: Die HRA-Lunge einer Seite (alle Segmentflächen) wird achsenweise so skaliert und verschoben,
+ * dass sie den Bronchialbaum derselben Seite aus BodyParts3D mit anatomisch begründeten Abständen umschließt:
+ * Lungenspitze etwas über, Lungenbasis (Recessus) deutlich unter den letzten Bronchien, außen und vorn/hinten wenige mm.
+ */
+async function hraLobe(entry: CatalogEntry, offset: number[]): Promise<RawGeometry> {
+  const nodes = await loadHraLung()
+  const { side } = entry.hra!
+  const sidePattern = side === 'right' ? /^VH_M_(right_.*bronchopulmonary_segment|hilum_(upper|middle|lower)_R)$/ : /^VH_M_(left_.*bronchopulmonary_segment|hilum_(upper|lower)_L)$/
+  const all: number[] = []
+  for (const [name, geo] of nodes) if (sidePattern.test(name)) all.push(...geo.positions)
+  const h = rawBounds(all)
+  const tree = { positions: [] as number[], indices: [] as number[] }
+  for (const element of concepts.get(`${side} bronchial tree`)!.elements) readObj(elementFile(element)!, tree)
+  for (let i = 0; i < tree.positions.length; i += 3) for (let k = 0; k < 3; k++) tree.positions[i + k] += offset[k]
+  const t = rawBounds(tree.positions)
+  const lateral = 0.008, medial = 0, sagittal = 0.008, apex = 0.012, base = 0.028
+  const tmin = [side === 'right' ? t.min[0] - lateral : t.min[0] - medial, t.min[1] - base, t.min[2] - sagittal]
+  const tmax = [side === 'right' ? t.max[0] + medial : t.max[0] + lateral, t.max[1] + apex, t.max[2] + sagittal]
+  const out: RawGeometry = { positions: [], indices: [] }
+  for (const [name, geo] of nodes) {
+    if (!entry.hra!.nodes.test(name)) continue
+    const base0 = out.positions.length / 3
+    for (let i = 0; i < geo.positions.length; i += 3)
+      for (let k = 0; k < 3; k++) out.positions.push(tmin[k] + ((geo.positions[i + k] - h.min[k]) / (h.max[k] - h.min[k])) * (tmax[k] - tmin[k]))
+    for (const idx of geo.indices) out.indices.push(idx + base0)
+  }
+  if (!out.indices.length) throw new Error(`${entry.id}: keine HRA-Knoten gefunden`)
+  return out
+}
+
 // ── 4. Ablauf ──────────────────────────────────────────────────
 await ensureRawData()
 loadTables()
@@ -284,6 +353,7 @@ const offset = [-(skinBounds.min[0] + skinBounds.max[0]) / 2, -skinBounds.min[1]
 type ManifestEntry = {
   id: string
   layer: LayerId
+  source: 'bodyparts3d' | 'hra-lung-male-v1.4'
   triangles: number
   sourceTriangles: number
   center: number[]
@@ -313,14 +383,18 @@ for (const layer of LAYER_IDS) {
   let layerTriangles = 0
   for (const entry of entries) {
     const elements = (elementsOf.get(entry.id) ?? []).sort()
-    if (!elements.length) throw new Error(`${entry.id}: keine Element-Dateien (alle von spezifischeren Einträgen beansprucht?)`)
-    const raw = { positions: [] as number[], indices: [] as number[] }
-    for (const element of elements) {
-      const file = elementFile(element)
-      if (!file) throw new Error(`${entry.id}: Element-Datei ${element}.obj fehlt`)
-      readObj(file, raw)
+    let raw: RawGeometry
+    if (entry.hra) raw = await hraLobe(entry, offset)
+    else {
+      if (!elements.length) throw new Error(`${entry.id}: keine Element-Dateien (alle von spezifischeren Einträgen beansprucht?)`)
+      raw = { positions: [], indices: [] }
+      for (const element of elements) {
+        const file = elementFile(element)
+        if (!file) throw new Error(`${entry.id}: Element-Datei ${element}.obj fehlt`)
+        readObj(file, raw)
+      }
+      for (let i = 0; i < raw.positions.length; i += 3) for (let k = 0; k < 3; k++) raw.positions[i + k] += offset[k]
     }
-    for (let i = 0; i < raw.positions.length; i += 3) for (let k = 0; k < 3; k++) raw.positions[i + k] += offset[k]
     const sourceTriangles = raw.indices.length / 3
     const geo = simplify(weld(raw.positions, raw.indices), entry.budget)
     const normals = computeNormals(geo)
@@ -344,7 +418,8 @@ for (const layer of LAYER_IDS) {
       sourceTriangles,
       center: min.map((v, k) => r((v + max[k]) / 2)),
       size: min.map((v, k) => r(max[k] - v)),
-      concepts: (conceptsOf.get(entry.id) ?? []).map((c) => ({ fma: c.fma, name: c.name })),
+      source: entry.hra ? 'hra-lung-male-v1.4' : 'bodyparts3d',
+      concepts: entry.hra ? [{ fma: 'HRA', name: entry.hra.nodes.source.replace(/[\^$()]/g, '') }] : (conceptsOf.get(entry.id) ?? []).map((c) => ({ fma: c.fma, name: c.name })),
       elements,
     })
     console.log(`  ${entry.id.padEnd(28)} ${String(sourceTriangles).padStart(7)} → ${String(triangles).padStart(6)} Dreiecke`)
@@ -359,5 +434,5 @@ for (const layer of LAYER_IDS) {
   console.log(`✓ ${layer}.glb – ${entries.length} Strukturen, ${layerTriangles} Dreiecke, ${(glb.byteLength / 1024).toFixed(0)} KB`)
 }
 
-writeFileSync(manifestFile, JSON.stringify({ source: 'BodyParts3D 4.0 (DBCLS), CC BY 4.0', layers: layerInfo, structures: manifest }, null, 1) + '\n')
+writeFileSync(manifestFile, JSON.stringify({ source: 'BodyParts3D 4.0 (DBCLS), CC BY 4.0; Lungenlappen: HRA 3D Reference Organ Lung, Male v1.4 (Browne & Schlehlein 2024), CC BY 4.0', layers: layerInfo, structures: manifest }, null, 1) + '\n')
 console.log(`✓ Manifest: ${manifest.length} Strukturen`)

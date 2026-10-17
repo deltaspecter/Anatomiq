@@ -51,6 +51,6 @@ export const RIBS: AnatomicalStructure[] = Array.from({ length: 12 }, (_, i) => 
           ? 'Brüche der unteren Rippen können Leber, Milz oder Nieren verletzen. Pleurapunktionen erfolgen am Oberrand einer Rippe, um die Gefäße in der Rippenfurche zu schonen.'
           : 'Rippenbrüche sind schmerzhaft und können die Lunge verletzen (Pneumothorax). Pleurapunktionen erfolgen am Oberrand einer Rippe, um die Gefäße in der Rippenfurche zu schonen.',
     mnemonic: n === 1 || n === 8 || n === 11 ? '7 echte, 3 falsche, 2 freie Rippen je Seite.' : undefined,
-    related: [`vertebra-t${n}`, ...(n >= 2 && n <= 10 ? [`vertebra-t${n - 1}`] : []), ...(n > 1 ? [`~rib-${n - 1}`] : []), ...(n < 12 ? [`~rib-${n + 1}`] : []), ...(n <= 7 ? ['sternum', '~costal-cartilages'] : []), '~lung'],
+    related: [`vertebra-t${n}`, ...(n >= 2 && n <= 10 ? [`vertebra-t${n - 1}`] : []), ...(n > 1 ? [`~rib-${n - 1}`] : []), ...(n < 12 ? [`~rib-${n + 1}`] : []), ...(n <= 7 ? ['sternum', '~costal-cartilages'] : []), n <= 4 ? '~lung-upper-lobe' : '~lung-lower-lobe'],
   }),
 )

@@ -36,7 +36,7 @@ const centralArteries: AnatomicalStructure[] = [
     structure: 'Etwa 5 cm lang. Mit dem Aortenbogen über das Lig. arteriosum verbunden – den Rest des vorgeburtlichen Ductus arteriosus (Botalli).',
     function: 'Leitet das Blut in den Lungenkreislauf. Obwohl eine Arterie, führt er sauerstoffarmes Blut – daher hier blau dargestellt.',
     clinical: 'Bei einer Lungenembolie verstopft ein verschleppter Blutpfropf (meist aus den Beinvenen) die Lungenarterien. Schließt sich der Ductus arteriosus nach der Geburt nicht, spricht man von einem persistierenden Ductus arteriosus.',
-    related: ['heart', 'aorta', 'lung-r', 'lung-l'],
+    related: ['heart', 'aorta', 'bronchial-tree-r', 'bronchial-tree-l', 'lung-upper-lobe-r', 'lung-upper-lobe-l'],
   }),
   single('brachiocephalic-trunk', 'vessels', {
     nameDe: 'Arm-Kopf-Arterienstamm',

@@ -139,7 +139,10 @@ export function StructureContent({ structure: s }: { structure: AnatomicalStruct
           </p>
           {mesh && (
             <p>
-              3D-Geometrie: BodyParts3D (DBCLS, CC BY 4.0) · {mesh.concepts.map((c) => `${c.fma} ${c.name}`).join(', ')} · {mesh.triangles.toLocaleString('de-DE')} Dreiecke
+              {mesh.source === 'bodyparts3d'
+                ? `3D-Geometrie: BodyParts3D (DBCLS, CC BY 4.0) · ${mesh.concepts.map((c) => `${c.fma} ${c.name}`).join(', ')}`
+                : '3D-Geometrie: Human Reference Atlas, Referenzlunge (männlich, v1.4), CC BY 4.0 – auf den Bronchialbaum von BodyParts3D eingepasst'}{' '}
+              · {mesh.triangles.toLocaleString('de-DE')} Dreiecke
             </p>
           )}
         </div>

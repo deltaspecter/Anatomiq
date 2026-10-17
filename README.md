@@ -8,18 +8,18 @@ Die App läuft im Browser auf iPhone, Tablet und Desktop und lässt sich in Safa
 
 | Bereich | Status | Details |
 |---|---|---|
-| **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0): **270 einzeln antippbare Strukturen** in sechs Ebenen, rund 506 000 Dreiecke, zusammen 2,8 MB (meshopt-komprimiert). Männlicher Körper. |
+| **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0), Lungenlappen aus der Referenzlunge des [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (CC BY 4.0): **339 einzeln antippbare Strukturen** in sechs Ebenen, rund 600 000 Dreiecke, zusammen 3,4 MB (meshopt-komprimiert). Männlicher Körper. |
 | **Navigation am Modell** | ✅ umgesetzt | Drehen (1 Finger / Maus), Pinch-Zoom und Verschieben (2 Finger), Mausrad-Zoom zum Zeiger, Grenzen für Zoom und Drehpunkt, Ausgangsansicht, feste Ansichten (vorn/rechts/hinten/links) |
 | **Auswahl** | ✅ umgesetzt | Antippen wählt die vorderste deckend sichtbare Struktur (BVH-beschleunigtes Raycasting); Drehen/Zoomen löst nie eine Auswahl aus; Doppeltippen fokussiert; Hervorhebung durch Randleuchten |
 | **Informationspanel** | ✅ umgesetzt | Bottom-Sheet (Hochformat) bzw. Seitenpanel (Querformat, Desktop); Name, Latein, Englisch, System, Region, Kurzfassung, Lage, Funktion, Aufbau, Ursprung/Ansatz/Innervation, Gelenke, Blutversorgung, Klinik, Fachbegriffe, Merksätze, verwandte Strukturen, Quellen, Modellherkunft (FMA-IDs) |
 | **Kamera** | ✅ umgesetzt | Sanfter Fokus auf die ausgewählte Struktur (abschaltbar), jede Berührung unterbricht Animationen; Schließen des Panels verändert die Ansicht nicht |
 | **Ebenen** | ✅ umgesetzt | Haut, Muskeln, Skelett, Organe, Gefäße, Nerven – je sichtbar / transparent / aus; transparente Strukturen lassen Fingertipps durch |
 | **Einzelstrukturen** | ✅ umgesetzt | Isolieren (auch mit verwandten Strukturen), transparent machen, ausblenden, Darstellung zurücksetzen |
-| **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 270 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
+| **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 339 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
 | **Lernen** | ✅ umgesetzt | Favoriten, „Zuletzt angesehen“, Quiz „Finde die Struktur“ (Antippen im Modell), Lernkarten mit Leitner-Wiederholung – alles lokal gespeichert |
 | **PWA / Offline** | ✅ umgesetzt | Manifest, Icons, Safe Areas, Service Worker; nach dem ersten Besuch offline nutzbar (Muskelebene nach erstem Laden) |
-| **Lungenoberfläche** | ❌ fehlt in den Quelldaten | BodyParts3D enthält nur Bronchial- und Gefäßbaum der Lunge – so wird sie auch angezeigt und benannt |
-| **Weitere Strukturen** | 🔜 geplant | u. a. Schilddrüse, Kehlkopf, periphere Nerven, Bauchmuskeln (Rectus abdominis), Latissimus dorsi, Sigma, weibliche Anatomie – siehe [docs/MODELL.md](docs/MODELL.md#was-fehlt) |
+| **Lunge** | 🟡 Näherung | Fünf Lungenlappen aus der HRA-Referenzlunge, auf den Bronchialbaum von BodyParts3D eingepasst (BodyParts3D selbst hat keine Lungenoberfläche); der Bronchialbaum ist darunter separat antippbar |
+| **Weitere Strukturen** | 🔜 geplant | u. a. Schilddrüse, periphere Nerven, Hand- und Fußmuskeln, Rectus abdominis, Latissimus dorsi, Sigma, weibliche Anatomie – siehe [docs/MODELL.md](docs/MODELL.md#was-fehlt) |
 
 ## Schnellstart
 
@@ -79,6 +79,7 @@ Mehr dazu in [docs/ARCHITEKTUR.md](docs/ARCHITEKTUR.md).
 
 ## Lizenzen und Quellen
 
+- **Lungenlappen:** Browne, K.; Schlehlein, H. (2024): *3D Reference Organ for Lung, Male v1.4*, Human Reference Atlas, [doi:10.48539/HBM532.KLZD.394](https://doi.org/10.48539/HBM532.KLZD.394), CC BY 4.0 – skaliert und auf das BodyParts3D-Modell eingepasst.
 - **3D-Geometrie:** BodyParts3D, © The Database Center for Life Science, lizenziert unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (laut aktueller Lizenzseite des LSDB Archive; ältere Dateiköpfe nennen CC BY-SA 2.1 JP – Details und Umgang damit in [docs/MODELL.md](docs/MODELL.md#lizenz)). Für Anatomiq vereinfacht, zu Strukturen zusammengefasst und neu eingefärbt.
 - **Texte:** eigene Erstfassungen auf Grundlage anatomischer Standardwerke (Terminologia Anatomica, Prometheus, OpenStax Anatomy & Physiology, Gray’s Anatomy); Quellen stehen bei jeder Struktur.
 - **Schrift:** Inter (SIL Open Font License), lokal eingebunden.

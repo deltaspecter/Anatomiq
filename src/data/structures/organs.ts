@@ -5,6 +5,87 @@
 import type { AnatomicalStructure } from '../types'
 import { paired, single } from './define'
 
+
+const LUNG = '#e2aaa6'
+const LUNG_SOURCES = ['ta2', 'prometheus', 'openstax', 'hra-lung']
+
+/** Gemeinsame Angaben für alle Lungenlappen */
+const lungCommon = {
+  system: 'respiratory' as const,
+  region: 'thorax' as const,
+  color: LUNG,
+  function: 'Gasaustausch: In den Lungenbläschen (Alveolen, insgesamt rund 300 Millionen mit einer Austauschfläche in der Größenordnung von 100 m²) gelangt Sauerstoff ins Blut und Kohlendioxid in die Atemluft.',
+  bloodSupply: 'Funktionell über Äste der Lungenarterien und -venen (Gasaustausch); zur Eigenversorgung über Bronchialarterien aus der Aorta.',
+  innervation: 'Plexus pulmonalis (Sympathikus und N. vagus); das Lungengewebe selbst ist schmerzunempfindlich, das Rippenfell dagegen sehr empfindlich.',
+  sources: LUNG_SOURCES,
+}
+const modelNote = ' Die Oberfläche stammt aus der Referenzlunge des Human Reference Atlas und ist auf den Bronchialbaum dieses Modells eingepasst (Näherung).'
+
+function lungLobes(): AnatomicalStructure[] {
+  return [
+    single('lung-upper-lobe-r', 'organs', {
+      ...lungCommon,
+      nameDe: 'Rechter Lungenoberlappen',
+      nameLa: 'Lobus superior pulmonis dextri',
+      nameEn: 'Upper lobe of right lung',
+      side: 'r',
+      summary: 'Oberer der drei Lappen der rechten Lunge; reicht mit der Lungenspitze bis über das Schlüsselbein.' + modelNote,
+      location: 'Oben und vorn in der rechten Brusthöhle; nach unten durch die waagerechte Fissur (Fissura horizontalis) vom Mittellappen und hinten durch die schräge Fissur vom Unterlappen getrennt.',
+      structure: 'Drei Segmente: apikales (S1), hinteres (S2) und vorderes (S3).',
+      clinical: 'Die Lungenspitze ist ein typischer Ort für Tuberkulose und für Tumoren, die Nerven und Gefäße zum Arm bedrängen können (Pancoast-Tumor).',
+      related: ['lung-middle-lobe-r', 'lung-lower-lobe-r', 'bronchial-tree-r', 'rib-1-r', 'clavicle-r', 'superior-vena-cava'],
+    }),
+    single('lung-middle-lobe-r', 'organs', {
+      ...lungCommon,
+      nameDe: 'Rechter Lungenmittellappen',
+      nameLa: 'Lobus medius pulmonis dextri',
+      nameEn: 'Middle lobe of right lung',
+      side: 'r',
+      summary: 'Kleinster Lappen der rechten Lunge; liegt vorn unten und berührt das Herz. Die linke Lunge hat keinen Mittellappen.' + modelNote,
+      location: 'Vorn in der rechten Brusthöhle zwischen waagerechter und schräger Fissur, neben dem rechten Herzrand.',
+      structure: 'Zwei Segmente: seitliches (S4) und mittleres (S5).',
+      clinical: 'Wird sein langer, enger Lappenbronchus eingeengt, kann der Lappen schlecht belüftet und wiederholt entzündet sein (Mittellappensyndrom). Beim Abhören liegt er vorn rechts unterhalb der 4. Rippe.',
+      related: ['lung-upper-lobe-r', 'lung-lower-lobe-r', 'bronchial-tree-r', 'heart', 'rib-5-r'],
+    }),
+    single('lung-lower-lobe-r', 'organs', {
+      ...lungCommon,
+      nameDe: 'Rechter Lungenunterlappen',
+      nameLa: 'Lobus inferior pulmonis dextri',
+      nameEn: 'Lower lobe of right lung',
+      side: 'r',
+      summary: 'Größter Lappen der rechten Lunge; liegt vor allem hinten und unten auf der rechten Zwerchfellkuppel.' + modelNote,
+      location: 'Hinten und unten in der rechten Brusthöhle; durch die schräge Fissur (Fissura obliqua) von Ober- und Mittellappen getrennt. Darunter liegen Zwerchfell und Leber.',
+      structure: 'Fünf Segmente: oberes (S6) und vier basale Segmente (S7–S10).',
+      clinical: 'Eingeatmete (aspirierte) Fremdkörper oder Mageninhalt gelangen beim liegenden Menschen bevorzugt in die rechten Unterlappensegmente; dort entstehen häufig Aspirationspneumonien.',
+      related: ['lung-upper-lobe-r', 'lung-middle-lobe-r', 'bronchial-tree-r', 'diaphragm', 'liver', 'rib-8-r'],
+    }),
+    single('lung-upper-lobe-l', 'organs', {
+      ...lungCommon,
+      nameDe: 'Linker Lungenoberlappen',
+      nameLa: 'Lobus superior pulmonis sinistri',
+      nameEn: 'Upper lobe of left lung',
+      side: 'l',
+      summary: 'Oberer der beiden Lappen der linken Lunge; mit der Herzeinbuchtung und dem zungenförmigen Fortsatz (Lingula), der dem rechten Mittellappen entspricht.' + modelNote,
+      location: 'Oben und vorn in der linken Brusthöhle; durch die schräge Fissur vom Unterlappen getrennt. Vorn unten weicht er dem Herzen aus (Incisura cardiaca).',
+      structure: 'Segmente: apikoposteriores (S1+2), vorderes (S3) und die beiden Lingulasegmente (S4, S5).',
+      clinical: 'Wegen der Herzeinbuchtung liegt das Herz vorn links teilweise direkt der Brustwand an – dort ist der Herzspitzenstoß tastbar.',
+      related: ['lung-lower-lobe-l', 'bronchial-tree-l', 'heart', 'aorta', 'rib-1-l', 'pulmonary-trunk'],
+    }),
+    single('lung-lower-lobe-l', 'organs', {
+      ...lungCommon,
+      nameDe: 'Linker Lungenunterlappen',
+      nameLa: 'Lobus inferior pulmonis sinistri',
+      nameEn: 'Lower lobe of left lung',
+      side: 'l',
+      summary: 'Unterer Lappen der linken Lunge; liegt hinten und unten auf der linken Zwerchfellkuppel.' + modelNote,
+      location: 'Hinten und unten in der linken Brusthöhle; darunter Zwerchfell, Magen und Milz.',
+      structure: 'Segmente: oberes (S6) und basale Segmente (S8–S10; S7 ist links meist mit S8 verschmolzen oder fehlt).',
+      clinical: 'Lungenentzündungen der Unterlappen zeigen sich beim Abhören am Rücken; Flüssigkeit im Pleuraraum (Pleuraerguss) sammelt sich zuerst im Rippen-Zwerchfell-Winkel unter den Unterlappen.',
+      related: ['lung-upper-lobe-l', 'bronchial-tree-l', 'diaphragm', 'spleen', 'stomach', 'aorta', 'rib-8-l'],
+    }),
+  ]
+}
+
 const thorax: AnatomicalStructure[] = [
   single('heart', 'organs', {
     nameDe: 'Herz',
@@ -27,26 +108,26 @@ const thorax: AnatomicalStructure[] = [
       { term: 'Diastole', meaning: 'Erschlaffungs- und Füllungsphase der Kammern.' },
     ],
     mnemonic: 'Rechts „tri“, links „bi“: Die Trikuspidalklappe (drei Segel) liegt rechts, die Mitralklappe (zwei Segel, „Bischofsmütze“) links.',
-    related: ['aorta', 'pulmonary-trunk', 'superior-vena-cava', 'inferior-vena-cava', 'lung-r', 'lung-l', 'diaphragm', 'sternum', 'esophagus'],
+    related: ['aorta', 'pulmonary-trunk', 'superior-vena-cava', 'inferior-vena-cava', 'lung-upper-lobe-r', 'lung-upper-lobe-l', 'diaphragm', 'sternum', 'esophagus'],
   }),
-  ...paired('lung', 'organs', {
-    nameDe: 'Lunge (Bronchial- und Gefäßbaum)',
-    nameLa: ['Pulmo dexter', 'Pulmo sinister'],
-    nameEn: 'Lung',
+  ...paired('bronchial-tree', 'organs', {
+    nameDe: 'Bronchialbaum und Lungengefäße',
+    nameLa: ['Arbor bronchialis dexter', 'Arbor bronchialis sinister'],
+    nameEn: 'Bronchial tree',
     system: 'respiratory',
     region: 'thorax',
     color: '#d99a9a',
-    summary: 'Paariges Atmungsorgan für den Gasaustausch. Das Modell zeigt den verzweigten Bronchialbaum und die Segmentgefäße der Lunge; die äußere Lungenoberfläche ist in den Quelldaten (BodyParts3D) nicht enthalten.',
-    location: 'In den beiden Pleurahöhlen zu beiden Seiten des Mittelfellraums; die Lungenspitze reicht bis über das Schlüsselbein.',
-    structure: 'Rechts drei Lappen (Ober-, Mittel-, Unterlappen), links zwei (Ober- und Unterlappen mit Herzeinbuchtung und Zünglein). Jeder Lappen gliedert sich in Segmente, die jeweils von einem Segmentbronchus und einem Ast der Lungenarterie versorgt werden – genau diese Aufzweigungen sind im Modell zu sehen. Am Lungenhilum treten Hauptbronchus, Lungenarterie und Lungenvenen ein bzw. aus.',
-    function: 'Gasaustausch in rund 300 Millionen Lungenbläschen (Alveolen) mit einer Austauschfläche in der Größenordnung von 100 m²; zudem Beteiligung an Säure-Basen-Haushalt und Abwehr.',
-    bloodSupply: 'Funktionell über die Lungenarterien und -venen (Vasa publica, Gasaustausch); zur Eigenversorgung über Bronchialarterien aus der Aorta (Vasa privata).',
+    summary: 'Die Verzweigungen der Atemwege in der Lunge – vom Hauptbronchus über Lappen- und Segmentbronchien – zusammen mit den begleitenden Ästen der Lungenarterien und -venen. Sichtbar, wenn die Lungenlappen transparent oder ausgeblendet sind.',
+    location: 'Innerhalb der Lungenlappen; tritt am Lungenhilum aus der Lunge aus.',
+    structure: 'Die Luftröhre teilt sich in zwei Hauptbronchien; der rechte gibt drei, der linke zwei Lappenbronchien ab, diese wiederum die Segmentbronchien (rechts 10, links meist 9–10). Danach folgen viele weitere Teilungen bis zu den Bronchiolen und Alveolen. Jeder Segmentbronchus wird von einem Ast der Lungenarterie begleitet; die Lungenvenen verlaufen zwischen den Segmenten.',
+    function: 'Leitet die Atemluft zu den Lungenbläschen; die Lungenarterien bringen sauerstoffarmes Blut zum Gasaustausch, die Lungenvenen führen sauerstoffreiches Blut zum linken Vorhof.',
     innervation: 'Plexus pulmonalis: Sympathikus erweitert, N. vagus verengt die Bronchien und steigert die Schleimbildung.',
-    neighbors: 'Mittig Herz und Mittelfellraum, unten das Zwerchfell (rechts darunter die Leber, links Magen und Milz), außen die Rippen.',
-    clinical: 'Wichtige Erkrankungen sind Lungenentzündung (Pneumonie), Asthma, COPD, Lungenembolie und Lungenkrebs. Gelangt Luft in den Pleuraspalt, fällt die Lunge zusammen (Pneumothorax). Fremdkörper gelangen häufiger in den rechten Hauptbronchus, weil er steiler und weiter ist.',
-    terms: [{ term: 'Bronchopulmonales Segment', meaning: 'Kleinste chirurgisch eigenständig entfernbare Lungeneinheit mit eigenem Segmentbronchus und Arterienast (rechts 10, links meist 9–10 Segmente).' }],
-    related: ['heart', 'trachea', 'diaphragm', 'pulmonary-trunk', '~rib-5'],
+    clinical: 'Beim Asthma verengen sich die kleinen Bronchien krampfartig. Fremdkörper gelangen häufiger in den rechten Hauptbronchus, weil er steiler und weiter ist. In der Bronchoskopie wird der Bronchialbaum mit einer Kamera untersucht.',
+    terms: [{ term: 'Bronchopulmonales Segment', meaning: 'Kleinste chirurgisch eigenständig entfernbare Lungeneinheit mit eigenem Segmentbronchus und Arterienast.' }],
+    sources: ['ta2', 'prometheus', 'openstax', 'bodyparts3d'],
+    related: ['trachea', 'pulmonary-trunk', 'heart', '~lung-upper-lobe', '~lung-lower-lobe'],
   }),
+  ...lungLobes(),
   single('trachea', 'organs', {
     nameDe: 'Luftröhre',
     nameLa: 'Trachea',
@@ -61,7 +142,7 @@ const thorax: AnatomicalStructure[] = [
     bloodSupply: 'Äste der unteren Schilddrüsenarterien und der Bronchialarterien.',
     neighbors: 'Hinten die Speiseröhre, vorn am Hals die Schilddrüse, seitlich die Halsgefäße, im Brustraum der Aortenbogen.',
     clinical: 'Bei Atemwegsverlegung wird notfallmäßig oberhalb (Koniotomie) oder chirurgisch in der Luftröhre selbst (Tracheotomie) ein Zugang geschaffen.',
-    related: ['lung-r', 'lung-l', 'esophagus', 'aorta', 'hyoid-bone'],
+    related: ['bronchial-tree-r', 'bronchial-tree-l', 'esophagus', 'aorta', 'hyoid-bone'],
   }),
   single('esophagus', 'organs', {
     nameDe: 'Speiseröhre',
@@ -313,6 +394,83 @@ const abdomen: AnatomicalStructure[] = [
   }),
 ]
 
+
+const neck: AnatomicalStructure[] = [
+  single('tongue', 'organs', {
+    nameDe: 'Zunge',
+    nameLa: 'Lingua',
+    nameEn: 'Tongue',
+    system: 'digestive',
+    region: 'head',
+    color: '#c9746c',
+    summary: 'Sehr bewegliches Muskelorgan der Mundhöhle für Kauen, Schlucken, Sprechen und Schmecken.',
+    location: 'Boden der Mundhöhle; der Zungengrund reicht bis in den Rachen.',
+    structure: 'Innere Zungenmuskeln (verändern die Form) und äußere Zungenmuskeln (bewegen die Zunge als Ganzes), überzogen von Schleimhaut mit Papillen (faden-, pilz-, blatt- und wallförmig); Geschmacksknospen vor allem in den Wall-, Blatt- und Pilzpapillen.',
+    function: 'Bewegt die Nahrung beim Kauen, formt den Bissen und leitet das Schlucken ein; Lautbildung; Geschmack und Tastempfinden.',
+    innervation: 'Motorisch: N. hypoglossus (XII). Allgemeine Empfindung der vorderen zwei Drittel: N. lingualis (aus V3); Geschmack vorn: Chorda tympani (aus VII); hinteres Drittel (Empfindung und Geschmack): N. glossopharyngeus (IX).',
+    clinical: 'Bei einseitiger Lähmung des N. hypoglossus weicht die herausgestreckte Zunge zur gelähmten Seite ab.',
+    related: ['mandible', 'hyoid-bone', 'upper-teeth', 'lower-teeth', 'epiglottis', 'submandibular-gland-r'],
+  }),
+  single('epiglottis', 'organs', {
+    nameDe: 'Kehldeckel',
+    nameLa: 'Epiglottis',
+    nameEn: 'Epiglottis',
+    system: 'respiratory',
+    region: 'neck',
+    color: '#d9c39a',
+    summary: 'Blattförmiger Knorpel am Kehlkopfeingang, der sich beim Schlucken über den Eingang legt.',
+    location: 'Hinter dem Zungengrund, oberhalb des Kehlkopfeingangs; am Schildknorpel befestigt.',
+    structure: 'Elastischer Knorpel, von Schleimhaut überzogen.',
+    function: 'Hilft beim Schlucken, Speisen und Flüssigkeiten an den Atemwegen vorbei in die Speiseröhre zu leiten.',
+    clinical: 'Die akute Kehldeckelentzündung (Epiglottitis) kann die Atemwege rasch verschließen – ein Notfall; seit der Hib-Impfung bei Kindern selten geworden.',
+    related: ['thyroid-cartilage', 'cricoid-cartilage', 'tongue', 'hyoid-bone', 'trachea', 'esophagus'],
+  }),
+  single('thyroid-cartilage', 'organs', {
+    nameDe: 'Schildknorpel',
+    nameLa: 'Cartilago thyroidea',
+    nameEn: 'Thyroid cartilage',
+    system: 'respiratory',
+    region: 'neck',
+    color: '#d6c7ae',
+    summary: 'Größter Kehlkopfknorpel; seine Vorderkante ist als „Adamsapfel“ tastbar.',
+    location: 'Vorderer Hals, unterhalb des Zungenbeins und oberhalb des Ringknorpels.',
+    structure: 'Zwei Platten aus hyalinem Knorpel, die vorn im Kehlkopfvorsprung (Prominentia laryngea) zusammentreffen; beim Mann spitzwinkliger und deutlicher sichtbar. Innen setzen die Stimmbänder an.',
+    function: 'Schützt den Kehlkopf und trägt die Stimmbänder; über das Gelenk zum Ringknorpel wird die Stimmbandspannung verändert.',
+    joints: 'Gelenk mit dem Ringknorpel (Articulatio cricothyroidea); mit dem Zungenbein über eine Membran verbunden.',
+    clinical: 'Zwischen Schild- und Ringknorpel liegt das Lig. cricothyroideum – hier wird im Notfall der Atemweg eröffnet (Koniotomie). Die Schilddrüse liegt unterhalb (im Modell nicht enthalten).',
+    related: ['cricoid-cartilage', 'epiglottis', 'hyoid-bone', 'trachea', 'common-carotid-artery-r'],
+  }),
+  single('cricoid-cartilage', 'organs', {
+    nameDe: 'Ringknorpel',
+    nameLa: 'Cartilago cricoidea',
+    nameEn: 'Cricoid cartilage',
+    system: 'respiratory',
+    region: 'neck',
+    color: '#d6c7ae',
+    summary: 'Siegelringförmiger Knorpel am Unterrand des Kehlkopfs – der einzige vollständig geschlossene Knorpelring der Atemwege.',
+    location: 'Etwa auf Höhe des 6. Halswirbels; darunter beginnt die Luftröhre, dahinter die Speiseröhre.',
+    structure: 'Vorn schmaler Bogen, hinten breite Platte, auf der die Stellknorpel sitzen.',
+    function: 'Stützt den Kehlkopf und trägt die Stellknorpel, die die Stimmritze öffnen und schließen.',
+    joints: 'Gelenke mit dem Schildknorpel und den Stellknorpeln.',
+    clinical: 'Orientierungspunkt für Koniotomie und Tracheotomie. Auf seiner Höhe liegt die obere Engstelle der Speiseröhre.',
+    related: ['thyroid-cartilage', 'trachea', 'esophagus', 'vertebra-c6'],
+  }),
+  ...paired('submandibular-gland', 'organs', {
+    nameDe: 'Unterkieferspeicheldrüse',
+    nameLa: ['Glandula submandibularis dextra', 'Glandula submandibularis sinistra'],
+    nameEn: 'Submandibular gland',
+    system: 'digestive',
+    region: 'neck',
+    color: '#d9b27a',
+    summary: 'Paarige Speicheldrüse unter dem Unterkieferrand, die den größten Teil des Ruhespeichels bildet.',
+    location: 'Im Unterkieferdreieck am Hals, unter dem Unterkieferkörper; ihr Ausführungsgang mündet unter der Zunge neben dem Zungenbändchen.',
+    function: 'Bildet gemischten (serös-mukösen) Speichel, der den Mund befeuchtet, die Nahrung gleitfähig macht und die Verdauung von Stärke einleitet.',
+    innervation: 'Parasympathisch über die Chorda tympani (aus dem N. facialis) und das Ganglion submandibulare.',
+    clinical: 'Speichelsteine (Sialolithiasis) entstehen am häufigsten in dieser Drüse und führen zu Schwellung beim Essen.',
+    related: ['mandible', 'tongue', 'hyoid-bone'],
+  }),
+]
+
 const urogenital: AnatomicalStructure[] = [
   ...paired('kidney', 'organs', {
     nameDe: 'Niere',
@@ -422,4 +580,4 @@ const urogenital: AnatomicalStructure[] = [
   }),
 ]
 
-export const ORGANS: AnatomicalStructure[] = [...thorax, ...abdomen, ...urogenital]
+export const ORGANS: AnatomicalStructure[] = [...thorax, ...neck, ...abdomen, ...urogenital]

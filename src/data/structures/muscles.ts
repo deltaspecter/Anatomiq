@@ -172,7 +172,7 @@ const headNeckTrunk: AnatomicalStructure[] = [
     innervation: 'N. phrenicus (C3–C5).',
     clinical: 'Rutscht Magen durch den Hiatus oesophageus in den Brustraum, spricht man von einer Hiatushernie. Eine Schädigung des N. phrenicus führt zum Hochstand der betroffenen Zwerchfellhälfte. Schluckauf (Singultus) entsteht durch unwillkürliche Zwerchfellkontraktionen.',
     mnemonic: '„C3, 4, 5 keeps the diaphragm alive“ – das Zwerchfell wird aus C3–C5 versorgt. Durchtritte: Hohlvene T8, Speiseröhre T10, Aorta T12.',
-    related: ['heart', 'lung-r', 'lung-l', 'liver', 'stomach', 'spleen', 'aorta', 'esophagus', 'inferior-vena-cava'],
+    related: ['heart', 'lung-lower-lobe-r', 'lung-lower-lobe-l', 'liver', 'stomach', 'spleen', 'aorta', 'esophagus', 'inferior-vena-cava'],
   }),
 ]
 

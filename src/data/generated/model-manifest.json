@@ -1,5 +1,5 @@
 {
- "source": "BodyParts3D 4.0 (DBCLS), CC BY 4.0",
+ "source": "BodyParts3D 4.0 (DBCLS), CC BY 4.0; Lungenlappen: HRA 3D Reference Organ Lung, Male v1.4 (Browne & Schlehlein 2024), CC BY 4.0",
  "layers": {
   "skin": {
    "file": "/models/skin.glb",
@@ -9,21 +9,21 @@
   },
   "skeleton": {
    "file": "/models/skeleton.glb",
-   "bytes": 1063440,
-   "hash": "0760097cbf",
-   "triangles": 179176
+   "bytes": 1157024,
+   "hash": "4756264049",
+   "triangles": 194276
   },
   "muscles": {
    "file": "/models/muscles.glb",
-   "bytes": 659880,
-   "hash": "2c3c853563",
-   "triangles": 112086
+   "bytes": 1003316,
+   "hash": "1388ccb541",
+   "triangles": 167640
   },
   "organs": {
    "file": "/models/organs.glb",
-   "bytes": 536672,
-   "hash": "befd5fdae0",
-   "triangles": 95026
+   "bytes": 659280,
+   "hash": "3b490543a1",
+   "triangles": 116410
   },
   "nervous": {
    "file": "/models/nervous.glb",
@@ -54,6 +54,7 @@
     1.7193,
     0.292
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7163",
@@ -79,6 +80,7 @@
     0.109,
     0.0707
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52734",
@@ -104,6 +106,7 @@
     0.1183,
     0.1426
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52788",
@@ -129,6 +132,7 @@
     0.1183,
     0.1465
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52789",
@@ -154,6 +158,7 @@
     0.1067,
     0.119
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52735",
@@ -179,6 +184,7 @@
     0.0759,
     0.0987
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52738",
@@ -204,6 +210,7 @@
     0.076,
     0.0985
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52739",
@@ -229,6 +236,7 @@
     0.0695,
     0.0546
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52736",
@@ -254,6 +262,7 @@
     0.056,
     0.0397
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52892",
@@ -279,6 +288,7 @@
     0.0561,
     0.0397
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52893",
@@ -304,6 +314,7 @@
     0.0694,
     0.0547
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA53649",
@@ -329,6 +340,7 @@
     0.0692,
     0.0561
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA53650",
@@ -354,6 +366,7 @@
     0.032,
     0.0212
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA53647",
@@ -379,6 +392,7 @@
     0.0316,
     0.02
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA53648",
@@ -387,6 +401,214 @@
    ],
    "elements": [
     "FJ3272"
+   ]
+  },
+  {
+   "id": "ethmoid-bone",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 22276,
+   "center": [
+    0,
+    1.5929,
+    0.0427
+   ],
+   "size": [
+    0.0416,
+    0.035,
+    0.0472
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA52740",
+     "name": "ethmoid"
+    }
+   ],
+   "elements": [
+    "FJ3199"
+   ]
+  },
+  {
+   "id": "lacrimal-bone-r",
+   "layer": "skeleton",
+   "triangles": 300,
+   "sourceTriangles": 702,
+   "center": [
+    -0.0121,
+    1.5927,
+    0.0575
+   ],
+   "size": [
+    0.0105,
+    0.0255,
+    0.0145
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA53645",
+     "name": "right lacrimal bone"
+    }
+   ],
+   "elements": [
+    "FJ3371"
+   ]
+  },
+  {
+   "id": "lacrimal-bone-l",
+   "layer": "skeleton",
+   "triangles": 300,
+   "sourceTriangles": 640,
+   "center": [
+    0.0133,
+    1.5905,
+    0.057
+   ],
+   "size": [
+    0.0106,
+    0.029,
+    0.014
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA53646",
+     "name": "left lacrimal bone"
+    }
+   ],
+   "elements": [
+    "FJ3265"
+   ]
+  },
+  {
+   "id": "palatine-bone-r",
+   "layer": "skeleton",
+   "triangles": 700,
+   "sourceTriangles": 1736,
+   "center": [
+    -0.0136,
+    1.57,
+    0.0258
+   ],
+   "size": [
+    0.0289,
+    0.0429,
+    0.0465
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA53655",
+     "name": "right palatine bone"
+    }
+   ],
+   "elements": [
+    "FJ3379"
+   ]
+  },
+  {
+   "id": "palatine-bone-l",
+   "layer": "skeleton",
+   "triangles": 700,
+   "sourceTriangles": 1938,
+   "center": [
+    0.0136,
+    1.5698,
+    0.0259
+   ],
+   "size": [
+    0.029,
+    0.0431,
+    0.0466
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA53656",
+     "name": "left palatine bone"
+    }
+   ],
+   "elements": [
+    "FJ3273"
+   ]
+  },
+  {
+   "id": "vomer",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 7218,
+   "center": [
+    0,
+    1.5745,
+    0.0375
+   ],
+   "size": [
+    0.0109,
+    0.0434,
+    0.055
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA9710",
+     "name": "vomer"
+    }
+   ],
+   "elements": [
+    "FJ3395"
+   ]
+  },
+  {
+   "id": "inferior-nasal-concha-r",
+   "layer": "skeleton",
+   "triangles": 500,
+   "sourceTriangles": 714,
+   "center": [
+    -0.011,
+    1.5666,
+    0.0474
+   ],
+   "size": [
+    0.0098,
+    0.02,
+    0.0363
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA54737",
+     "name": "right inferior nasal concha"
+    }
+   ],
+   "elements": [
+    "FJ3369"
+   ]
+  },
+  {
+   "id": "inferior-nasal-concha-l",
+   "layer": "skeleton",
+   "triangles": 500,
+   "sourceTriangles": 738,
+   "center": [
+    0.0109,
+    1.5685,
+    0.0509
+   ],
+   "size": [
+    0.0113,
+    0.0154,
+    0.0355
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA54738",
+     "name": "left inferior nasal concha"
+    }
+   ],
+   "elements": [
+    "FJ3263"
    ]
   },
   {
@@ -404,6 +626,7 @@
     0.0845,
     0.084
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52748",
@@ -412,6 +635,188 @@
    ],
    "elements": [
     "FJ3289"
+   ]
+  },
+  {
+   "id": "upper-teeth",
+   "layer": "skeleton",
+   "triangles": 4200,
+   "sourceTriangles": 22268,
+   "center": [
+    0,
+    1.5462,
+    0.0583
+   ],
+   "size": [
+    0.061,
+    0.0328,
+    0.0485
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA55680",
+     "name": "right upper lateral secondary incisor tooth"
+    },
+    {
+     "fma": "FMA55681",
+     "name": "right upper central secondary incisor tooth"
+    },
+    {
+     "fma": "FMA55682",
+     "name": "left upper central secondary incisor tooth"
+    },
+    {
+     "fma": "FMA55683",
+     "name": "left upper lateral secondary incisor tooth"
+    },
+    {
+     "fma": "FMA55688",
+     "name": "right upper second secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55689",
+     "name": "right upper first secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55690",
+     "name": "left upper first secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55691",
+     "name": "left upper second secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55697",
+     "name": "right upper second secondary molar tooth"
+    },
+    {
+     "fma": "FMA55698",
+     "name": "right upper first secondary molar tooth"
+    },
+    {
+     "fma": "FMA55699",
+     "name": "left upper first secondary molar tooth"
+    },
+    {
+     "fma": "FMA55700",
+     "name": "left upper second secondary molar tooth"
+    },
+    {
+     "fma": "FMA55798",
+     "name": "right upper secondary canine tooth"
+    },
+    {
+     "fma": "FMA55799",
+     "name": "left upper secondary canine tooth"
+    }
+   ],
+   "elements": [
+    "FJ1261",
+    "FJ1262",
+    "FJ1263",
+    "FJ1264",
+    "FJ1265",
+    "FJ1266",
+    "FJ1267",
+    "FJ1275",
+    "FJ1276",
+    "FJ1277",
+    "FJ1278",
+    "FJ1279",
+    "FJ1280",
+    "FJ1281"
+   ]
+  },
+  {
+   "id": "lower-teeth",
+   "layer": "skeleton",
+   "triangles": 4200,
+   "sourceTriangles": 17476,
+   "center": [
+    0,
+    1.5233,
+    0.0517
+   ],
+   "size": [
+    0.0656,
+    0.036,
+    0.0522
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA55686",
+     "name": "right lower secondary canine tooth"
+    },
+    {
+     "fma": "FMA55687",
+     "name": "left lower secondary canine tooth"
+    },
+    {
+     "fma": "FMA55692",
+     "name": "left lower second secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55693",
+     "name": "left lower first secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55694",
+     "name": "right lower first secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55695",
+     "name": "right lower second secondary premolar tooth"
+    },
+    {
+     "fma": "FMA55703",
+     "name": "left lower second secondary molar tooth"
+    },
+    {
+     "fma": "FMA55704",
+     "name": "left lower first secondary molar tooth"
+    },
+    {
+     "fma": "FMA55705",
+     "name": "right lower first secondary molar tooth"
+    },
+    {
+     "fma": "FMA55706",
+     "name": "right lower second secondary molar tooth"
+    },
+    {
+     "fma": "FMA57140",
+     "name": "right lower lateral secondary incisor tooth"
+    },
+    {
+     "fma": "FMA57141",
+     "name": "left lower lateral secondary incisor tooth"
+    },
+    {
+     "fma": "FMA57142",
+     "name": "right lower central secondary incisor tooth"
+    },
+    {
+     "fma": "FMA57143",
+     "name": "left lower central secondary incisor tooth"
+    }
+   ],
+   "elements": [
+    "FJ1254",
+    "FJ1255",
+    "FJ1256",
+    "FJ1257",
+    "FJ1258",
+    "FJ1259",
+    "FJ1260",
+    "FJ1268",
+    "FJ1269",
+    "FJ1270",
+    "FJ1271",
+    "FJ1272",
+    "FJ1273",
+    "FJ1274"
    ]
   },
   {
@@ -429,6 +834,7 @@
     0.0184,
     0.0345
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA52749",
@@ -455,6 +861,7 @@
     0.0192,
     0.047
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12519",
@@ -480,6 +887,7 @@
     0.045,
     0.0499
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12520",
@@ -505,6 +913,7 @@
     0.0287,
     0.0497
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12521",
@@ -530,6 +939,7 @@
     0.0275,
     0.0483
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12522",
@@ -555,6 +965,7 @@
     0.0242,
     0.0547
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12523",
@@ -580,6 +991,7 @@
     0.0231,
     0.0624
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12524",
@@ -605,6 +1017,7 @@
     0.0271,
     0.0688
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12525",
@@ -630,6 +1043,7 @@
     0.0297,
     0.0698
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9165",
@@ -655,6 +1069,7 @@
     0.0337,
     0.0704
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9187",
@@ -680,6 +1095,7 @@
     0.0394,
     0.0752
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9209",
@@ -705,6 +1121,7 @@
     0.0435,
     0.0694
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9248",
@@ -730,6 +1147,7 @@
     0.0575,
     0.066
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9922",
@@ -755,6 +1173,7 @@
     0.0597,
     0.064
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9945",
@@ -780,6 +1199,7 @@
     0.0624,
     0.0663
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9968",
@@ -805,6 +1225,7 @@
     0.0593,
     0.071
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9991",
@@ -830,6 +1251,7 @@
     0.0581,
     0.0715
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA10014",
@@ -855,6 +1277,7 @@
     0.0573,
     0.0762
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA10037",
@@ -880,6 +1303,7 @@
     0.0535,
     0.0795
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA10059",
@@ -905,6 +1329,7 @@
     0.0516,
     0.0787
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA10081",
@@ -930,6 +1355,7 @@
     0.0567,
     0.0803
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13072",
@@ -955,6 +1381,7 @@
     0.0473,
     0.0804
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13073",
@@ -980,6 +1407,7 @@
     0.042,
     0.0857
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13074",
@@ -1005,6 +1433,7 @@
     0.0447,
     0.0842
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13075",
@@ -1030,6 +1459,7 @@
     0.0502,
     0.0808
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13076",
@@ -1055,6 +1485,7 @@
     0.1443,
     0.0884
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA16202",
@@ -1080,6 +1511,7 @@
     0.556,
     0.0854
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA10446",
@@ -1127,6 +1559,7 @@
     0.1612,
     0.0829
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7485",
@@ -1154,6 +1587,7 @@
     0.0604,
     0.0659
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7857",
@@ -1179,6 +1613,7 @@
     0.0604,
     0.066
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7987",
@@ -1204,6 +1639,7 @@
     0.0854,
     0.1165
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7882",
@@ -1229,6 +1665,7 @@
     0.0855,
     0.1163
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8012",
@@ -1254,6 +1691,7 @@
     0.092,
     0.1424
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7909",
@@ -1279,6 +1717,7 @@
     0.0921,
     0.1424
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8039",
@@ -1304,6 +1743,7 @@
     0.1041,
     0.1688
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7957",
@@ -1329,6 +1769,7 @@
     0.104,
     0.1689
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8148",
@@ -1354,6 +1795,7 @@
     0.1191,
     0.1848
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8066",
@@ -1379,6 +1821,7 @@
     0.1191,
     0.1849
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8093",
@@ -1404,6 +1847,7 @@
     0.1278,
     0.1899
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8175",
@@ -1429,6 +1873,7 @@
     0.1287,
     0.1896
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8202",
@@ -1454,6 +1899,7 @@
     0.135,
     0.1756
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8229",
@@ -1479,6 +1925,7 @@
     0.135,
     0.1757
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8256",
@@ -1504,6 +1951,7 @@
     0.1366,
     0.1581
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8283",
@@ -1529,6 +1977,7 @@
     0.1366,
     0.1581
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8310",
@@ -1554,6 +2003,7 @@
     0.1352,
     0.1279
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8364",
@@ -1579,6 +2029,7 @@
     0.1351,
     0.128
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8391",
@@ -1604,6 +2055,7 @@
     0.136,
     0.1063
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8445",
@@ -1629,6 +2081,7 @@
     0.136,
     0.1062
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8472",
@@ -1654,6 +2107,7 @@
     0.1136,
     0.078
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8531",
@@ -1679,6 +2133,7 @@
     0.1137,
     0.078
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8532",
@@ -1704,6 +2159,7 @@
     0.0778,
     0.0381
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8533",
@@ -1729,6 +2185,7 @@
     0.0778,
     0.0381
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8534",
@@ -1754,6 +2211,7 @@
     0.2176,
     0.091
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7875",
@@ -1809,6 +2267,7 @@
     0.2177,
     0.0908
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8005",
@@ -1864,6 +2323,7 @@
     0.0468,
     0.0925
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13322",
@@ -1889,6 +2349,7 @@
     0.0467,
     0.0927
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13323",
@@ -1914,6 +2375,7 @@
     0.1658,
     0.1078
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13395",
@@ -1939,6 +2401,7 @@
     0.1657,
     0.1078
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13396",
@@ -1964,6 +2427,7 @@
     0.3072,
     0.0492
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23130",
@@ -1989,6 +2453,7 @@
     0.3073,
     0.0492
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23131",
@@ -2014,6 +2479,7 @@
     0.2292,
     0.0658
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23464",
@@ -2039,6 +2505,7 @@
     0.2288,
     0.0658
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23465",
@@ -2064,6 +2531,7 @@
     0.2473,
     0.0787
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23467",
@@ -2089,6 +2557,7 @@
     0.2475,
     0.0787
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23468",
@@ -2114,6 +2583,7 @@
     0.0305,
     0.0271
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23725",
@@ -2174,6 +2644,7 @@
     0.0304,
     0.027
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24436",
@@ -2234,6 +2705,7 @@
     0.0784,
     0.0415
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24464",
@@ -2279,6 +2751,7 @@
     0.0784,
     0.0414
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24465",
@@ -2324,6 +2797,7 @@
     0.1141,
     0.0613
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24450",
@@ -2414,6 +2888,7 @@
     0.1138,
     0.061
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA23938",
@@ -2504,6 +2979,7 @@
     0.2057,
     0.1379
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA16586",
@@ -2529,6 +3005,7 @@
     0.2061,
     0.1378
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA16587",
@@ -2554,6 +3031,7 @@
     0.4661,
     0.0627
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24474",
@@ -2579,6 +3057,7 @@
     0.4662,
     0.0628
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24475",
@@ -2604,6 +3083,7 @@
     0.0393,
     0.0217
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24486",
@@ -2629,6 +3109,7 @@
     0.0393,
     0.0218
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24487",
@@ -2654,6 +3135,7 @@
     0.38,
     0.0628
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24477",
@@ -2679,6 +3161,7 @@
     0.38,
     0.0625
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24478",
@@ -2704,6 +3187,7 @@
     0.3844,
     0.0297
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24480",
@@ -2729,6 +3213,7 @@
     0.3843,
     0.0296
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24481",
@@ -2754,6 +3239,7 @@
     0.0716,
     0.1165
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24482",
@@ -2809,6 +3295,7 @@
     0.0715,
     0.1163
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24483",
@@ -2864,6 +3351,7 @@
     0.0514,
     0.1028
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24507",
@@ -2909,6 +3397,7 @@
     0.0514,
     0.1029
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA24508",
@@ -2954,6 +3443,7 @@
     0.0158,
     0.0854
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32634",
@@ -3034,6 +3524,7 @@
     0.016,
     0.0852
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32635",
@@ -3114,6 +3605,7 @@
     0.2007,
     0.1196
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13408",
@@ -3139,6 +3631,7 @@
     0.2008,
     0.1194
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13409",
@@ -3164,6 +3657,7 @@
     0.4517,
     0.125
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA33586",
@@ -3199,6 +3693,7 @@
     0.4517,
     0.1252
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA33587",
@@ -3234,6 +3729,7 @@
     0.1672,
     0.1186
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA34680",
@@ -3269,6 +3765,7 @@
     0.1675,
     0.1186
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA34681",
@@ -3304,6 +3801,7 @@
     0.209,
     0.1384
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13373",
@@ -3330,6 +3828,7 @@
     0.209,
     0.1384
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13374",
@@ -3356,6 +3855,7 @@
     0.145,
     0.0926
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13375",
@@ -3381,6 +3881,7 @@
     0.1449,
     0.0925
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13376",
@@ -3406,6 +3907,7 @@
     0.2702,
     0.1626
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13398",
@@ -3431,6 +3933,7 @@
     0.2702,
     0.1626
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13399",
@@ -3456,6 +3959,7 @@
     0.4171,
     0.1814
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13336",
@@ -3481,6 +3985,7 @@
     0.4176,
     0.1816
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13337",
@@ -3506,6 +4011,7 @@
     0.1735,
     0.0282
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13381",
@@ -3531,6 +4037,7 @@
     0.1735,
     0.0282
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13382",
@@ -3556,6 +4063,7 @@
     0.035,
     0.0789
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32544",
@@ -3581,6 +4089,7 @@
     0.035,
     0.0789
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32545",
@@ -3606,6 +4115,7 @@
     0.1244,
     0.0808
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32547",
@@ -3631,6 +4141,7 @@
     0.1245,
     0.0808
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32548",
@@ -3656,6 +4167,7 @@
     0.0957,
     0.0811
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32551",
@@ -3681,6 +4193,7 @@
     0.0957,
     0.0811
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA32552",
@@ -3706,6 +4219,7 @@
     0.3453,
     0.0415
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA37686",
@@ -3736,6 +4250,7 @@
     0.3453,
     0.0415
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA37687",
@@ -3766,6 +4281,7 @@
     0.2714,
     0.0531
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA37699",
@@ -3801,6 +4317,7 @@
     0.2714,
     0.0531
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA37700",
@@ -3836,6 +4353,7 @@
     0.2248,
     0.0258
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA37668",
@@ -3861,6 +4379,7 @@
     0.2248,
     0.0258
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA37669",
@@ -3886,6 +4405,7 @@
     0.3379,
     0.067
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38486",
@@ -3911,6 +4431,7 @@
     0.3379,
     0.067
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38487",
@@ -3936,6 +4457,7 @@
     0.2648,
     0.0979
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22328",
@@ -3961,6 +4483,7 @@
     0.2648,
     0.0979
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22329",
@@ -3986,6 +4509,7 @@
     0.1612,
     0.0851
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22330",
@@ -4011,6 +4535,7 @@
     0.1612,
     0.0851
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22331",
@@ -4036,6 +4561,7 @@
     0.1589,
     0.0394
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22425",
@@ -4061,6 +4587,7 @@
     0.1589,
     0.0394
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22426",
@@ -4086,6 +4613,7 @@
     0.2232,
     0.0827
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22322",
@@ -4111,6 +4639,7 @@
     0.2232,
     0.0827
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22323",
@@ -4136,6 +4665,7 @@
     0.3633,
     0.0664
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22342",
@@ -4161,6 +4691,7 @@
     0.3633,
     0.0664
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22343",
@@ -4186,6 +4717,7 @@
     0.6273,
     0.057
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22354",
@@ -4211,6 +4743,7 @@
     0.6273,
     0.057
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22355",
@@ -4236,6 +4769,7 @@
     0.5563,
     0.0685
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38928",
@@ -4261,6 +4795,7 @@
     0.5561,
     0.0684
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38929",
@@ -4286,6 +4821,7 @@
     0.4698,
     0.0795
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38930",
@@ -4311,6 +4847,7 @@
     0.4698,
     0.0795
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38931",
@@ -4336,6 +4873,7 @@
     0.3976,
     0.0578
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38932",
@@ -4361,6 +4899,7 @@
     0.3976,
     0.0578
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA38933",
@@ -4386,6 +4925,7 @@
     0.2895,
     0.0475
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22456",
@@ -4411,6 +4951,7 @@
     0.2895,
     0.0475
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22457",
@@ -4436,6 +4977,7 @@
     0.5138,
     0.0672
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA43883",
@@ -4461,6 +5003,7 @@
     0.514,
     0.0672
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA43884",
@@ -4486,6 +5029,7 @@
     0.4368,
     0.0689
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA45888",
@@ -4516,6 +5060,7 @@
     0.4368,
     0.0689
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA45889",
@@ -4546,6 +5091,7 @@
     0.4806,
     0.0738
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22358",
@@ -4571,6 +5117,7 @@
     0.4806,
     0.0738
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22359",
@@ -4596,6 +5143,7 @@
     0.4385,
     0.0662
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22448",
@@ -4621,6 +5169,7 @@
     0.4385,
     0.0662
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22449",
@@ -4646,6 +5195,7 @@
     0.3092,
     0.0869
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA45957",
@@ -4676,6 +5226,7 @@
     0.3092,
     0.0869
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA45958",
@@ -4706,6 +5257,7 @@
     0.3259,
     0.0589
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22558",
@@ -4731,6 +5283,7 @@
     0.3259,
     0.0589
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22559",
@@ -4756,6 +5309,7 @@
     0.3928,
     0.075
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22544",
@@ -4781,6 +5335,7 @@
     0.3928,
     0.075
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22545",
@@ -4806,6 +5361,7 @@
     0.4046,
     0.0957
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22552",
@@ -4831,6 +5387,7 @@
     0.4046,
     0.0957
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22553",
@@ -4856,6 +5413,7 @@
     0.2066,
     0.1791
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13295",
@@ -4864,6 +5422,1258 @@
    ],
    "elements": [
     "FJ3131"
+   ]
+  },
+  {
+   "id": "levator-scapulae-r",
+   "layer": "muscles",
+   "triangles": 998,
+   "sourceTriangles": 4718,
+   "center": [
+    -0.0503,
+    1.4671,
+    -0.0535
+   ],
+   "size": [
+    0.0598,
+    0.1592,
+    0.0704
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32540",
+     "name": "right levator scapulae"
+    }
+   ],
+   "elements": [
+    "FJ1532"
+   ]
+  },
+  {
+   "id": "levator-scapulae-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 4718,
+   "center": [
+    0.0516,
+    1.467,
+    -0.0535
+   ],
+   "size": [
+    0.0598,
+    0.1592,
+    0.0703
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32541",
+     "name": "left levator scapulae"
+    }
+   ],
+   "elements": [
+    "FJ1532M"
+   ]
+  },
+  {
+   "id": "splenius-capitis-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 7808,
+   "center": [
+    -0.0284,
+    1.4703,
+    -0.0658
+   ],
+   "size": [
+    0.0633,
+    0.2137,
+    0.0741
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22728",
+     "name": "right splenius capitis"
+    }
+   ],
+   "elements": [
+    "FJ1545"
+   ]
+  },
+  {
+   "id": "splenius-capitis-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 7808,
+   "center": [
+    0.0297,
+    1.4704,
+    -0.0658
+   ],
+   "size": [
+    0.0633,
+    0.2135,
+    0.0741
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22729",
+     "name": "left splenius capitis"
+    }
+   ],
+   "elements": [
+    "FJ1545M"
+   ]
+  },
+  {
+   "id": "scalenus-anterior-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 2632,
+   "center": [
+    -0.0387,
+    1.4557,
+    -0.013
+   ],
+   "size": [
+    0.034,
+    0.0866,
+    0.018
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13392",
+     "name": "right scalenus anterior"
+    }
+   ],
+   "elements": [
+    "FJ1592"
+   ]
+  },
+  {
+   "id": "scalenus-anterior-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 2596,
+   "center": [
+    0.0386,
+    1.4557,
+    -0.0129
+   ],
+   "size": [
+    0.0339,
+    0.0867,
+    0.0179
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13393",
+     "name": "left scalenus anterior"
+    }
+   ],
+   "elements": [
+    "FJ1570"
+   ]
+  },
+  {
+   "id": "scalenus-medius-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 4102,
+   "center": [
+    -0.0382,
+    1.474,
+    -0.0221
+   ],
+   "size": [
+    0.0334,
+    0.1054,
+    0.0146
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13390",
+     "name": "right scalenus medius"
+    }
+   ],
+   "elements": [
+    "FJ1593"
+   ]
+  },
+  {
+   "id": "scalenus-medius-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 4074,
+   "center": [
+    0.0382,
+    1.474,
+    -0.022
+   ],
+   "size": [
+    0.0334,
+    0.1054,
+    0.0145
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13391",
+     "name": "left scalenus medius"
+    }
+   ],
+   "elements": [
+    "FJ1571"
+   ]
+  },
+  {
+   "id": "iliocostalis-lumborum-r",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 15872,
+   "center": [
+    -0.053,
+    1.1127,
+    -0.0875
+   ],
+   "size": [
+    0.0969,
+    0.4085,
+    0.0447
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22740",
+     "name": "right iliocostalis lumborum"
+    }
+   ],
+   "elements": [
+    "FJ1527"
+   ]
+  },
+  {
+   "id": "iliocostalis-lumborum-l",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 15872,
+   "center": [
+    0.0544,
+    1.1127,
+    -0.0875
+   ],
+   "size": [
+    0.097,
+    0.4084,
+    0.0447
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22741",
+     "name": "left iliocostalis lumborum"
+    }
+   ],
+   "elements": [
+    "FJ1527M"
+   ]
+  },
+  {
+   "id": "longissimus-thoracis-r",
+   "layer": "muscles",
+   "triangles": 1786,
+   "sourceTriangles": 15068,
+   "center": [
+    -0.0334,
+    1.1874,
+    -0.0671
+   ],
+   "size": [
+    0.0693,
+    0.5204,
+    0.0736
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22751",
+     "name": "right longissimus thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1535"
+   ]
+  },
+  {
+   "id": "longissimus-thoracis-l",
+   "layer": "muscles",
+   "triangles": 1792,
+   "sourceTriangles": 15068,
+   "center": [
+    0.0347,
+    1.1876,
+    -0.067
+   ],
+   "size": [
+    0.0694,
+    0.5209,
+    0.0738
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22753",
+     "name": "left longissimus thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1535M"
+   ]
+  },
+  {
+   "id": "teres-minor-r",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 506,
+   "center": [
+    -0.1473,
+    1.3469,
+    -0.0544
+   ],
+   "size": [
+    0.0851,
+    0.0964,
+    0.0679
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32553",
+     "name": "right teres minor"
+    }
+   ],
+   "elements": [
+    "FJ1508"
+   ]
+  },
+  {
+   "id": "teres-minor-l",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 506,
+   "center": [
+    0.1486,
+    1.3469,
+    -0.0544
+   ],
+   "size": [
+    0.0851,
+    0.0964,
+    0.0679
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32554",
+     "name": "left teres minor"
+    }
+   ],
+   "elements": [
+    "FJ1508M"
+   ]
+  },
+  {
+   "id": "subscapularis-r",
+   "layer": "muscles",
+   "triangles": 1186,
+   "sourceTriangles": 2092,
+   "center": [
+    -0.114,
+    1.3381,
+    -0.0494
+   ],
+   "size": [
+    0.1029,
+    0.1296,
+    0.0972
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13414",
+     "name": "right subscapularis"
+    }
+   ],
+   "elements": [
+    "FJ1504"
+   ]
+  },
+  {
+   "id": "subscapularis-l",
+   "layer": "muscles",
+   "triangles": 1186,
+   "sourceTriangles": 2092,
+   "center": [
+    0.1153,
+    1.3381,
+    -0.0494
+   ],
+   "size": [
+    0.1029,
+    0.1296,
+    0.0972
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13415",
+     "name": "left subscapularis"
+    }
+   ],
+   "elements": [
+    "FJ1504M"
+   ]
+  },
+  {
+   "id": "coracobrachialis-r",
+   "layer": "muscles",
+   "triangles": 444,
+   "sourceTriangles": 444,
+   "center": [
+    -0.1591,
+    1.3271,
+    -0.0142
+   ],
+   "size": [
+    0.0593,
+    0.1577,
+    0.0393
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37665",
+     "name": "right coracobrachialis"
+    }
+   ],
+   "elements": [
+    "FJ1488"
+   ]
+  },
+  {
+   "id": "coracobrachialis-l",
+   "layer": "muscles",
+   "triangles": 444,
+   "sourceTriangles": 444,
+   "center": [
+    0.1604,
+    1.3271,
+    -0.0142
+   ],
+   "size": [
+    0.0593,
+    0.1577,
+    0.0393
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37666",
+     "name": "left coracobrachialis"
+    }
+   ],
+   "elements": [
+    "FJ1488M"
+   ]
+  },
+  {
+   "id": "flexor-carpi-radialis-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1148,
+   "center": [
+    -0.2276,
+    0.997,
+    0.0029
+   ],
+   "size": [
+    0.0878,
+    0.2765,
+    0.0654
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38460",
+     "name": "right flexor carpi radialis"
+    }
+   ],
+   "elements": [
+    "FJ1496"
+   ]
+  },
+  {
+   "id": "flexor-carpi-radialis-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1148,
+   "center": [
+    0.2289,
+    0.997,
+    0.0029
+   ],
+   "size": [
+    0.0878,
+    0.2765,
+    0.0654
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38461",
+     "name": "left flexor carpi radialis"
+    }
+   ],
+   "elements": [
+    "FJ1496M"
+   ]
+  },
+  {
+   "id": "palmaris-longus-r",
+   "layer": "muscles",
+   "triangles": 996,
+   "sourceTriangles": 4968,
+   "center": [
+    -0.2344,
+    0.9715,
+    0.01
+   ],
+   "size": [
+    0.1111,
+    0.3207,
+    0.0778
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38463",
+     "name": "right palmaris longus"
+    }
+   ],
+   "elements": [
+    "FJ1502"
+   ]
+  },
+  {
+   "id": "palmaris-longus-l",
+   "layer": "muscles",
+   "triangles": 994,
+   "sourceTriangles": 4968,
+   "center": [
+    0.2357,
+    0.9715,
+    0.01
+   ],
+   "size": [
+    0.1111,
+    0.3207,
+    0.0778
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38464",
+     "name": "left palmaris longus"
+    }
+   ],
+   "elements": [
+    "FJ1502M"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-superficialis-r",
+   "layer": "muscles",
+   "triangles": 1600,
+   "sourceTriangles": 9564,
+   "center": [
+    -0.2413,
+    0.9426,
+    0.0169
+   ],
+   "size": [
+    0.1277,
+    0.3773,
+    0.1002
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38470",
+     "name": "right flexor digitorum superficialis"
+    }
+   ],
+   "elements": [
+    "FJ1475",
+    "FJ1499"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-superficialis-l",
+   "layer": "muscles",
+   "triangles": 1598,
+   "sourceTriangles": 9564,
+   "center": [
+    0.2426,
+    0.9426,
+    0.017
+   ],
+   "size": [
+    0.1277,
+    0.3773,
+    0.1001
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38471",
+     "name": "left flexor digitorum superficialis"
+    }
+   ],
+   "elements": [
+    "FJ1475M",
+    "FJ1499M"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-profundus-r",
+   "layer": "muscles",
+   "triangles": 1396,
+   "sourceTriangles": 4838,
+   "center": [
+    -0.2547,
+    0.9203,
+    0.027
+   ],
+   "size": [
+    0.1028,
+    0.3533,
+    0.1181
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38479",
+     "name": "right flexor digitorum profundus"
+    }
+   ],
+   "elements": [
+    "FJ1497"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-profundus-l",
+   "layer": "muscles",
+   "triangles": 1394,
+   "sourceTriangles": 4838,
+   "center": [
+    0.256,
+    0.9202,
+    0.027
+   ],
+   "size": [
+    0.1028,
+    0.3531,
+    0.1181
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38480",
+     "name": "left flexor digitorum profundus"
+    }
+   ],
+   "elements": [
+    "FJ1497M"
+   ]
+  },
+  {
+   "id": "extensor-carpi-radialis-longus-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 2474,
+   "center": [
+    -0.2483,
+    1.0185,
+    -0.0137
+   ],
+   "size": [
+    0.0578,
+    0.3225,
+    0.0677
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38495",
+     "name": "right extensor carpi radialis longus"
+    }
+   ],
+   "elements": [
+    "FJ1490"
+   ]
+  },
+  {
+   "id": "extensor-carpi-radialis-longus-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 2474,
+   "center": [
+    0.2496,
+    1.0185,
+    -0.0137
+   ],
+   "size": [
+    0.0578,
+    0.3225,
+    0.0677
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38496",
+     "name": "left extensor carpi radialis longus"
+    }
+   ],
+   "elements": [
+    "FJ1490M"
+   ]
+  },
+  {
+   "id": "extensor-digitorum-r",
+   "layer": "muscles",
+   "triangles": 1396,
+   "sourceTriangles": 4294,
+   "center": [
+    -0.2631,
+    0.9471,
+    0.0032
+   ],
+   "size": [
+    0.0825,
+    0.382,
+    0.1172
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38501",
+     "name": "right extensor digitorum"
+    }
+   ],
+   "elements": [
+    "FJ1492"
+   ]
+  },
+  {
+   "id": "extensor-digitorum-l",
+   "layer": "muscles",
+   "triangles": 1396,
+   "sourceTriangles": 4294,
+   "center": [
+    0.2644,
+    0.9471,
+    0.0032
+   ],
+   "size": [
+    0.0825,
+    0.382,
+    0.1172
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38502",
+     "name": "left extensor digitorum"
+    }
+   ],
+   "elements": [
+    "FJ1492M"
+   ]
+  },
+  {
+   "id": "extensor-carpi-ulnaris-r",
+   "layer": "muscles",
+   "triangles": 992,
+   "sourceTriangles": 3394,
+   "center": [
+    -0.2278,
+    0.9931,
+    -0.0125
+   ],
+   "size": [
+    0.018,
+    0.2876,
+    0.0771
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38507",
+     "name": "right extensor carpi ulnaris"
+    }
+   ],
+   "elements": [
+    "FJ1472",
+    "FJ1517"
+   ]
+  },
+  {
+   "id": "extensor-carpi-ulnaris-l",
+   "layer": "muscles",
+   "triangles": 988,
+   "sourceTriangles": 3394,
+   "center": [
+    0.2291,
+    0.9931,
+    -0.0125
+   ],
+   "size": [
+    0.018,
+    0.2876,
+    0.0771
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38508",
+     "name": "left extensor carpi ulnaris"
+    }
+   ],
+   "elements": [
+    "FJ1472M",
+    "FJ1517M"
+   ]
+  },
+  {
+   "id": "supinator-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 3110,
+   "center": [
+    -0.2376,
+    1.0729,
+    -0.0274
+   ],
+   "size": [
+    0.0317,
+    0.1231,
+    0.0342
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38513",
+     "name": "right supinator"
+    }
+   ],
+   "elements": [
+    "FJ1505"
+   ]
+  },
+  {
+   "id": "supinator-l",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 3110,
+   "center": [
+    0.2389,
+    1.0729,
+    -0.0274
+   ],
+   "size": [
+    0.0317,
+    0.1231,
+    0.0342
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38514",
+     "name": "left supinator"
+    }
+   ],
+   "elements": [
+    "FJ1505M"
+   ]
+  },
+  {
+   "id": "gluteus-minimus-r",
+   "layer": "muscles",
+   "triangles": 1198,
+   "sourceTriangles": 4208,
+   "center": [
+    -0.1057,
+    0.9314,
+    -0.0264
+   ],
+   "size": [
+    0.0774,
+    0.1399,
+    0.0559
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22332",
+     "name": "right gluteus minimus"
+    }
+   ],
+   "elements": [
+    "FJ1420"
+   ]
+  },
+  {
+   "id": "gluteus-minimus-l",
+   "layer": "muscles",
+   "triangles": 1198,
+   "sourceTriangles": 4208,
+   "center": [
+    0.107,
+    0.9314,
+    -0.0264
+   ],
+   "size": [
+    0.0774,
+    0.1399,
+    0.0559
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22333",
+     "name": "left gluteus minimus"
+    }
+   ],
+   "elements": [
+    "FJ1420M"
+   ]
+  },
+  {
+   "id": "piriformis-r",
+   "layer": "muscles",
+   "triangles": 698,
+   "sourceTriangles": 1092,
+   "center": [
+    -0.0807,
+    0.9173,
+    -0.0587
+   ],
+   "size": [
+    0.1113,
+    0.0663,
+    0.0599
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22340",
+     "name": "right piriformis"
+    }
+   ],
+   "elements": [
+    "FJ1428"
+   ]
+  },
+  {
+   "id": "piriformis-l",
+   "layer": "muscles",
+   "triangles": 698,
+   "sourceTriangles": 1092,
+   "center": [
+    0.082,
+    0.9173,
+    -0.0587
+   ],
+   "size": [
+    0.1113,
+    0.0663,
+    0.0599
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22341",
+     "name": "left piriformis"
+    }
+   ],
+   "elements": [
+    "FJ1428M"
+   ]
+  },
+  {
+   "id": "adductor-magnus-r",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 5972,
+   "center": [
+    -0.0623,
+    0.6568,
+    -0.017
+   ],
+   "size": [
+    0.0985,
+    0.3974,
+    0.0586
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22459",
+     "name": "right adductor magnus"
+    }
+   ],
+   "elements": [
+    "FJ1403"
+   ]
+  },
+  {
+   "id": "adductor-magnus-l",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 5972,
+   "center": [
+    0.0636,
+    0.6568,
+    -0.017
+   ],
+   "size": [
+    0.0985,
+    0.3974,
+    0.0586
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22460",
+     "name": "left adductor magnus"
+    }
+   ],
+   "elements": [
+    "FJ1403M"
+   ]
+  },
+  {
+   "id": "vastus-intermedius-r",
+   "layer": "muscles",
+   "triangles": 1400,
+   "sourceTriangles": 4260,
+   "center": [
+    -0.104,
+    0.6342,
+    0.0049
+   ],
+   "size": [
+    0.0568,
+    0.4273,
+    0.0589
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38934",
+     "name": "right vastus intermedius"
+    }
+   ],
+   "elements": [
+    "FJ1441"
+   ]
+  },
+  {
+   "id": "vastus-intermedius-l",
+   "layer": "muscles",
+   "triangles": 1400,
+   "sourceTriangles": 4260,
+   "center": [
+    0.1052,
+    0.6342,
+    0.0049
+   ],
+   "size": [
+    0.0568,
+    0.4273,
+    0.0589
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38935",
+     "name": "left vastus intermedius"
+    }
+   ],
+   "elements": [
+    "FJ1441M"
+   ]
+  },
+  {
+   "id": "tibialis-posterior-r",
+   "layer": "muscles",
+   "triangles": 1388,
+   "sourceTriangles": 5136,
+   "center": [
+    -0.0732,
+    0.2247,
+    -0.0046
+   ],
+   "size": [
+    0.0622,
+    0.3783,
+    0.0734
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA65018",
+     "name": "right tibialis posterior"
+    }
+   ],
+   "elements": [
+    "FJ1440"
+   ]
+  },
+  {
+   "id": "tibialis-posterior-l",
+   "layer": "muscles",
+   "triangles": 1394,
+   "sourceTriangles": 5136,
+   "center": [
+    0.0745,
+    0.2247,
+    -0.0046
+   ],
+   "size": [
+    0.0622,
+    0.3783,
+    0.0734
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA65019",
+     "name": "left tibialis posterior"
+    }
+   ],
+   "elements": [
+    "FJ1440M"
+   ]
+  },
+  {
+   "id": "extensor-digitorum-longus-r",
+   "layer": "muscles",
+   "triangles": 1400,
+   "sourceTriangles": 4546,
+   "center": [
+    -0.127,
+    0.2243,
+    0.0402
+   ],
+   "size": [
+    0.0767,
+    0.4263,
+    0.1653
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22548",
+     "name": "right extensor digitorum longus"
+    }
+   ],
+   "elements": [
+    "FJ1406"
+   ]
+  },
+  {
+   "id": "extensor-digitorum-longus-l",
+   "layer": "muscles",
+   "triangles": 1394,
+   "sourceTriangles": 4546,
+   "center": [
+    0.1283,
+    0.2243,
+    0.0402
+   ],
+   "size": [
+    0.0767,
+    0.4263,
+    0.1653
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22549",
+     "name": "left extensor digitorum longus"
+    }
+   ],
+   "elements": [
+    "FJ1406M"
+   ]
+  },
+  {
+   "id": "fibularis-brevis-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 1766,
+   "center": [
+    -0.0993,
+    0.1444,
+    -0.0318
+   ],
+   "size": [
+    0.0355,
+    0.2443,
+    0.0525
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22554",
+     "name": "right fibularis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1409"
+   ]
+  },
+  {
+   "id": "fibularis-brevis-l",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 1766,
+   "center": [
+    0.1006,
+    0.1445,
+    -0.0318
+   ],
+   "size": [
+    0.0355,
+    0.2446,
+    0.0525
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22555",
+     "name": "left fibularis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1409M"
    ]
   },
   {
@@ -4881,6 +6691,7 @@
     0.1044,
     0.1063
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7088",
@@ -4974,7 +6785,7 @@
    ]
   },
   {
-   "id": "lung-r",
+   "id": "bronchial-tree-r",
    "layer": "organs",
    "triangles": 12000,
    "sourceTriangles": 73312,
@@ -4988,6 +6799,7 @@
     0.3334,
     0.1528
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7309",
@@ -5154,7 +6966,7 @@
    ]
   },
   {
-   "id": "lung-l",
+   "id": "bronchial-tree-l",
    "layer": "organs",
    "triangles": 12000,
    "sourceTriangles": 41438,
@@ -5168,6 +6980,7 @@
     0.2328,
     0.1575
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7310",
@@ -5302,6 +7115,126 @@
    ]
   },
   {
+   "id": "lung-upper-lobe-r",
+   "layer": "organs",
+   "triangles": 2542,
+   "sourceTriangles": 2542,
+   "center": [
+    -0.0594,
+    1.3679,
+    -0.0018
+   ],
+   "size": [
+    0.1129,
+    0.1401,
+    0.134
+   ],
+   "source": "hra-lung-male-v1.4",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_right_apical|posterior|anterior_bronchopulmonary_segment|hilum_upper_R"
+    }
+   ],
+   "elements": []
+  },
+  {
+   "id": "lung-middle-lobe-r",
+   "layer": "organs",
+   "triangles": 2648,
+   "sourceTriangles": 2648,
+   "center": [
+    -0.0619,
+    1.2702,
+    0.0262
+   ],
+   "size": [
+    0.1156,
+    0.1069,
+    0.1096
+   ],
+   "source": "hra-lung-male-v1.4",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_right_lateral|medial_bronchopulmonary_segment|hilum_middle_R"
+    }
+   ],
+   "elements": []
+  },
+  {
+   "id": "lung-lower-lobe-r",
+   "layer": "organs",
+   "triangles": 4012,
+   "sourceTriangles": 4012,
+   "center": [
+    -0.0618,
+    1.2767,
+    -0.0228
+   ],
+   "size": [
+    0.1242,
+    0.1817,
+    0.1235
+   ],
+   "source": "hra-lung-male-v1.4",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_right_superior|anterior_basal|lateral_basal|medial_basal|posterior_basal_bronchopulmonary_segment|hilum_lower_R"
+    }
+   ],
+   "elements": []
+  },
+  {
+   "id": "lung-upper-lobe-l",
+   "layer": "organs",
+   "triangles": 3994,
+   "sourceTriangles": 3994,
+   "center": [
+    0.0647,
+    1.2961,
+    0.0078
+   ],
+   "size": [
+    0.1272,
+    0.2322,
+    0.1545
+   ],
+   "source": "hra-lung-male-v1.4",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_left_apical|posterior|anterior|lingula_superior|lingula_inferior_bronchopulmonary_segment|hilum_upper_L"
+    }
+   ],
+   "elements": []
+  },
+  {
+   "id": "lung-lower-lobe-l",
+   "layer": "organs",
+   "triangles": 3468,
+   "sourceTriangles": 3468,
+   "center": [
+    0.0679,
+    1.2674,
+    -0.0247
+   ],
+   "size": [
+    0.1273,
+    0.1848,
+    0.1274
+   ],
+   "source": "hra-lung-male-v1.4",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_left_superior|anterior_basal|lateral_basal|medial_basal|posetrior_basal|posterior_basal_bronchopulmonary_segment|hilum_lower_L"
+    }
+   ],
+   "elements": []
+  },
+  {
    "id": "trachea",
    "layer": "organs",
    "triangles": 2000,
@@ -5316,6 +7249,7 @@
     0.1103,
     0.0327
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7394",
@@ -5341,6 +7275,7 @@
     0.2744,
     0.0579
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7131",
@@ -5349,6 +7284,163 @@
    ],
    "elements": [
     "FJ2563"
+   ]
+  },
+  {
+   "id": "tongue",
+   "layer": "organs",
+   "triangles": 524,
+   "sourceTriangles": 524,
+   "center": [
+    0.0001,
+    1.5273,
+    0.0394
+   ],
+   "size": [
+    0.0388,
+    0.0364,
+    0.0594
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA54640",
+     "name": "tongue"
+    }
+   ],
+   "elements": [
+    "FJ2761"
+   ]
+  },
+  {
+   "id": "epiglottis",
+   "layer": "organs",
+   "triangles": 1200,
+   "sourceTriangles": 3602,
+   "center": [
+    0,
+    1.5016,
+    0.0113
+   ],
+   "size": [
+    0.0158,
+    0.0294,
+    0.0077
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA55130",
+     "name": "epiglottis"
+    }
+   ],
+   "elements": [
+    "FJ2770"
+   ]
+  },
+  {
+   "id": "thyroid-cartilage",
+   "layer": "organs",
+   "triangles": 1500,
+   "sourceTriangles": 2610,
+   "center": [
+    0,
+    1.4893,
+    0.0062
+   ],
+   "size": [
+    0.0386,
+    0.0395,
+    0.0309
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA55099",
+     "name": "thyroid cartilage"
+    }
+   ],
+   "elements": [
+    "FJ2808"
+   ]
+  },
+  {
+   "id": "cricoid-cartilage",
+   "layer": "organs",
+   "triangles": 1124,
+   "sourceTriangles": 3404,
+   "center": [
+    -0.0001,
+    1.474,
+    0.0013
+   ],
+   "size": [
+    0.0229,
+    0.0174,
+    0.0188
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA9615",
+     "name": "cricoid cartilage"
+    }
+   ],
+   "elements": [
+    "FJ2440",
+    "FJ2769"
+   ]
+  },
+  {
+   "id": "submandibular-gland-r",
+   "layer": "organs",
+   "triangles": 228,
+   "sourceTriangles": 228,
+   "center": [
+    -0.023,
+    1.5277,
+    0.0292
+   ],
+   "size": [
+    0.0159,
+    0.0224,
+    0.0227
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA59802",
+     "name": "right submandibular gland"
+    }
+   ],
+   "elements": [
+    "FJ2768"
+   ]
+  },
+  {
+   "id": "submandibular-gland-l",
+   "layer": "organs",
+   "triangles": 228,
+   "sourceTriangles": 228,
+   "center": [
+    0.023,
+    1.5277,
+    0.0293
+   ],
+   "size": [
+    0.0159,
+    0.0224,
+    0.0229
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA59803",
+     "name": "left submandibular gland"
+    }
+   ],
+   "elements": [
+    "FJ2766"
    ]
   },
   {
@@ -5366,6 +7458,7 @@
     0.0722,
     0.0395
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9607",
@@ -5380,8 +7473,8 @@
   {
    "id": "liver",
    "layer": "organs",
-   "triangles": 11996,
-   "sourceTriangles": 159222,
+   "triangles": 11912,
+   "sourceTriangles": 191622,
    "center": [
     -0.0097,
     1.1837,
@@ -5392,6 +7485,7 @@
     0.155,
     0.159
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7197",
@@ -5400,8 +7494,13 @@
    ],
    "elements": [
     "FJ1883",
+    "FJ1893",
+    "FJ1913",
+    "FJ1914",
     "FJ1916",
     "FJ2386",
+    "FJ2404",
+    "FJ2405",
     "FJ2409",
     "FJ2415",
     "FJ2416",
@@ -5415,6 +7514,8 @@
     "FJ2824",
     "FJ3071",
     "FJ3072",
+    "FJ3073",
+    "FJ3074",
     "FJ3075",
     "FJ3076",
     "FJ3077",
@@ -5429,6 +7530,7 @@
     "FJ3093",
     "FJ3095",
     "FJ3096",
+    "FJ3102",
     "FJ3103",
     "FJ3104",
     "FJ3105",
@@ -5437,11 +7539,20 @@
     "FJ3108",
     "FJ3109",
     "FJ3110",
+    "FJ3111",
+    "FJ3112",
+    "FJ3113",
     "FJ3114",
     "FJ3115",
     "FJ3116",
     "FJ3117",
-    "FJ3123"
+    "FJ3122",
+    "FJ3123",
+    "FJ3124",
+    "FJ3125",
+    "FJ3126",
+    "FJ3127",
+    "FJ3128"
    ]
   },
   {
@@ -5459,6 +7570,7 @@
     0.0403,
     0.0484
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7202",
@@ -5484,6 +7596,7 @@
     0.117,
     0.1129
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7148",
@@ -5509,6 +7622,7 @@
     0.0702,
     0.0951
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7196",
@@ -5534,6 +7648,7 @@
     0.0734,
     0.0508
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7198",
@@ -5562,6 +7677,7 @@
     0.0915,
     0.053
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7206",
@@ -5587,6 +7703,7 @@
     0.1144,
     0.0659
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7207",
@@ -5634,6 +7751,7 @@
     0.1473,
     0.0598
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7208",
@@ -5689,6 +7807,7 @@
     0.0532,
     0.0341
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14541",
@@ -5714,6 +7833,7 @@
     0.0181,
     0.039
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14542",
@@ -5739,6 +7859,7 @@
     0.1857,
     0.0548
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14545",
@@ -5764,6 +7885,7 @@
     0.0713,
     0.0901
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14546",
@@ -5789,6 +7911,7 @@
     0.2389,
     0.0913
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14547",
@@ -5814,6 +7937,7 @@
     0.1165,
     0.0623
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14544",
@@ -5839,6 +7963,7 @@
     0.1043,
     0.0471
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7204",
@@ -5864,6 +7989,7 @@
     0.1059,
     0.0405
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7205",
@@ -5889,6 +8015,7 @@
     0.0421,
     0.0271
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA15629",
@@ -5914,6 +8041,7 @@
     0.0449,
     0.0201
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA15630",
@@ -5939,6 +8067,7 @@
     0.2453,
     0.0586
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA15571",
@@ -5964,6 +8093,7 @@
     0.2545,
     0.0581
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA15572",
@@ -5989,6 +8119,7 @@
     0.0403,
     0.0717
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA15900",
@@ -6014,6 +8145,7 @@
     0.0204,
     0.032
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA9600",
@@ -6039,6 +8171,7 @@
     0.0284,
     0.0222
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7211",
@@ -6064,6 +8197,7 @@
     0.0289,
     0.0222
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7212",
@@ -6089,6 +8223,7 @@
     0.0259,
     0.0271
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12514",
@@ -6121,6 +8256,7 @@
     0.0261,
     0.0269
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA12515",
@@ -6154,6 +8290,7 @@
     0.1168,
     0.1798
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA67292",
@@ -6197,6 +8334,7 @@
     0.117,
     0.1797
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA61819",
@@ -6240,6 +8378,7 @@
     0.0533,
     0.0562
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA67944",
@@ -6266,6 +8405,7 @@
     0.0817,
     0.0457
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA79876",
@@ -6301,6 +8441,7 @@
     0.0356,
     0.0131
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA7647",
@@ -6326,6 +8467,7 @@
     0.024,
     0.0496
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA50875",
@@ -6352,6 +8494,7 @@
     0.024,
     0.0496
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA50878",
@@ -6378,6 +8521,7 @@
     0.3703,
     0.0923
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA3734",
@@ -6407,6 +8551,7 @@
     0.0371,
     0.0423
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA8612",
@@ -6432,6 +8577,7 @@
     0.038,
     0.0177
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA3932",
@@ -6457,6 +8603,7 @@
     0.044,
     0.0122
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA3941",
@@ -6482,6 +8629,7 @@
     0.0663,
     0.0162
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4058",
@@ -6507,6 +8655,7 @@
     0.1032,
     0.0205
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA3949",
@@ -6532,6 +8681,7 @@
     0.1032,
     0.0205
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4062",
@@ -6557,6 +8707,7 @@
     0.1076,
     0.0283
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA3958",
@@ -6582,6 +8733,7 @@
     0.1076,
     0.0283
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4066",
@@ -6607,6 +8759,7 @@
     0.0221,
     0.0179
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA3953",
@@ -6632,6 +8785,7 @@
     0.0491,
     0.0188
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4694",
@@ -6657,6 +8811,7 @@
     0.0815,
     0.0262
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22655",
@@ -6682,6 +8837,7 @@
     0.0816,
     0.0263
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22656",
@@ -6707,6 +8863,7 @@
     0.2537,
     0.0166
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22691",
@@ -6732,6 +8889,7 @@
     0.2537,
     0.0166
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22692",
@@ -6757,6 +8915,7 @@
     0.2332,
     0.0439
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22733",
@@ -6782,6 +8941,7 @@
     0.2331,
     0.0439
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22734",
@@ -6807,6 +8967,7 @@
     0.2297,
     0.054
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22797",
@@ -6832,6 +8993,7 @@
     0.2297,
     0.054
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22798",
@@ -6857,6 +9019,7 @@
     0.0122,
     0.0232
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14812",
@@ -6882,6 +9045,7 @@
     0.1452,
     0.0391
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14749",
@@ -6908,6 +9072,7 @@
     0.0235,
     0.0223
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14752",
@@ -6933,6 +9098,7 @@
     0.0132,
     0.0235
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14753",
@@ -6958,6 +9124,7 @@
     0.0612,
     0.025
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14765",
@@ -6983,6 +9150,7 @@
     0.0629,
     0.0391
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14766",
@@ -7008,6 +9176,7 @@
     0.0604,
     0.085
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA18809",
@@ -7033,6 +9202,7 @@
     0.0645,
     0.0897
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA18810",
@@ -7058,6 +9228,7 @@
     0.1099,
     0.0667
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA18806",
@@ -7083,6 +9254,7 @@
     0.1025,
     0.0748
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA18807",
@@ -7108,6 +9280,7 @@
     0.3598,
     0.0575
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA70249",
@@ -7133,6 +9306,7 @@
     0.36,
     0.0576
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA70250",
@@ -7158,6 +9332,7 @@
     0.1975,
     0.0427
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA77380",
@@ -7183,6 +9358,7 @@
     0.1972,
     0.0429
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA77381",
@@ -7208,6 +9384,7 @@
     0.3174,
     0.0278
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA43896",
@@ -7233,6 +9410,7 @@
     0.3174,
     0.0279
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA43897",
@@ -7258,6 +9436,7 @@
     0.331,
     0.0364
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA43898",
@@ -7283,6 +9462,7 @@
     0.3311,
     0.0364
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA43899",
@@ -7308,6 +9488,7 @@
     0.035,
     0.0237
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4720",
@@ -7333,6 +9514,7 @@
     0.2396,
     0.0252
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA10951",
@@ -7359,6 +9541,7 @@
     0.0518,
     0.0219
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4751",
@@ -7384,6 +9567,7 @@
     0.052,
     0.0218
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4761",
@@ -7409,6 +9593,7 @@
     0.0413,
     0.0092
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4754",
@@ -7434,6 +9619,7 @@
     0.043,
     0.0104
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4762",
@@ -7459,6 +9645,7 @@
     0.0238,
     0.0133
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4755",
@@ -7484,6 +9671,7 @@
     0.0282,
     0.0156
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4763",
@@ -7509,6 +9697,7 @@
     0.5523,
     0.0539
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13325",
@@ -7534,6 +9723,7 @@
     0.5522,
     0.0538
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA13326",
@@ -7559,6 +9749,7 @@
     0.4482,
     0.0519
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22909",
@@ -7584,6 +9775,7 @@
     0.4483,
     0.0518
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA22910",
@@ -7609,6 +9801,7 @@
     0.077,
     0.0384
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14335",
@@ -7635,6 +9828,7 @@
     0.0768,
     0.064
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14336",
@@ -7661,6 +9855,7 @@
     0.064,
     0.0351
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA21387",
@@ -7686,6 +9881,7 @@
     0.0646,
     0.0462
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA21388",
@@ -7711,6 +9907,7 @@
     0.3233,
     0.0707
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA21188",
@@ -7736,6 +9933,7 @@
     0.3233,
     0.0709
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA21189",
@@ -7761,6 +9959,7 @@
     0.8222,
     0.1058
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA21379",
@@ -7786,6 +9985,7 @@
     0.8222,
     0.1057
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA21380",
@@ -7811,6 +10011,7 @@
     0.4544,
     0.0753
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA44334",
@@ -7836,6 +10037,7 @@
     0.4542,
     0.0752
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA44335",
@@ -7861,6 +10063,7 @@
     0.0488,
     0.0206
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA50735",
@@ -7886,6 +10089,7 @@
     0.0405,
     0.0409
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14331",
@@ -7911,6 +10115,7 @@
     0.1566,
     0.0405
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA14332",
@@ -7936,6 +10141,7 @@
     0.2174,
     0.053
    ],
+   "source": "bodyparts3d",
    "concepts": [
     {
      "fma": "FMA4838",

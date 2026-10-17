@@ -33,6 +33,11 @@ export const SOURCES: Record<string, SourceReference> = {
     title: 'Foundational Model of Anatomy (FMA), Structural Informatics Group, University of Washington',
     url: 'https://bioportal.bioontology.org/ontologies/FMA',
   },
+  'hra-lung': {
+    id: 'hra-lung',
+    title: 'Browne, K.; Schlehlein, H. (2024): 3D Reference Organ for Lung, Male v1.4. Human Reference Atlas (HuBMAP), CC BY 4.0 – Geometrie der Lungenlappen',
+    url: 'https://doi.org/10.48539/HBM532.KLZD.394',
+  },
   bodyparts3d: {
     id: 'bodyparts3d',
     title: 'BodyParts3D, © The Database Center for Life Science (DBCLS), CC BY 4.0 – 3D-Geometrie',

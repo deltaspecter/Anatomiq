@@ -8,6 +8,8 @@ import type { LayerId } from './layers'
 export type ModelMesh = {
   id: string
   layer: LayerId
+  /** Herkunft der Geometrie */
+  source: 'bodyparts3d' | 'hra-lung-male-v1.4'
   triangles: number
   sourceTriangles: number
   center: [number, number, number]
@@ -20,7 +22,7 @@ export type LayerFile = { file: string; bytes: number; hash: string; triangles: 
 
 export const MODEL_SOURCE: string = manifest.source
 export const LAYER_FILES = manifest.layers as Record<LayerId, LayerFile>
-export const MODEL_MESHES = manifest.structures as ModelMesh[]
+export const MODEL_MESHES = manifest.structures as unknown as ModelMesh[]
 const byId = new Map(MODEL_MESHES.map((m) => [m.id, m]))
 
 export const modelMesh = (id: string): ModelMesh | undefined => byId.get(id)

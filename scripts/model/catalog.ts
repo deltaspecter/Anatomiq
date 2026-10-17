@@ -25,6 +25,11 @@ export type CatalogEntry = {
   include: Source[]
   exclude?: Source[]
   budget: number
+  /**
+   * Geometrie aus der HRA-Referenzlunge (Human Reference Atlas, CC BY 4.0) statt aus BodyParts3D:
+   * Knoten nach Namen, eingepasst auf den Bronchialbaum derselben Körperseite (siehe build-model.ts)
+   */
+  hra?: { nodes: RegExp; side: 'right' | 'left' }
 }
 
 const SIDES = [
@@ -76,7 +81,14 @@ export const CATALOG: CatalogEntry[] = [
   ...pair('zygomatic-bone', 'skeleton', ['{side} zygomatic bone'], 1200),
   ...pair('maxilla', 'skeleton', ['{side} maxilla'], 3000),
   ...pair('nasal-bone', 'skeleton', ['{side} nasal bone'], 300),
+  ...one('ethmoid-bone', 'skeleton', ['ethmoid'], 2500),
+  ...pair('lacrimal-bone', 'skeleton', ['{side} lacrimal bone'], 300),
+  ...pair('palatine-bone', 'skeleton', ['{side} palatine bone'], 700),
+  ...one('vomer', 'skeleton', ['vomer'], 1200),
+  ...pair('inferior-nasal-concha', 'skeleton', ['{side} inferior nasal concha'], 500),
   ...one('mandible', 'skeleton', ['mandible'], 3500),
+  ...one('upper-teeth', 'skeleton', [/^(left|right) upper .*tooth$/], 4200),
+  ...one('lower-teeth', 'skeleton', [/^(left|right) lower .*tooth$/], 4200),
   ...one('hyoid-bone', 'skeleton', ['hyoid bone'], 600),
   // ── Skelett: Rumpf ──────────────────────────────────────────
   ...vertebrae,
@@ -139,12 +151,48 @@ export const CATALOG: CatalogEntry[] = [
   ...pair('tibialis-anterior', 'muscles', ['{side} tibialis anterior'], 1500),
   ...pair('fibularis-longus', 'muscles', ['{side} fibularis longus'], 1200),
   ...one('diaphragm', 'muscles', ['diaphragm'], 4000),
+  ...pair('levator-scapulae', 'muscles', ['{side} levator scapulae'], 1000),
+  ...pair('splenius-capitis', 'muscles', ['{side} splenius capitis'], 1200),
+  ...pair('scalenus-anterior', 'muscles', ['{side} scalenus anterior'], 800),
+  ...pair('scalenus-medius', 'muscles', ['{side} scalenus medius'], 1000),
+  ...pair('iliocostalis-lumborum', 'muscles', ['{side} iliocostalis lumborum'], 1800),
+  ...pair('longissimus-thoracis', 'muscles', ['{side} longissimus thoracis'], 1800),
+  ...pair('teres-minor', 'muscles', ['{side} teres minor'], 500),
+  ...pair('subscapularis', 'muscles', ['{side} subscapularis'], 1200),
+  ...pair('coracobrachialis', 'muscles', ['{side} coracobrachialis'], 450),
+  ...pair('flexor-carpi-radialis', 'muscles', ['{side} flexor carpi radialis'], 1000),
+  ...pair('palmaris-longus', 'muscles', ['{side} palmaris longus'], 1000),
+  ...pair('flexor-digitorum-superficialis', 'muscles', ['{side} flexor digitorum superficialis'], 1600),
+  ...pair('flexor-digitorum-profundus', 'muscles', ['{side} flexor digitorum profundus'], 1400),
+  ...pair('extensor-carpi-radialis-longus', 'muscles', ['{side} extensor carpi radialis longus'], 1000),
+  ...pair('extensor-digitorum', 'muscles', ['{side} extensor digitorum'], 1400),
+  ...pair('extensor-carpi-ulnaris', 'muscles', ['{side} extensor carpi ulnaris'], 1000),
+  ...pair('supinator', 'muscles', ['{side} supinator'], 900),
+  ...pair('gluteus-minimus', 'muscles', ['{side} gluteus minimus'], 1200),
+  ...pair('piriformis', 'muscles', ['{side} piriformis'], 700),
+  ...pair('adductor-magnus', 'muscles', ['{side} adductor magnus'], 1800),
+  ...pair('vastus-intermedius', 'muscles', ['{side} vastus intermedius'], 1400),
+  ...pair('tibialis-posterior', 'muscles', ['{side} tibialis posterior'], 1400),
+  ...pair('extensor-digitorum-longus', 'muscles', ['{side} extensor digitorum longus'], 1400),
+  ...pair('fibularis-brevis', 'muscles', ['{side} fibularis brevis'], 900),
 
   // ── Innere Organe ────────────────────────────────────────────
   ...one('heart', 'organs', ['heart'], 16000),
-  ...pair('lung', 'organs', ['{side} lung'], 12000),
+  // BodyParts3D enthält keine Lungenoberfläche – nur Bronchial- und Gefäßbäume der Segmente
+  ...pair('bronchial-tree', 'organs', ['{side} lung'], 12000),
+  // Lungenlappen aus der HRA-Referenzlunge (männlich, v1.4), Segmentflächen je Lappen
+  { id: 'lung-upper-lobe-r', layer: 'organs', include: [], budget: 5000, hra: { side: 'right', nodes: /^VH_M_(right_(apical|posterior|anterior)_bronchopulmonary_segment|hilum_upper_R)$/ } },
+  { id: 'lung-middle-lobe-r', layer: 'organs', include: [], budget: 3000, hra: { side: 'right', nodes: /^VH_M_(right_(lateral|medial)_bronchopulmonary_segment|hilum_middle_R)$/ } },
+  { id: 'lung-lower-lobe-r', layer: 'organs', include: [], budget: 5000, hra: { side: 'right', nodes: /^VH_M_(right_(superior|anterior_basal|lateral_basal|medial_basal|posterior_basal)_bronchopulmonary_segment|hilum_lower_R)$/ } },
+  { id: 'lung-upper-lobe-l', layer: 'organs', include: [], budget: 5000, hra: { side: 'left', nodes: /^VH_M_(left_(apical|posterior|anterior|lingula_superior|lingula_inferior)_bronchopulmonary_segment|hilum_upper_L)$/ } },
+  { id: 'lung-lower-lobe-l', layer: 'organs', include: [], budget: 5000, hra: { side: 'left', nodes: /^VH_M_(left_(superior|anterior_basal|lateral_basal|medial_basal|posetrior_basal|posterior_basal)_bronchopulmonary_segment|hilum_lower_L)$/ } },
   ...one('trachea', 'organs', ['trachea'], 2000),
   ...one('esophagus', 'organs', ['esophagus'], 1500),
+  ...one('tongue', 'organs', ['tongue'], 600),
+  ...one('epiglottis', 'organs', ['epiglottis'], 1200),
+  ...one('thyroid-cartilage', 'organs', ['thyroid cartilage'], 1500),
+  ...one('cricoid-cartilage', 'organs', ['cricoid cartilage'], 1200),
+  ...pair('submandibular-gland', 'organs', ['{side} submandibular gland'], 250),
   ...one('thymus', 'organs', ['thymus'], 1500),
   ...one('liver', 'organs', ['liver'], 12000),
   ...one('gallbladder', 'organs', ['gallbladder'], 1000),

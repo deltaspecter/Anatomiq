@@ -151,9 +151,13 @@ try {
   check(s.layers.skeleton === 'ghost', 'Ebenenschalter: Skelett transparent')
   await page.getByRole('button', { name: /Ausgangsansicht/ }).click()
   await settle(page)
+  // Das Herz liegt teilweise hinter den Lungen; getippt wird dort, wo es sichtbar ist (wie ein Nutzer es täte)
   ;[x, y] = await screenPos(page, 'heart')
-  await page.mouse.click(x, y)
-  s = await waitFor(page, (v) => v.selectedId === 'heart')
+  for (const [dx, dy] of [[0, 0], [8, 10], [-8, 10], [12, 18], [0, 22], [-12, 18], [16, 4], [4, 30]]) {
+    await page.mouse.click(x + dx, y + dy)
+    s = await waitFor(page, (v) => v.selectedId !== null, 3000)
+    if (s.selectedId === 'heart') break
+  }
   check(s.selectedId === 'heart', `Bei transparentem Skelett lässt sich das Herz antippen (${s.selectedId})`)
   await settle(page)
   const camHeart = (await snapshot(page)).camera!
