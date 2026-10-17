@@ -78,7 +78,7 @@ const headNeckArmArteries: AnatomicalStructure[] = [
     structure: 'Wichtige Äste im Schädel: A. ophthalmica (Auge), A. communicans posterior, vordere und mittlere Hirnarterie (Aa. cerebri anterior et media).',
     function: 'Versorgt zusammen mit der Gegenseite den größten Teil des Großhirns („vorderer Kreislauf“) sowie Auge und Augenhöhle.',
     clinical: 'Ablagerungen am Abgang können Blutgerinnsel ins Gehirn oder Auge schwemmen: Schlaganfall, flüchtige Durchblutungsstörung (TIA) oder vorübergehende Erblindung eines Auges (Amaurosis fugax).',
-    related: ['~common-carotid-artery', '~vertebral-artery', '~cerebral-hemisphere', '~eyeball', '~temporal-bone', 'sphenoid-bone'],
+    related: ['~common-carotid-artery', '~vertebral-artery', '~frontal-lobe', '~temporal-lobe', '~eyeball', '~temporal-bone', 'sphenoid-bone'],
   }),
   ...paired('vertebral-artery', 'vessels', {
     nameDe: 'Wirbelarterie',
@@ -91,7 +91,7 @@ const headNeckArmArteries: AnatomicalStructure[] = [
     location: 'Steigt meist ab dem 6. Halswirbel durch die Querfortsatzlöcher bis zum Atlas, windet sich über dessen hinteren Bogen und tritt durch das Foramen magnum in den Schädel. Beide Wirbelarterien vereinigen sich am Hirnstamm zur A. basilaris.',
     function: 'Versorgt Hirnstamm, Kleinhirn und die hinteren Großhirnanteile („hinterer Kreislauf“) sowie über die vordere Rückenmarkarterie das Halsmark.',
     clinical: 'Einrisse der Gefäßwand (Dissektion), z. B. nach Unfällen oder ruckartigen Kopfbewegungen, können Hirnstamm- und Kleinhirninfarkte auslösen. Ist die A. subclavia vor ihrem Abgang verengt, kann die Flussrichtung umkehren (Subclavian-Steal).',
-    related: ['~subclavian-artery', 'atlas', 'axis', 'vertebra-c6', 'brainstem', 'cerebellum', '~internal-carotid-artery'],
+    related: ['~subclavian-artery', 'atlas', 'axis', 'vertebra-c6', 'pons', 'medulla-oblongata', 'cerebellum', '~occipital-lobe', '~internal-carotid-artery'],
   }),
   ...paired('subclavian-artery', 'vessels', {
     nameDe: 'Schlüsselbeinarterie',

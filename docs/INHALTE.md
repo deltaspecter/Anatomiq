@@ -2,7 +2,7 @@
 
 ## Qualität und Prüfstatus
 
-Alle 339 Steckbriefe tragen den Status **„Erstfassung“** (`status: 'draft'`). Sie wurden mit Unterstützung eines KI-Sprachmodells auf Grundlage anatomischer Standardwerke formuliert und **nicht fachlich begutachtet**. Die App weist bei jeder Struktur darauf hin.
+Alle 372 Steckbriefe tragen den Status **„Erstfassung“** (`status: 'draft'`). Sie wurden mit Unterstützung eines KI-Sprachmodells auf Grundlage anatomischer Standardwerke formuliert und **nicht fachlich begutachtet**. Die App weist bei jeder Struktur darauf hin.
 
 Grundsätze beim Schreiben:
 

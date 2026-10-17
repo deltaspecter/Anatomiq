@@ -55,8 +55,8 @@ Die Rohdaten (~270 MB BodyParts3D, 11 MB HRA-Lunge) werden nur beim Neuerzeugen 
 | Muskeln | `muscles.glb` | 115 | 168 000 | 980 KB |
 | Organe | `organs.glb` | 43 | 116 000 | 644 KB |
 | Gefäße | `vessels.glb` | 63 | 38 000 | 264 KB |
-| Nerven | `nervous.glb` | 7 | 43 000 | 227 KB |
-| **Gesamt** | | **339** | **≈ 599 000** | **≈ 3,4 MB** |
+| Nerven | `nervous.glb` | 40 | 107 000 | 604 KB |
+| **Gesamt** | | **372** | **≈ 663 000** | **≈ 3,7 MB** |
 
 Enthaltene Strukturen (r/l = rechts und links einzeln):
 
@@ -64,7 +64,7 @@ Enthaltene Strukturen (r/l = rechts und links einzeln):
 - **Muskeln (r/l):** Kopfwender, Kapuzenmuskel, Deltamuskel, großer und kleiner Brustmuskel, vorderer Sägezahnmuskel, äußerer schräger Bauchmuskel, großer Rautenmuskel, Ober- und Untergrätenmuskel, großer Rundmuskel, Bizeps, Trizeps, M. brachialis, M. brachioradialis, großer und mittlerer Gesäßmuskel, Schenkelbindenspanner, Darmbeinmuskel, großer Lendenmuskel, Schneidermuskel, Rectus femoris, Vastus lateralis und medialis, langer Adduktor, Gracilis, Biceps femoris, Semitendinosus, Semimembranosus, Gastrocnemius, Soleus, Tibialis anterior, Fibularis longus; Schulterblattheber, Riemenmuskel des Kopfes, vorderer und mittlerer Treppenmuskel, Iliocostalis lumborum, Longissimus thoracis, Teres minor, Subscapularis, Coracobrachialis, Flexor carpi radialis, Palmaris longus, oberflächlicher und tiefer Fingerbeuger, Extensor carpi radialis longus, Fingerstrecker, Extensor carpi ulnaris, Supinator, kleiner Gesäßmuskel, Piriformis, Adductor magnus, Vastus intermedius, Tibialis posterior, langer Zehenstrecker, Fibularis brevis; dazu das Zwerchfell.
 - **Organe:** Herz (mit Herzkranzgefäßen), fünf Lungenlappen (HRA, siehe oben), Bronchialbaum mit Lungengefäßen r/l, Luftröhre, Kehldeckel, Schild- und Ringknorpel, Zunge, Unterkieferspeicheldrüsen, Speiseröhre, Thymus, Leber, Gallenblase, Magen, Milz, Bauchspeicheldrüse, Zwölffinger-, Leer- und Krummdarm, Blinddarm, Wurmfortsatz, aufsteigender, querer und absteigender Dickdarm, Mastdarm, Nieren, Nebennieren, Harnleiter, Harnblase, Prostata, Hoden, Augäpfel.
 - **Gefäße:** Aorta, Lungenarterienstamm, Truncus brachiocephalicus, Aa. carotis communis und interna, Aa. vertebrales, subclaviae, axillares, brachiales, radiales, ulnares, Truncus coeliacus, A. mesenterica superior, Aa. renales, iliacae communes, internae und externae, femorales, popliteae, tibiales anteriores und posteriores; obere und untere Hohlvene, Vv. brachiocephalicae, jugulares internae (unterer Abschnitt), subclaviae, cephalicae, basilicae, renales, iliacae communes, femorales, saphenae magnae und parvae, Pfortader, Milzvene, V. mesenterica superior, V. azygos.
-- **Nerven:** Großhirnhälften r/l, Kleinhirn, Hirnstamm, Rückenmark, Sehnerven r/l.
+- **Nervensystem:** Großhirn je Seite gegliedert in Stirnlappen, vordere und hintere Zentralwindung (motorischer bzw. somatosensibler Kortex), Scheitel-, Schläfen- und Hinterhauptslappen, Inselrinde, Gürtelwindung und Hippocampus; Marklager, Balken, innere Kapseln, Seitenventrikel, Schweifkerne, Putamen, Thalami, Hypothalamus, Hirnanhangsdrüse, Zirbeldrüse; Mittelhirn, Brücke, verlängertes Mark, Kleinhirn, Rückenmark, Sehnerven.
 
 ## Was fehlt
 

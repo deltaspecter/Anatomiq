@@ -63,7 +63,7 @@ Hinweise zu iOS:
 | Funktion | Offline? |
 |---|---|
 | App-Oberfläche, Texte aller Strukturen, Favoriten, Lernfunktionen | ✅ nach dem ersten Besuch |
-| Ebenen Haut, Skelett, Organe, Gefäße, Nerven | ✅ werden bei der Installation des Service Workers vorab gespeichert (~2,4 MB) |
+| Ebenen Haut, Skelett, Organe, Gefäße, Nerven | ✅ werden bei der Installation des Service Workers vorab gespeichert (~2,8 MB) |
 | Muskelebene (1,0 MB) | ✅ nachdem sie einmal online eingeschaltet wurde |
 | Quellen-Links (externe Websites) | ❌ benötigen Internet |
 
@@ -77,4 +77,4 @@ Updates: Erscheint eine neue Version, zeigt die App „Eine neue Version ist ver
 | Dasselbe, zusätzlich 844 × 390 (Querformat) | Manuelle Sichtprüfung per Screenshots (Auswahl, Seitenpanel, Ebenen, Quiz, Lernkarten, Einstellungen) |
 | **Echtes iPhone / iOS-Safari** | **Noch nicht getestet** – in dieser Entwicklungsumgebung steht kein Apple-Gerät zur Verfügung. |
 
-Erwartung für echte Geräte (nicht gemessen): Die Standardansicht umfasst rund 430 000 Dreiecke bei geteilten Materialien und Rendern nur bei Bedarf; aktuelle iPhones sollten das flüssig darstellen. Auf älteren Geräten hilft *Einstellungen → Darstellungsqualität → Einfach* und das Ausblenden nicht benötigter Ebenen. Bitte nach dem ersten Test auf dem iPhone Gerät, iOS-Version und Eindruck (Ladezeit, Flüssigkeit, Gesten) hier eintragen.
+Erwartung für echte Geräte (nicht gemessen): Die Standardansicht umfasst rund 495 000 Dreiecke bei geteilten Materialien und Rendern nur bei Bedarf; aktuelle iPhones sollten das flüssig darstellen. Auf älteren Geräten hilft *Einstellungen → Darstellungsqualität → Einfach* und das Ausblenden nicht benötigter Ebenen. Bitte nach dem ersten Test auf dem iPhone Gerät, iOS-Version und Eindruck (Ladezeit, Flüssigkeit, Gesten) hier eintragen.

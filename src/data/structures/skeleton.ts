@@ -24,7 +24,7 @@ const skull: AnatomicalStructure[] = [
     function: 'Schützt das Stirnhirn, bildet das Dach der Augenhöhlen und einen Teil der vorderen Schädelgrube.',
     joints: 'Über die Kranznaht (Sutura coronalis) mit beiden Scheitelbeinen; außerdem mit Keilbein, Siebbein, Nasenbeinen, Tränenbeinen, Oberkiefern und Jochbeinen.',
     clinical: 'Die Stirnhöhlen können sich bei einer Nasennebenhöhlenentzündung (Sinusitis frontalis) mitentzünden. Bleibt die beim Kind vorhandene Stirnnaht (Sutura frontalis) bestehen, spricht man von einer Sutura metopica.',
-    related: ['parietal-bone-r', 'parietal-bone-l', 'sphenoid-bone', 'nasal-bone-r', 'zygomatic-bone-r', 'cerebral-hemisphere-r'],
+    related: ['parietal-bone-r', 'parietal-bone-l', 'sphenoid-bone', 'nasal-bone-r', 'zygomatic-bone-r', 'frontal-lobe-r', 'frontal-lobe-l', 'ethmoid-bone'],
   }),
   ...paired('parietal-bone', 'skeleton', {
     nameDe: 'Scheitelbein',
@@ -40,7 +40,7 @@ const skull: AnatomicalStructure[] = [
     joints: 'Pfeilnaht (Sutura sagittalis) zum Scheitelbein der Gegenseite, Kranznaht (Sutura coronalis) zum Stirnbein, Lambdanaht (Sutura lambdoidea) zum Hinterhauptbein, Schuppennaht (Sutura squamosa) zum Schläfenbein; außerdem Kontakt zum großen Keilbeinflügel.',
     clinical: 'Brüche im Schläfen-Scheitel-Bereich können die mittlere Hirnhautarterie (A. meningea media) verletzen – Gefahr einer epiduralen Blutung.',
     terms: [{ term: 'Fontanelle', meaning: 'Knochenfreie, bindegewebige Lücke am Säuglingsschädel; die große Fontanelle liegt zwischen Stirn- und Scheitelbeinen.' }],
-    related: ['frontal-bone', 'occipital-bone', '~temporal-bone', '~cerebral-hemisphere'],
+    related: ['frontal-bone', 'occipital-bone', '~temporal-bone', '~parietal-lobe', '~postcentral-gyrus'],
   }),
   single('occipital-bone', 'skeleton', {
     nameDe: 'Hinterhauptbein',
@@ -55,7 +55,7 @@ const skull: AnatomicalStructure[] = [
     function: 'Schützt Kleinhirn und Hinterhauptslappen, trägt den Kopf auf der Wirbelsäule und dient zahlreichen Nackenmuskeln als Ursprung.',
     joints: 'Oberes Kopfgelenk (Articulatio atlantooccipitalis) mit dem Atlas – ermöglicht das Nicken. Lambdanaht zu den Scheitelbeinen, Verbindungen zu Schläfenbeinen und Keilbein.',
     clinical: 'Steigt der Hirndruck stark an, können Teile des Kleinhirns in das Foramen magnum gedrückt werden (Einklemmung) – lebensbedrohlich, weil dort der Hirnstamm liegt.',
-    related: ['atlas', 'parietal-bone-r', 'parietal-bone-l', 'cerebellum', 'brainstem', 'trapezius-r'],
+    related: ['atlas', 'parietal-bone-r', 'parietal-bone-l', 'cerebellum', 'medulla-oblongata', 'occipital-lobe-r', 'trapezius-r'],
   }),
   ...paired('temporal-bone', 'skeleton', {
     nameDe: 'Schläfenbein',

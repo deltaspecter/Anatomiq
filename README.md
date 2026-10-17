@@ -8,14 +8,14 @@ Die App läuft im Browser auf iPhone, Tablet und Desktop und lässt sich in Safa
 
 | Bereich | Status | Details |
 |---|---|---|
-| **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0), Lungenlappen aus der Referenzlunge des [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (CC BY 4.0): **339 einzeln antippbare Strukturen** in sechs Ebenen, rund 600 000 Dreiecke, zusammen 3,4 MB (meshopt-komprimiert). Männlicher Körper. |
+| **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0), Lungenlappen aus der Referenzlunge des [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (CC BY 4.0): **372 einzeln antippbare Strukturen** in sechs Ebenen, rund 660 000 Dreiecke, zusammen 3,7 MB (meshopt-komprimiert). Männlicher Körper. |
 | **Navigation am Modell** | ✅ umgesetzt | Drehen (1 Finger / Maus), Pinch-Zoom und Verschieben (2 Finger), Mausrad-Zoom zum Zeiger, Grenzen für Zoom und Drehpunkt, Ausgangsansicht, feste Ansichten (vorn/rechts/hinten/links) |
 | **Auswahl** | ✅ umgesetzt | Antippen wählt die vorderste deckend sichtbare Struktur (BVH-beschleunigtes Raycasting); Drehen/Zoomen löst nie eine Auswahl aus; Doppeltippen fokussiert; Hervorhebung durch Randleuchten; am Desktop zeigt ein Etikett den Namen unter dem Mauszeiger |
 | **Informationspanel** | ✅ umgesetzt | Bottom-Sheet (Hochformat) bzw. Seitenpanel (Querformat, Desktop); Name, Latein, Englisch, System, Region, Kurzfassung, Lage, Funktion, Aufbau, Ursprung/Ansatz/Innervation, Gelenke, Blutversorgung, Klinik, Fachbegriffe, Merksätze, verwandte Strukturen, Quellen, Modellherkunft (FMA-IDs) |
 | **Kamera** | ✅ umgesetzt | Sanfter Fokus auf die ausgewählte Struktur (abschaltbar), jede Berührung unterbricht Animationen; Schließen des Panels verändert die Ansicht nicht |
 | **Ebenen** | ✅ umgesetzt | Haut, Muskeln, Skelett, Organe, Gefäße, Nerven – je sichtbar / transparent / aus; transparente Strukturen lassen Fingertipps durch |
 | **Einzelstrukturen** | ✅ umgesetzt | Isolieren (auch mit verwandten Strukturen), transparent machen, ausblenden, Darstellung zurücksetzen |
-| **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 339 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
+| **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 372 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
 | **Lernen** | ✅ umgesetzt | Favoriten, „Zuletzt angesehen“, Quiz „Finde die Struktur“ (Antippen im Modell), Lernkarten mit Leitner-Wiederholung – alles lokal gespeichert |
 | **PWA / Offline** | ✅ umgesetzt | Manifest, Icons, Safe Areas, Service Worker; nach dem ersten Besuch offline nutzbar (Muskelebene nach erstem Laden) |
 | **Lunge** | 🟡 Näherung | Fünf Lungenlappen aus der HRA-Referenzlunge, auf den Bronchialbaum von BodyParts3D eingepasst (BodyParts3D selbst hat keine Lungenoberfläche); der Bronchialbaum ist darunter separat antippbar |

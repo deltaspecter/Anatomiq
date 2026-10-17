@@ -27,7 +27,7 @@ const cervical: AnatomicalStructure[] = [
     function: 'Trägt den Schädel und ermöglicht zusammen mit dem Axis die Kopfbewegungen.',
     joints: 'Oberes Kopfgelenk (Articulatio atlantooccipitalis) mit dem Hinterhauptbein für das Nicken; unteres Kopfgelenk (Articulationes atlantoaxiales) mit dem Axis für die Drehung. Zwischen Atlas und Axis liegt keine Bandscheibe.',
     clinical: 'Der Atlasbogen kann bei axialer Stauchung (z. B. Kopfsprung in flaches Wasser) brechen (Jefferson-Fraktur).',
-    related: ['occipital-bone', 'axis', 'spinal-cord', 'brainstem'],
+    related: ['occipital-bone', 'axis', 'spinal-cord', 'medulla-oblongata'],
   }),
   single('axis', 'skeleton', {
     nameDe: '2. Halswirbel (Axis)',

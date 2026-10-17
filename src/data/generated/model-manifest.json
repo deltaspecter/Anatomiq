@@ -27,9 +27,9 @@
   },
   "nervous": {
    "file": "/models/nervous.glb",
-   "bytes": 232012,
-   "hash": "7c4a50c114",
-   "triangles": 42522
+   "bytes": 618432,
+   "hash": "44b42c00d7",
+   "triangles": 107072
   },
   "vessels": {
    "file": "/models/vessels.glb",
@@ -8276,91 +8276,955 @@
    ]
   },
   {
-   "id": "cerebral-hemisphere-r",
+   "id": "frontal-lobe-r",
    "layer": "nervous",
-   "triangles": 16000,
-   "sourceTriangles": 105900,
+   "triangles": 7000,
+   "sourceTriangles": 13068,
    "center": [
-    -0.0348,
-    1.65,
-    -0.0211
+    -0.0312,
+    1.6665,
+    0.011
    ],
    "size": [
-    0.0689,
-    0.1168,
-    0.1798
+    0.0607,
+    0.0838,
+    0.1159
    ],
    "source": "bodyparts3d",
    "concepts": [
     {
-     "fma": "FMA67292",
-     "name": "right cerebral hemisphere"
+     "fma": "FMA72653",
+     "name": "right superior frontal gyrus"
+    },
+    {
+     "fma": "FMA72655",
+     "name": "right middle frontal gyrus"
+    },
+    {
+     "fma": "FMA72657",
+     "name": "right inferior frontal gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1745",
+    "FJ1788",
+    "FJ1834"
+   ]
+  },
+  {
+   "id": "frontal-lobe-l",
+   "layer": "nervous",
+   "triangles": 7000,
+   "sourceTriangles": 13158,
+   "center": [
+    0.0312,
+    1.6668,
+    0.011
+   ],
+   "size": [
+    0.0607,
+    0.0836,
+    0.1158
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72654",
+     "name": "left superior frontal gyrus"
+    },
+    {
+     "fma": "FMA72656",
+     "name": "left middle frontal gyrus"
+    },
+    {
+     "fma": "FMA72658",
+     "name": "left inferior frontal gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1744",
+    "FJ1787",
+    "FJ1833"
+   ]
+  },
+  {
+   "id": "precentral-gyrus-r",
+   "layer": "nervous",
+   "triangles": 2500,
+   "sourceTriangles": 4042,
+   "center": [
+    -0.0322,
+    1.6717,
+    -0.0288
+   ],
+   "size": [
+    0.0625,
+    0.066,
+    0.0653
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72661",
+     "name": "right precentral gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1801"
+   ]
+  },
+  {
+   "id": "precentral-gyrus-l",
+   "layer": "nervous",
+   "triangles": 2500,
+   "sourceTriangles": 4042,
+   "center": [
+    0.0324,
+    1.6718,
+    -0.0287
+   ],
+   "size": [
+    0.0623,
+    0.066,
+    0.0655
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72662",
+     "name": "left precentral gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1800"
+   ]
+  },
+  {
+   "id": "postcentral-gyrus-r",
+   "layer": "nervous",
+   "triangles": 2500,
+   "sourceTriangles": 3604,
+   "center": [
+    -0.0344,
+    1.672,
+    -0.0448
+   ],
+   "size": [
+    0.0666,
+    0.0595,
+    0.0635
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72665",
+     "name": "right postcentral gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1798"
+   ]
+  },
+  {
+   "id": "postcentral-gyrus-l",
+   "layer": "nervous",
+   "triangles": 2500,
+   "sourceTriangles": 3604,
+   "center": [
+    0.0345,
+    1.6719,
+    -0.0447
+   ],
+   "size": [
+    0.0666,
+    0.0598,
+    0.0636
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72666",
+     "name": "left postcentral gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1797"
+   ]
+  },
+  {
+   "id": "parietal-lobe-r",
+   "layer": "nervous",
+   "triangles": 5000,
+   "sourceTriangles": 11508,
+   "center": [
+    -0.0348,
+    1.6563,
+    -0.0674
+   ],
+   "size": [
+    0.0681,
+    0.0776,
+    0.0796
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72671",
+     "name": "right superior parietal lobule"
+    },
+    {
+     "fma": "FMA72667",
+     "name": "right supramarginal gyrus"
+    },
+    {
+     "fma": "FMA72669",
+     "name": "right angular gyrus"
     }
    ],
    "elements": [
     "FJ1733",
-    "FJ1740",
-    "FJ1745",
-    "FJ1747",
-    "FJ1749",
-    "FJ1751",
-    "FJ1784",
-    "FJ1786",
-    "FJ1788",
-    "FJ1790",
-    "FJ1792",
-    "FJ1798",
-    "FJ1801",
-    "FJ1806",
-    "FJ1807",
-    "FJ1814",
-    "FJ1834",
     "FJ1836",
     "FJ1842"
    ]
   },
   {
-   "id": "cerebral-hemisphere-l",
+   "id": "parietal-lobe-l",
    "layer": "nervous",
-   "triangles": 16000,
-   "sourceTriangles": 104316,
+   "triangles": 5000,
+   "sourceTriangles": 11296,
    "center": [
-    0.0349,
-    1.6501,
-    -0.0212
+    0.0351,
+    1.6563,
+    -0.0674
    ],
    "size": [
-    0.0693,
-    0.117,
-    0.1797
+    0.0686,
+    0.0778,
+    0.0794
    ],
    "source": "bodyparts3d",
    "concepts": [
     {
-     "fma": "FMA61819",
-     "name": "left cerebral hemisphere"
+     "fma": "FMA72672",
+     "name": "left superior parietal lobule"
+    },
+    {
+     "fma": "FMA72668",
+     "name": "left supramarginal gyrus"
+    },
+    {
+     "fma": "FMA72670",
+     "name": "left angular gyrus"
     }
    ],
    "elements": [
     "FJ1732",
-    "FJ1739",
-    "FJ1744",
-    "FJ1746",
-    "FJ1748",
-    "FJ1750",
-    "FJ1758",
-    "FJ1759",
-    "FJ1767",
-    "FJ1783",
-    "FJ1785",
-    "FJ1787",
-    "FJ1789",
-    "FJ1791",
-    "FJ1797",
-    "FJ1800",
-    "FJ1833",
     "FJ1835",
     "FJ1841"
+   ]
+  },
+  {
+   "id": "temporal-lobe-r",
+   "layer": "nervous",
+   "triangles": 6000,
+   "sourceTriangles": 12186,
+   "center": [
+    -0.04,
+    1.6213,
+    -0.0296
+   ],
+   "size": [
+    0.061,
+    0.0593,
+    0.1138
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72800",
+     "name": "anterior part of right superior temporal gyrus"
+    },
+    {
+     "fma": "FMA72804",
+     "name": "posterior part of right superior temporal gyrus"
+    },
+    {
+     "fma": "FMA72685",
+     "name": "right middle temporal gyrus"
+    },
+    {
+     "fma": "FMA72687",
+     "name": "right inferior temporal gyrus"
+    },
+    {
+     "fma": "FMA72689",
+     "name": "right fusiform gyrus"
+    },
+    {
+     "fma": "FMA72705",
+     "name": "right parahippocampal gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1747",
+    "FJ1784",
+    "FJ1786",
+    "FJ1790",
+    "FJ1838",
+    "FJ1840"
+   ]
+  },
+  {
+   "id": "temporal-lobe-l",
+   "layer": "nervous",
+   "triangles": 6000,
+   "sourceTriangles": 11800,
+   "center": [
+    0.04,
+    1.6213,
+    -0.0298
+   ],
+   "size": [
+    0.0608,
+    0.0595,
+    0.114
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72801",
+     "name": "anterior part of left superior temporal gyrus"
+    },
+    {
+     "fma": "FMA72805",
+     "name": "posterior part of left superior temporal gyrus"
+    },
+    {
+     "fma": "FMA72686",
+     "name": "left middle temporal gyrus"
+    },
+    {
+     "fma": "FMA72688",
+     "name": "left inferior temporal gyrus"
+    },
+    {
+     "fma": "FMA72690",
+     "name": "left fusiform gyrus"
+    },
+    {
+     "fma": "FMA72706",
+     "name": "left parahippocampal gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1746",
+    "FJ1783",
+    "FJ1785",
+    "FJ1789",
+    "FJ1837",
+    "FJ1839"
+   ]
+  },
+  {
+   "id": "occipital-lobe-r",
+   "layer": "nervous",
+   "triangles": 3000,
+   "sourceTriangles": 4564,
+   "center": [
+    -0.0225,
+    1.6228,
+    -0.0795
+   ],
+   "size": [
+    0.0433,
+    0.0538,
+    0.0631
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72975",
+     "name": "right occipital lobe"
+    }
+   ],
+   "elements": [
+    "FJ1792"
+   ]
+  },
+  {
+   "id": "occipital-lobe-l",
+   "layer": "nervous",
+   "triangles": 3000,
+   "sourceTriangles": 4390,
+   "center": [
+    0.0225,
+    1.6228,
+    -0.0795
+   ],
+   "size": [
+    0.0434,
+    0.0537,
+    0.0633
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72976",
+     "name": "left occipital lobe"
+    }
+   ],
+   "elements": [
+    "FJ1791"
+   ]
+  },
+  {
+   "id": "insula-r",
+   "layer": "nervous",
+   "triangles": 1500,
+   "sourceTriangles": 2448,
+   "center": [
+    -0.0353,
+    1.6409,
+    -0.0042
+   ],
+   "size": [
+    0.0192,
+    0.0345,
+    0.0517
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72977",
+     "name": "right insula"
+    }
+   ],
+   "elements": [
+    "FJ1749"
+   ]
+  },
+  {
+   "id": "insula-l",
+   "layer": "nervous",
+   "triangles": 1500,
+   "sourceTriangles": 2448,
+   "center": [
+    0.0353,
+    1.6409,
+    -0.0043
+   ],
+   "size": [
+    0.0193,
+    0.0345,
+    0.0516
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72978",
+     "name": "left insula"
+    }
+   ],
+   "elements": [
+    "FJ1748"
+   ]
+  },
+  {
+   "id": "cingulate-gyrus-r",
+   "layer": "nervous",
+   "triangles": 1500,
+   "sourceTriangles": 2346,
+   "center": [
+    -0.0148,
+    1.642,
+    -0.0143
+   ],
+   "size": [
+    0.028,
+    0.0666,
+    0.1113
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72717",
+     "name": "right cingulate gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1740"
+   ]
+  },
+  {
+   "id": "cingulate-gyrus-l",
+   "layer": "nervous",
+   "triangles": 1500,
+   "sourceTriangles": 2416,
+   "center": [
+    0.0148,
+    1.642,
+    -0.0144
+   ],
+   "size": [
+    0.0283,
+    0.0667,
+    0.1112
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72718",
+     "name": "left cingulate gyrus"
+    }
+   ],
+   "elements": [
+    "FJ1739"
+   ]
+  },
+  {
+   "id": "hippocampus-r",
+   "layer": "nervous",
+   "triangles": 800,
+   "sourceTriangles": 1020,
+   "center": [
+    -0.0273,
+    1.6184,
+    -0.0198
+   ],
+   "size": [
+    0.02,
+    0.022,
+    0.0428
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72713",
+     "name": "right hippocampus"
+    }
+   ],
+   "elements": [
+    "FJ1807"
+   ]
+  },
+  {
+   "id": "hippocampus-l",
+   "layer": "nervous",
+   "triangles": 800,
+   "sourceTriangles": 980,
+   "center": [
+    0.0273,
+    1.6183,
+    -0.0199
+   ],
+   "size": [
+    0.02,
+    0.022,
+    0.0429
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72714",
+     "name": "left hippocampus"
+    }
+   ],
+   "elements": [
+    "FJ1759"
+   ]
+  },
+  {
+   "id": "internal-capsule-r",
+   "layer": "nervous",
+   "triangles": 2500,
+   "sourceTriangles": 10742,
+   "center": [
+    -0.019,
+    1.6386,
+    -0.0092
+   ],
+   "size": [
+    0.0229,
+    0.0332,
+    0.0542
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72906",
+     "name": "right internal capsule"
+    }
+   ],
+   "elements": [
+    "FJ1751"
+   ]
+  },
+  {
+   "id": "internal-capsule-l",
+   "layer": "nervous",
+   "triangles": 2500,
+   "sourceTriangles": 10740,
+   "center": [
+    0.0189,
+    1.6386,
+    -0.0092
+   ],
+   "size": [
+    0.0229,
+    0.0332,
+    0.0542
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72907",
+     "name": "left internal capsule"
+    }
+   ],
+   "elements": [
+    "FJ1750"
+   ]
+  },
+  {
+   "id": "lateral-ventricle-r",
+   "layer": "nervous",
+   "triangles": 3000,
+   "sourceTriangles": 18016,
+   "center": [
+    -0.0195,
+    1.6329,
+    -0.0285
+   ],
+   "size": [
+    0.0385,
+    0.049,
+    0.1093
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA78449",
+     "name": "right lateral ventricle"
+    }
+   ],
+   "elements": [
+    "FJ1814"
+   ]
+  },
+  {
+   "id": "lateral-ventricle-l",
+   "layer": "nervous",
+   "triangles": 3000,
+   "sourceTriangles": 17968,
+   "center": [
+    0.0195,
+    1.6329,
+    -0.0285
+   ],
+   "size": [
+    0.0385,
+    0.049,
+    0.1093
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA78450",
+     "name": "left lateral ventricle"
+    }
+   ],
+   "elements": [
+    "FJ1767"
+   ]
+  },
+  {
+   "id": "caudate-nucleus-r",
+   "layer": "nervous",
+   "triangles": 1200,
+   "sourceTriangles": 2570,
+   "center": [
+    -0.0184,
+    1.6369,
+    -0.0087
+   ],
+   "size": [
+    0.0317,
+    0.0371,
+    0.0635
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72826",
+     "name": "right caudate nucleus"
+    }
+   ],
+   "elements": [
+    "FJ1802"
+   ]
+  },
+  {
+   "id": "caudate-nucleus-l",
+   "layer": "nervous",
+   "triangles": 1200,
+   "sourceTriangles": 2544,
+   "center": [
+    0.0184,
+    1.6369,
+    -0.0086
+   ],
+   "size": [
+    0.0318,
+    0.0371,
+    0.0635
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72827",
+     "name": "left caudate nucleus"
+    }
+   ],
+   "elements": [
+    "FJ1754"
+   ]
+  },
+  {
+   "id": "putamen-r",
+   "layer": "nervous",
+   "triangles": 1800,
+   "sourceTriangles": 7064,
+   "center": [
+    -0.026,
+    1.6366,
+    -0.0038
+   ],
+   "size": [
+    0.0183,
+    0.0261,
+    0.0428
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72828",
+     "name": "right putamen"
+    }
+   ],
+   "elements": [
+    "FJ1823"
+   ]
+  },
+  {
+   "id": "putamen-l",
+   "layer": "nervous",
+   "triangles": 1800,
+   "sourceTriangles": 7056,
+   "center": [
+    0.026,
+    1.6366,
+    -0.0038
+   ],
+   "size": [
+    0.0182,
+    0.0261,
+    0.0428
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA72829",
+     "name": "left putamen"
+    }
+   ],
+   "elements": [
+    "FJ1776"
+   ]
+  },
+  {
+   "id": "thalamus-r",
+   "layer": "nervous",
+   "triangles": 758,
+   "sourceTriangles": 758,
+   "center": [
+    -0.0123,
+    1.632,
+    -0.0206
+   ],
+   "size": [
+    0.0234,
+    0.0236,
+    0.0365
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA258714",
+     "name": "right thalamus"
+    }
+   ],
+   "elements": [
+    "FJ1827"
+   ]
+  },
+  {
+   "id": "thalamus-l",
+   "layer": "nervous",
+   "triangles": 900,
+   "sourceTriangles": 1702,
+   "center": [
+    0.0122,
+    1.632,
+    -0.0207
+   ],
+   "size": [
+    0.0233,
+    0.0237,
+    0.0366
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA258716",
+     "name": "left thalamus"
+    }
+   ],
+   "elements": [
+    "FJ1782"
+   ]
+  },
+  {
+   "id": "cerebral-white-matter",
+   "layer": "nervous",
+   "triangles": 8000,
+   "sourceTriangles": 52054,
+   "center": [
+    0,
+    1.6507,
+    -0.0199
+   ],
+   "size": [
+    0.1261,
+    0.1008,
+    0.1631
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA241998",
+     "name": "cerebral white matter"
+    }
+   ],
+   "elements": [
+    "FJ1758",
+    "FJ1806"
+   ]
+  },
+  {
+   "id": "corpus-callosum",
+   "layer": "nervous",
+   "triangles": 4000,
+   "sourceTriangles": 30232,
+   "center": [
+    0,
+    1.6419,
+    -0.0155
+   ],
+   "size": [
+    0.0517,
+    0.0389,
+    0.0916
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA86464",
+     "name": "corpus callosum"
+    }
+   ],
+   "elements": [
+    "FJ1742"
+   ]
+  },
+  {
+   "id": "hypothalamus",
+   "layer": "nervous",
+   "triangles": 1496,
+   "sourceTriangles": 5684,
+   "center": [
+    0,
+    1.6202,
+    0.0004
+   ],
+   "size": [
+    0.0172,
+    0.02,
+    0.0179
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA62008",
+     "name": "hypothalamus"
+    }
+   ],
+   "elements": [
+    "FJ1760",
+    "FJ1780",
+    "FJ1808",
+    "FJ1828"
+   ]
+  },
+  {
+   "id": "pituitary-gland",
+   "layer": "nervous",
+   "triangles": 500,
+   "sourceTriangles": 1164,
+   "center": [
+    0,
+    1.6072,
+    0.0051
+   ],
+   "size": [
+    0.0123,
+    0.013,
+    0.0095
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13889",
+     "name": "pituitary gland"
+    }
+   ],
+   "elements": [
+    "FJ1796"
+   ]
+  },
+  {
+   "id": "pineal-gland",
+   "layer": "nervous",
+   "triangles": 300,
+   "sourceTriangles": 580,
+   "center": [
+    0.0001,
+    1.6222,
+    -0.0359
+   ],
+   "size": [
+    0.0063,
+    0.0077,
+    0.0114
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA62033",
+     "name": "pineal body"
+    }
+   ],
+   "elements": [
+    "FJ1795"
    ]
   },
   {
@@ -8391,38 +9255,88 @@
    ]
   },
   {
-   "id": "brainstem",
+   "id": "midbrain",
    "layer": "nervous",
-   "triangles": 2994,
-   "sourceTriangles": 46888,
+   "triangles": 2494,
+   "sourceTriangles": 14142,
    "center": [
     0,
-    1.5835,
-    -0.0267
+    1.6155,
+    -0.0195
    ],
    "size": [
-    0.0421,
-    0.0817,
-    0.0457
+    0.0293,
+    0.0179,
+    0.0294
    ],
    "source": "bodyparts3d",
    "concepts": [
     {
-     "fma": "FMA79876",
-     "name": "brainstem"
+     "fma": "FMA61993",
+     "name": "midbrain"
     }
    ],
    "elements": [
     "FJ1738",
     "FJ1762",
-    "FJ1769",
     "FJ1770",
-    "FJ1775",
     "FJ1779",
     "FJ1810",
     "FJ1817",
-    "FJ1822",
-    "FJ1826",
+    "FJ1826"
+   ]
+  },
+  {
+   "id": "pons",
+   "layer": "nervous",
+   "triangles": 2496,
+   "sourceTriangles": 20650,
+   "center": [
+    0,
+    1.5945,
+    -0.021
+   ],
+   "size": [
+    0.0421,
+    0.0286,
+    0.0344
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA67943",
+     "name": "pons"
+    }
+   ],
+   "elements": [
+    "FJ1775",
+    "FJ1822"
+   ]
+  },
+  {
+   "id": "medulla-oblongata",
+   "layer": "nervous",
+   "triangles": 2000,
+   "sourceTriangles": 12096,
+   "center": [
+    0,
+    1.5633,
+    -0.0329
+   ],
+   "size": [
+    0.0267,
+    0.0412,
+    0.0332
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA62004",
+     "name": "medulla oblongata"
+    }
+   ],
+   "elements": [
+    "FJ1769",
     "FJ1831"
    ]
   },
