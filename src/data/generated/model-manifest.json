@@ -1,0 +1,7064 @@
+{
+ "source": "BodyParts3D 4.0 (DBCLS), CC BY 4.0",
+ "layers": {
+  "skin": {
+   "file": "/models/skin.glb",
+   "bytes": 192628,
+   "hash": "7751a47ea2",
+   "triangles": 40000
+  },
+  "skeleton": {
+   "file": "/models/skeleton.glb",
+   "bytes": 1063440,
+   "hash": "0760097cbf",
+   "triangles": 179176
+  },
+  "muscles": {
+   "file": "/models/muscles.glb",
+   "bytes": 659880,
+   "hash": "2c3c853563",
+   "triangles": 112086
+  },
+  "organs": {
+   "file": "/models/organs.glb",
+   "bytes": 536672,
+   "hash": "befd5fdae0",
+   "triangles": 95026
+  },
+  "nervous": {
+   "file": "/models/nervous.glb",
+   "bytes": 232012,
+   "hash": "7c4a50c114",
+   "triangles": 42522
+  },
+  "vessels": {
+   "file": "/models/vessels.glb",
+   "bytes": 129448,
+   "hash": "7e0d3144a4",
+   "triangles": 20294
+  }
+ },
+ "structures": [
+  {
+   "id": "skin",
+   "layer": "skin",
+   "triangles": 40000,
+   "sourceTriangles": 203382,
+   "center": [
+    0,
+    0.8597,
+    0
+   ],
+   "size": [
+    0.6669,
+    1.7193,
+    0.292
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7163",
+     "name": "skin"
+    }
+   ],
+   "elements": [
+    "FJ2810"
+   ]
+  },
+  {
+   "id": "frontal-bone",
+   "layer": "skeleton",
+   "triangles": 4000,
+   "sourceTriangles": 14510,
+   "center": [
+    0,
+    1.6535,
+    0.0413
+   ],
+   "size": [
+    0.1251,
+    0.109,
+    0.0707
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52734",
+     "name": "frontal bone"
+    }
+   ],
+   "elements": [
+    "FJ3200"
+   ]
+  },
+  {
+   "id": "parietal-bone-r",
+   "layer": "skeleton",
+   "triangles": 2498,
+   "sourceTriangles": 13002,
+   "center": [
+    -0.035,
+    1.6552,
+    -0.0442
+   ],
+   "size": [
+    0.0811,
+    0.1183,
+    0.1426
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52788",
+     "name": "right parietal bone"
+    }
+   ],
+   "elements": [
+    "FJ3380"
+   ]
+  },
+  {
+   "id": "parietal-bone-l",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 13210,
+   "center": [
+    0.0342,
+    1.6552,
+    -0.0423
+   ],
+   "size": [
+    0.0825,
+    0.1183,
+    0.1465
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52789",
+     "name": "left parietal bone"
+    }
+   ],
+   "elements": [
+    "FJ3274"
+   ]
+  },
+  {
+   "id": "occipital-bone",
+   "layer": "skeleton",
+   "triangles": 3500,
+   "sourceTriangles": 12450,
+   "center": [
+    0.0001,
+    1.6092,
+    -0.0593
+   ],
+   "size": [
+    0.1226,
+    0.1067,
+    0.119
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52735",
+     "name": "occipital bone"
+    }
+   ],
+   "elements": [
+    "FJ3309"
+   ]
+  },
+  {
+   "id": "temporal-bone-r",
+   "layer": "skeleton",
+   "triangles": 3500,
+   "sourceTriangles": 4928,
+   "center": [
+    -0.0427,
+    1.5917,
+    -0.0164
+   ],
+   "size": [
+    0.0613,
+    0.0759,
+    0.0987
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52738",
+     "name": "right temporal bone"
+    }
+   ],
+   "elements": [
+    "FJ3386"
+   ]
+  },
+  {
+   "id": "temporal-bone-l",
+   "layer": "skeleton",
+   "triangles": 3500,
+   "sourceTriangles": 4936,
+   "center": [
+    0.0427,
+    1.5916,
+    -0.0164
+   ],
+   "size": [
+    0.0609,
+    0.076,
+    0.0985
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52739",
+     "name": "left temporal bone"
+    }
+   ],
+   "elements": [
+    "FJ3281"
+   ]
+  },
+  {
+   "id": "sphenoid-bone",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 8154,
+   "center": [
+    0,
+    1.5918,
+    0.0169
+   ],
+   "size": [
+    0.1113,
+    0.0695,
+    0.0546
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52736",
+     "name": "sphenoid bone"
+    }
+   ],
+   "elements": [
+    "FJ3394"
+   ]
+  },
+  {
+   "id": "zygomatic-bone-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 1556,
+   "center": [
+    -0.0483,
+    1.5868,
+    0.0408
+   ],
+   "size": [
+    0.0313,
+    0.056,
+    0.0397
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52892",
+     "name": "right zygomatic bone"
+    }
+   ],
+   "elements": [
+    "FJ3392"
+   ]
+  },
+  {
+   "id": "zygomatic-bone-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 1434,
+   "center": [
+    0.0482,
+    1.5868,
+    0.0408
+   ],
+   "size": [
+    0.0314,
+    0.0561,
+    0.0397
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52893",
+     "name": "left zygomatic bone"
+    }
+   ],
+   "elements": [
+    "FJ3287"
+   ]
+  },
+  {
+   "id": "maxilla-r",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 5324,
+   "center": [
+    -0.0233,
+    1.5768,
+    0.0559
+   ],
+   "size": [
+    0.0473,
+    0.0694,
+    0.0547
+   ],
+   "concepts": [
+    {
+     "fma": "FMA53649",
+     "name": "right maxilla"
+    }
+   ],
+   "elements": [
+    "FJ3375"
+   ]
+  },
+  {
+   "id": "maxilla-l",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 5198,
+   "center": [
+    0.022,
+    1.5768,
+    0.0541
+   ],
+   "size": [
+    0.0488,
+    0.0692,
+    0.0561
+   ],
+   "concepts": [
+    {
+     "fma": "FMA53650",
+     "name": "left maxilla"
+    }
+   ],
+   "elements": [
+    "FJ3269"
+   ]
+  },
+  {
+   "id": "nasal-bone-r",
+   "layer": "skeleton",
+   "triangles": 300,
+   "sourceTriangles": 416,
+   "center": [
+    -0.0043,
+    1.5953,
+    0.0794
+   ],
+   "size": [
+    0.0084,
+    0.032,
+    0.0212
+   ],
+   "concepts": [
+    {
+     "fma": "FMA53647",
+     "name": "right nasal bone"
+    }
+   ],
+   "elements": [
+    "FJ3378"
+   ]
+  },
+  {
+   "id": "nasal-bone-l",
+   "layer": "skeleton",
+   "triangles": 300,
+   "sourceTriangles": 438,
+   "center": [
+    0.003,
+    1.5958,
+    0.0786
+   ],
+   "size": [
+    0.0097,
+    0.0316,
+    0.02
+   ],
+   "concepts": [
+    {
+     "fma": "FMA53648",
+     "name": "left nasal bone"
+    }
+   ],
+   "elements": [
+    "FJ3272"
+   ]
+  },
+  {
+   "id": "mandible",
+   "layer": "skeleton",
+   "triangles": 3500,
+   "sourceTriangles": 5576,
+   "center": [
+    0,
+    1.542,
+    0.0311
+   ],
+   "size": [
+    0.1064,
+    0.0845,
+    0.084
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52748",
+     "name": "mandible"
+    }
+   ],
+   "elements": [
+    "FJ3289"
+   ]
+  },
+  {
+   "id": "hyoid-bone",
+   "layer": "skeleton",
+   "triangles": 572,
+   "sourceTriangles": 2392,
+   "center": [
+    0.0001,
+    1.5097,
+    0.011
+   ],
+   "size": [
+    0.0377,
+    0.0184,
+    0.0345
+   ],
+   "concepts": [
+    {
+     "fma": "FMA52749",
+     "name": "hyoid bone"
+    }
+   ],
+   "elements": [
+    "FJ2772",
+    "FJ3201"
+   ]
+  },
+  {
+   "id": "atlas",
+   "layer": "skeleton",
+   "triangles": 1500,
+   "sourceTriangles": 2094,
+   "center": [
+    0.0001,
+    1.5499,
+    -0.0366
+   ],
+   "size": [
+    0.0816,
+    0.0192,
+    0.047
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12519",
+     "name": "atlas"
+    }
+   ],
+   "elements": [
+    "FJ3176"
+   ]
+  },
+  {
+   "id": "axis",
+   "layer": "skeleton",
+   "triangles": 1500,
+   "sourceTriangles": 2288,
+   "center": [
+    -0.0001,
+    1.5338,
+    -0.0392
+   ],
+   "size": [
+    0.0504,
+    0.045,
+    0.0499
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12520",
+     "name": "axis"
+    }
+   ],
+   "elements": [
+    "FJ3177"
+   ]
+  },
+  {
+   "id": "vertebra-c3",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 2030,
+   "center": [
+    0,
+    1.5095,
+    -0.0378
+   ],
+   "size": [
+    0.0584,
+    0.0287,
+    0.0497
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12521",
+     "name": "third cervical vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3161"
+   ]
+  },
+  {
+   "id": "vertebra-c4",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 2410,
+   "center": [
+    -0.0001,
+    1.4965,
+    -0.0358
+   ],
+   "size": [
+    0.0541,
+    0.0275,
+    0.0483
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12522",
+     "name": "fourth cervical vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3164"
+   ]
+  },
+  {
+   "id": "vertebra-c5",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 2196,
+   "center": [
+    0,
+    1.484,
+    -0.0373
+   ],
+   "size": [
+    0.058,
+    0.0242,
+    0.0547
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12523",
+     "name": "fifth cervical vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3167"
+   ]
+  },
+  {
+   "id": "vertebra-c6",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 2374,
+   "center": [
+    -0.0001,
+    1.4713,
+    -0.0403
+   ],
+   "size": [
+    0.0611,
+    0.0231,
+    0.0624
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12524",
+     "name": "sixth cervical vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3170"
+   ]
+  },
+  {
+   "id": "vertebra-c7",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 1820,
+   "center": [
+    0,
+    1.4564,
+    -0.0451
+   ],
+   "size": [
+    0.0652,
+    0.0271,
+    0.0688
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12525",
+     "name": "seventh cervical vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3172"
+   ]
+  },
+  {
+   "id": "vertebra-t1",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 1700,
+   "center": [
+    -0.0001,
+    1.4402,
+    -0.0488
+   ],
+   "size": [
+    0.0733,
+    0.0297,
+    0.0698
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9165",
+     "name": "first thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3158"
+   ]
+  },
+  {
+   "id": "vertebra-t2",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 1938,
+   "center": [
+    0,
+    1.4216,
+    -0.0534
+   ],
+   "size": [
+    0.0705,
+    0.0337,
+    0.0704
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9187",
+     "name": "second thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3160"
+   ]
+  },
+  {
+   "id": "vertebra-t3",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2038,
+   "center": [
+    0.0001,
+    1.4002,
+    -0.0618
+   ],
+   "size": [
+    0.0648,
+    0.0394,
+    0.0752
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9209",
+     "name": "third thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3163"
+   ]
+  },
+  {
+   "id": "vertebra-t4",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2066,
+   "center": [
+    0.0001,
+    1.3777,
+    -0.0658
+   ],
+   "size": [
+    0.0697,
+    0.0435,
+    0.0694
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9248",
+     "name": "fourth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3166"
+   ]
+  },
+  {
+   "id": "vertebra-t5",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2280,
+   "center": [
+    0,
+    1.3466,
+    -0.0678
+   ],
+   "size": [
+    0.071,
+    0.0575,
+    0.066
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9922",
+     "name": "fifth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3169"
+   ]
+  },
+  {
+   "id": "vertebra-t6",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2248,
+   "center": [
+    0,
+    1.3173,
+    -0.0676
+   ],
+   "size": [
+    0.0714,
+    0.0597,
+    0.064
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9945",
+     "name": "sixth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3171"
+   ]
+  },
+  {
+   "id": "vertebra-t7",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2574,
+   "center": [
+    0.0002,
+    1.2887,
+    -0.0669
+   ],
+   "size": [
+    0.0734,
+    0.0624,
+    0.0663
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9968",
+     "name": "seventh thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3173"
+   ]
+  },
+  {
+   "id": "vertebra-t8",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2424,
+   "center": [
+    -0.0001,
+    1.2615,
+    -0.0643
+   ],
+   "size": [
+    0.0658,
+    0.0593,
+    0.071
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9991",
+     "name": "eighth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3174"
+   ]
+  },
+  {
+   "id": "vertebra-t9",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2586,
+   "center": [
+    -0.0001,
+    1.2339,
+    -0.0589
+   ],
+   "size": [
+    0.0674,
+    0.0581,
+    0.0715
+   ],
+   "concepts": [
+    {
+     "fma": "FMA10014",
+     "name": "ninth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3175"
+   ]
+  },
+  {
+   "id": "vertebra-t10",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2790,
+   "center": [
+    0.0001,
+    1.2066,
+    -0.0548
+   ],
+   "size": [
+    0.0656,
+    0.0573,
+    0.0762
+   ],
+   "concepts": [
+    {
+     "fma": "FMA10037",
+     "name": "tenth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3154"
+   ]
+  },
+  {
+   "id": "vertebra-t11",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2674,
+   "center": [
+    0.0001,
+    1.1806,
+    -0.048
+   ],
+   "size": [
+    0.0522,
+    0.0535,
+    0.0795
+   ],
+   "concepts": [
+    {
+     "fma": "FMA10059",
+     "name": "eleventh thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3155"
+   ]
+  },
+  {
+   "id": "vertebra-t12",
+   "layer": "skeleton",
+   "triangles": 1400,
+   "sourceTriangles": 2772,
+   "center": [
+    0,
+    1.1539,
+    -0.0388
+   ],
+   "size": [
+    0.0433,
+    0.0516,
+    0.0787
+   ],
+   "concepts": [
+    {
+     "fma": "FMA10081",
+     "name": "twelfth thoracic vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3156"
+   ]
+  },
+  {
+   "id": "vertebra-l1",
+   "layer": "skeleton",
+   "triangles": 1600,
+   "sourceTriangles": 2972,
+   "center": [
+    0,
+    1.1216,
+    -0.0314
+   ],
+   "size": [
+    0.0702,
+    0.0567,
+    0.0803
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13072",
+     "name": "first lumbar vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3157"
+   ]
+  },
+  {
+   "id": "vertebra-l2",
+   "layer": "skeleton",
+   "triangles": 1600,
+   "sourceTriangles": 3214,
+   "center": [
+    0,
+    1.0942,
+    -0.0262
+   ],
+   "size": [
+    0.0794,
+    0.0473,
+    0.0804
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13073",
+     "name": "second lumbar vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3159"
+   ]
+  },
+  {
+   "id": "vertebra-l3",
+   "layer": "skeleton",
+   "triangles": 1600,
+   "sourceTriangles": 3272,
+   "center": [
+    -0.0001,
+    1.0668,
+    -0.0283
+   ],
+   "size": [
+    0.0787,
+    0.042,
+    0.0857
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13074",
+     "name": "third lumbar vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3162"
+   ]
+  },
+  {
+   "id": "vertebra-l4",
+   "layer": "skeleton",
+   "triangles": 1600,
+   "sourceTriangles": 3512,
+   "center": [
+    0.0001,
+    1.0391,
+    -0.0325
+   ],
+   "size": [
+    0.0839,
+    0.0447,
+    0.0842
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13075",
+     "name": "fourth lumbar vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3165"
+   ]
+  },
+  {
+   "id": "vertebra-l5",
+   "layer": "skeleton",
+   "triangles": 1600,
+   "sourceTriangles": 3892,
+   "center": [
+    -0.0001,
+    1.0079,
+    -0.0421
+   ],
+   "size": [
+    0.1006,
+    0.0502,
+    0.0808
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13076",
+     "name": "fifth lumbar vertebra"
+    }
+   ],
+   "elements": [
+    "FJ3168"
+   ]
+  },
+  {
+   "id": "sacrum",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 9922,
+   "center": [
+    0,
+    0.9331,
+    -0.0636
+   ],
+   "size": [
+    0.1176,
+    0.1443,
+    0.0884
+   ],
+   "concepts": [
+    {
+     "fma": "FMA16202",
+     "name": "sacrum"
+    }
+   ],
+   "elements": [
+    "FJ3393"
+   ]
+  },
+  {
+   "id": "intervertebral-discs",
+   "layer": "skeleton",
+   "triangles": 5990,
+   "sourceTriangles": 54134,
+   "center": [
+    0,
+    1.251,
+    -0.0275
+   ],
+   "size": [
+    0.0489,
+    0.556,
+    0.0854
+   ],
+   "concepts": [
+    {
+     "fma": "FMA10446",
+     "name": "intervertebral disk"
+    }
+   ],
+   "elements": [
+    "FJ3202",
+    "FJ3203",
+    "FJ3204",
+    "FJ3205",
+    "FJ3206",
+    "FJ3207",
+    "FJ3208",
+    "FJ3209",
+    "FJ3210",
+    "FJ3211",
+    "FJ3212",
+    "FJ3213",
+    "FJ3214",
+    "FJ3215",
+    "FJ3216",
+    "FJ3217",
+    "FJ3218",
+    "FJ3219",
+    "FJ3220",
+    "FJ3221",
+    "FJ3222",
+    "FJ3223",
+    "FJ3224"
+   ]
+  },
+  {
+   "id": "sternum",
+   "layer": "skeleton",
+   "triangles": 1990,
+   "sourceTriangles": 8114,
+   "center": [
+    0.0006,
+    1.3227,
+    0.0716
+   ],
+   "size": [
+    0.0546,
+    0.1612,
+    0.0829
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7485",
+     "name": "sternum"
+    }
+   ],
+   "elements": [
+    "FJ3153",
+    "FJ3178",
+    "FJ3290"
+   ]
+  },
+  {
+   "id": "rib-1-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 3276,
+   "center": [
+    -0.0418,
+    1.4184,
+    -0.0034
+   ],
+   "size": [
+    0.0546,
+    0.0604,
+    0.0659
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7857",
+     "name": "right first rib"
+    }
+   ],
+   "elements": [
+    "FJ3334"
+   ]
+  },
+  {
+   "id": "rib-1-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 3276,
+   "center": [
+    0.0418,
+    1.4184,
+    -0.0033
+   ],
+   "size": [
+    0.0546,
+    0.0604,
+    0.066
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7987",
+     "name": "left first rib"
+    }
+   ],
+   "elements": [
+    "FJ3228"
+   ]
+  },
+  {
+   "id": "rib-2-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 5594,
+   "center": [
+    -0.0559,
+    1.3944,
+    0.0081
+   ],
+   "size": [
+    0.0808,
+    0.0854,
+    0.1165
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7882",
+     "name": "right second rib"
+    }
+   ],
+   "elements": [
+    "FJ3336"
+   ]
+  },
+  {
+   "id": "rib-2-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 5594,
+   "center": [
+    0.0558,
+    1.3944,
+    0.0081
+   ],
+   "size": [
+    0.0807,
+    0.0855,
+    0.1163
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8012",
+     "name": "left second rib"
+    }
+   ],
+   "elements": [
+    "FJ3229"
+   ]
+  },
+  {
+   "id": "rib-3-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 7254,
+   "center": [
+    -0.0609,
+    1.368,
+    0.0073
+   ],
+   "size": [
+    0.0948,
+    0.092,
+    0.1424
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7909",
+     "name": "right third rib"
+    }
+   ],
+   "elements": [
+    "FJ3338"
+   ]
+  },
+  {
+   "id": "rib-3-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 7254,
+   "center": [
+    0.0608,
+    1.368,
+    0.0073
+   ],
+   "size": [
+    0.0948,
+    0.0921,
+    0.1424
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8039",
+     "name": "left third rib"
+    }
+   ],
+   "elements": [
+    "FJ3230"
+   ]
+  },
+  {
+   "id": "rib-4-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 8832,
+   "center": [
+    -0.0656,
+    1.3413,
+    0.007
+   ],
+   "size": [
+    0.1025,
+    0.1041,
+    0.1688
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7957",
+     "name": "right fourth rib"
+    }
+   ],
+   "elements": [
+    "FJ3340"
+   ]
+  },
+  {
+   "id": "rib-4-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 8850,
+   "center": [
+    0.0653,
+    1.3414,
+    0.0069
+   ],
+   "size": [
+    0.1033,
+    0.104,
+    0.1689
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8148",
+     "name": "left fourth rib"
+    }
+   ],
+   "elements": [
+    "FJ3231"
+   ]
+  },
+  {
+   "id": "rib-5-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 9710,
+   "center": [
+    -0.0706,
+    1.3099,
+    0.0044
+   ],
+   "size": [
+    0.1117,
+    0.1191,
+    0.1848
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8066",
+     "name": "right fifth rib"
+    }
+   ],
+   "elements": [
+    "FJ3342"
+   ]
+  },
+  {
+   "id": "rib-5-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 9710,
+   "center": [
+    0.0705,
+    1.3098,
+    0.0044
+   ],
+   "size": [
+    0.1117,
+    0.1191,
+    0.1849
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8093",
+     "name": "left fifth rib"
+    }
+   ],
+   "elements": [
+    "FJ3232"
+   ]
+  },
+  {
+   "id": "rib-6-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 10246,
+   "center": [
+    -0.0739,
+    1.2799,
+    -0.0022
+   ],
+   "size": [
+    0.1194,
+    0.1278,
+    0.1899
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8175",
+     "name": "right sixth rib"
+    }
+   ],
+   "elements": [
+    "FJ3344"
+   ]
+  },
+  {
+   "id": "rib-6-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 10264,
+   "center": [
+    0.0736,
+    1.2805,
+    -0.0022
+   ],
+   "size": [
+    0.1202,
+    0.1287,
+    0.1896
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8202",
+     "name": "left sixth rib"
+    }
+   ],
+   "elements": [
+    "FJ3233"
+   ]
+  },
+  {
+   "id": "rib-7-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 10032,
+   "center": [
+    -0.0747,
+    1.2508,
+    -0.0084
+   ],
+   "size": [
+    0.1233,
+    0.135,
+    0.1756
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8229",
+     "name": "right seventh rib"
+    }
+   ],
+   "elements": [
+    "FJ3346"
+   ]
+  },
+  {
+   "id": "rib-7-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 10032,
+   "center": [
+    0.0747,
+    1.2508,
+    -0.0084
+   ],
+   "size": [
+    0.1232,
+    0.135,
+    0.1757
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8256",
+     "name": "left seventh rib"
+    }
+   ],
+   "elements": [
+    "FJ3234"
+   ]
+  },
+  {
+   "id": "rib-8-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 8336,
+   "center": [
+    -0.0727,
+    1.2211,
+    -0.0171
+   ],
+   "size": [
+    0.1192,
+    0.1366,
+    0.1581
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8283",
+     "name": "right eighth rib"
+    }
+   ],
+   "elements": [
+    "FJ3347"
+   ]
+  },
+  {
+   "id": "rib-8-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 8336,
+   "center": [
+    0.0726,
+    1.2211,
+    -0.0171
+   ],
+   "size": [
+    0.1192,
+    0.1366,
+    0.1581
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8310",
+     "name": "left eighth rib"
+    }
+   ],
+   "elements": [
+    "FJ3235"
+   ]
+  },
+  {
+   "id": "rib-9-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 7576,
+   "center": [
+    -0.0719,
+    1.1958,
+    -0.0291
+   ],
+   "size": [
+    0.1131,
+    0.1352,
+    0.1279
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8364",
+     "name": "right ninth rib"
+    }
+   ],
+   "elements": [
+    "FJ3348"
+   ]
+  },
+  {
+   "id": "rib-9-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 7576,
+   "center": [
+    0.0718,
+    1.1958,
+    -0.0292
+   ],
+   "size": [
+    0.1132,
+    0.1351,
+    0.128
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8391",
+     "name": "left ninth rib"
+    }
+   ],
+   "elements": [
+    "FJ3236"
+   ]
+  },
+  {
+   "id": "rib-10-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 6820,
+   "center": [
+    -0.0696,
+    1.1691,
+    -0.0363
+   ],
+   "size": [
+    0.1067,
+    0.136,
+    0.1063
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8445",
+     "name": "right tenth rib"
+    }
+   ],
+   "elements": [
+    "FJ3330"
+   ]
+  },
+  {
+   "id": "rib-10-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 6826,
+   "center": [
+    0.0696,
+    1.1691,
+    -0.0362
+   ],
+   "size": [
+    0.1067,
+    0.136,
+    0.1062
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8472",
+     "name": "left tenth rib"
+    }
+   ],
+   "elements": [
+    "FJ3225"
+   ]
+  },
+  {
+   "id": "rib-11-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 4866,
+   "center": [
+    -0.0638,
+    1.143,
+    -0.0438
+   ],
+   "size": [
+    0.0937,
+    0.1136,
+    0.078
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8531",
+     "name": "right eleventh rib"
+    }
+   ],
+   "elements": [
+    "FJ3331"
+   ]
+  },
+  {
+   "id": "rib-11-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 4866,
+   "center": [
+    0.0638,
+    1.143,
+    -0.0438
+   ],
+   "size": [
+    0.0937,
+    0.1137,
+    0.078
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8532",
+     "name": "left eleventh rib"
+    }
+   ],
+   "elements": [
+    "FJ3226"
+   ]
+  },
+  {
+   "id": "rib-12-r",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 2818,
+   "center": [
+    -0.0517,
+    1.1284,
+    -0.0537
+   ],
+   "size": [
+    0.0683,
+    0.0778,
+    0.0381
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8533",
+     "name": "right twelfth rib"
+    }
+   ],
+   "elements": [
+    "FJ3332"
+   ]
+  },
+  {
+   "id": "rib-12-l",
+   "layer": "skeleton",
+   "triangles": 1200,
+   "sourceTriangles": 2818,
+   "center": [
+    0.0517,
+    1.1284,
+    -0.0537
+   ],
+   "size": [
+    0.0683,
+    0.0778,
+    0.0381
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8534",
+     "name": "left twelfth rib"
+    }
+   ],
+   "elements": [
+    "FJ3227"
+   ]
+  },
+  {
+   "id": "costal-cartilages-r",
+   "layer": "skeleton",
+   "triangles": 2498,
+   "sourceTriangles": 7844,
+   "center": [
+    -0.0566,
+    1.2895,
+    0.0669
+   ],
+   "size": [
+    0.1054,
+    0.2176,
+    0.091
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7875",
+     "name": "right first costal cartilage"
+    },
+    {
+     "fma": "FMA7886",
+     "name": "right second costal cartilage"
+    },
+    {
+     "fma": "FMA7913",
+     "name": "right third costal cartilage"
+    },
+    {
+     "fma": "FMA7976",
+     "name": "right fourth costal cartilage"
+    },
+    {
+     "fma": "FMA8070",
+     "name": "right fifth costal cartilage"
+    },
+    {
+     "fma": "FMA8194",
+     "name": "right sixth costal cartilage"
+    },
+    {
+     "fma": "FMA8248",
+     "name": "right seventh costal cartilage"
+    }
+   ],
+   "elements": [
+    "FJ3333",
+    "FJ3335",
+    "FJ3337",
+    "FJ3339",
+    "FJ3341",
+    "FJ3343",
+    "FJ3345"
+   ]
+  },
+  {
+   "id": "costal-cartilages-l",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 7390,
+   "center": [
+    0.0565,
+    1.2895,
+    0.067
+   ],
+   "size": [
+    0.1051,
+    0.2177,
+    0.0908
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8005",
+     "name": "left first costal cartilage"
+    },
+    {
+     "fma": "FMA8031",
+     "name": "left second costal cartilage"
+    },
+    {
+     "fma": "FMA8058",
+     "name": "left third costal cartilage"
+    },
+    {
+     "fma": "FMA8167",
+     "name": "left fourth costal cartilage"
+    },
+    {
+     "fma": "FMA8112",
+     "name": "left fifth costal cartilage"
+    },
+    {
+     "fma": "FMA8221",
+     "name": "left sixth costal cartilage"
+    },
+    {
+     "fma": "FMA8275",
+     "name": "left seventh costal cartilage"
+    }
+   ],
+   "elements": [
+    "FJ3239",
+    "FJ3242",
+    "FJ3245",
+    "FJ3248",
+    "FJ3251",
+    "FJ3254",
+    "FJ3255"
+   ]
+  },
+  {
+   "id": "clavicle-r",
+   "layer": "skeleton",
+   "triangles": 1146,
+   "sourceTriangles": 1146,
+   "center": [
+    -0.0768,
+    1.4101,
+    -0.0001
+   ],
+   "size": [
+    0.1356,
+    0.0468,
+    0.0925
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13322",
+     "name": "right clavicle"
+    }
+   ],
+   "elements": [
+    "FJ3362"
+   ]
+  },
+  {
+   "id": "clavicle-l",
+   "layer": "skeleton",
+   "triangles": 1176,
+   "sourceTriangles": 1176,
+   "center": [
+    0.0768,
+    1.41,
+    0
+   ],
+   "size": [
+    0.1356,
+    0.0467,
+    0.0927
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13323",
+     "name": "left clavicle"
+    }
+   ],
+   "elements": [
+    "FJ3237"
+   ]
+  },
+  {
+   "id": "scapula-r",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 26172,
+   "center": [
+    -0.1112,
+    1.3451,
+    -0.0519
+   ],
+   "size": [
+    0.1092,
+    0.1658,
+    0.1078
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13395",
+     "name": "right scapula"
+    }
+   ],
+   "elements": [
+    "FJ3384"
+   ]
+  },
+  {
+   "id": "scapula-l",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 28106,
+   "center": [
+    0.1123,
+    1.345,
+    -0.0519
+   ],
+   "size": [
+    0.1093,
+    0.1657,
+    0.1078
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13396",
+     "name": "left scapula"
+    }
+   ],
+   "elements": [
+    "FJ3279"
+   ]
+  },
+  {
+   "id": "humerus-r",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 3784,
+   "center": [
+    -0.1898,
+    1.2611,
+    -0.0251
+   ],
+   "size": [
+    0.1007,
+    0.3072,
+    0.0492
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23130",
+     "name": "right humerus"
+    }
+   ],
+   "elements": [
+    "FJ3368"
+   ]
+  },
+  {
+   "id": "humerus-l",
+   "layer": "skeleton",
+   "triangles": 2500,
+   "sourceTriangles": 3844,
+   "center": [
+    0.1911,
+    1.261,
+    -0.0251
+   ],
+   "size": [
+    0.1007,
+    0.3073,
+    0.0492
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23131",
+     "name": "left humerus"
+    }
+   ],
+   "elements": [
+    "FJ3262"
+   ]
+  },
+  {
+   "id": "radius-r",
+   "layer": "skeleton",
+   "triangles": 672,
+   "sourceTriangles": 672,
+   "center": [
+    -0.249,
+    0.9986,
+    -0.0068
+   ],
+   "size": [
+    0.0597,
+    0.2292,
+    0.0658
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23464",
+     "name": "right radius"
+    }
+   ],
+   "elements": [
+    "FJ3349"
+   ]
+  },
+  {
+   "id": "radius-l",
+   "layer": "skeleton",
+   "triangles": 632,
+   "sourceTriangles": 632,
+   "center": [
+    0.2501,
+    0.9987,
+    -0.0064
+   ],
+   "size": [
+    0.0593,
+    0.2288,
+    0.0658
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23465",
+     "name": "left radius"
+    }
+   ],
+   "elements": [
+    "FJ3277"
+   ]
+  },
+  {
+   "id": "ulna-r",
+   "layer": "skeleton",
+   "triangles": 834,
+   "sourceTriangles": 834,
+   "center": [
+    -0.2214,
+    1.0069,
+    -0.0166
+   ],
+   "size": [
+    0.0503,
+    0.2473,
+    0.0787
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23467",
+     "name": "right ulna"
+    }
+   ],
+   "elements": [
+    "FJ3391"
+   ]
+  },
+  {
+   "id": "ulna-l",
+   "layer": "skeleton",
+   "triangles": 824,
+   "sourceTriangles": 824,
+   "center": [
+    0.2227,
+    1.0069,
+    -0.0169
+   ],
+   "size": [
+    0.0502,
+    0.2475,
+    0.0787
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23468",
+     "name": "left ulna"
+    }
+   ],
+   "elements": [
+    "FJ3286"
+   ]
+  },
+  {
+   "id": "carpal-bones-r",
+   "layer": "skeleton",
+   "triangles": 2400,
+   "sourceTriangles": 2758,
+   "center": [
+    -0.2562,
+    0.8747,
+    0.0233
+   ],
+   "size": [
+    0.0498,
+    0.0305,
+    0.0271
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23725",
+     "name": "right trapezoid"
+    },
+    {
+     "fma": "FMA24435",
+     "name": "right scaphoid"
+    },
+    {
+     "fma": "FMA24437",
+     "name": "right lunate"
+    },
+    {
+     "fma": "FMA24439",
+     "name": "right triquetral"
+    },
+    {
+     "fma": "FMA24441",
+     "name": "right pisiform"
+    },
+    {
+     "fma": "FMA24443",
+     "name": "right trapezium"
+    },
+    {
+     "fma": "FMA24446",
+     "name": "right capitate"
+    },
+    {
+     "fma": "FMA24448",
+     "name": "right hamate"
+    }
+   ],
+   "elements": [
+    "FJ3361",
+    "FJ3367",
+    "FJ3374",
+    "FJ3382",
+    "FJ3383",
+    "FJ3388",
+    "FJ3389",
+    "FJ3390"
+   ]
+  },
+  {
+   "id": "carpal-bones-l",
+   "layer": "skeleton",
+   "triangles": 2400,
+   "sourceTriangles": 2748,
+   "center": [
+    0.2575,
+    0.8746,
+    0.0233
+   ],
+   "size": [
+    0.05,
+    0.0304,
+    0.027
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24436",
+     "name": "left scaphoid"
+    },
+    {
+     "fma": "FMA24438",
+     "name": "left lunate"
+    },
+    {
+     "fma": "FMA24440",
+     "name": "left triquetral"
+    },
+    {
+     "fma": "FMA24442",
+     "name": "left pisiform"
+    },
+    {
+     "fma": "FMA24444",
+     "name": "left trapezium"
+    },
+    {
+     "fma": "FMA24445",
+     "name": "left trapezoid"
+    },
+    {
+     "fma": "FMA24447",
+     "name": "left capitate"
+    },
+    {
+     "fma": "FMA24449",
+     "name": "left hamate"
+    }
+   ],
+   "elements": [
+    "FJ3257",
+    "FJ3261",
+    "FJ3268",
+    "FJ3276",
+    "FJ3278",
+    "FJ3283",
+    "FJ3284",
+    "FJ3285"
+   ]
+  },
+  {
+   "id": "metacarpal-bones-r",
+   "layer": "skeleton",
+   "triangles": 2400,
+   "sourceTriangles": 3058,
+   "center": [
+    -0.2667,
+    0.8362,
+    0.0323
+   ],
+   "size": [
+    0.0844,
+    0.0784,
+    0.0415
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24464",
+     "name": "right first metacarpal bone"
+    },
+    {
+     "fma": "FMA24466",
+     "name": "right second metacarpal bone"
+    },
+    {
+     "fma": "FMA24468",
+     "name": "right third metacarpal bone"
+    },
+    {
+     "fma": "FMA24470",
+     "name": "right fourth metacarpal bone"
+    },
+    {
+     "fma": "FMA24472",
+     "name": "right fifth metacarpal bone"
+    }
+   ],
+   "elements": [
+    "FJ3350",
+    "FJ3352",
+    "FJ3354",
+    "FJ3356",
+    "FJ3358"
+   ]
+  },
+  {
+   "id": "metacarpal-bones-l",
+   "layer": "skeleton",
+   "triangles": 2400,
+   "sourceTriangles": 3088,
+   "center": [
+    0.2681,
+    0.8363,
+    0.0323
+   ],
+   "size": [
+    0.0843,
+    0.0784,
+    0.0414
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24465",
+     "name": "left first metacarpal bone"
+    },
+    {
+     "fma": "FMA24467",
+     "name": "left second metacarpal bone"
+    },
+    {
+     "fma": "FMA24469",
+     "name": "left third metacarpal bone"
+    },
+    {
+     "fma": "FMA24471",
+     "name": "left fourth metacarpal bone"
+    },
+    {
+     "fma": "FMA24473",
+     "name": "left fifth metacarpal bone"
+    }
+   ],
+   "elements": [
+    "FJ3240",
+    "FJ3243",
+    "FJ3246",
+    "FJ3249",
+    "FJ3252"
+   ]
+  },
+  {
+   "id": "hand-phalanges-r",
+   "layer": "skeleton",
+   "triangles": 3600,
+   "sourceTriangles": 3906,
+   "center": [
+    -0.2708,
+    0.7882,
+    0.064
+   ],
+   "size": [
+    0.105,
+    0.1141,
+    0.0613
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24450",
+     "name": "proximal phalanx of right thumb"
+    },
+    {
+     "fma": "FMA24451",
+     "name": "proximal phalanx of right index finger"
+    },
+    {
+     "fma": "FMA24452",
+     "name": "proximal phalanx of right middle finger"
+    },
+    {
+     "fma": "FMA24453",
+     "name": "proximal phalanx of right ring finger"
+    },
+    {
+     "fma": "FMA24454",
+     "name": "proximal phalanx of right little finger"
+    },
+    {
+     "fma": "FMA24455",
+     "name": "middle phalanx of right index finger"
+    },
+    {
+     "fma": "FMA24456",
+     "name": "middle phalanx of right middle finger"
+    },
+    {
+     "fma": "FMA24457",
+     "name": "middle phalanx of right ring finger"
+    },
+    {
+     "fma": "FMA24458",
+     "name": "middle phalanx of right little finger"
+    },
+    {
+     "fma": "FMA24459",
+     "name": "distal phalanx of right thumb"
+    },
+    {
+     "fma": "FMA24460",
+     "name": "distal phalanx of right index finger"
+    },
+    {
+     "fma": "FMA24461",
+     "name": "distal phalanx of right middle finger"
+    },
+    {
+     "fma": "FMA24462",
+     "name": "distal phalanx of right ring finger"
+    },
+    {
+     "fma": "FMA24463",
+     "name": "distal phalanx of right little finger"
+    }
+   ],
+   "elements": [
+    "FJ3193",
+    "FJ3194",
+    "FJ3196",
+    "FJ3197",
+    "FJ3198",
+    "FJ3292",
+    "FJ3303",
+    "FJ3304",
+    "FJ3306",
+    "FJ3322",
+    "FJ3323",
+    "FJ3325",
+    "FJ3326",
+    "FJ3327"
+   ]
+  },
+  {
+   "id": "hand-phalanges-l",
+   "layer": "skeleton",
+   "triangles": 3600,
+   "sourceTriangles": 4390,
+   "center": [
+    0.2721,
+    0.7884,
+    0.0638
+   ],
+   "size": [
+    0.105,
+    0.1138,
+    0.061
+   ],
+   "concepts": [
+    {
+     "fma": "FMA23938",
+     "name": "middle phalanx of left index finger"
+    },
+    {
+     "fma": "FMA23940",
+     "name": "middle phalanx of left middle finger"
+    },
+    {
+     "fma": "FMA23942",
+     "name": "middle phalanx of left ring finger"
+    },
+    {
+     "fma": "FMA23944",
+     "name": "middle phalanx of left little finger"
+    },
+    {
+     "fma": "FMA23951",
+     "name": "distal phalanx of left thumb"
+    },
+    {
+     "fma": "FMA23953",
+     "name": "distal phalanx of left index finger"
+    },
+    {
+     "fma": "FMA23955",
+     "name": "distal phalanx of left middle finger"
+    },
+    {
+     "fma": "FMA23957",
+     "name": "distal phalanx of left ring finger"
+    },
+    {
+     "fma": "FMA23959",
+     "name": "distal phalanx of left little finger"
+    },
+    {
+     "fma": "FMA65470",
+     "name": "proximal phalanx of left thumb"
+    },
+    {
+     "fma": "FMA66791",
+     "name": "proximal phalanx of left little finger"
+    },
+    {
+     "fma": "FMA71908",
+     "name": "proximal phalanx of left middle finger"
+    },
+    {
+     "fma": "FMA71915",
+     "name": "proximal phalanx of left index finger"
+    },
+    {
+     "fma": "FMA71916",
+     "name": "proximal phalanx of left ring finger"
+    }
+   ],
+   "elements": [
+    "FJ3183",
+    "FJ3184",
+    "FJ3186",
+    "FJ3187",
+    "FJ3188",
+    "FJ3291",
+    "FJ3296",
+    "FJ3297",
+    "FJ3299",
+    "FJ3313",
+    "FJ3314",
+    "FJ3316",
+    "FJ3317",
+    "FJ3318"
+   ]
+  },
+  {
+   "id": "hip-bone-r",
+   "layer": "skeleton",
+   "triangles": 2374,
+   "sourceTriangles": 2374,
+   "center": [
+    -0.0732,
+    0.9331,
+    -0.0307
+   ],
+   "size": [
+    0.1421,
+    0.2057,
+    0.1379
+   ],
+   "concepts": [
+    {
+     "fma": "FMA16586",
+     "name": "right hip bone"
+    }
+   ],
+   "elements": [
+    "FJ3152"
+   ]
+  },
+  {
+   "id": "hip-bone-l",
+   "layer": "skeleton",
+   "triangles": 2332,
+   "sourceTriangles": 2332,
+   "center": [
+    0.0744,
+    0.9331,
+    -0.0306
+   ],
+   "size": [
+    0.142,
+    0.2061,
+    0.1378
+   ],
+   "concepts": [
+    {
+     "fma": "FMA16587",
+     "name": "left hip bone"
+    }
+   ],
+   "elements": [
+    "FJ3288"
+   ]
+  },
+  {
+   "id": "femur-r",
+   "layer": "skeleton",
+   "triangles": 2600,
+   "sourceTriangles": 3102,
+   "center": [
+    -0.0904,
+    0.6793,
+    -0.0199
+   ],
+   "size": [
+    0.1182,
+    0.4661,
+    0.0627
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24474",
+     "name": "right femur"
+    }
+   ],
+   "elements": [
+    "FJ3365"
+   ]
+  },
+  {
+   "id": "femur-l",
+   "layer": "skeleton",
+   "triangles": 2600,
+   "sourceTriangles": 3204,
+   "center": [
+    0.0917,
+    0.6793,
+    -0.0199
+   ],
+   "size": [
+    0.1183,
+    0.4662,
+    0.0628
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24475",
+     "name": "left femur"
+    }
+   ],
+   "elements": [
+    "FJ3259"
+   ]
+  },
+  {
+   "id": "patella-r",
+   "layer": "skeleton",
+   "triangles": 306,
+   "sourceTriangles": 306,
+   "center": [
+    -0.0808,
+    0.4593,
+    0.0111
+   ],
+   "size": [
+    0.0417,
+    0.0393,
+    0.0217
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24486",
+     "name": "right patella"
+    }
+   ],
+   "elements": [
+    "FJ3381"
+   ]
+  },
+  {
+   "id": "patella-l",
+   "layer": "skeleton",
+   "triangles": 310,
+   "sourceTriangles": 310,
+   "center": [
+    0.0821,
+    0.4592,
+    0.0111
+   ],
+   "size": [
+    0.0416,
+    0.0393,
+    0.0218
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24487",
+     "name": "left patella"
+    }
+   ],
+   "elements": [
+    "FJ3275"
+   ]
+  },
+  {
+   "id": "tibia-r",
+   "layer": "skeleton",
+   "triangles": 1664,
+   "sourceTriangles": 1664,
+   "center": [
+    -0.0716,
+    0.2621,
+    -0.0173
+   ],
+   "size": [
+    0.0741,
+    0.38,
+    0.0628
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24477",
+     "name": "right tibia"
+    }
+   ],
+   "elements": [
+    "FJ3387"
+   ]
+  },
+  {
+   "id": "tibia-l",
+   "layer": "skeleton",
+   "triangles": 1692,
+   "sourceTriangles": 1692,
+   "center": [
+    0.0729,
+    0.262,
+    -0.0175
+   ],
+   "size": [
+    0.0744,
+    0.38,
+    0.0625
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24478",
+     "name": "left tibia"
+    }
+   ],
+   "elements": [
+    "FJ3282"
+   ]
+  },
+  {
+   "id": "fibula-r",
+   "layer": "skeleton",
+   "triangles": 1142,
+   "sourceTriangles": 1142,
+   "center": [
+    -0.1016,
+    0.245,
+    -0.0374
+   ],
+   "size": [
+    0.0358,
+    0.3844,
+    0.0297
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24480",
+     "name": "right fibula"
+    }
+   ],
+   "elements": [
+    "FJ3366"
+   ]
+  },
+  {
+   "id": "fibula-l",
+   "layer": "skeleton",
+   "triangles": 1124,
+   "sourceTriangles": 1124,
+   "center": [
+    0.103,
+    0.2451,
+    -0.0374
+   ],
+   "size": [
+    0.0356,
+    0.3843,
+    0.0296
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24481",
+     "name": "left fibula"
+    }
+   ],
+   "elements": [
+    "FJ3260"
+   ]
+  },
+  {
+   "id": "tarsal-bones-r",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 6318,
+   "center": [
+    -0.0793,
+    0.0454,
+    -0.0185
+   ],
+   "size": [
+    0.0702,
+    0.0716,
+    0.1165
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24482",
+     "name": "right talus"
+    },
+    {
+     "fma": "FMA24497",
+     "name": "right calcaneus"
+    },
+    {
+     "fma": "FMA24500",
+     "name": "navicular bone of right foot"
+    },
+    {
+     "fma": "FMA24521",
+     "name": "right medial cuneiform bone"
+    },
+    {
+     "fma": "FMA24523",
+     "name": "right intermediate cuneiform bone"
+    },
+    {
+     "fma": "FMA24525",
+     "name": "right lateral cuneiform bone"
+    },
+    {
+     "fma": "FMA24528",
+     "name": "right cuboid bone"
+    }
+   ],
+   "elements": [
+    "FJ3308",
+    "FJ3360",
+    "FJ3364",
+    "FJ3370",
+    "FJ3373",
+    "FJ3377",
+    "FJ3385"
+   ]
+  },
+  {
+   "id": "tarsal-bones-l",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 6416,
+   "center": [
+    0.0807,
+    0.0455,
+    -0.0184
+   ],
+   "size": [
+    0.0701,
+    0.0715,
+    0.1163
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24483",
+     "name": "left talus"
+    },
+    {
+     "fma": "FMA24498",
+     "name": "left calcaneus"
+    },
+    {
+     "fma": "FMA24501",
+     "name": "navicular bone of left foot"
+    },
+    {
+     "fma": "FMA24522",
+     "name": "left medial cuneiform bone"
+    },
+    {
+     "fma": "FMA24524",
+     "name": "left intermediate cuneiform bone"
+    },
+    {
+     "fma": "FMA24526",
+     "name": "left lateral cuneiform bone"
+    },
+    {
+     "fma": "FMA24529",
+     "name": "left cuboid bone"
+    }
+   ],
+   "elements": [
+    "FJ3256",
+    "FJ3258",
+    "FJ3264",
+    "FJ3267",
+    "FJ3271",
+    "FJ3280",
+    "FJ3307"
+   ]
+  },
+  {
+   "id": "metatarsal-bones-r",
+   "layer": "skeleton",
+   "triangles": 2400,
+   "sourceTriangles": 4042,
+   "center": [
+    -0.1129,
+    0.0341,
+    0.04
+   ],
+   "size": [
+    0.0775,
+    0.0514,
+    0.1028
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24507",
+     "name": "right first metatarsal bone"
+    },
+    {
+     "fma": "FMA24509",
+     "name": "right second metatarsal bone"
+    },
+    {
+     "fma": "FMA24511",
+     "name": "right third metatarsal bone"
+    },
+    {
+     "fma": "FMA24513",
+     "name": "right fourth metatarsal bone"
+    },
+    {
+     "fma": "FMA24515",
+     "name": "right fifth metatarsal bone"
+    }
+   ],
+   "elements": [
+    "FJ3351",
+    "FJ3353",
+    "FJ3355",
+    "FJ3357",
+    "FJ3359"
+   ]
+  },
+  {
+   "id": "metatarsal-bones-l",
+   "layer": "skeleton",
+   "triangles": 2400,
+   "sourceTriangles": 4324,
+   "center": [
+    0.1143,
+    0.0341,
+    0.04
+   ],
+   "size": [
+    0.0773,
+    0.0514,
+    0.1029
+   ],
+   "concepts": [
+    {
+     "fma": "FMA24508",
+     "name": "left first metatarsal bone"
+    },
+    {
+     "fma": "FMA24510",
+     "name": "left second metatarsal bone"
+    },
+    {
+     "fma": "FMA24512",
+     "name": "left third metatarsal bone"
+    },
+    {
+     "fma": "FMA24514",
+     "name": "left fourth metatarsal bone"
+    },
+    {
+     "fma": "FMA24516",
+     "name": "left fifth metatarsal bone"
+    }
+   ],
+   "elements": [
+    "FJ3241",
+    "FJ3244",
+    "FJ3247",
+    "FJ3250",
+    "FJ3253"
+   ]
+  },
+  {
+   "id": "foot-phalanges-r",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 3636,
+   "center": [
+    -0.1397,
+    0.0156,
+    0.0906
+   ],
+   "size": [
+    0.058,
+    0.0158,
+    0.0854
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32634",
+     "name": "proximal phalanx of right second toe"
+    },
+    {
+     "fma": "FMA32636",
+     "name": "proximal phalanx of right third toe"
+    },
+    {
+     "fma": "FMA32638",
+     "name": "proximal phalanx of right fourth toe"
+    },
+    {
+     "fma": "FMA32640",
+     "name": "proximal phalanx of right little toe"
+    },
+    {
+     "fma": "FMA32642",
+     "name": "middle phalanx of right second toe"
+    },
+    {
+     "fma": "FMA32644",
+     "name": "middle phalanx of right third toe"
+    },
+    {
+     "fma": "FMA32646",
+     "name": "middle phalanx of right fourth toe"
+    },
+    {
+     "fma": "FMA32652",
+     "name": "distal phalanx of right second toe"
+    },
+    {
+     "fma": "FMA32654",
+     "name": "distal phalanx of right third toe"
+    },
+    {
+     "fma": "FMA32656",
+     "name": "distal phalanx of right fourth toe"
+    },
+    {
+     "fma": "FMA32658",
+     "name": "distal phalanx of right little toe"
+    },
+    {
+     "fma": "FMA230986",
+     "name": "middle phalanx of right little toe"
+    }
+   ],
+   "elements": [
+    "FJ3189",
+    "FJ3190",
+    "FJ3191",
+    "FJ3195",
+    "FJ3300",
+    "FJ3301",
+    "FJ3302",
+    "FJ3305",
+    "FJ3319",
+    "FJ3320",
+    "FJ3321",
+    "FJ3324"
+   ]
+  },
+  {
+   "id": "foot-phalanges-l",
+   "layer": "skeleton",
+   "triangles": 3000,
+   "sourceTriangles": 3772,
+   "center": [
+    0.1411,
+    0.0156,
+    0.0906
+   ],
+   "size": [
+    0.0579,
+    0.016,
+    0.0852
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32635",
+     "name": "proximal phalanx of left second toe"
+    },
+    {
+     "fma": "FMA32637",
+     "name": "proximal phalanx of left third toe"
+    },
+    {
+     "fma": "FMA32639",
+     "name": "proximal phalanx of left fourth toe"
+    },
+    {
+     "fma": "FMA32641",
+     "name": "proximal phalanx of left little toe"
+    },
+    {
+     "fma": "FMA32643",
+     "name": "middle phalanx of left second toe"
+    },
+    {
+     "fma": "FMA32645",
+     "name": "middle phalanx of left third toe"
+    },
+    {
+     "fma": "FMA32647",
+     "name": "middle phalanx of left fourth toe"
+    },
+    {
+     "fma": "FMA32653",
+     "name": "distal phalanx of left second toe"
+    },
+    {
+     "fma": "FMA32655",
+     "name": "distal phalanx of left third toe"
+    },
+    {
+     "fma": "FMA32657",
+     "name": "distal phalanx of left fourth toe"
+    },
+    {
+     "fma": "FMA32659",
+     "name": "distal phalanx of left little toe"
+    },
+    {
+     "fma": "FMA230988",
+     "name": "middle phalanx of left little toe"
+    }
+   ],
+   "elements": [
+    "FJ3179",
+    "FJ3180",
+    "FJ3181",
+    "FJ3185",
+    "FJ3293",
+    "FJ3294",
+    "FJ3295",
+    "FJ3298",
+    "FJ3311",
+    "FJ3312",
+    "FJ3315",
+    "FJ3328"
+   ]
+  },
+  {
+   "id": "sternocleidomastoid-r",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 10344,
+   "center": [
+    -0.0318,
+    1.4805,
+    -0.0037
+   ],
+   "size": [
+    0.0612,
+    0.2007,
+    0.1196
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13408",
+     "name": "right sternocleidomastoid"
+    }
+   ],
+   "elements": [
+    "FJ1595"
+   ]
+  },
+  {
+   "id": "sternocleidomastoid-l",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 10224,
+   "center": [
+    0.0318,
+    1.4805,
+    -0.0037
+   ],
+   "size": [
+    0.0611,
+    0.2008,
+    0.1194
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13409",
+     "name": "left sternocleidomastoid"
+    }
+   ],
+   "elements": [
+    "FJ1573"
+   ]
+  },
+  {
+   "id": "trapezius-r",
+   "layer": "muscles",
+   "triangles": 3000,
+   "sourceTriangles": 22098,
+   "center": [
+    -0.079,
+    1.3585,
+    -0.0627
+   ],
+   "size": [
+    0.1671,
+    0.4517,
+    0.125
+   ],
+   "concepts": [
+    {
+     "fma": "FMA33586",
+     "name": "descending part of right trapezius"
+    },
+    {
+     "fma": "FMA33584",
+     "name": "transverse part of right trapezius"
+    },
+    {
+     "fma": "FMA33581",
+     "name": "ascending part of right trapezius"
+    }
+   ],
+   "elements": [
+    "FJ1520",
+    "FJ1521",
+    "FJ1554"
+   ]
+  },
+  {
+   "id": "trapezius-l",
+   "layer": "muscles",
+   "triangles": 2996,
+   "sourceTriangles": 22098,
+   "center": [
+    0.0803,
+    1.3585,
+    -0.0627
+   ],
+   "size": [
+    0.1671,
+    0.4517,
+    0.1252
+   ],
+   "concepts": [
+    {
+     "fma": "FMA33587",
+     "name": "descending part of left trapezius"
+    },
+    {
+     "fma": "FMA33585",
+     "name": "transverse part of left trapezius"
+    },
+    {
+     "fma": "FMA33583",
+     "name": "ascending part of left trapezius"
+    }
+   ],
+   "elements": [
+    "FJ1520M",
+    "FJ1521M",
+    "FJ1554M"
+   ]
+  },
+  {
+   "id": "deltoid-r",
+   "layer": "muscles",
+   "triangles": 2482,
+   "sourceTriangles": 5406,
+   "center": [
+    -0.1545,
+    1.3497,
+    -0.0387
+   ],
+   "size": [
+    0.1441,
+    0.1672,
+    0.1186
+   ],
+   "concepts": [
+    {
+     "fma": "FMA34680",
+     "name": "clavicular part of right deltoid"
+    },
+    {
+     "fma": "FMA34682",
+     "name": "acromial part of right deltoid"
+    },
+    {
+     "fma": "FMA34684",
+     "name": "spinal part of right deltoid"
+    }
+   ],
+   "elements": [
+    "FJ1467",
+    "FJ1468",
+    "FJ1513"
+   ]
+  },
+  {
+   "id": "deltoid-l",
+   "layer": "muscles",
+   "triangles": 2474,
+   "sourceTriangles": 5406,
+   "center": [
+    0.1558,
+    1.3496,
+    -0.0387
+   ],
+   "size": [
+    0.1441,
+    0.1675,
+    0.1186
+   ],
+   "concepts": [
+    {
+     "fma": "FMA34681",
+     "name": "clavicular part of left deltoid"
+    },
+    {
+     "fma": "FMA34683",
+     "name": "acromial part of left deltoid"
+    },
+    {
+     "fma": "FMA34685",
+     "name": "spinal part of left deltoid"
+    }
+   ],
+   "elements": [
+    "FJ1467M",
+    "FJ1468M",
+    "FJ1513M"
+   ]
+  },
+  {
+   "id": "pectoralis-major-r",
+   "layer": "muscles",
+   "triangles": 2498,
+   "sourceTriangles": 8650,
+   "center": [
+    -0.0955,
+    1.2874,
+    0.0494
+   ],
+   "size": [
+    0.1827,
+    0.209,
+    0.1384
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13373",
+     "name": "right pectoralis major"
+    }
+   ],
+   "elements": [
+    "FJ1446",
+    "FJ1464"
+   ]
+  },
+  {
+   "id": "pectoralis-major-l",
+   "layer": "muscles",
+   "triangles": 2498,
+   "sourceTriangles": 8650,
+   "center": [
+    0.0968,
+    1.2874,
+    0.0494
+   ],
+   "size": [
+    0.1827,
+    0.209,
+    0.1384
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13374",
+     "name": "left pectoralis major"
+    }
+   ],
+   "elements": [
+    "FJ1446M",
+    "FJ1464M"
+   ]
+  },
+  {
+   "id": "pectoralis-minor-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 9468,
+   "center": [
+    -0.0998,
+    1.3323,
+    0.0259
+   ],
+   "size": [
+    0.0592,
+    0.145,
+    0.0926
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13375",
+     "name": "right pectoralis minor"
+    }
+   ],
+   "elements": [
+    "FJ1456"
+   ]
+  },
+  {
+   "id": "pectoralis-minor-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 9468,
+   "center": [
+    0.1011,
+    1.3322,
+    0.0259
+   ],
+   "size": [
+    0.0592,
+    0.1449,
+    0.0925
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13376",
+     "name": "left pectoralis minor"
+    }
+   ],
+   "elements": [
+    "FJ1456M"
+   ]
+  },
+  {
+   "id": "serratus-anterior-r",
+   "layer": "muscles",
+   "triangles": 2500,
+   "sourceTriangles": 49212,
+   "center": [
+    -0.1007,
+    1.2914,
+    -0.0247
+   ],
+   "size": [
+    0.0858,
+    0.2702,
+    0.1626
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13398",
+     "name": "right serratus anterior"
+    }
+   ],
+   "elements": [
+    "FJ1459"
+   ]
+  },
+  {
+   "id": "serratus-anterior-l",
+   "layer": "muscles",
+   "triangles": 2500,
+   "sourceTriangles": 49212,
+   "center": [
+    0.1017,
+    1.2914,
+    -0.0247
+   ],
+   "size": [
+    0.0864,
+    0.2702,
+    0.1626
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13399",
+     "name": "left serratus anterior"
+    }
+   ],
+   "elements": [
+    "FJ1459M"
+   ]
+  },
+  {
+   "id": "external-oblique-r",
+   "layer": "muscles",
+   "triangles": 2500,
+   "sourceTriangles": 111826,
+   "center": [
+    -0.0714,
+    1.0804,
+    0.027
+   ],
+   "size": [
+    0.1371,
+    0.4171,
+    0.1814
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13336",
+     "name": "right external oblique"
+    }
+   ],
+   "elements": [
+    "FJ1452"
+   ]
+  },
+  {
+   "id": "external-oblique-l",
+   "layer": "muscles",
+   "triangles": 2500,
+   "sourceTriangles": 111826,
+   "center": [
+    0.0729,
+    1.0809,
+    0.0271
+   ],
+   "size": [
+    0.1368,
+    0.4176,
+    0.1816
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13337",
+     "name": "left external oblique"
+    }
+   ],
+   "elements": [
+    "FJ1452M"
+   ]
+  },
+  {
+   "id": "rhomboid-major-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 7202,
+   "center": [
+    -0.0438,
+    1.353,
+    -0.0928
+   ],
+   "size": [
+    0.0899,
+    0.1735,
+    0.0282
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13381",
+     "name": "right rhomboid major"
+    }
+   ],
+   "elements": [
+    "FJ1536"
+   ]
+  },
+  {
+   "id": "rhomboid-major-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 7202,
+   "center": [
+    0.0451,
+    1.353,
+    -0.0928
+   ],
+   "size": [
+    0.0899,
+    0.1735,
+    0.0282
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13382",
+     "name": "left rhomboid major"
+    }
+   ],
+   "elements": [
+    "FJ1536M"
+   ]
+  },
+  {
+   "id": "supraspinatus-r",
+   "layer": "muscles",
+   "triangles": 872,
+   "sourceTriangles": 878,
+   "center": [
+    -0.1255,
+    1.403,
+    -0.0483
+   ],
+   "size": [
+    0.1246,
+    0.035,
+    0.0789
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32544",
+     "name": "right supraspinatus"
+    }
+   ],
+   "elements": [
+    "FJ1506"
+   ]
+  },
+  {
+   "id": "supraspinatus-l",
+   "layer": "muscles",
+   "triangles": 868,
+   "sourceTriangles": 878,
+   "center": [
+    0.1268,
+    1.403,
+    -0.0483
+   ],
+   "size": [
+    0.1246,
+    0.035,
+    0.0789
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32545",
+     "name": "left supraspinatus"
+    }
+   ],
+   "elements": [
+    "FJ1506M"
+   ]
+  },
+  {
+   "id": "infraspinatus-r",
+   "layer": "muscles",
+   "triangles": 866,
+   "sourceTriangles": 866,
+   "center": [
+    -0.124,
+    1.3469,
+    -0.0641
+   ],
+   "size": [
+    0.1288,
+    0.1244,
+    0.0808
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32547",
+     "name": "right infraspinatus muscle"
+    }
+   ],
+   "elements": [
+    "FJ1500"
+   ]
+  },
+  {
+   "id": "infraspinatus-l",
+   "layer": "muscles",
+   "triangles": 866,
+   "sourceTriangles": 866,
+   "center": [
+    0.1253,
+    1.3469,
+    -0.0641
+   ],
+   "size": [
+    0.1288,
+    0.1245,
+    0.0808
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32548",
+     "name": "left infraspinatus muscle"
+    }
+   ],
+   "elements": [
+    "FJ1500M"
+   ]
+  },
+  {
+   "id": "teres-major-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1042,
+   "center": [
+    -0.1286,
+    1.3156,
+    -0.0618
+   ],
+   "size": [
+    0.0859,
+    0.0957,
+    0.0811
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32551",
+     "name": "right teres major"
+    }
+   ],
+   "elements": [
+    "FJ1507"
+   ]
+  },
+  {
+   "id": "teres-major-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1042,
+   "center": [
+    0.1299,
+    1.3156,
+    -0.0618
+   ],
+   "size": [
+    0.0859,
+    0.0957,
+    0.0811
+   ],
+   "concepts": [
+    {
+     "fma": "FMA32552",
+     "name": "left teres major"
+    }
+   ],
+   "elements": [
+    "FJ1507M"
+   ]
+  },
+  {
+   "id": "biceps-brachii-r",
+   "layer": "muscles",
+   "triangles": 1990,
+   "sourceTriangles": 3282,
+   "center": [
+    -0.1819,
+    1.2449,
+    -0.0122
+   ],
+   "size": [
+    0.0946,
+    0.3453,
+    0.0415
+   ],
+   "concepts": [
+    {
+     "fma": "FMA37686",
+     "name": "long head of right biceps brachii"
+    },
+    {
+     "fma": "FMA37684",
+     "name": "short head of right biceps brachii"
+    }
+   ],
+   "elements": [
+    "FJ1478",
+    "FJ1512"
+   ]
+  },
+  {
+   "id": "biceps-brachii-l",
+   "layer": "muscles",
+   "triangles": 1988,
+   "sourceTriangles": 3282,
+   "center": [
+    0.1832,
+    1.2449,
+    -0.0122
+   ],
+   "size": [
+    0.0946,
+    0.3453,
+    0.0415
+   ],
+   "concepts": [
+    {
+     "fma": "FMA37687",
+     "name": "long head of left biceps brachii"
+    },
+    {
+     "fma": "FMA37685",
+     "name": "short head of left biceps brachii"
+    }
+   ],
+   "elements": [
+    "FJ1478M",
+    "FJ1512M"
+   ]
+  },
+  {
+   "id": "triceps-brachii-r",
+   "layer": "muscles",
+   "triangles": 2500,
+   "sourceTriangles": 5026,
+   "center": [
+    -0.1807,
+    1.2432,
+    -0.0554
+   ],
+   "size": [
+    0.0933,
+    0.2714,
+    0.0531
+   ],
+   "concepts": [
+    {
+     "fma": "FMA37699",
+     "name": "long head of right triceps brachii"
+    },
+    {
+     "fma": "FMA37697",
+     "name": "lateral head of right triceps brachii"
+    },
+    {
+     "fma": "FMA37695",
+     "name": "medial head of right triceps brachii"
+    }
+   ],
+   "elements": [
+    "FJ1477",
+    "FJ1479",
+    "FJ1480"
+   ]
+  },
+  {
+   "id": "triceps-brachii-l",
+   "layer": "muscles",
+   "triangles": 2500,
+   "sourceTriangles": 5026,
+   "center": [
+    0.182,
+    1.2432,
+    -0.0554
+   ],
+   "size": [
+    0.0933,
+    0.2714,
+    0.0531
+   ],
+   "concepts": [
+    {
+     "fma": "FMA37700",
+     "name": "long head of left triceps brachii"
+    },
+    {
+     "fma": "FMA37698",
+     "name": "lateral head of left triceps brachii"
+    },
+    {
+     "fma": "FMA37696",
+     "name": "medial head of left triceps brachii"
+    }
+   ],
+   "elements": [
+    "FJ1477M",
+    "FJ1479M",
+    "FJ1480M"
+   ]
+  },
+  {
+   "id": "brachialis-r",
+   "layer": "muscles",
+   "triangles": 1198,
+   "sourceTriangles": 1746,
+   "center": [
+    -0.2051,
+    1.1859,
+    -0.0273
+   ],
+   "size": [
+    0.0587,
+    0.2248,
+    0.0258
+   ],
+   "concepts": [
+    {
+     "fma": "FMA37668",
+     "name": "right brachialis"
+    }
+   ],
+   "elements": [
+    "FJ1486"
+   ]
+  },
+  {
+   "id": "brachialis-l",
+   "layer": "muscles",
+   "triangles": 1198,
+   "sourceTriangles": 1746,
+   "center": [
+    0.2064,
+    1.1859,
+    -0.0273
+   ],
+   "size": [
+    0.0587,
+    0.2248,
+    0.0258
+   ],
+   "concepts": [
+    {
+     "fma": "FMA37669",
+     "name": "left brachialis"
+    }
+   ],
+   "elements": [
+    "FJ1486M"
+   ]
+  },
+  {
+   "id": "brachioradialis-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 4874,
+   "center": [
+    -0.2439,
+    1.0568,
+    -0.0114
+   ],
+   "size": [
+    0.072,
+    0.3379,
+    0.067
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38486",
+     "name": "right brachioradialis"
+    }
+   ],
+   "elements": [
+    "FJ1487"
+   ]
+  },
+  {
+   "id": "brachioradialis-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 4874,
+   "center": [
+    0.2452,
+    1.0568,
+    -0.0114
+   ],
+   "size": [
+    0.072,
+    0.3379,
+    0.067
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38487",
+     "name": "left brachioradialis"
+    }
+   ],
+   "elements": [
+    "FJ1487M"
+   ]
+  },
+  {
+   "id": "gluteus-maximus-r",
+   "layer": "muscles",
+   "triangles": 2364,
+   "sourceTriangles": 2376,
+   "center": [
+    -0.0713,
+    0.8783,
+    -0.0717
+   ],
+   "size": [
+    0.1469,
+    0.2648,
+    0.0979
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22328",
+     "name": "right gluteus maximus"
+    }
+   ],
+   "elements": [
+    "FJ1418"
+   ]
+  },
+  {
+   "id": "gluteus-maximus-l",
+   "layer": "muscles",
+   "triangles": 2364,
+   "sourceTriangles": 2376,
+   "center": [
+    0.0726,
+    0.8783,
+    -0.0717
+   ],
+   "size": [
+    0.1469,
+    0.2648,
+    0.0979
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22329",
+     "name": "left gluteus maximus"
+    }
+   ],
+   "elements": [
+    "FJ1418M"
+   ]
+  },
+  {
+   "id": "gluteus-medius-r",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 3356,
+   "center": [
+    -0.104,
+    0.9484,
+    -0.0413
+   ],
+   "size": [
+    0.0901,
+    0.1612,
+    0.0851
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22330",
+     "name": "right gluteus medius"
+    }
+   ],
+   "elements": [
+    "FJ1419"
+   ]
+  },
+  {
+   "id": "gluteus-medius-l",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 3356,
+   "center": [
+    0.1053,
+    0.9484,
+    -0.0413
+   ],
+   "size": [
+    0.0901,
+    0.1612,
+    0.0851
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22331",
+     "name": "left gluteus medius"
+    }
+   ],
+   "elements": [
+    "FJ1419M"
+   ]
+  },
+  {
+   "id": "tensor-fasciae-latae-r",
+   "layer": "muscles",
+   "triangles": 998,
+   "sourceTriangles": 1254,
+   "center": [
+    -0.1435,
+    0.9174,
+    0.0128
+   ],
+   "size": [
+    0.0318,
+    0.1589,
+    0.0394
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22425",
+     "name": "right tensor fasciae latae"
+    }
+   ],
+   "elements": [
+    "FJ1438"
+   ]
+  },
+  {
+   "id": "tensor-fasciae-latae-l",
+   "layer": "muscles",
+   "triangles": 998,
+   "sourceTriangles": 1254,
+   "center": [
+    0.1448,
+    0.9174,
+    0.0128
+   ],
+   "size": [
+    0.0318,
+    0.1589,
+    0.0394
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22426",
+     "name": "left tensor fasciae latae"
+    }
+   ],
+   "elements": [
+    "FJ1438M"
+   ]
+  },
+  {
+   "id": "iliacus-r",
+   "layer": "muscles",
+   "triangles": 1194,
+   "sourceTriangles": 2862,
+   "center": [
+    -0.0994,
+    0.9245,
+    -0.0129
+   ],
+   "size": [
+    0.0545,
+    0.2232,
+    0.0827
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22322",
+     "name": "right iliacus"
+    }
+   ],
+   "elements": [
+    "FJ1422"
+   ]
+  },
+  {
+   "id": "iliacus-l",
+   "layer": "muscles",
+   "triangles": 1194,
+   "sourceTriangles": 2862,
+   "center": [
+    0.1006,
+    0.9245,
+    -0.0129
+   ],
+   "size": [
+    0.0545,
+    0.2232,
+    0.0827
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22323",
+     "name": "left iliacus"
+    }
+   ],
+   "elements": [
+    "FJ1422M"
+   ]
+  },
+  {
+   "id": "psoas-major-r",
+   "layer": "muscles",
+   "triangles": 1498,
+   "sourceTriangles": 4900,
+   "center": [
+    -0.0599,
+    0.9952,
+    -0.0144
+   ],
+   "size": [
+    0.1062,
+    0.3633,
+    0.0664
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22342",
+     "name": "right psoas major"
+    }
+   ],
+   "elements": [
+    "FJ1431"
+   ]
+  },
+  {
+   "id": "psoas-major-l",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 4900,
+   "center": [
+    0.0612,
+    0.9952,
+    -0.0144
+   ],
+   "size": [
+    0.1062,
+    0.3633,
+    0.0664
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22343",
+     "name": "left psoas major"
+    }
+   ],
+   "elements": [
+    "FJ1431M"
+   ]
+  },
+  {
+   "id": "sartorius-r",
+   "layer": "muscles",
+   "triangles": 1494,
+   "sourceTriangles": 3444,
+   "center": [
+    -0.0753,
+    0.6659,
+    0.0117
+   ],
+   "size": [
+    0.1105,
+    0.6273,
+    0.057
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22354",
+     "name": "right sartorius"
+    }
+   ],
+   "elements": [
+    "FJ1434"
+   ]
+  },
+  {
+   "id": "sartorius-l",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 3444,
+   "center": [
+    0.0765,
+    0.666,
+    0.0117
+   ],
+   "size": [
+    0.1104,
+    0.6273,
+    0.057
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22355",
+     "name": "left sartorius"
+    }
+   ],
+   "elements": [
+    "FJ1434M"
+   ]
+  },
+  {
+   "id": "rectus-femoris-r",
+   "layer": "muscles",
+   "triangles": 1498,
+   "sourceTriangles": 5688,
+   "center": [
+    -0.1081,
+    0.6711,
+    0.0175
+   ],
+   "size": [
+    0.0915,
+    0.5563,
+    0.0685
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38928",
+     "name": "right rectus femoris"
+    }
+   ],
+   "elements": [
+    "FJ1433"
+   ]
+  },
+  {
+   "id": "rectus-femoris-l",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 5688,
+   "center": [
+    0.1094,
+    0.671,
+    0.0175
+   ],
+   "size": [
+    0.0915,
+    0.5561,
+    0.0684
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38929",
+     "name": "left rectus femoris"
+    }
+   ],
+   "elements": [
+    "FJ1433M"
+   ]
+  },
+  {
+   "id": "vastus-lateralis-r",
+   "layer": "muscles",
+   "triangles": 2000,
+   "sourceTriangles": 6688,
+   "center": [
+    -0.1212,
+    0.6314,
+    -0.0035
+   ],
+   "size": [
+    0.0756,
+    0.4698,
+    0.0795
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38930",
+     "name": "right vastus lateralis"
+    }
+   ],
+   "elements": [
+    "FJ1442"
+   ]
+  },
+  {
+   "id": "vastus-lateralis-l",
+   "layer": "muscles",
+   "triangles": 2000,
+   "sourceTriangles": 6688,
+   "center": [
+    0.1225,
+    0.6314,
+    -0.0035
+   ],
+   "size": [
+    0.0756,
+    0.4698,
+    0.0795
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38931",
+     "name": "left vastus lateralis"
+    }
+   ],
+   "elements": [
+    "FJ1442M"
+   ]
+  },
+  {
+   "id": "vastus-medialis-r",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 4552,
+   "center": [
+    -0.0696,
+    0.6175,
+    0.0172
+   ],
+   "size": [
+    0.0706,
+    0.3976,
+    0.0578
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38932",
+     "name": "right vastus medialis"
+    }
+   ],
+   "elements": [
+    "FJ1443"
+   ]
+  },
+  {
+   "id": "vastus-medialis-l",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 4552,
+   "center": [
+    0.0709,
+    0.6175,
+    0.0172
+   ],
+   "size": [
+    0.0706,
+    0.3976,
+    0.0578
+   ],
+   "concepts": [
+    {
+     "fma": "FMA38933",
+     "name": "left vastus medialis"
+    }
+   ],
+   "elements": [
+    "FJ1443M"
+   ]
+  },
+  {
+   "id": "adductor-longus-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 2616,
+   "center": [
+    -0.0549,
+    0.733,
+    0.0124
+   ],
+   "size": [
+    0.0771,
+    0.2895,
+    0.0475
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22456",
+     "name": "right adductor longus"
+    }
+   ],
+   "elements": [
+    "FJ1402"
+   ]
+  },
+  {
+   "id": "adductor-longus-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 2616,
+   "center": [
+    0.0562,
+    0.733,
+    0.0124
+   ],
+   "size": [
+    0.0771,
+    0.2895,
+    0.0475
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22457",
+     "name": "left adductor longus"
+    }
+   ],
+   "elements": [
+    "FJ1402M"
+   ]
+  },
+  {
+   "id": "gracilis-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 3172,
+   "center": [
+    -0.0406,
+    0.6186,
+    -0.0018
+   ],
+   "size": [
+    0.0583,
+    0.5138,
+    0.0672
+   ],
+   "concepts": [
+    {
+     "fma": "FMA43883",
+     "name": "right gracilis"
+    }
+   ],
+   "elements": [
+    "FJ1421"
+   ]
+  },
+  {
+   "id": "gracilis-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 3172,
+   "center": [
+    0.0419,
+    0.6185,
+    -0.0018
+   ],
+   "size": [
+    0.0583,
+    0.514,
+    0.0672
+   ],
+   "concepts": [
+    {
+     "fma": "FMA43884",
+     "name": "left gracilis"
+    }
+   ],
+   "elements": [
+    "FJ1421M"
+   ]
+  },
+  {
+   "id": "biceps-femoris-r",
+   "layer": "muscles",
+   "triangles": 2000,
+   "sourceTriangles": 6838,
+   "center": [
+    -0.087,
+    0.6244,
+    -0.048
+   ],
+   "size": [
+    0.0779,
+    0.4368,
+    0.0689
+   ],
+   "concepts": [
+    {
+     "fma": "FMA45888",
+     "name": "long head of right biceps femoris"
+    },
+    {
+     "fma": "FMA45891",
+     "name": "short head of right biceps femoris"
+    }
+   ],
+   "elements": [
+    "FJ1395",
+    "FJ1444"
+   ]
+  },
+  {
+   "id": "biceps-femoris-l",
+   "layer": "muscles",
+   "triangles": 2000,
+   "sourceTriangles": 6838,
+   "center": [
+    0.0883,
+    0.6244,
+    -0.048
+   ],
+   "size": [
+    0.0779,
+    0.4368,
+    0.0689
+   ],
+   "concepts": [
+    {
+     "fma": "FMA45889",
+     "name": "long head of left biceps femoris"
+    },
+    {
+     "fma": "FMA45892",
+     "name": "short head of left biceps femoris"
+    }
+   ],
+   "elements": [
+    "FJ1395M",
+    "FJ1444M"
+   ]
+  },
+  {
+   "id": "semitendinosus-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 2712,
+   "center": [
+    -0.047,
+    0.6015,
+    -0.0391
+   ],
+   "size": [
+    0.0414,
+    0.4806,
+    0.0738
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22358",
+     "name": "right semitendinosus"
+    }
+   ],
+   "elements": [
+    "FJ1436"
+   ]
+  },
+  {
+   "id": "semitendinosus-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 2712,
+   "center": [
+    0.0483,
+    0.6015,
+    -0.0391
+   ],
+   "size": [
+    0.0414,
+    0.4806,
+    0.0738
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22359",
+     "name": "left semitendinosus"
+    }
+   ],
+   "elements": [
+    "FJ1436M"
+   ]
+  },
+  {
+   "id": "semimembranosus-r",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 4612,
+   "center": [
+    -0.0415,
+    0.6133,
+    -0.0304
+   ],
+   "size": [
+    0.0575,
+    0.4385,
+    0.0662
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22448",
+     "name": "right semimembranosus"
+    }
+   ],
+   "elements": [
+    "FJ1435"
+   ]
+  },
+  {
+   "id": "semimembranosus-l",
+   "layer": "muscles",
+   "triangles": 1500,
+   "sourceTriangles": 4612,
+   "center": [
+    0.0428,
+    0.6133,
+    -0.0304
+   ],
+   "size": [
+    0.0576,
+    0.4385,
+    0.0662
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22449",
+     "name": "left semimembranosus"
+    }
+   ],
+   "elements": [
+    "FJ1435M"
+   ]
+  },
+  {
+   "id": "gastrocnemius-r",
+   "layer": "muscles",
+   "triangles": 2000,
+   "sourceTriangles": 6894,
+   "center": [
+    -0.0687,
+    0.3556,
+    -0.0515
+   ],
+   "size": [
+    0.0952,
+    0.3092,
+    0.0869
+   ],
+   "concepts": [
+    {
+     "fma": "FMA45957",
+     "name": "medial head of right gastrocnemius"
+    },
+    {
+     "fma": "FMA45960",
+     "name": "lateral head of right gastrocnemius"
+    }
+   ],
+   "elements": [
+    "FJ1394",
+    "FJ1397"
+   ]
+  },
+  {
+   "id": "gastrocnemius-l",
+   "layer": "muscles",
+   "triangles": 2000,
+   "sourceTriangles": 6894,
+   "center": [
+    0.07,
+    0.3556,
+    -0.0515
+   ],
+   "size": [
+    0.0952,
+    0.3092,
+    0.0869
+   ],
+   "concepts": [
+    {
+     "fma": "FMA45958",
+     "name": "medial head of left gastrocnemius"
+    },
+    {
+     "fma": "FMA45961",
+     "name": "lateral head of left gastrocnemius"
+    }
+   ],
+   "elements": [
+    "FJ1394M",
+    "FJ1397M"
+   ]
+  },
+  {
+   "id": "soleus-r",
+   "layer": "muscles",
+   "triangles": 1800,
+   "sourceTriangles": 4418,
+   "center": [
+    -0.0751,
+    0.2736,
+    -0.0391
+   ],
+   "size": [
+    0.0801,
+    0.3259,
+    0.0589
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22558",
+     "name": "right soleus"
+    }
+   ],
+   "elements": [
+    "FJ1437"
+   ]
+  },
+  {
+   "id": "soleus-l",
+   "layer": "muscles",
+   "triangles": 1796,
+   "sourceTriangles": 4418,
+   "center": [
+    0.0764,
+    0.2736,
+    -0.0391
+   ],
+   "size": [
+    0.0801,
+    0.3259,
+    0.0589
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22559",
+     "name": "left soleus"
+    }
+   ],
+   "elements": [
+    "FJ1437M"
+   ]
+  },
+  {
+   "id": "tibialis-anterior-r",
+   "layer": "muscles",
+   "triangles": 1498,
+   "sourceTriangles": 2510,
+   "center": [
+    -0.0912,
+    0.237,
+    0.0096
+   ],
+   "size": [
+    0.0498,
+    0.3928,
+    0.075
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22544",
+     "name": "right tibialis anterior"
+    }
+   ],
+   "elements": [
+    "FJ1439"
+   ]
+  },
+  {
+   "id": "tibialis-anterior-l",
+   "layer": "muscles",
+   "triangles": 1498,
+   "sourceTriangles": 2510,
+   "center": [
+    0.0925,
+    0.237,
+    0.0096
+   ],
+   "size": [
+    0.0498,
+    0.3928,
+    0.075
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22545",
+     "name": "left tibialis anterior"
+    }
+   ],
+   "elements": [
+    "FJ1439M"
+   ]
+  },
+  {
+   "id": "fibularis-longus-r",
+   "layer": "muscles",
+   "triangles": 1198,
+   "sourceTriangles": 3860,
+   "center": [
+    -0.1038,
+    0.2276,
+    -0.0121
+   ],
+   "size": [
+    0.044,
+    0.4046,
+    0.0957
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22552",
+     "name": "right fibularis longus"
+    }
+   ],
+   "elements": [
+    "FJ1410"
+   ]
+  },
+  {
+   "id": "fibularis-longus-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 3860,
+   "center": [
+    0.1051,
+    0.2276,
+    -0.0121
+   ],
+   "size": [
+    0.044,
+    0.4046,
+    0.0957
+   ],
+   "concepts": [
+    {
+     "fma": "FMA22553",
+     "name": "left fibularis longus"
+    }
+   ],
+   "elements": [
+    "FJ1410M"
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "layer": "muscles",
+   "triangles": 4000,
+   "sourceTriangles": 68522,
+   "center": [
+    -0.0001,
+    1.1674,
+    0.0148
+   ],
+   "size": [
+    0.2431,
+    0.2066,
+    0.1791
+   ],
+   "concepts": [
+    {
+     "fma": "FMA13295",
+     "name": "diaphragm"
+    }
+   ],
+   "elements": [
+    "FJ3131"
+   ]
+  },
+  {
+   "id": "heart",
+   "layer": "organs",
+   "triangles": 16000,
+   "sourceTriangles": 102802,
+   "center": [
+    0.0222,
+    1.3053,
+    0.0226
+   ],
+   "size": [
+    0.1156,
+    0.1044,
+    0.1063
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7088",
+     "name": "heart"
+    }
+   ],
+   "elements": [
+    "FJ2417",
+    "FJ2418",
+    "FJ2419",
+    "FJ2420",
+    "FJ2421",
+    "FJ2422",
+    "FJ2423",
+    "FJ2424",
+    "FJ2425",
+    "FJ2426",
+    "FJ2427",
+    "FJ2429",
+    "FJ2430",
+    "FJ2431",
+    "FJ2432",
+    "FJ2433",
+    "FJ2434",
+    "FJ2435",
+    "FJ2436",
+    "FJ2437",
+    "FJ2438",
+    "FJ2439",
+    "FJ2631",
+    "FJ2632",
+    "FJ2633",
+    "FJ2634",
+    "FJ2635",
+    "FJ2636",
+    "FJ2637",
+    "FJ2638",
+    "FJ2639",
+    "FJ2640",
+    "FJ2641",
+    "FJ2642",
+    "FJ2643",
+    "FJ2644",
+    "FJ2645",
+    "FJ2646",
+    "FJ2647",
+    "FJ2648",
+    "FJ2649",
+    "FJ2650",
+    "FJ2651",
+    "FJ2652",
+    "FJ2653",
+    "FJ2654",
+    "FJ2655",
+    "FJ2656",
+    "FJ2667",
+    "FJ2668",
+    "FJ2670",
+    "FJ2671",
+    "FJ2672",
+    "FJ2673",
+    "FJ2674",
+    "FJ2675",
+    "FJ2676",
+    "FJ2677",
+    "FJ2692",
+    "FJ2693",
+    "FJ2694",
+    "FJ2695",
+    "FJ2696",
+    "FJ2697",
+    "FJ2698",
+    "FJ2699",
+    "FJ2700",
+    "FJ2714",
+    "FJ2715",
+    "FJ2716",
+    "FJ2717",
+    "FJ2718",
+    "FJ2719",
+    "FJ2720",
+    "FJ2721",
+    "FJ2722",
+    "FJ2723",
+    "FJ2724",
+    "FJ2727",
+    "FJ2728",
+    "FJ2729",
+    "FJ2731",
+    "FJ2737"
+   ]
+  },
+  {
+   "id": "lung-r",
+   "layer": "organs",
+   "triangles": 12000,
+   "sourceTriangles": 73312,
+   "center": [
+    -0.0552,
+    1.2595,
+    -0.0034
+   ],
+   "size": [
+    0.1214,
+    0.3334,
+    0.1528
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7309",
+     "name": "right lung"
+    }
+   ],
+   "elements": [
+    "FJ2041",
+    "FJ2044",
+    "FJ2449",
+    "FJ2451",
+    "FJ2452",
+    "FJ2453",
+    "FJ2454",
+    "FJ2455",
+    "FJ2456",
+    "FJ2457",
+    "FJ2458",
+    "FJ2459",
+    "FJ2470",
+    "FJ2481",
+    "FJ2486",
+    "FJ2487",
+    "FJ2488",
+    "FJ2489",
+    "FJ2490",
+    "FJ2491",
+    "FJ2492",
+    "FJ2493",
+    "FJ2494",
+    "FJ2495",
+    "FJ2496",
+    "FJ2497",
+    "FJ2498",
+    "FJ2499",
+    "FJ2500",
+    "FJ2501",
+    "FJ2502",
+    "FJ2503",
+    "FJ2504",
+    "FJ2505",
+    "FJ2506",
+    "FJ2507",
+    "FJ2508",
+    "FJ2509",
+    "FJ2510",
+    "FJ2511",
+    "FJ2512",
+    "FJ2513",
+    "FJ2514",
+    "FJ2515",
+    "FJ2516",
+    "FJ2517",
+    "FJ2518",
+    "FJ2519",
+    "FJ2520",
+    "FJ2521",
+    "FJ2522",
+    "FJ2523",
+    "FJ2524",
+    "FJ2525",
+    "FJ2526",
+    "FJ2967",
+    "FJ2968",
+    "FJ2969",
+    "FJ2970",
+    "FJ2971",
+    "FJ2972",
+    "FJ2973",
+    "FJ2974",
+    "FJ2975",
+    "FJ2976",
+    "FJ2977",
+    "FJ2978",
+    "FJ2979",
+    "FJ2980",
+    "FJ2981",
+    "FJ2982",
+    "FJ2983",
+    "FJ2984",
+    "FJ2985",
+    "FJ2986",
+    "FJ2987",
+    "FJ2988",
+    "FJ2989",
+    "FJ2990",
+    "FJ2991",
+    "FJ2992",
+    "FJ2993",
+    "FJ2994",
+    "FJ2995",
+    "FJ2996",
+    "FJ2997",
+    "FJ2998",
+    "FJ2999",
+    "FJ3000",
+    "FJ3001",
+    "FJ3002",
+    "FJ3003",
+    "FJ3004",
+    "FJ3005",
+    "FJ3006",
+    "FJ3007",
+    "FJ3008",
+    "FJ3009",
+    "FJ3010",
+    "FJ3011",
+    "FJ3012",
+    "FJ3013",
+    "FJ3014",
+    "FJ3015",
+    "FJ3016",
+    "FJ3017",
+    "FJ3018",
+    "FJ3021",
+    "FJ3022",
+    "FJ3023",
+    "FJ3024",
+    "FJ3025",
+    "FJ3026",
+    "FJ3027",
+    "FJ3028",
+    "FJ3029",
+    "FJ3030",
+    "FJ3031",
+    "FJ3032",
+    "FJ3033",
+    "FJ3034",
+    "FJ3035",
+    "FJ3036",
+    "FJ3037",
+    "FJ3038",
+    "FJ3039",
+    "FJ3041",
+    "FJ3042",
+    "FJ3043",
+    "FJ3044",
+    "FJ3045",
+    "FJ3046",
+    "FJ3047",
+    "FJ3048",
+    "FJ3049",
+    "FJ3050",
+    "FJ3051",
+    "FJ3052",
+    "FJ3053",
+    "FJ3054",
+    "FJ3055",
+    "FJ3056",
+    "FJ3057",
+    "FJ3058",
+    "FJ3059",
+    "FJ3060",
+    "FJ3061",
+    "FJ3062",
+    "FJ3063",
+    "FJ3064",
+    "FJ3065",
+    "FJ3066",
+    "FJ3067",
+    "FJ3068",
+    "FJ3069",
+    "FJ3070"
+   ]
+  },
+  {
+   "id": "lung-l",
+   "layer": "organs",
+   "triangles": 12000,
+   "sourceTriangles": 41438,
+   "center": [
+    0.0733,
+    1.3177,
+    -0.0017
+   ],
+   "size": [
+    0.1056,
+    0.2328,
+    0.1575
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7310",
+     "name": "left lung"
+    }
+   ],
+   "elements": [
+    "FJ2441",
+    "FJ2442",
+    "FJ2443",
+    "FJ2444",
+    "FJ2445",
+    "FJ2446",
+    "FJ2447",
+    "FJ2448",
+    "FJ2460",
+    "FJ2461",
+    "FJ2462",
+    "FJ2463",
+    "FJ2464",
+    "FJ2465",
+    "FJ2466",
+    "FJ2467",
+    "FJ2468",
+    "FJ2469",
+    "FJ2471",
+    "FJ2472",
+    "FJ2473",
+    "FJ2474",
+    "FJ2475",
+    "FJ2476",
+    "FJ2477",
+    "FJ2478",
+    "FJ2479",
+    "FJ2480",
+    "FJ2482",
+    "FJ2483",
+    "FJ2484",
+    "FJ2485",
+    "FJ2527",
+    "FJ2528",
+    "FJ2529",
+    "FJ2530",
+    "FJ2531",
+    "FJ2532",
+    "FJ2533",
+    "FJ2534",
+    "FJ2535",
+    "FJ2536",
+    "FJ2537",
+    "FJ2538",
+    "FJ2540",
+    "FJ2881",
+    "FJ2882",
+    "FJ2883",
+    "FJ2884",
+    "FJ2885",
+    "FJ2886",
+    "FJ2887",
+    "FJ2888",
+    "FJ2889",
+    "FJ2890",
+    "FJ2891",
+    "FJ2892",
+    "FJ2893",
+    "FJ2894",
+    "FJ2895",
+    "FJ2896",
+    "FJ2897",
+    "FJ2898",
+    "FJ2899",
+    "FJ2900",
+    "FJ2901",
+    "FJ2902",
+    "FJ2903",
+    "FJ2904",
+    "FJ2905",
+    "FJ2906",
+    "FJ2907",
+    "FJ2908",
+    "FJ2909",
+    "FJ2910",
+    "FJ2911",
+    "FJ2912",
+    "FJ2913",
+    "FJ2914",
+    "FJ2915",
+    "FJ2916",
+    "FJ2917",
+    "FJ2918",
+    "FJ2919",
+    "FJ2920",
+    "FJ2921",
+    "FJ2922",
+    "FJ2923",
+    "FJ2926",
+    "FJ2927",
+    "FJ2928",
+    "FJ2929",
+    "FJ2930",
+    "FJ2931",
+    "FJ2932",
+    "FJ2934",
+    "FJ2935",
+    "FJ2936",
+    "FJ2937",
+    "FJ2938",
+    "FJ2939",
+    "FJ2940",
+    "FJ2941",
+    "FJ2942",
+    "FJ2943",
+    "FJ2945",
+    "FJ2946",
+    "FJ2947",
+    "FJ2948",
+    "FJ2949",
+    "FJ2951",
+    "FJ2952",
+    "FJ2953",
+    "FJ2954",
+    "FJ2956",
+    "FJ2957",
+    "FJ2958",
+    "FJ2959",
+    "FJ2960",
+    "FJ2961",
+    "FJ2962",
+    "FJ2963",
+    "FJ2964",
+    "FJ2965"
+   ]
+  },
+  {
+   "id": "trachea",
+   "layer": "organs",
+   "triangles": 2000,
+   "sourceTriangles": 4996,
+   "center": [
+    0.0005,
+    1.4183,
+    -0.0071
+   ],
+   "size": [
+    0.0259,
+    0.1103,
+    0.0327
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7394",
+     "name": "trachea"
+    }
+   ],
+   "elements": [
+    "FJ2541"
+   ]
+  },
+  {
+   "id": "esophagus",
+   "layer": "organs",
+   "triangles": 578,
+   "sourceTriangles": 578,
+   "center": [
+    0.008,
+    1.3313,
+    -0.0054
+   ],
+   "size": [
+    0.0324,
+    0.2744,
+    0.0579
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7131",
+     "name": "esophagus"
+    }
+   ],
+   "elements": [
+    "FJ2563"
+   ]
+  },
+  {
+   "id": "thymus",
+   "layer": "organs",
+   "triangles": 1500,
+   "sourceTriangles": 2080,
+   "center": [
+    -0.0008,
+    1.3718,
+    0.0387
+   ],
+   "size": [
+    0.0466,
+    0.0722,
+    0.0395
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9607",
+     "name": "thymus"
+    }
+   ],
+   "elements": [
+    "FJ3150",
+    "FJ3151"
+   ]
+  },
+  {
+   "id": "liver",
+   "layer": "organs",
+   "triangles": 11996,
+   "sourceTriangles": 159222,
+   "center": [
+    -0.0097,
+    1.1837,
+    0.0221
+   ],
+   "size": [
+    0.2093,
+    0.155,
+    0.159
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7197",
+     "name": "liver"
+    }
+   ],
+   "elements": [
+    "FJ1883",
+    "FJ1916",
+    "FJ2386",
+    "FJ2409",
+    "FJ2415",
+    "FJ2416",
+    "FJ2816",
+    "FJ2818",
+    "FJ2819",
+    "FJ2820",
+    "FJ2821",
+    "FJ2822",
+    "FJ2823",
+    "FJ2824",
+    "FJ3071",
+    "FJ3072",
+    "FJ3075",
+    "FJ3076",
+    "FJ3077",
+    "FJ3081",
+    "FJ3083",
+    "FJ3086",
+    "FJ3088",
+    "FJ3089",
+    "FJ3090",
+    "FJ3091",
+    "FJ3092",
+    "FJ3093",
+    "FJ3095",
+    "FJ3096",
+    "FJ3103",
+    "FJ3104",
+    "FJ3105",
+    "FJ3106",
+    "FJ3107",
+    "FJ3108",
+    "FJ3109",
+    "FJ3110",
+    "FJ3114",
+    "FJ3115",
+    "FJ3116",
+    "FJ3117",
+    "FJ3123"
+   ]
+  },
+  {
+   "id": "gallbladder",
+   "layer": "organs",
+   "triangles": 1000,
+   "sourceTriangles": 2396,
+   "center": [
+    -0.0444,
+    1.1494,
+    0.0536
+   ],
+   "size": [
+    0.0364,
+    0.0403,
+    0.0484
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7202",
+     "name": "gallbladder"
+    }
+   ],
+   "elements": [
+    "FJ2817"
+   ]
+  },
+  {
+   "id": "stomach",
+   "layer": "organs",
+   "triangles": 1810,
+   "sourceTriangles": 1810,
+   "center": [
+    0.0389,
+    1.1765,
+    0.0372
+   ],
+   "size": [
+    0.1345,
+    0.117,
+    0.1129
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7148",
+     "name": "stomach"
+    }
+   ],
+   "elements": [
+    "FJ2564"
+   ]
+  },
+  {
+   "id": "spleen",
+   "layer": "organs",
+   "triangles": 1200,
+   "sourceTriangles": 1330,
+   "center": [
+    0.0854,
+    1.1648,
+    -0.007
+   ],
+   "size": [
+    0.0582,
+    0.0702,
+    0.0951
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7196",
+     "name": "spleen"
+    }
+   ],
+   "elements": [
+    "FJ2561"
+   ]
+  },
+  {
+   "id": "pancreas",
+   "layer": "organs",
+   "triangles": 1904,
+   "sourceTriangles": 16962,
+   "center": [
+    0.0089,
+    1.1194,
+    0.0202
+   ],
+   "size": [
+    0.1287,
+    0.0734,
+    0.0508
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7198",
+     "name": "pancreas"
+    }
+   ],
+   "elements": [
+    "FJ1895",
+    "FJ1896",
+    "FJ2629",
+    "FJ2630"
+   ]
+  },
+  {
+   "id": "duodenum",
+   "layer": "organs",
+   "triangles": 1860,
+   "sourceTriangles": 1860,
+   "center": [
+    -0.016,
+    1.1095,
+    0.0296
+   ],
+   "size": [
+    0.098,
+    0.0915,
+    0.053
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7206",
+     "name": "duodenum"
+    }
+   ],
+   "elements": [
+    "FJ2573"
+   ]
+  },
+  {
+   "id": "jejunum",
+   "layer": "organs",
+   "triangles": 6000,
+   "sourceTriangles": 6026,
+   "center": [
+    0.0104,
+    1.0445,
+    0.0497
+   ],
+   "size": [
+    0.1937,
+    0.1144,
+    0.0659
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7207",
+     "name": "jejunum"
+    }
+   ],
+   "elements": [
+    "FJ2606",
+    "FJ2607",
+    "FJ2608",
+    "FJ2609",
+    "FJ2610",
+    "FJ2611",
+    "FJ2612",
+    "FJ2613",
+    "FJ2614",
+    "FJ2615",
+    "FJ2616",
+    "FJ2617",
+    "FJ2618",
+    "FJ2619",
+    "FJ2620",
+    "FJ2621",
+    "FJ2622",
+    "FJ2623",
+    "FJ2624",
+    "FJ2625",
+    "FJ2626",
+    "FJ2627",
+    "FJ2628"
+   ]
+  },
+  {
+   "id": "ileum",
+   "layer": "organs",
+   "triangles": 6000,
+   "sourceTriangles": 7884,
+   "center": [
+    0.0115,
+    0.9571,
+    0.0491
+   ],
+   "size": [
+    0.1816,
+    0.1473,
+    0.0598
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7208",
+     "name": "ileum"
+    }
+   ],
+   "elements": [
+    "FJ2574",
+    "FJ2575",
+    "FJ2576",
+    "FJ2577",
+    "FJ2578",
+    "FJ2579",
+    "FJ2580",
+    "FJ2581",
+    "FJ2582",
+    "FJ2583",
+    "FJ2584",
+    "FJ2585",
+    "FJ2586",
+    "FJ2587",
+    "FJ2588",
+    "FJ2589",
+    "FJ2590",
+    "FJ2591",
+    "FJ2592",
+    "FJ2593",
+    "FJ2594",
+    "FJ2595",
+    "FJ2596",
+    "FJ2597",
+    "FJ2598",
+    "FJ2600",
+    "FJ2601",
+    "FJ2602",
+    "FJ2603",
+    "FJ2604",
+    "FJ2605"
+   ]
+  },
+  {
+   "id": "cecum",
+   "layer": "organs",
+   "triangles": 288,
+   "sourceTriangles": 288,
+   "center": [
+    -0.065,
+    0.9748,
+    0.0235
+   ],
+   "size": [
+    0.0285,
+    0.0532,
+    0.0341
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14541",
+     "name": "cecum"
+    }
+   ],
+   "elements": [
+    "FJ2599"
+   ]
+  },
+  {
+   "id": "appendix",
+   "layer": "organs",
+   "triangles": 442,
+   "sourceTriangles": 442,
+   "center": [
+    -0.053,
+    0.9527,
+    0.0005
+   ],
+   "size": [
+    0.0696,
+    0.0181,
+    0.039
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14542",
+     "name": "appendix"
+    }
+   ],
+   "elements": [
+    "FJ2565"
+   ]
+  },
+  {
+   "id": "ascending-colon",
+   "layer": "organs",
+   "triangles": 1998,
+   "sourceTriangles": 3310,
+   "center": [
+    -0.0947,
+    1.0393,
+    0.0174
+   ],
+   "size": [
+    0.0629,
+    0.1857,
+    0.0548
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14545",
+     "name": "ascending colon"
+    }
+   ],
+   "elements": [
+    "FJ2566"
+   ]
+  },
+  {
+   "id": "transverse-colon",
+   "layer": "organs",
+   "triangles": 2500,
+   "sourceTriangles": 3472,
+   "center": [
+    0.0046,
+    1.1072,
+    0.0511
+   ],
+   "size": [
+    0.1854,
+    0.0713,
+    0.0901
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14546",
+     "name": "transverse colon"
+    }
+   ],
+   "elements": [
+    "FJ2572"
+   ]
+  },
+  {
+   "id": "descending-colon",
+   "layer": "organs",
+   "triangles": 2000,
+   "sourceTriangles": 5588,
+   "center": [
+    0.0503,
+    1.02,
+    -0.0048
+   ],
+   "size": [
+    0.1351,
+    0.2389,
+    0.0913
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14547",
+     "name": "descending colon"
+    }
+   ],
+   "elements": [
+    "FJ2567"
+   ]
+  },
+  {
+   "id": "rectum",
+   "layer": "organs",
+   "triangles": 1500,
+   "sourceTriangles": 2118,
+   "center": [
+    0.0052,
+    0.8937,
+    -0.0583
+   ],
+   "size": [
+    0.0616,
+    0.1165,
+    0.0623
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14544",
+     "name": "rectum"
+    }
+   ],
+   "elements": [
+    "FJ2571"
+   ]
+  },
+  {
+   "id": "kidney-r",
+   "layer": "organs",
+   "triangles": 1800,
+   "sourceTriangles": 2310,
+   "center": [
+    -0.0584,
+    1.0972,
+    -0.0125
+   ],
+   "size": [
+    0.0571,
+    0.1043,
+    0.0471
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7204",
+     "name": "right kidney"
+    }
+   ],
+   "elements": [
+    "FJ3147"
+   ]
+  },
+  {
+   "id": "kidney-l",
+   "layer": "organs",
+   "triangles": 1800,
+   "sourceTriangles": 2982,
+   "center": [
+    0.0623,
+    1.1156,
+    -0.0209
+   ],
+   "size": [
+    0.0575,
+    0.1059,
+    0.0405
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7205",
+     "name": "left kidney"
+    }
+   ],
+   "elements": [
+    "FJ3145"
+   ]
+  },
+  {
+   "id": "adrenal-gland-r",
+   "layer": "organs",
+   "triangles": 600,
+   "sourceTriangles": 2294,
+   "center": [
+    -0.0459,
+    1.1448,
+    -0.0121
+   ],
+   "size": [
+    0.0319,
+    0.0421,
+    0.0271
+   ],
+   "concepts": [
+    {
+     "fma": "FMA15629",
+     "name": "right adrenal gland"
+    }
+   ],
+   "elements": [
+    "FJ3130"
+   ]
+  },
+  {
+   "id": "adrenal-gland-l",
+   "layer": "organs",
+   "triangles": 600,
+   "sourceTriangles": 3996,
+   "center": [
+    0.0521,
+    1.1639,
+    -0.0276
+   ],
+   "size": [
+    0.0481,
+    0.0449,
+    0.0201
+   ],
+   "concepts": [
+    {
+     "fma": "FMA15630",
+     "name": "left adrenal gland"
+    }
+   ],
+   "elements": [
+    "FJ3129"
+   ]
+  },
+  {
+   "id": "ureter-r",
+   "layer": "organs",
+   "triangles": 800,
+   "sourceTriangles": 1924,
+   "center": [
+    -0.0405,
+    1.0123,
+    -0.0111
+   ],
+   "size": [
+    0.0631,
+    0.2453,
+    0.0586
+   ],
+   "concepts": [
+    {
+     "fma": "FMA15571",
+     "name": "right ureter"
+    }
+   ],
+   "elements": [
+    "FJ3146"
+   ]
+  },
+  {
+   "id": "ureter-l",
+   "layer": "organs",
+   "triangles": 800,
+   "sourceTriangles": 2062,
+   "center": [
+    0.052,
+    1.0234,
+    -0.0101
+   ],
+   "size": [
+    0.056,
+    0.2545,
+    0.0581
+   ],
+   "concepts": [
+    {
+     "fma": "FMA15572",
+     "name": "left ureter"
+    }
+   ],
+   "elements": [
+    "FJ3144"
+   ]
+  },
+  {
+   "id": "urinary-bladder",
+   "layer": "organs",
+   "triangles": 226,
+   "sourceTriangles": 226,
+   "center": [
+    -0.0001,
+    0.888,
+    -0.0084
+   ],
+   "size": [
+    0.0668,
+    0.0403,
+    0.0717
+   ],
+   "concepts": [
+    {
+     "fma": "FMA15900",
+     "name": "urinary bladder"
+    }
+   ],
+   "elements": [
+    "FJ3149"
+   ]
+  },
+  {
+   "id": "prostate",
+   "layer": "organs",
+   "triangles": 442,
+   "sourceTriangles": 442,
+   "center": [
+    0,
+    0.8604,
+    -0.0203
+   ],
+   "size": [
+    0.0343,
+    0.0204,
+    0.032
+   ],
+   "concepts": [
+    {
+     "fma": "FMA9600",
+     "name": "prostate"
+    }
+   ],
+   "elements": [
+    "FJ3139"
+   ]
+  },
+  {
+   "id": "testis-r",
+   "layer": "organs",
+   "triangles": 212,
+   "sourceTriangles": 212,
+   "center": [
+    -0.02,
+    0.7829,
+    0.0515
+   ],
+   "size": [
+    0.0204,
+    0.0284,
+    0.0222
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7211",
+     "name": "right testis"
+    }
+   ],
+   "elements": [
+    "FJ3142"
+   ]
+  },
+  {
+   "id": "testis-l",
+   "layer": "organs",
+   "triangles": 210,
+   "sourceTriangles": 210,
+   "center": [
+    0.0182,
+    0.7823,
+    0.0517
+   ],
+   "size": [
+    0.0201,
+    0.0289,
+    0.0222
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7212",
+     "name": "left testis"
+    }
+   ],
+   "elements": [
+    "FJ3138"
+   ]
+  },
+  {
+   "id": "eyeball-r",
+   "layer": "organs",
+   "triangles": 1472,
+   "sourceTriangles": 97374,
+   "center": [
+    -0.0298,
+    1.5964,
+    0.0516
+   ],
+   "size": [
+    0.0261,
+    0.0259,
+    0.0271
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12514",
+     "name": "right eyeball"
+    }
+   ],
+   "elements": [
+    "FJ1336",
+    "FJ1337",
+    "FJ1340",
+    "FJ1348",
+    "FJ1356",
+    "FJ1368",
+    "FJ1371",
+    "FJ1382"
+   ]
+  },
+  {
+   "id": "eyeball-l",
+   "layer": "organs",
+   "triangles": 1488,
+   "sourceTriangles": 100388,
+   "center": [
+    0.0298,
+    1.5962,
+    0.0516
+   ],
+   "size": [
+    0.0261,
+    0.0261,
+    0.0269
+   ],
+   "concepts": [
+    {
+     "fma": "FMA12515",
+     "name": "left eyeball"
+    }
+   ],
+   "elements": [
+    "FJ1282",
+    "FJ1285",
+    "FJ1286",
+    "FJ1289",
+    "FJ1297",
+    "FJ1305",
+    "FJ1317",
+    "FJ1320",
+    "FJ1331"
+   ]
+  },
+  {
+   "id": "cerebral-hemisphere-r",
+   "layer": "nervous",
+   "triangles": 16000,
+   "sourceTriangles": 105900,
+   "center": [
+    -0.0348,
+    1.65,
+    -0.0211
+   ],
+   "size": [
+    0.0689,
+    0.1168,
+    0.1798
+   ],
+   "concepts": [
+    {
+     "fma": "FMA67292",
+     "name": "right cerebral hemisphere"
+    }
+   ],
+   "elements": [
+    "FJ1733",
+    "FJ1740",
+    "FJ1745",
+    "FJ1747",
+    "FJ1749",
+    "FJ1751",
+    "FJ1784",
+    "FJ1786",
+    "FJ1788",
+    "FJ1790",
+    "FJ1792",
+    "FJ1798",
+    "FJ1801",
+    "FJ1806",
+    "FJ1807",
+    "FJ1814",
+    "FJ1834",
+    "FJ1836",
+    "FJ1842"
+   ]
+  },
+  {
+   "id": "cerebral-hemisphere-l",
+   "layer": "nervous",
+   "triangles": 16000,
+   "sourceTriangles": 104316,
+   "center": [
+    0.0349,
+    1.6501,
+    -0.0212
+   ],
+   "size": [
+    0.0693,
+    0.117,
+    0.1797
+   ],
+   "concepts": [
+    {
+     "fma": "FMA61819",
+     "name": "left cerebral hemisphere"
+    }
+   ],
+   "elements": [
+    "FJ1732",
+    "FJ1739",
+    "FJ1744",
+    "FJ1746",
+    "FJ1748",
+    "FJ1750",
+    "FJ1758",
+    "FJ1759",
+    "FJ1767",
+    "FJ1783",
+    "FJ1785",
+    "FJ1787",
+    "FJ1789",
+    "FJ1791",
+    "FJ1797",
+    "FJ1800",
+    "FJ1833",
+    "FJ1835",
+    "FJ1841"
+   ]
+  },
+  {
+   "id": "cerebellum",
+   "layer": "nervous",
+   "triangles": 6000,
+   "sourceTriangles": 47700,
+   "center": [
+    0,
+    1.592,
+    -0.0605
+   ],
+   "size": [
+    0.1065,
+    0.0533,
+    0.0562
+   ],
+   "concepts": [
+    {
+     "fma": "FMA67944",
+     "name": "cerebellum"
+    }
+   ],
+   "elements": [
+    "FJ1781",
+    "FJ1830"
+   ]
+  },
+  {
+   "id": "brainstem",
+   "layer": "nervous",
+   "triangles": 2994,
+   "sourceTriangles": 46888,
+   "center": [
+    0,
+    1.5835,
+    -0.0267
+   ],
+   "size": [
+    0.0421,
+    0.0817,
+    0.0457
+   ],
+   "concepts": [
+    {
+     "fma": "FMA79876",
+     "name": "brainstem"
+    }
+   ],
+   "elements": [
+    "FJ1738",
+    "FJ1762",
+    "FJ1769",
+    "FJ1770",
+    "FJ1775",
+    "FJ1779",
+    "FJ1810",
+    "FJ1817",
+    "FJ1822",
+    "FJ1826",
+    "FJ1831"
+   ]
+  },
+  {
+   "id": "spinal-cord",
+   "layer": "nervous",
+   "triangles": 728,
+   "sourceTriangles": 728,
+   "center": [
+    0,
+    1.5545,
+    -0.0423
+   ],
+   "size": [
+    0.0022,
+    0.0356,
+    0.0131
+   ],
+   "concepts": [
+    {
+     "fma": "FMA7647",
+     "name": "spinal cord"
+    }
+   ],
+   "elements": [
+    "FJ1737"
+   ]
+  },
+  {
+   "id": "optic-nerve-r",
+   "layer": "nervous",
+   "triangles": 400,
+   "sourceTriangles": 4236,
+   "center": [
+    -0.0166,
+    1.6084,
+    0.0262
+   ],
+   "size": [
+    0.032,
+    0.024,
+    0.0496
+   ],
+   "concepts": [
+    {
+     "fma": "FMA50875",
+     "name": "right optic nerve"
+    }
+   ],
+   "elements": [
+    "FJ1364",
+    "FJ1819"
+   ]
+  },
+  {
+   "id": "optic-nerve-l",
+   "layer": "nervous",
+   "triangles": 400,
+   "sourceTriangles": 4236,
+   "center": [
+    0.0166,
+    1.6084,
+    0.0262
+   ],
+   "size": [
+    0.0319,
+    0.024,
+    0.0496
+   ],
+   "concepts": [
+    {
+     "fma": "FMA50878",
+     "name": "left optic nerve"
+    }
+   ],
+   "elements": [
+    "FJ1313",
+    "FJ1772"
+   ]
+  },
+  {
+   "id": "aorta",
+   "layer": "vessels",
+   "triangles": 4000,
+   "sourceTriangles": 10188,
+   "center": [
+    0.0147,
+    1.21,
+    -0.0095
+   ],
+   "size": [
+    0.0417,
+    0.3703,
+    0.0923
+   ],
+   "concepts": [
+    {
+     "fma": "FMA3734",
+     "name": "aorta"
+    }
+   ],
+   "elements": [
+    "FJ1931",
+    "FJ1932",
+    "FJ3411",
+    "FJ3413",
+    "FJ3427"
+   ]
+  },
+  {
+   "id": "pulmonary-trunk",
+   "layer": "vessels",
+   "triangles": 1000,
+   "sourceTriangles": 1302,
+   "center": [
+    0.0273,
+    1.3532,
+    0.0369
+   ],
+   "size": [
+    0.0308,
+    0.0371,
+    0.0423
+   ],
+   "concepts": [
+    {
+     "fma": "FMA8612",
+     "name": "pulmonary trunk"
+    }
+   ],
+   "elements": [
+    "FJ2966"
+   ]
+  },
+  {
+   "id": "brachiocephalic-trunk",
+   "layer": "vessels",
+   "triangles": 262,
+   "sourceTriangles": 262,
+   "center": [
+    0.0001,
+    1.4014,
+    0.01
+   ],
+   "size": [
+    0.0375,
+    0.038,
+    0.0177
+   ],
+   "concepts": [
+    {
+     "fma": "FMA3932",
+     "name": "brachiocephalic artery"
+    }
+   ],
+   "elements": [
+    "FJ3417"
+   ]
+  },
+  {
+   "id": "common-carotid-artery-r",
+   "layer": "vessels",
+   "triangles": 794,
+   "sourceTriangles": 7726,
+   "center": [
+    -0.0221,
+    1.528,
+    0.0127
+   ],
+   "size": [
+    0.043,
+    0.2407,
+    0.1036
+   ],
+   "concepts": [
+    {
+     "fma": "FMA3941",
+     "name": "right common carotid artery"
+    }
+   ],
+   "elements": [
+    "FJ1654",
+    "FJ1658",
+    "FJ1662",
+    "FJ1663",
+    "FJ1682",
+    "FJ1692",
+    "FJ1695",
+    "FJ3564"
+   ]
+  },
+  {
+   "id": "common-carotid-artery-l",
+   "layer": "vessels",
+   "triangles": 800,
+   "sourceTriangles": 5722,
+   "center": [
+    0.0131,
+    1.5063,
+    0.0128
+   ],
+   "size": [
+    0.0499,
+    0.2416,
+    0.1035
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4058",
+     "name": "left common carotid artery"
+    }
+   ],
+   "elements": [
+    "FJ1654M",
+    "FJ1655",
+    "FJ1658M",
+    "FJ1682M",
+    "FJ1695M",
+    "FJ1713",
+    "FJ1713M",
+    "FJ1723",
+    "FJ1723M",
+    "FJ3483"
+   ]
+  },
+  {
+   "id": "subclavian-artery-r",
+   "layer": "vessels",
+   "triangles": 698,
+   "sourceTriangles": 96622,
+   "center": [
+    -0.1155,
+    1.2559,
+    -0.001
+   ],
+   "size": [
+    0.3268,
+    0.7887,
+    0.206
+   ],
+   "concepts": [
+    {
+     "fma": "FMA3953",
+     "name": "right subclavian artery"
+    }
+   ],
+   "elements": [
+    "FJ1656",
+    "FJ1656M",
+    "FJ1657",
+    "FJ1661",
+    "FJ1661M",
+    "FJ1672",
+    "FJ1675",
+    "FJ1675M",
+    "FJ1677",
+    "FJ1677M",
+    "FJ1678",
+    "FJ1678M",
+    "FJ1680",
+    "FJ1680M",
+    "FJ1684",
+    "FJ1684M",
+    "FJ1687",
+    "FJ1687M",
+    "FJ1689",
+    "FJ1689M",
+    "FJ1691",
+    "FJ1691M",
+    "FJ1700",
+    "FJ1701",
+    "FJ1702",
+    "FJ1703",
+    "FJ1704",
+    "FJ1705",
+    "FJ1706",
+    "FJ1707",
+    "FJ1708",
+    "FJ1709",
+    "FJ1710",
+    "FJ1711",
+    "FJ1715",
+    "FJ1720",
+    "FJ1720M",
+    "FJ1725",
+    "FJ1726",
+    "FJ1726M",
+    "FJ1727",
+    "FJ1727M",
+    "FJ1844",
+    "FJ1935",
+    "FJ1936",
+    "FJ1937",
+    "FJ1938",
+    "FJ1969",
+    "FJ2209",
+    "FJ2263",
+    "FJ2264",
+    "FJ2266",
+    "FJ2267",
+    "FJ2273",
+    "FJ2275",
+    "FJ2276",
+    "FJ2277",
+    "FJ2278",
+    "FJ2282",
+    "FJ2283",
+    "FJ2284",
+    "FJ2288",
+    "FJ2291",
+    "FJ2292",
+    "FJ2293",
+    "FJ2294",
+    "FJ2295",
+    "FJ2298",
+    "FJ2303",
+    "FJ2304",
+    "FJ2305",
+    "FJ2307",
+    "FJ2308",
+    "FJ2309",
+    "FJ2310",
+    "FJ2311",
+    "FJ2361",
+    "FJ2373",
+    "FJ3579"
+   ]
+  },
+  {
+   "id": "subclavian-artery-l",
+   "layer": "vessels",
+   "triangles": 774,
+   "sourceTriangles": 67062,
+   "center": [
+    0.1403,
+    1.2229,
+    -0.0009
+   ],
+   "size": [
+    0.2794,
+    0.7221,
+    0.2057
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4694",
+     "name": "left subclavian artery"
+    }
+   ],
+   "elements": [
+    "FJ1700M",
+    "FJ1701M",
+    "FJ1702M",
+    "FJ1703M",
+    "FJ1704M",
+    "FJ1705M",
+    "FJ1706M",
+    "FJ1707M",
+    "FJ1708M",
+    "FJ1709M",
+    "FJ1710M",
+    "FJ1711M",
+    "FJ1715M",
+    "FJ1725M",
+    "FJ1970",
+    "FJ1971",
+    "FJ1972",
+    "FJ1976",
+    "FJ1979",
+    "FJ2210",
+    "FJ2211",
+    "FJ2212",
+    "FJ2214",
+    "FJ2215",
+    "FJ2221",
+    "FJ2223",
+    "FJ2224",
+    "FJ2225",
+    "FJ2226",
+    "FJ2230",
+    "FJ2231",
+    "FJ2232",
+    "FJ2236",
+    "FJ2239",
+    "FJ2240",
+    "FJ2241",
+    "FJ2242",
+    "FJ2243",
+    "FJ2246",
+    "FJ2251",
+    "FJ2252",
+    "FJ2253",
+    "FJ2255",
+    "FJ2256",
+    "FJ2257",
+    "FJ2258",
+    "FJ2259",
+    "FJ2330",
+    "FJ2374",
+    "FJ3479"
+   ]
+  },
+  {
+   "id": "common-iliac-artery-r",
+   "layer": "vessels",
+   "triangles": 600,
+   "sourceTriangles": 62294,
+   "center": [
+    -0.0525,
+    0.5622,
+    0.0061
+   ],
+   "size": [
+    0.1266,
+    1.0928,
+    0.1567
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14765",
+     "name": "right common iliac artery"
+    }
+   ],
+   "elements": [
+    "FJ2055",
+    "FJ2130",
+    "FJ2133",
+    "FJ2159",
+    "FJ2163",
+    "FJ2164",
+    "FJ2169",
+    "FJ2170",
+    "FJ2172",
+    "FJ2179",
+    "FJ3565",
+    "FJ3567",
+    "FJ3569",
+    "FJ3604"
+   ]
+  },
+  {
+   "id": "common-iliac-artery-l",
+   "layer": "vessels",
+   "triangles": 596,
+   "sourceTriangles": 62376,
+   "center": [
+    0.0594,
+    0.5623,
+    -0.0022
+   ],
+   "size": [
+    0.1155,
+    1.0924,
+    0.1736
+   ],
+   "concepts": [
+    {
+     "fma": "FMA14766",
+     "name": "left common iliac artery"
+    }
+   ],
+   "elements": [
+    "FJ2065",
+    "FJ2067",
+    "FJ2073",
+    "FJ2079",
+    "FJ2081",
+    "FJ2082",
+    "FJ2085",
+    "FJ2086",
+    "FJ2087",
+    "FJ2089",
+    "FJ3464",
+    "FJ3466",
+    "FJ3468",
+    "FJ3511"
+   ]
+  },
+  {
+   "id": "femoral-artery-r",
+   "layer": "vessels",
+   "triangles": 1200,
+   "sourceTriangles": 11322,
+   "center": [
+    -0.076,
+    0.7376,
+    0.0302
+   ],
+   "size": [
+    0.0874,
+    0.5982,
+    0.1385
+   ],
+   "concepts": [
+    {
+     "fma": "FMA70249",
+     "name": "right femoral artery"
+    }
+   ],
+   "elements": [
+    "FJ2137",
+    "FJ2143",
+    "FJ2158",
+    "FJ3614"
+   ]
+  },
+  {
+   "id": "femoral-artery-l",
+   "layer": "vessels",
+   "triangles": 1200,
+   "sourceTriangles": 10994,
+   "center": [
+    0.0773,
+    0.7376,
+    0.0302
+   ],
+   "size": [
+    0.0875,
+    0.5982,
+    0.1388
+   ],
+   "concepts": [
+    {
+     "fma": "FMA70250",
+     "name": "left femoral artery"
+    }
+   ],
+   "elements": [
+    "FJ2069",
+    "FJ2074",
+    "FJ2078",
+    "FJ3529"
+   ]
+  },
+  {
+   "id": "superior-vena-cava",
+   "layer": "vessels",
+   "triangles": 598,
+   "sourceTriangles": 598,
+   "center": [
+    -0.0147,
+    1.3704,
+    0.0147
+   ],
+   "size": [
+    0.0225,
+    0.035,
+    0.0237
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4720",
+     "name": "superior vena cava"
+    }
+   ],
+   "elements": [
+    "FJ3645"
+   ]
+  },
+  {
+   "id": "inferior-vena-cava",
+   "layer": "vessels",
+   "triangles": 1500,
+   "sourceTriangles": 3080,
+   "center": [
+    -0.0138,
+    1.1488,
+    0.0154
+   ],
+   "size": [
+    0.0247,
+    0.2396,
+    0.0252
+   ],
+   "concepts": [
+    {
+     "fma": "FMA10951",
+     "name": "inferior vena cava"
+    }
+   ],
+   "elements": [
+    "FJ3441",
+    "FJ3659"
+   ]
+  },
+  {
+   "id": "internal-jugular-vein-r",
+   "layer": "vessels",
+   "triangles": 226,
+   "sourceTriangles": 226,
+   "center": [
+    -0.0258,
+    1.4392,
+    0.0167
+   ],
+   "size": [
+    0.0094,
+    0.0413,
+    0.0092
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4754",
+     "name": "right internal jugular vein"
+    }
+   ],
+   "elements": [
+    "FJ3585"
+   ]
+  },
+  {
+   "id": "internal-jugular-vein-l",
+   "layer": "vessels",
+   "triangles": 280,
+   "sourceTriangles": 280,
+   "center": [
+    0.0252,
+    1.437,
+    0.0161
+   ],
+   "size": [
+    0.0128,
+    0.043,
+    0.0104
+   ],
+   "concepts": [
+    {
+     "fma": "FMA4762",
+     "name": "left internal jugular vein"
+    }
+   ],
+   "elements": [
+    "FJ3485"
+   ]
+  },
+  {
+   "id": "femoral-vein-r",
+   "layer": "vessels",
+   "triangles": 658,
+   "sourceTriangles": 658,
+   "center": [
+    -0.0522,
+    0.7233,
+    0.0186
+   ],
+   "size": [
+    0.0418,
+    0.3233,
+    0.0707
+   ],
+   "concepts": [
+    {
+     "fma": "FMA21188",
+     "name": "right femoral vein"
+    }
+   ],
+   "elements": [
+    "FJ2144"
+   ]
+  },
+  {
+   "id": "femoral-vein-l",
+   "layer": "vessels",
+   "triangles": 658,
+   "sourceTriangles": 658,
+   "center": [
+    0.0536,
+    0.7233,
+    0.0186
+   ],
+   "size": [
+    0.0421,
+    0.3233,
+    0.0709
+   ],
+   "concepts": [
+    {
+     "fma": "FMA21189",
+     "name": "left femoral vein"
+    }
+   ],
+   "elements": [
+    "FJ2102"
+   ]
+  },
+  {
+   "id": "great-saphenous-vein-r",
+   "layer": "vessels",
+   "triangles": 1500,
+   "sourceTriangles": 30036,
+   "center": [
+    -0.0535,
+    0.4629,
+    0.0002
+   ],
+   "size": [
+    0.0814,
+    0.8222,
+    0.1057
+   ],
+   "concepts": [
+    {
+     "fma": "FMA21379",
+     "name": "right great saphenous vein"
+    }
+   ],
+   "elements": [
+    "FJ2145"
+   ]
+  },
+  {
+   "id": "great-saphenous-vein-l",
+   "layer": "vessels",
+   "triangles": 1500,
+   "sourceTriangles": 30040,
+   "center": [
+    0.0548,
+    0.4628,
+    0.0003
+   ],
+   "size": [
+    0.0814,
+    0.8222,
+    0.1057
+   ],
+   "concepts": [
+    {
+     "fma": "FMA21380",
+     "name": "left great saphenous vein"
+    }
+   ],
+   "elements": [
+    "FJ2103"
+   ]
+  },
+  {
+   "id": "hepatic-portal-vein",
+   "layer": "vessels",
+   "triangles": 1450,
+   "sourceTriangles": 35982,
+   "center": [
+    -0.022,
+    1.1911,
+    0.0252
+   ],
+   "size": [
+    0.1574,
+    0.1004,
+    0.1468
+   ],
+   "concepts": [
+    {
+     "fma": "FMA50735",
+     "name": "hepatic portal vein"
+    }
+   ],
+   "elements": [
+    "FJ1853",
+    "FJ1893",
+    "FJ1913",
+    "FJ1914",
+    "FJ2404",
+    "FJ2405",
+    "FJ3073",
+    "FJ3074",
+    "FJ3102",
+    "FJ3111",
+    "FJ3112",
+    "FJ3113",
+    "FJ3122",
+    "FJ3124",
+    "FJ3125",
+    "FJ3126",
+    "FJ3127",
+    "FJ3128"
+   ]
+  }
+ ]
+}

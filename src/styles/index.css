@@ -1,0 +1,167 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --color-ink: #e9eef3;
+  --color-muted: #96a3b1;
+  --color-faint: #5d6977;
+  --color-accent: #3ec7e0;
+  --color-accent-strong: #67d8ec;
+  --color-surface: rgb(16 22 30 / 0.84);
+  --color-surface-solid: #121922;
+  --color-line: rgb(255 255 255 / 0.09);
+  --color-good: #4ccf7a;
+  --color-bad: #ef5f5f;
+}
+
+:root {
+  --muted: var(--color-muted);
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  background: #0b1016;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Ruhiger Hintergrund hinter der transparenten 3D-Fläche */
+.stage {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 42%, #1f2b39 0%, #141c26 45%, #0b1016 100%);
+}
+
+.viewer-canvas {
+  position: absolute !important;
+  inset: 0;
+  touch-action: none;
+}
+
+/* Schwebende Bedienelemente: dezent, gut tappbar (≥ 44 px) */
+.glass {
+  background: var(--color-surface);
+  backdrop-filter: blur(18px) saturate(1.3);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  border: 1px solid var(--color-line);
+}
+
+.icon-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  color: var(--color-ink);
+  transition: background-color 0.15s, color 0.15s, transform 0.1s;
+}
+.icon-btn:hover {
+  background: rgb(255 255 255 / 0.08);
+}
+.icon-btn:active {
+  transform: scale(0.94);
+}
+.icon-btn[aria-pressed='true'] {
+  color: var(--color-accent);
+  background: rgb(62 199 224 / 0.14);
+}
+.icon-btn:focus-visible,
+.chip:focus-visible,
+.btn-primary:focus-visible,
+.btn-ghost:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 36px;
+  padding: 0 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  border: 1px solid var(--color-line);
+  background: rgb(255 255 255 / 0.04);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0 1.1rem;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  color: #06232a;
+  font-weight: 600;
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0 1.1rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-line);
+  background: rgb(255 255 255 / 0.05);
+}
+
+/* Lesbare Texte im Informationspanel dürfen markiert werden */
+.selectable {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.scroll-area {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-in {
+  animation: fade-in 0.22s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
