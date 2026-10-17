@@ -42,6 +42,8 @@ body {
   -webkit-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
+  /* kein Doppeltipp-Zoom und keine Tipp-Verzögerung auf Bedienelementen */
+  touch-action: manipulation;
 }
 
 /* Ruhiger Hintergrund hinter der transparenten 3D-Fläche */

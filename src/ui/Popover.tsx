@@ -11,7 +11,7 @@ export function Popover({ title, onClose, children }: { title: string; onClose: 
   return (
     <div
       className="glass fade-in absolute z-30 flex max-h-[min(72dvh,640px)] w-[min(380px,calc(100vw-24px))] flex-col overflow-hidden rounded-3xl shadow-2xl"
-      style={{ top: 'calc(64px + var(--safe-top))', right: 'calc(12px + var(--safe-right))' }}
+      style={{ top: 'calc(64px + var(--safe-top))', right: 'calc(12px + var(--safe-right))', background: 'rgb(16 22 30 / 0.94)' }}
       role="dialog"
       aria-label={title}
     >

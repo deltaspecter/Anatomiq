@@ -11,7 +11,7 @@ import { LAYERS } from '@/data/layers'
 import { getStructure } from '@/data/structures'
 import { REGION_LABELS, SIDE_LABELS, SYSTEM_LABELS, type AnatomicalStructure } from '@/data/types'
 import { useViewer } from '@/state/viewer'
-import { peekHeight, SIDE_PANEL_WIDTH, useIsWide, useViewport } from '@/ui/useLayout'
+import { peekHeight, sidePanelWidth, useIsWide, useViewport } from '@/ui/useLayout'
 import { StructureActions } from './StructureActions'
 import { StructureContent } from './StructureContent'
 
@@ -48,7 +48,7 @@ export function InfoPanel() {
   const selectedId = useViewer((s) => s.selectedId)
   const panel = useViewer((s) => s.panel)
   const wide = useIsWide()
-  const { height } = useViewport()
+  const { width, height } = useViewport()
   const scrollRef = useRef<HTMLDivElement>(null)
   const drag = useRef<{ y: number; moved: number } | null>(null)
   const sheetRef = useRef<HTMLElement>(null)
@@ -76,7 +76,7 @@ export function InfoPanel() {
     return (
       <aside
         className="glass fade-in absolute z-20 flex flex-col overflow-hidden rounded-3xl shadow-2xl"
-        style={{ width: SIDE_PANEL_WIDTH, top: 'calc(68px + var(--safe-top))', right: 'calc(12px + var(--safe-right))', bottom: 'calc(12px + var(--safe-bottom))' }}
+        style={{ width: sidePanelWidth(width), top: 'calc(68px + var(--safe-top))', right: 'calc(12px + var(--safe-right))', bottom: 'calc(12px + var(--safe-bottom))' }}
         aria-labelledby="panel-title"
       >
         <div ref={scrollRef} className="scroll-area flex-1 pt-4">

@@ -12,7 +12,7 @@ import { CameraBar, TopBar, type Sheet } from './ui/Chrome'
 import { FavoritesSheet } from './ui/FavoritesSheet'
 import { SettingsSheet } from './ui/SettingsSheet'
 import { Hints, LoadingStatus, Toast, UpdateBanner } from './ui/Status'
-import { peekHeight, SIDE_PANEL_WIDTH, useIsWide, useViewport } from './ui/useLayout'
+import { peekHeight, sidePanelWidth, useIsWide, useViewport } from './ui/useLayout'
 
 function NoWebGL() {
   return (
@@ -46,8 +46,8 @@ export function App() {
   // Bedienelemente und Bildausschnitt weichen dem geöffneten Panel aus
   const sheetPeek = peekHeight(height)
   const bottomOffset = !wide && panelOpen ? sheetPeek : 0
-  const rightOffset = wide && panelOpen ? SIDE_PANEL_WIDTH + 12 : 0
-  const panelOffset = panelOpen ? (wide ? { x: Math.min(SIDE_PANEL_WIDTH / 2, width / 4), y: 0 } : { x: 0, y: Math.round(sheetPeek / 2) }) : { x: 0, y: 0 }
+  const rightOffset = wide && panelOpen ? sidePanelWidth(width) + 12 : 0
+  const panelOffset = panelOpen ? (wide ? { x: Math.round(sidePanelWidth(width) / 2), y: 0 } : { x: 0, y: Math.round(sheetPeek / 2) }) : { x: 0, y: 0 }
   const hideControls = !wide && panelFull
 
   return (

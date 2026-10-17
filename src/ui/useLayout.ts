@@ -1,7 +1,10 @@
 import { useSyncExternalStore } from 'react'
 
-/** Breite Ansicht (Tablet quer, Desktop): Informationspanel seitlich statt als Bottom-Sheet */
-const QUERY = '(min-width: 900px)'
+/**
+ * Breite Ansicht (Desktop, Tablet, Smartphone im Querformat): Informationspanel seitlich statt als Bottom-Sheet.
+ * Im Querformat wäre ein Bottom-Sheet höher als der halbe Bildschirm und würde das Modell verdecken.
+ */
+const QUERY = '(min-width: 900px), (orientation: landscape) and (min-width: 640px)'
 
 const subscribe = (cb: () => void) => {
   const mq = window.matchMedia(QUERY)
@@ -25,4 +28,5 @@ export function useViewport(): { width: number; height: number } {
 
 /** Höhe des eingeklappten Panels (Bottom-Sheet) in px */
 export const peekHeight = (viewportHeight: number) => Math.round(Math.min(Math.max(viewportHeight * 0.42, 250), 400))
-export const SIDE_PANEL_WIDTH = 400
+/** Breite des Seitenpanels: höchstens 400 px bzw. knapp die Hälfte des Bildschirms */
+export const sidePanelWidth = (viewportWidth: number) => Math.round(Math.min(400, viewportWidth * 0.46))

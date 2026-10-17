@@ -12,3 +12,6 @@ createRoot(document.getElementById('root')!).render(
 )
 
 registerServiceWorker()
+
+// iOS-Safari ignoriert user-scalable=no: Pinch soll das Modell zoomen, nicht die Seite
+document.addEventListener('gesturestart', (e) => e.preventDefault())
