@@ -20,6 +20,8 @@ type ViewerState = VisibilityState & {
   command: (CameraCommand & { seq: number }) | null
   toast: { text: string; seq: number } | null
   layerBarOpen: boolean
+  /** Struktur unter dem Mauszeiger (nur Maus, nicht Touch) */
+  hover: { id: string; x: number; y: number } | null
 
   select: (id: string | null) => void
   setPanel: (panel: PanelState) => void
@@ -31,6 +33,7 @@ type ViewerState = VisibilityState & {
   camera: (command: CameraCommand) => void
   showToast: (text: string) => void
   setLayerBarOpen: (open: boolean) => void
+  setHover: (hover: { id: string; x: number; y: number } | null) => void
 }
 
 let seq = 0
@@ -46,6 +49,7 @@ export const useViewer = create<ViewerState>()((set) => ({
   command: null,
   toast: null,
   layerBarOpen: false,
+  hover: null,
 
   select: (id) => set((s) => ({ selectedId: id, panel: id ? (s.panel === 'full' ? 'full' : 'peek') : 'closed' })),
   setPanel: (panel) => set((s) => ({ panel, selectedId: panel === 'closed' ? null : s.selectedId })),
@@ -69,4 +73,5 @@ export const useViewer = create<ViewerState>()((set) => ({
   camera: (command) => set({ command: { ...command, seq: ++seq } }),
   showToast: (text) => set({ toast: { text, seq: ++seq } }),
   setLayerBarOpen: (layerBarOpen) => set({ layerBarOpen }),
+  setHover: (hover) => set({ hover }),
 }))

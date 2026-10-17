@@ -4,11 +4,13 @@
  * Pinch-Zoom lösen daher nie versehentlich eine Auswahl aus. Getroffen wird die vorderste
  * deckend sichtbare Struktur; durchscheinende und ausgeblendete Strukturen werden durchdrungen.
  * Doppeltippen richtet die Kamera auf die getroffene Struktur aus.
+ * Mit der Maus zeigt ein Etikett den Namen der Struktur unter dem Zeiger (gedrosselt auf ein Bild).
  */
 import { useThree } from '@react-three/fiber'
 import { useEffect } from 'react'
 import { Raycaster, Vector2, type Mesh } from 'three'
 import { allMeshes } from '@/scene/registry'
+import { useViewer } from '@/state/viewer'
 import { handleTap } from './tap'
 
 const MAX_MOVE_PX = 8
@@ -38,6 +40,33 @@ export function Picker() {
       return (hit?.object.userData.structureId as string | undefined) ?? null
     }
 
+    let hoverFrame = 0
+    const move = (e: PointerEvent) => {
+      if (e.pointerType !== 'mouse') return
+      if (e.buttons) {
+        if (useViewer.getState().hover) useViewer.getState().setHover(null)
+        return
+      }
+      const { clientX, clientY } = e
+      cancelAnimationFrame(hoverFrame)
+      hoverFrame = requestAnimationFrame(() => {
+        const id = pick(clientX, clientY)
+        const current = useViewer.getState().hover
+        if (!id) {
+          if (current) useViewer.getState().setHover(null)
+          el.style.cursor = ''
+        } else {
+          useViewer.getState().setHover({ id, x: clientX, y: clientY })
+          el.style.cursor = 'pointer'
+        }
+      })
+    }
+    const leave = () => {
+      cancelAnimationFrame(hoverFrame)
+      useViewer.getState().setHover(null)
+      el.style.cursor = ''
+    }
+
     const down = (e: PointerEvent) => {
       active.set(e.pointerId, { x: e.clientX, y: e.clientY, t: performance.now() })
       if (active.size > 1) multiTouch = true
@@ -64,7 +93,12 @@ export function Picker() {
     el.addEventListener('pointerdown', down)
     el.addEventListener('pointerup', up)
     el.addEventListener('pointercancel', cancel)
+    el.addEventListener('pointermove', move)
+    el.addEventListener('pointerleave', leave)
     return () => {
+      cancelAnimationFrame(hoverFrame)
+      el.removeEventListener('pointermove', move)
+      el.removeEventListener('pointerleave', leave)
       el.removeEventListener('pointerdown', down)
       el.removeEventListener('pointerup', up)
       el.removeEventListener('pointercancel', cancel)

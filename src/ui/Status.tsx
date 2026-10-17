@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { LAYER_IDS, LAYERS, type LayerId } from '@/data/layers'
 import { applyUpdate, useUpdate } from '@/pwa/registerServiceWorker'
 import { retryLayer } from '@/scene/AnatomyModel'
+import { getStructure } from '@/data/structures'
+import { SIDE_LABELS } from '@/data/types'
 import { usePrefs } from '@/state/prefs'
 import { useViewer } from '@/state/viewer'
 
@@ -125,6 +127,21 @@ export function Hints({ bottomOffset }: { bottomOffset: number }) {
           Verstanden
         </button>
       </div>
+    </div>
+  )
+}
+
+/** Name der Struktur unter dem Mauszeiger (Desktop) */
+export function HoverLabel() {
+  const hover = useViewer((s) => s.hover)
+  const selected = useViewer((s) => s.selectedId)
+  const s = hover ? getStructure(hover.id) : undefined
+  if (!hover || !s || hover.id === selected) return null
+  return (
+    <div className="glass pointer-events-none fixed z-30 rounded-xl px-2.5 py-1.5 text-[12.5px] shadow-lg" style={{ left: hover.x + 14, top: hover.y + 14 }} aria-hidden>
+      <span className="font-medium">{s.nameDe}</span>
+      {s.side && <span className="text-muted"> · {SIDE_LABELS[s.side]}</span>}
+      <span className="block text-[11.5px] italic text-muted">{s.nameLa}</span>
     </div>
   )
 }

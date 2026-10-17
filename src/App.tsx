@@ -11,7 +11,7 @@ import { useViewer } from './state/viewer'
 import { CameraBar, TopBar, type Sheet } from './ui/Chrome'
 import { FavoritesSheet } from './ui/FavoritesSheet'
 import { SettingsSheet } from './ui/SettingsSheet'
-import { Hints, LoadingStatus, Toast, UpdateBanner } from './ui/Status'
+import { Hints, HoverLabel, LoadingStatus, Toast, UpdateBanner } from './ui/Status'
 import { peekHeight, sidePanelWidth, useIsWide, useViewport } from './ui/useLayout'
 
 function NoWebGL() {
@@ -64,6 +64,7 @@ export function App() {
       <LearnOverlay />
       <InfoPanel />
       <Hints bottomOffset={bottomOffset} />
+      <HoverLabel />
       <Toast bottomOffset={bottomOffset} />
       <UpdateBanner />
       {sheet === 'settings' && <SettingsSheet onClose={() => setSheet(null)} />}
