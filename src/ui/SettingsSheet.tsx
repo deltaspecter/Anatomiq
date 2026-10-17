@@ -47,7 +47,7 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
       <div className="divide-y divide-white/5">
         <div className="py-3">
           <p className="text-[15px]">Darstellungsqualität</p>
-          <p className="mt-0.5 text-[12.5px] leading-snug text-muted">„Einfach“ rendert mit geringerer Auflösung und ohne Kantenglättung – für ältere Geräte oder zum Akkusparen.</p>
+          <p className="mt-0.5 text-[12.5px] leading-snug text-muted">„Automatisch“ senkt die Auflösung, wenn das Drehen ruckelt. „Einfach“ rendert immer mit geringerer Auflösung und ohne Kantenglättung – für ältere Geräte oder zum Akkusparen.</p>
           <div className="mt-2.5 flex gap-1.5" role="radiogroup" aria-label="Darstellungsqualität">
             {QUALITY.map((q) => (
               <button key={q.id} type="button" role="radio" aria-checked={prefs.quality === q.id} onClick={() => prefs.setQuality(q.id)} className={`chip flex-1 justify-center ${prefs.quality === q.id ? 'border-accent/60 bg-accent/15 text-accent' : ''}`}>

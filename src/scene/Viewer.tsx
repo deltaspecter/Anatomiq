@@ -9,6 +9,7 @@ import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment
 import { CameraRig, FOV } from '@/camera/CameraRig'
 import { Picker } from '@/selection/Picker'
 import { usePrefs } from '@/state/prefs'
+import { AdaptiveResolution } from './AdaptiveResolution'
 import { AnatomyModel } from './AnatomyModel'
 import { disposeMaterials } from './materials'
 import { setRenderCallback, startVisibilitySync, stopVisibilitySync } from './visibilitySync'
@@ -88,6 +89,7 @@ export function Viewer({ panelOffset }: { panelOffset: { x: number; y: number } 
         <AnatomyModel />
         <Sync />
         <Picker />
+        <AdaptiveResolution enabled={quality === 'auto'} />
         <CameraRig panelOffset={panelOffset} />
       </Canvas>
     </ViewerErrorBoundary>
