@@ -155,7 +155,7 @@ const headNeckArmArteries: AnatomicalStructure[] = [
     system: 'cardiovascular',
     region: 'upper-limb',
     color: ARTERY,
-    summary: 'Kleinfingerseitige, meist stärkere Endast der Oberarmarterie.',
+    summary: 'Kleinfingerseitiger, meist stärkerer Endast der Oberarmarterie.',
     location: 'Von der Ellenbeuge in der Tiefe der Beugemuskeln zur Kleinfingerseite des Unterarms; am Handgelenk zusammen mit dem N. ulnaris durch die Guyon-Loge.',
     structure: 'Gibt die A. interossea communis für die tiefen Unterarmmuskeln ab und bildet den Hauptteil des oberflächlichen Hohlhandbogens.',
     function: 'Versorgt die Kleinfingerseite von Unterarm und Hand.',
