@@ -64,7 +64,7 @@ Hinweise zu iOS:
 |---|---|
 | App-Oberfläche, Texte aller Strukturen, Favoriten, Lernfunktionen | ✅ nach dem ersten Besuch |
 | Ebenen Haut, Skelett, Organe, Gefäße, Nerven | ✅ werden bei der Installation des Service Workers vorab gespeichert (~2,8 MB) |
-| Muskelebene (1,0 MB) | ✅ nachdem sie einmal online eingeschaltet wurde |
+| Muskelebene (1,2 MB) | ✅ nachdem sie einmal online eingeschaltet wurde |
 | Quellen-Links (externe Websites) | ❌ benötigen Internet |
 
 Updates: Erscheint eine neue Version, zeigt die App „Eine neue Version ist verfügbar – Aktualisieren“. Ohne Bestätigung läuft die bisherige Version weiter, damit niemand mitten in der Exploration unterbrochen wird.

@@ -15,9 +15,9 @@
   },
   "muscles": {
    "file": "/models/muscles.glb",
-   "bytes": 1003316,
-   "hash": "1388ccb541",
-   "triangles": 167640
+   "bytes": 1257724,
+   "hash": "179d83f163",
+   "triangles": 206358
   },
   "organs": {
    "file": "/models/organs.glb",
@@ -6674,6 +6674,1150 @@
    ],
    "elements": [
     "FJ1409M"
+   ]
+  },
+  {
+   "id": "abductor-pollicis-brevis-r",
+   "layer": "muscles",
+   "triangles": 596,
+   "sourceTriangles": 744,
+   "center": [
+    -0.2823,
+    0.8671,
+    0.0371
+   ],
+   "size": [
+    0.0392,
+    0.0382,
+    0.0297
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37386",
+     "name": "right abductor pollicis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1483"
+   ]
+  },
+  {
+   "id": "abductor-pollicis-brevis-l",
+   "layer": "muscles",
+   "triangles": 596,
+   "sourceTriangles": 744,
+   "center": [
+    0.2836,
+    0.8671,
+    0.0371
+   ],
+   "size": [
+    0.0392,
+    0.0382,
+    0.0297
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37387",
+     "name": "left abductor pollicis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1483M"
+   ]
+  },
+  {
+   "id": "flexor-pollicis-brevis-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 714,
+   "center": [
+    0.2793,
+    0.8584,
+    0.0384
+   ],
+   "size": [
+    0.0448,
+    0.0275,
+    0.0279
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37388",
+     "name": "right flexor pollicis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1469M"
+   ]
+  },
+  {
+   "id": "flexor-pollicis-brevis-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 714,
+   "center": [
+    -0.278,
+    0.8584,
+    0.0384
+   ],
+   "size": [
+    0.0448,
+    0.0275,
+    0.0279
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37389",
+     "name": "left flexor pollicis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1469"
+   ]
+  },
+  {
+   "id": "opponens-pollicis-r",
+   "layer": "muscles",
+   "triangles": 692,
+   "sourceTriangles": 956,
+   "center": [
+    -0.2813,
+    0.868,
+    0.0389
+   ],
+   "size": [
+    0.0478,
+    0.0322,
+    0.0186
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37390",
+     "name": "right opponens pollicis"
+    }
+   ],
+   "elements": [
+    "FJ1501"
+   ]
+  },
+  {
+   "id": "opponens-pollicis-l",
+   "layer": "muscles",
+   "triangles": 694,
+   "sourceTriangles": 956,
+   "center": [
+    0.2826,
+    0.868,
+    0.0389
+   ],
+   "size": [
+    0.0478,
+    0.0322,
+    0.0186
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37391",
+     "name": "left opponens pollicis"
+    }
+   ],
+   "elements": [
+    "FJ1501M"
+   ]
+  },
+  {
+   "id": "pronator-quadratus-r",
+   "layer": "muscles",
+   "triangles": 796,
+   "sourceTriangles": 1838,
+   "center": [
+    -0.2484,
+    0.9236,
+    0.0136
+   ],
+   "size": [
+    0.0454,
+    0.05,
+    0.0236
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38454",
+     "name": "right pronator quadratus"
+    }
+   ],
+   "elements": [
+    "FJ1503"
+   ]
+  },
+  {
+   "id": "pronator-quadratus-l",
+   "layer": "muscles",
+   "triangles": 798,
+   "sourceTriangles": 1838,
+   "center": [
+    0.2497,
+    0.9236,
+    0.0136
+   ],
+   "size": [
+    0.0454,
+    0.05,
+    0.0236
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38455",
+     "name": "left pronator quadratus"
+    }
+   ],
+   "elements": [
+    "FJ1503M"
+   ]
+  },
+  {
+   "id": "flexor-pollicis-longus-r",
+   "layer": "muscles",
+   "triangles": 992,
+   "sourceTriangles": 1442,
+   "center": [
+    -0.2756,
+    0.9287,
+    0.026
+   ],
+   "size": [
+    0.0756,
+    0.2307,
+    0.0782
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38482",
+     "name": "right flexor pollicis longus"
+    }
+   ],
+   "elements": [
+    "FJ1498"
+   ]
+  },
+  {
+   "id": "flexor-pollicis-longus-l",
+   "layer": "muscles",
+   "triangles": 990,
+   "sourceTriangles": 1442,
+   "center": [
+    0.2769,
+    0.9287,
+    0.026
+   ],
+   "size": [
+    0.0756,
+    0.2307,
+    0.0783
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38484",
+     "name": "left flexor pollicis longus"
+    }
+   ],
+   "elements": [
+    "FJ1498M"
+   ]
+  },
+  {
+   "id": "extensor-pollicis-longus-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 1326,
+   "center": [
+    -0.2714,
+    0.9122,
+    0.0188
+   ],
+   "size": [
+    0.0948,
+    0.2021,
+    0.0877
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38522",
+     "name": "right extensor pollicis longus"
+    }
+   ],
+   "elements": [
+    "FJ1495"
+   ]
+  },
+  {
+   "id": "extensor-pollicis-longus-l",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 1326,
+   "center": [
+    0.2727,
+    0.9122,
+    0.0188
+   ],
+   "size": [
+    0.0948,
+    0.2021,
+    0.0877
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38523",
+     "name": "left extensor pollicis longus"
+    }
+   ],
+   "elements": [
+    "FJ1495M"
+   ]
+  },
+  {
+   "id": "abductor-pollicis-longus-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1874,
+   "center": [
+    -0.2578,
+    0.9579,
+    0.0002
+   ],
+   "size": [
+    0.0619,
+    0.1819,
+    0.0617
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38516",
+     "name": "right abductor pollicis longus"
+    }
+   ],
+   "elements": [
+    "FJ1484"
+   ]
+  },
+  {
+   "id": "abductor-pollicis-longus-l",
+   "layer": "muscles",
+   "triangles": 996,
+   "sourceTriangles": 1874,
+   "center": [
+    0.2591,
+    0.9579,
+    0.0002
+   ],
+   "size": [
+    0.0619,
+    0.1819,
+    0.0617
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38517",
+     "name": "left abductor pollicis longus"
+    }
+   ],
+   "elements": [
+    "FJ1484M"
+   ]
+  },
+  {
+   "id": "extensor-pollicis-brevis-r",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 998,
+   "center": [
+    -0.2725,
+    0.9043,
+    0.0185
+   ],
+   "size": [
+    0.0764,
+    0.1356,
+    0.0567
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38519",
+     "name": "right extensor pollicis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1494"
+   ]
+  },
+  {
+   "id": "extensor-pollicis-brevis-l",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 998,
+   "center": [
+    0.2738,
+    0.9043,
+    0.0185
+   ],
+   "size": [
+    0.0764,
+    0.1356,
+    0.0567
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38520",
+     "name": "left extensor pollicis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1494M"
+   ]
+  },
+  {
+   "id": "extensor-carpi-radialis-brevis-r",
+   "layer": "muscles",
+   "triangles": 998,
+   "sourceTriangles": 2098,
+   "center": [
+    -0.2499,
+    1.0055,
+    -0.0177
+   ],
+   "size": [
+    0.0443,
+    0.3025,
+    0.0654
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38498",
+     "name": "right extensor carpi radialis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1489"
+   ]
+  },
+  {
+   "id": "extensor-carpi-radialis-brevis-l",
+   "layer": "muscles",
+   "triangles": 998,
+   "sourceTriangles": 2098,
+   "center": [
+    0.2511,
+    1.0054,
+    -0.0177
+   ],
+   "size": [
+    0.0443,
+    0.3024,
+    0.0654
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38499",
+     "name": "left extensor carpi radialis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1489M"
+   ]
+  },
+  {
+   "id": "extensor-digiti-minimi-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 1434,
+   "center": [
+    -0.2345,
+    0.9653,
+    -0.0022
+   ],
+   "size": [
+    0.0162,
+    0.325,
+    0.0892
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38504",
+     "name": "right extensor digiti minimi"
+    }
+   ],
+   "elements": [
+    "FJ1491"
+   ]
+  },
+  {
+   "id": "extensor-digiti-minimi-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 1434,
+   "center": [
+    0.2358,
+    0.9653,
+    -0.0022
+   ],
+   "size": [
+    0.0162,
+    0.325,
+    0.0893
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38505",
+     "name": "left extensor digiti minimi"
+    }
+   ],
+   "elements": [
+    "FJ1491M"
+   ]
+  },
+  {
+   "id": "extensor-indicis-r",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 720,
+   "center": [
+    -0.2679,
+    0.8466,
+    0.0337
+   ],
+   "size": [
+    0.0781,
+    0.1995,
+    0.0783
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38525",
+     "name": "right extensor indicis"
+    }
+   ],
+   "elements": [
+    "FJ1493"
+   ]
+  },
+  {
+   "id": "extensor-indicis-l",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 720,
+   "center": [
+    0.2692,
+    0.8466,
+    0.0337
+   ],
+   "size": [
+    0.0781,
+    0.1995,
+    0.0783
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA38526",
+     "name": "left extensor indicis"
+    }
+   ],
+   "elements": [
+    "FJ1493M"
+   ]
+  },
+  {
+   "id": "pectineus-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 1380,
+   "center": [
+    -0.06,
+    0.8236,
+    0.0068
+   ],
+   "size": [
+    0.0758,
+    0.1407,
+    0.0568
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22450",
+     "name": "right pectineus"
+    }
+   ],
+   "elements": [
+    "FJ1427"
+   ]
+  },
+  {
+   "id": "pectineus-l",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 1380,
+   "center": [
+    0.0613,
+    0.8236,
+    0.0068
+   ],
+   "size": [
+    0.0758,
+    0.1407,
+    0.0568
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22451",
+     "name": "left pectineus"
+    }
+   ],
+   "elements": [
+    "FJ1427M"
+   ]
+  },
+  {
+   "id": "adductor-brevis-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1464,
+   "center": [
+    -0.0601,
+    0.7782,
+    0.0023
+   ],
+   "size": [
+    0.0754,
+    0.1968,
+    0.0468
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22452",
+     "name": "right adductor brevis"
+    }
+   ],
+   "elements": [
+    "FJ1401"
+   ]
+  },
+  {
+   "id": "adductor-brevis-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1464,
+   "center": [
+    0.0614,
+    0.7782,
+    0.0023
+   ],
+   "size": [
+    0.0754,
+    0.1968,
+    0.0468
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22454",
+     "name": "left adductor brevis"
+    }
+   ],
+   "elements": [
+    "FJ1401M"
+   ]
+  },
+  {
+   "id": "obturator-internus-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 2466,
+   "center": [
+    -0.0696,
+    0.877,
+    -0.0325
+   ],
+   "size": [
+    0.0975,
+    0.0571,
+    0.0778
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22324",
+     "name": "right obturator internus"
+    }
+   ],
+   "elements": [
+    "FJ1426"
+   ]
+  },
+  {
+   "id": "obturator-internus-l",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 2466,
+   "center": [
+    0.0709,
+    0.877,
+    -0.0325
+   ],
+   "size": [
+    0.0975,
+    0.0571,
+    0.0778
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22325",
+     "name": "left obturator internus"
+    }
+   ],
+   "elements": [
+    "FJ1426M"
+   ]
+  },
+  {
+   "id": "obturator-externus-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 784,
+   "center": [
+    -0.0758,
+    0.8601,
+    -0.0183
+   ],
+   "size": [
+    0.104,
+    0.0292,
+    0.054
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22326",
+     "name": "right obturator externus"
+    }
+   ],
+   "elements": [
+    "FJ1425"
+   ]
+  },
+  {
+   "id": "obturator-externus-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 784,
+   "center": [
+    0.0771,
+    0.8601,
+    -0.0183
+   ],
+   "size": [
+    0.104,
+    0.0292,
+    0.054
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22327",
+     "name": "left obturator externus"
+    }
+   ],
+   "elements": [
+    "FJ1425M"
+   ]
+  },
+  {
+   "id": "quadratus-femoris-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 1196,
+   "center": [
+    -0.0912,
+    0.8449,
+    -0.0505
+   ],
+   "size": [
+    0.0706,
+    0.0462,
+    0.0152
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22338",
+     "name": "right quadratus femoris"
+    }
+   ],
+   "elements": [
+    "FJ1432"
+   ]
+  },
+  {
+   "id": "quadratus-femoris-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 1196,
+   "center": [
+    0.0925,
+    0.8449,
+    -0.0505
+   ],
+   "size": [
+    0.0706,
+    0.0462,
+    0.0152
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22339",
+     "name": "left quadratus femoris"
+    }
+   ],
+   "elements": [
+    "FJ1432M"
+   ]
+  },
+  {
+   "id": "popliteus-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 858,
+   "center": [
+    -0.0824,
+    0.4124,
+    -0.0304
+   ],
+   "size": [
+    0.0529,
+    0.1447,
+    0.0456
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22591",
+     "name": "right popliteus"
+    }
+   ],
+   "elements": [
+    "FJ1430"
+   ]
+  },
+  {
+   "id": "popliteus-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 858,
+   "center": [
+    0.0837,
+    0.4124,
+    -0.0304
+   ],
+   "size": [
+    0.0529,
+    0.1447,
+    0.0456
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22592",
+     "name": "left popliteus"
+    }
+   ],
+   "elements": [
+    "FJ1430M"
+   ]
+  },
+  {
+   "id": "extensor-hallucis-longus-r",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1668,
+   "center": [
+    -0.0931,
+    0.1577,
+    0.0368
+   ],
+   "size": [
+    0.0277,
+    0.2725,
+    0.1439
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22546",
+     "name": "right extensor hallucis longus"
+    }
+   ],
+   "elements": [
+    "FJ1408"
+   ]
+  },
+  {
+   "id": "extensor-hallucis-longus-l",
+   "layer": "muscles",
+   "triangles": 1000,
+   "sourceTriangles": 1668,
+   "center": [
+    0.0944,
+    0.1577,
+    0.0368
+   ],
+   "size": [
+    0.0277,
+    0.2725,
+    0.1439
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22547",
+     "name": "left extensor hallucis longus"
+    }
+   ],
+   "elements": [
+    "FJ1408M"
+   ]
+  },
+  {
+   "id": "flexor-hallucis-longus-r",
+   "layer": "muscles",
+   "triangles": 1400,
+   "sourceTriangles": 2758,
+   "center": [
+    -0.0844,
+    0.1683,
+    0.033
+   ],
+   "size": [
+    0.0656,
+    0.3227,
+    0.1777
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA65014",
+     "name": "right flexor hallucis longus"
+    }
+   ],
+   "elements": [
+    "FJ1415"
+   ]
+  },
+  {
+   "id": "flexor-hallucis-longus-l",
+   "layer": "muscles",
+   "triangles": 1398,
+   "sourceTriangles": 2758,
+   "center": [
+    0.0857,
+    0.1683,
+    0.033
+   ],
+   "size": [
+    0.0656,
+    0.3228,
+    0.1777
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA65015",
+     "name": "left flexor hallucis longus"
+    }
+   ],
+   "elements": [
+    "FJ1415M"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-longus-r",
+   "layer": "muscles",
+   "triangles": 1400,
+   "sourceTriangles": 4004,
+   "center": [
+    -0.1019,
+    0.1877,
+    0.0405
+   ],
+   "size": [
+    0.1264,
+    0.3631,
+    0.1704
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA65016",
+     "name": "right flexor digitorum longus"
+    }
+   ],
+   "elements": [
+    "FJ1414"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-longus-l",
+   "layer": "muscles",
+   "triangles": 1398,
+   "sourceTriangles": 4004,
+   "center": [
+    0.1032,
+    0.1877,
+    0.0405
+   ],
+   "size": [
+    0.1264,
+    0.3631,
+    0.1704
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA65017",
+     "name": "left flexor digitorum longus"
+    }
+   ],
+   "elements": [
+    "FJ1414M"
+   ]
+  },
+  {
+   "id": "abductor-hallucis-r",
+   "layer": "muscles",
+   "triangles": 796,
+   "sourceTriangles": 1068,
+   "center": [
+    -0.0708,
+    0.0254,
+    0.0245
+   ],
+   "size": [
+    0.0352,
+    0.026,
+    0.1362
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37459",
+     "name": "right abductor hallucis"
+    }
+   ],
+   "elements": [
+    "FJ1400"
+   ]
+  },
+  {
+   "id": "abductor-hallucis-l",
+   "layer": "muscles",
+   "triangles": 792,
+   "sourceTriangles": 1068,
+   "center": [
+    0.0721,
+    0.0254,
+    0.0245
+   ],
+   "size": [
+    0.0352,
+    0.026,
+    0.1362
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37460",
+     "name": "left abductor hallucis"
+    }
+   ],
+   "elements": [
+    "FJ1400M"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-brevis-r",
+   "layer": "muscles",
+   "triangles": 1192,
+   "sourceTriangles": 2436,
+   "center": [
+    -0.1107,
+    0.0147,
+    0.0311
+   ],
+   "size": [
+    0.1056,
+    0.0189,
+    0.1726
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37461",
+     "name": "right flexor digitorum brevis"
+    }
+   ],
+   "elements": [
+    "FJ1413"
+   ]
+  },
+  {
+   "id": "flexor-digitorum-brevis-l",
+   "layer": "muscles",
+   "triangles": 1196,
+   "sourceTriangles": 2436,
+   "center": [
+    0.112,
+    0.0147,
+    0.0311
+   ],
+   "size": [
+    0.1056,
+    0.0189,
+    0.1726
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37462",
+     "name": "left flexor digitorum brevis"
+    }
+   ],
+   "elements": [
+    "FJ1413M"
    ]
   },
   {

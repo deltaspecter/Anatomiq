@@ -4,6 +4,7 @@
  */
 import type { AnatomicalStructure } from '../types'
 import { MUSCLES } from './muscles'
+import { MUSCLES_LIMBS } from './muscles-limbs'
 import { MUSCLES_MORE } from './muscles-more'
 import { NERVOUS } from './nervous'
 import { ORGANS } from './organs'
@@ -11,7 +12,7 @@ import { SKELETON } from './skeleton'
 import { SKIN } from './skin'
 import { VESSELS } from './vessels'
 
-export const STRUCTURES: AnatomicalStructure[] = [...SKIN, ...SKELETON, ...MUSCLES, ...MUSCLES_MORE, ...ORGANS, ...NERVOUS, ...VESSELS]
+export const STRUCTURES: AnatomicalStructure[] = [...SKIN, ...SKELETON, ...MUSCLES, ...MUSCLES_MORE, ...MUSCLES_LIMBS, ...ORGANS, ...NERVOUS, ...VESSELS]
 
 const byMesh = new Map<string, AnatomicalStructure>()
 const byId = new Map<string, AnatomicalStructure>()
