@@ -4,11 +4,17 @@
  * (z. B. nur Skelett einblenden → nur Knochen).
  */
 import { Check, Eye, MousePointerClick, SkipForward, SquareStack, X } from 'lucide-react'
+import { useState } from 'react'
+import { LAYERS } from '@/data/layers'
 import { getStructure } from '@/data/structures'
 import { SIDE_LABELS, type AnatomicalStructure } from '@/data/types'
 import { usePrefs } from '@/state/prefs'
+import { useViewer } from '@/state/viewer'
 import { Popover } from '@/ui/Popover'
-import { useLearn } from './store'
+import { useLearn, type LearnTopic } from './store'
+
+const TOPICS: LearnTopic[] = ['visible', 'skeleton', 'muscles', 'organs', 'vessels', 'nervous']
+const topicLabel = (t: LearnTopic) => (t === 'visible' ? 'Was sichtbar ist' : LAYERS[t].label)
 
 const name = (s: AnatomicalStructure) => (s.side ? `${s.nameDe} (${SIDE_LABELS[s.side]})` : s.nameDe)
 
@@ -16,13 +22,24 @@ export function LearnSheet({ onClose }: { onClose: () => void }) {
   const progress = usePrefs((s) => s.progress)
   const entries = Object.values(progress)
   const mastered = entries.filter((p) => p.box >= 3).length
+  const [topic, setTopic] = useState<LearnTopic>('visible')
   const start = (mode: 'quiz' | 'cards') => {
-    useLearn.getState().start(mode)
+    useLearn.getState().start(mode, topic)
     onClose()
   }
   return (
     <Popover title="Lernen" onClose={onClose}>
       <div className="space-y-2.5">
+        <div>
+          <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-muted">Thema</p>
+          <div className="flex flex-wrap gap-1.5" role="radiogroup" aria-label="Thema">
+            {TOPICS.map((t) => (
+              <button key={t} type="button" role="radio" aria-checked={topic === t} onClick={() => setTopic(t)} className={`chip ${topic === t ? 'border-accent/60 bg-accent/15 text-accent' : ''}`}>
+                {topicLabel(t)}
+              </button>
+            ))}
+          </div>
+        </div>
         <button type="button" className="flex w-full gap-3 rounded-2xl bg-white/[0.05] p-3.5 text-left hover:bg-white/[0.08]" onClick={() => start('quiz')}>
           <MousePointerClick size={22} className="mt-0.5 shrink-0 text-accent" aria-hidden />
           <span>
@@ -38,7 +55,7 @@ export function LearnSheet({ onClose }: { onClose: () => void }) {
           </span>
         </button>
         <p className="pt-1 text-[12.5px] leading-snug text-muted">
-          Tipp: Gefragt wird nur, was gerade sichtbar ist. Blende über „Ebenen“ z. B. nur das Skelett ein, um gezielt Knochen zu üben. Strukturen, die du nicht wusstest, kommen häufiger dran.
+          Mit einem Thema blendet Anatomiq die passende Ebene ein (Skelett zur Orientierung durchscheinend). „Was sichtbar ist“ fragt alles ab, was du gerade eingeblendet hast. Strukturen, die du nicht wusstest, kommen häufiger dran.
         </p>
         {entries.length > 0 && (
           <div className="flex items-center justify-between rounded-2xl border border-white/5 p-3 text-[13px]">
@@ -57,6 +74,7 @@ export function LearnSheet({ onClose }: { onClose: () => void }) {
 
 export function LearnOverlay() {
   const { mode, target, revealed, attempts, lastWrong, feedback, score } = useLearn()
+  const loading = useViewer((v) => Object.values(v.load).includes('loading'))
   if (mode === 'off') return null
   const { stop, next, reveal, grade } = useLearn.getState()
   const s = target ? getStructure(target) : undefined
@@ -79,7 +97,9 @@ export function LearnOverlay() {
           </span>
         </div>
 
-        {!s ? (
+        {!s && loading ? (
+          <p className="mt-2 text-[14px] leading-relaxed text-muted">Ebene wird geladen …</p>
+        ) : !s ? (
           <p className="mt-2 text-[14px] leading-relaxed">Gerade ist keine passende Struktur deckend sichtbar. Blende über „Ebenen“ eine Ebene ein und starte erneut.</p>
         ) : mode === 'quiz' ? (
           <>

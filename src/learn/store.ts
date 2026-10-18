@@ -5,9 +5,10 @@
  * Gefragt werden nur Strukturen, die geladen, deckend sichtbar und mit Inhalten hinterlegt sind.
  */
 import { create } from 'zustand'
-import type { LayerId } from '@/data/layers'
+import { LAYER_IDS, type LayerId } from '@/data/layers'
 import { getStructure } from '@/data/structures'
 import { effectiveVisibility } from '@/layers/visibility'
+import { isReachable } from '@/scene/reach'
 import { loadedIds, getMesh } from '@/scene/registry'
 import { usePrefs } from '@/state/prefs'
 import { useViewer } from '@/state/viewer'
@@ -15,6 +16,8 @@ import { pickNext } from './pick'
 
 export type LearnMode = 'off' | 'quiz' | 'cards'
 export type Feedback = { id: string; kind: 'correct' | 'wrong' | 'selected' }
+/** Thema: eine Ebene gezielt üben oder alles, was gerade sichtbar ist */
+export type LearnTopic = 'visible' | Exclude<LayerId, 'skin'>
 
 type LearnState = {
   mode: LearnMode
@@ -25,7 +28,7 @@ type LearnState = {
   lastWrong: string | null
   feedback: Feedback | null
   score: { correct: number; total: number }
-  start: (mode: Exclude<LearnMode, 'off'>) => void
+  start: (mode: Exclude<LearnMode, 'off'>, topic?: LearnTopic) => void
   stop: () => void
   next: () => void
   answer: (id: string | null) => void
@@ -54,11 +57,28 @@ export const useLearn = create<LearnState>()((set, get) => ({
   feedback: null,
   score: { correct: 0, total: 0 },
 
-  start: (mode) => {
+  start: (mode, topic = 'visible') => {
     clearTimeout(timer)
-    useViewer.getState().select(null)
+    const viewer = useViewer.getState()
+    viewer.select(null)
     set({ mode, score: { correct: 0, total: 0 }, target: null })
-    get().next()
+    if (topic === 'visible') return get().next()
+    // Thema einblenden: gewählte Ebene deckend, Skelett zur Orientierung durchscheinend, Rest aus
+    viewer.resetDisplay()
+    for (const layer of LAYER_IDS) {
+      if (layer === 'skin') continue
+      viewer.setLayer(layer, layer === topic ? 'visible' : layer === 'skeleton' ? 'ghost' : 'hidden')
+    }
+    viewer.camera({ kind: 'reset' })
+    // Auf das Laden der Ebene warten (z. B. Muskeln beim ersten Mal), dann die erste Aufgabe stellen
+    const ready = () => ['ready', 'error'].includes(useViewer.getState().load[topic])
+    if (ready()) return get().next()
+    const unsubscribe = useViewer.subscribe(() => {
+      if (!ready() || get().mode !== mode) return
+      unsubscribe()
+      // Sichtbarkeit wird nach dem Laden im selben Takt übertragen; danach erst auswählen
+      setTimeout(() => get().mode === mode && get().next(), 0)
+    })
   },
   stop: () => {
     clearTimeout(timer)
@@ -67,7 +87,19 @@ export const useLearn = create<LearnState>()((set, get) => ({
   next: () => {
     clearTimeout(timer)
     const { mode, target } = get()
-    const id = pickNext(availableTargets(), usePrefs.getState().progress, target)
+    // Zufällig wählen, aber nur Strukturen, die aus irgendeiner Richtung sichtbar sind
+    let pool = availableTargets()
+    const meshes = pool.map((p) => getMesh(p)!).filter(Boolean)
+    let id: string | null = null
+    for (let tries = 0; tries < 40 && pool.length; tries++) {
+      const candidate = pickNext(pool, usePrefs.getState().progress, target)
+      if (!candidate) break
+      if (isReachable(candidate, meshes)) {
+        id = candidate
+        break
+      }
+      pool = pool.filter((p) => p !== candidate)
+    }
     set({ target: id, attempts: 0, revealed: false, lastWrong: null, feedback: mode === 'cards' && id ? { id, kind: 'selected' } : null })
     if (mode === 'cards' && id) useViewer.getState().camera({ kind: 'focus', id })
   },

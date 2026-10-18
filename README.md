@@ -16,7 +16,7 @@ Die App läuft im Browser auf iPhone, Tablet und Desktop und lässt sich in Safa
 | **Ebenen** | ✅ umgesetzt | Haut, Muskeln, Skelett, Organe, Gefäße, Nerven – je sichtbar / transparent / aus; transparente Strukturen lassen Fingertipps durch |
 | **Einzelstrukturen** | ✅ umgesetzt | Isolieren (auch mit verwandten Strukturen), transparent machen, ausblenden, Darstellung zurücksetzen |
 | **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 416 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
-| **Lernen** | ✅ umgesetzt | Favoriten, „Zuletzt angesehen“, Quiz „Finde die Struktur“ (Antippen im Modell), Lernkarten mit Leitner-Wiederholung – alles lokal gespeichert |
+| **Lernen** | ✅ umgesetzt | Favoriten, „Zuletzt angesehen“, Quiz „Finde die Struktur“ (Antippen im Modell) und Lernkarten mit Leitner-Wiederholung, wahlweise nach Thema (Skelett, Muskeln, Organe, Gefäße, Nerven); gefragt wird nur, was von außen sichtbar ist – alles lokal gespeichert |
 | **PWA / Offline** | ✅ umgesetzt | Manifest, Icons, Safe Areas, Service Worker; nach dem ersten Besuch offline nutzbar (Muskelebene nach erstem Laden) |
 | **Lunge** | 🟡 Näherung | Fünf Lungenlappen aus der HRA-Referenzlunge, auf den Bronchialbaum von BodyParts3D eingepasst (BodyParts3D selbst hat keine Lungenoberfläche); der Bronchialbaum ist darunter separat antippbar |
 | **Weitere Strukturen** | 🔜 geplant | u. a. Schilddrüse, periphere Nerven, Hand- und Fußmuskeln, Rectus abdominis, Latissimus dorsi, Sigma, weibliche Anatomie – siehe [docs/MODELL.md](docs/MODELL.md#was-fehlt) |
