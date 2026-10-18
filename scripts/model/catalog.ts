@@ -170,6 +170,20 @@ export const CATALOG: CatalogEntry[] = [
   ...pair('scalenus-medius', 'muscles', ['{side} scalenus medius'], 1000),
   ...pair('iliocostalis-lumborum', 'muscles', ['{side} iliocostalis lumborum'], 1800),
   ...pair('longissimus-thoracis', 'muscles', ['{side} longissimus thoracis'], 1800),
+  // Weitere Rücken- und Nackenmuskeln: Rautenmuskel, hintere Sägemuskeln, Rückenstrecker (alle Abschnitte), Platysma
+  ...pair('rhomboid-minor', 'muscles', ['{side} rhomboid minor'], 600),
+  ...pair('serratus-posterior-superior', 'muscles', ['{side} serratus posterior superior'], 700),
+  ...pair('serratus-posterior-inferior', 'muscles', ['{side} serratus posterior inferior'], 800),
+  ...pair('splenius-cervicis', 'muscles', ['{side} splenius cervicis'], 800),
+  ...pair('semispinalis-capitis', 'muscles', ['{side} semispinalis capitis'], 1200),
+  ...pair('semispinalis-cervicis', 'muscles', ['{side} semispinalis cervicis'], 900),
+  ...pair('semispinalis-thoracis', 'muscles', ['{side} semispinalis thoracis'], 900),
+  ...pair('spinalis-thoracis', 'muscles', ['{side} spinalis thoracis'], 900),
+  ...pair('longissimus-capitis', 'muscles', ['{side} longissimus capitis'], 800),
+  ...pair('longissimus-cervicis', 'muscles', ['{side} longissimus cervicis'], 800),
+  ...pair('iliocostalis-thoracis', 'muscles', ['{side} iliocostalis thoracis'], 1200),
+  ...pair('iliocostalis-cervicis', 'muscles', ['{side} iliocostalis cervicis'], 800),
+  ...pair('platysma', 'muscles', ['{side} platysma'], 1200),
   ...pair('teres-minor', 'muscles', ['{side} teres minor'], 500),
   ...pair('subscapularis', 'muscles', ['{side} subscapularis'], 1200),
   ...pair('coracobrachialis', 'muscles', ['{side} coracobrachialis'], 450),
@@ -229,6 +243,7 @@ export const CATALOG: CatalogEntry[] = [
   ...one('cricoid-cartilage', 'organs', ['cricoid cartilage'], 1200),
   ...pair('arytenoid-cartilage', 'organs', ['{side} arytenoid cartilage'], 500),
   ...pair('submandibular-gland', 'organs', ['{side} submandibular gland'], 250),
+  ...pair('sublingual-gland', 'organs', ['{side} sublingual gland'], 300),
   // Ohrspeicheldrüsen fehlen in BodyParts3D: aus dem HRA-Mundmodell, eingepasst über Unterkiefer und Unterkieferdrüsen
   ...SIDES.map(([suffix, side]): CatalogEntry => ({
     id: `parotid-gland-${suffix}`,

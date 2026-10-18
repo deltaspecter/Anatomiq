@@ -15,15 +15,15 @@
   },
   "muscles": {
    "file": "/models/muscles.glb",
-   "bytes": 1257724,
-   "hash": "179d83f163",
-   "triangles": 206358
+   "bytes": 1411148,
+   "hash": "6520ec33d1",
+   "triangles": 229506
   },
   "organs": {
    "file": "/models/organs.glb",
-   "bytes": 698864,
-   "hash": "9d2ea278c4",
-   "triangles": 122409
+   "bytes": 703964,
+   "hash": "a74a42dfcf",
+   "triangles": 122883
   },
   "nervous": {
    "file": "/models/nervous.glb",
@@ -5737,6 +5737,682 @@
    ]
   },
   {
+   "id": "rhomboid-minor-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 2206,
+   "center": [
+    -0.0299,
+    1.4122,
+    -0.0803
+   ],
+   "size": [
+    0.0624,
+    0.1066,
+    0.0312
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13383",
+     "name": "right rhomboid minor"
+    }
+   ],
+   "elements": [
+    "FJ1537"
+   ]
+  },
+  {
+   "id": "rhomboid-minor-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 2206,
+   "center": [
+    0.0311,
+    1.4122,
+    -0.0803
+   ],
+   "size": [
+    0.0624,
+    0.1066,
+    0.0312
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13384",
+     "name": "left rhomboid minor"
+    }
+   ],
+   "elements": [
+    "FJ1537M"
+   ]
+  },
+  {
+   "id": "serratus-posterior-superior-r",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 9066,
+   "center": [
+    -0.0505,
+    1.398,
+    -0.0591
+   ],
+   "size": [
+    0.1037,
+    0.1311,
+    0.0637
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13403",
+     "name": "right serratus posterior superior"
+    }
+   ],
+   "elements": [
+    "FJ1542"
+   ]
+  },
+  {
+   "id": "serratus-posterior-superior-l",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 9066,
+   "center": [
+    0.052,
+    1.3979,
+    -0.0591
+   ],
+   "size": [
+    0.1034,
+    0.1308,
+    0.0638
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13404",
+     "name": "left serratus posterior superior"
+    }
+   ],
+   "elements": [
+    "FJ1542M"
+   ]
+  },
+  {
+   "id": "serratus-posterior-inferior-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 13164,
+   "center": [
+    -0.0515,
+    1.1288,
+    -0.0791
+   ],
+   "size": [
+    0.1083,
+    0.1624,
+    0.0408
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13405",
+     "name": "right serratus posterior inferior"
+    }
+   ],
+   "elements": [
+    "FJ1541"
+   ]
+  },
+  {
+   "id": "serratus-posterior-inferior-l",
+   "layer": "muscles",
+   "triangles": 798,
+   "sourceTriangles": 13164,
+   "center": [
+    0.0527,
+    1.1289,
+    -0.0791
+   ],
+   "size": [
+    0.1081,
+    0.1625,
+    0.0408
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13406",
+     "name": "left serratus posterior inferior"
+    }
+   ],
+   "elements": [
+    "FJ1541M"
+   ]
+  },
+  {
+   "id": "splenius-cervicis-r",
+   "layer": "muscles",
+   "triangles": 798,
+   "sourceTriangles": 6256,
+   "center": [
+    -0.0191,
+    1.4224,
+    -0.0645
+   ],
+   "size": [
+    0.0428,
+    0.2542,
+    0.0818
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22726",
+     "name": "right splenius cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1546"
+   ]
+  },
+  {
+   "id": "splenius-cervicis-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 6256,
+   "center": [
+    0.0204,
+    1.4224,
+    -0.0645
+   ],
+   "size": [
+    0.0428,
+    0.2542,
+    0.0818
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22727",
+     "name": "left splenius cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1546M"
+   ]
+  },
+  {
+   "id": "semispinalis-capitis-r",
+   "layer": "muscles",
+   "triangles": 1192,
+   "sourceTriangles": 1912,
+   "center": [
+    -0.0228,
+    1.5131,
+    -0.0591
+   ],
+   "size": [
+    0.0401,
+    0.1194,
+    0.0542
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22876",
+     "name": "right semispinalis capitis"
+    }
+   ],
+   "elements": [
+    "FJ1538"
+   ]
+  },
+  {
+   "id": "semispinalis-capitis-l",
+   "layer": "muscles",
+   "triangles": 1184,
+   "sourceTriangles": 1912,
+   "center": [
+    0.0241,
+    1.5131,
+    -0.0591
+   ],
+   "size": [
+    0.0401,
+    0.1194,
+    0.0542
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22877",
+     "name": "left semispinalis capitis"
+    }
+   ],
+   "elements": [
+    "FJ1538M"
+   ]
+  },
+  {
+   "id": "semispinalis-cervicis-r",
+   "layer": "muscles",
+   "triangles": 898,
+   "sourceTriangles": 3406,
+   "center": [
+    -0.0137,
+    1.4338,
+    -0.0592
+   ],
+   "size": [
+    0.0306,
+    0.1483,
+    0.0459
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22874",
+     "name": "right semispinalis cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1539"
+   ]
+  },
+  {
+   "id": "semispinalis-cervicis-l",
+   "layer": "muscles",
+   "triangles": 898,
+   "sourceTriangles": 3406,
+   "center": [
+    0.015,
+    1.4337,
+    -0.0592
+   ],
+   "size": [
+    0.0306,
+    0.1486,
+    0.0459
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22875",
+     "name": "left semispinalis cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1539M"
+   ]
+  },
+  {
+   "id": "semispinalis-thoracis-r",
+   "layer": "muscles",
+   "triangles": 888,
+   "sourceTriangles": 5176,
+   "center": [
+    -0.0153,
+    1.2983,
+    -0.0774
+   ],
+   "size": [
+    0.0338,
+    0.276,
+    0.042
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22872",
+     "name": "right semispinalis thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1540"
+   ]
+  },
+  {
+   "id": "semispinalis-thoracis-l",
+   "layer": "muscles",
+   "triangles": 894,
+   "sourceTriangles": 5176,
+   "center": [
+    0.0166,
+    1.2982,
+    -0.0774
+   ],
+   "size": [
+    0.0339,
+    0.2757,
+    0.042
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22873",
+     "name": "left semispinalis thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1540M"
+   ]
+  },
+  {
+   "id": "spinalis-thoracis-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 7422,
+   "center": [
+    -0.0042,
+    1.2329,
+    -0.0802
+   ],
+   "size": [
+    0.0142,
+    0.3599,
+    0.0467
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22779",
+     "name": "right spinalis thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1544"
+   ]
+  },
+  {
+   "id": "spinalis-thoracis-l",
+   "layer": "muscles",
+   "triangles": 898,
+   "sourceTriangles": 7422,
+   "center": [
+    0.0055,
+    1.2324,
+    -0.0802
+   ],
+   "size": [
+    0.0142,
+    0.3601,
+    0.0467
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22780",
+     "name": "left spinalis thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1544M"
+   ]
+  },
+  {
+   "id": "longissimus-capitis-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 2260,
+   "center": [
+    -0.0416,
+    1.4954,
+    -0.0436
+   ],
+   "size": [
+    0.0362,
+    0.1653,
+    0.0435
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22754",
+     "name": "right longissimus capitis"
+    }
+   ],
+   "elements": [
+    "FJ1533"
+   ]
+  },
+  {
+   "id": "longissimus-capitis-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 2260,
+   "center": [
+    0.0429,
+    1.4954,
+    -0.0436
+   ],
+   "size": [
+    0.0362,
+    0.1653,
+    0.0435
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22756",
+     "name": "left longissimus capitis"
+    }
+   ],
+   "elements": [
+    "FJ1533M"
+   ]
+  },
+  {
+   "id": "longissimus-cervicis-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 2816,
+   "center": [
+    -0.0292,
+    1.4279,
+    -0.0544
+   ],
+   "size": [
+    0.0199,
+    0.1957,
+    0.0666
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22757",
+     "name": "right longissimus cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1534"
+   ]
+  },
+  {
+   "id": "longissimus-cervicis-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 2816,
+   "center": [
+    0.0305,
+    1.4279,
+    -0.0544
+   ],
+   "size": [
+    0.0199,
+    0.1957,
+    0.0666
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22758",
+     "name": "left longissimus cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1534M"
+   ]
+  },
+  {
+   "id": "iliocostalis-thoracis-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 8386,
+   "center": [
+    -0.0663,
+    1.2868,
+    -0.0634
+   ],
+   "size": [
+    0.0501,
+    0.3042,
+    0.0759
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22742",
+     "name": "right iliocostalis thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1528"
+   ]
+  },
+  {
+   "id": "iliocostalis-thoracis-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 8386,
+   "center": [
+    0.0675,
+    1.2869,
+    -0.0634
+   ],
+   "size": [
+    0.05,
+    0.3044,
+    0.0759
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22743",
+     "name": "left iliocostalis thoracis"
+    }
+   ],
+   "elements": [
+    "FJ1528M"
+   ]
+  },
+  {
+   "id": "iliocostalis-cervicis-r",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 3072,
+   "center": [
+    -0.0473,
+    1.4078,
+    -0.0573
+   ],
+   "size": [
+    0.0511,
+    0.1797,
+    0.0748
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22744",
+     "name": "right iliocostalis cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1526"
+   ]
+  },
+  {
+   "id": "iliocostalis-cervicis-l",
+   "layer": "muscles",
+   "triangles": 800,
+   "sourceTriangles": 3072,
+   "center": [
+    0.0486,
+    1.4079,
+    -0.0573
+   ],
+   "size": [
+    0.0511,
+    0.1798,
+    0.0748
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22745",
+     "name": "left iliocostalis cervicis"
+    }
+   ],
+   "elements": [
+    "FJ1526M"
+   ]
+  },
+  {
+   "id": "platysma-r",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 13780,
+   "center": [
+    -0.0714,
+    1.4719,
+    0.0108
+   ],
+   "size": [
+    0.1495,
+    0.1486,
+    0.1235
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA45739",
+     "name": "right platysma"
+    }
+   ],
+   "elements": [
+    "FJ1587"
+   ]
+  },
+  {
+   "id": "platysma-l",
+   "layer": "muscles",
+   "triangles": 1200,
+   "sourceTriangles": 13396,
+   "center": [
+    0.0733,
+    1.4718,
+    0.0108
+   ],
+   "size": [
+    0.1461,
+    0.1486,
+    0.1234
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA45740",
+     "name": "left platysma"
+    }
+   ],
+   "elements": [
+    "FJ1558"
+   ]
+  },
+  {
    "id": "teres-minor-r",
    "layer": "muscles",
    "triangles": 500,
@@ -8637,6 +9313,58 @@
    ],
    "elements": [
     "FJ2766"
+   ]
+  },
+  {
+   "id": "sublingual-gland-r",
+   "layer": "organs",
+   "triangles": 244,
+   "sourceTriangles": 244,
+   "center": [
+    -0.0142,
+    1.5255,
+    0.0515
+   ],
+   "size": [
+    0.0126,
+    0.0132,
+    0.0227
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA59804",
+     "name": "right sublingual gland"
+    }
+   ],
+   "elements": [
+    "FJ2767"
+   ]
+  },
+  {
+   "id": "sublingual-gland-l",
+   "layer": "organs",
+   "triangles": 230,
+   "sourceTriangles": 230,
+   "center": [
+    0.0142,
+    1.5255,
+    0.0515
+   ],
+   "size": [
+    0.0126,
+    0.0131,
+    0.0226
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA59805",
+     "name": "left sublingual gland"
+    }
+   ],
+   "elements": [
+    "FJ2765"
    ]
   },
   {
