@@ -487,7 +487,7 @@ const neck: AnatomicalStructure[] = [
     innervation: 'Die Muskeln, die ihn bewegen, werden vom N. laryngeus recurrens (Ast des N. vagus) versorgt.',
     joints: 'Articulatio cricoarytenoidea mit dem Ringknorpel.',
     clinical: 'Eine Lähmung des N. laryngeus recurrens (z. B. nach Schilddrüsenoperation) lässt die Stimmlippe dieser Seite nahe der Mittellinie stehen: Heiserkeit; beidseits droht Atemnot. Selten wird der Stellknorpel bei einer Intubation aus dem Gelenk gehebelt (Aryluxation).',
-    related: ['cricoid-cartilage', 'thyroid-cartilage', 'epiglottis', 'trachea'],
+    related: ['cricoid-cartilage', 'thyroid-cartilage', '~posterior-cricoarytenoid', '~vocalis', 'transverse-arytenoid', 'epiglottis'],
   }),
   ...paired('submandibular-gland', 'organs', {
     nameDe: 'Unterkieferspeicheldrüse',

@@ -15,9 +15,9 @@
   },
   "muscles": {
    "file": "/models/muscles.glb",
-   "bytes": 1411148,
-   "hash": "6520ec33d1",
-   "triangles": 229506
+   "bytes": 1622496,
+   "hash": "2b3f4d7ad7",
+   "triangles": 256446
   },
   "organs": {
    "file": "/models/organs.glb",
@@ -6410,6 +6410,1389 @@
    ],
    "elements": [
     "FJ1558"
+   ]
+  },
+  {
+   "id": "digastric-r",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 2952,
+   "center": [
+    -0.0301,
+    1.5405,
+    0.0116
+   ],
+   "size": [
+    0.0538,
+    0.0652,
+    0.0923
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46292",
+     "name": "right digastric"
+    }
+   ],
+   "elements": [
+    "FJ1556",
+    "FJ1579"
+   ]
+  },
+  {
+   "id": "digastric-l",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 3284,
+   "center": [
+    0.0299,
+    1.54,
+    0.0116
+   ],
+   "size": [
+    0.0535,
+    0.0663,
+    0.0921
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46293",
+     "name": "left digastric"
+    }
+   ],
+   "elements": [
+    "FJ1555",
+    "FJ1560",
+    "FJ1578"
+   ]
+  },
+  {
+   "id": "mylohyoid-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 1956,
+   "center": [
+    -0.013,
+    1.5219,
+    0.0397
+   ],
+   "size": [
+    0.0261,
+    0.0242,
+    0.0366
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46321",
+     "name": "right mylohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1583"
+   ]
+  },
+  {
+   "id": "mylohyoid-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 1938,
+   "center": [
+    0.0131,
+    1.5219,
+    0.0397
+   ],
+   "size": [
+    0.0261,
+    0.0243,
+    0.0365
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46322",
+     "name": "left mylohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1562"
+   ]
+  },
+  {
+   "id": "geniohyoid-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 728,
+   "center": [
+    -0.0039,
+    1.5081,
+    0.0399
+   ],
+   "size": [
+    0.0076,
+    0.0138,
+    0.0392
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46326",
+     "name": "right geniohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1580"
+   ]
+  },
+  {
+   "id": "geniohyoid-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 732,
+   "center": [
+    0.0039,
+    1.5081,
+    0.0398
+   ],
+   "size": [
+    0.0076,
+    0.0138,
+    0.0393
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46327",
+     "name": "left geniohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1559"
+   ]
+  },
+  {
+   "id": "stylohyoid-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1236,
+   "center": [
+    -0.0248,
+    1.5378,
+    0.0039
+   ],
+   "size": [
+    0.0303,
+    0.06,
+    0.0393
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA45826",
+     "name": "right stylohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1598"
+   ]
+  },
+  {
+   "id": "stylohyoid-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1248,
+   "center": [
+    0.0248,
+    1.5379,
+    0.0039
+   ],
+   "size": [
+    0.0303,
+    0.0604,
+    0.0393
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA45827",
+     "name": "left stylohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1576"
+   ]
+  },
+  {
+   "id": "sternohyoid-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 3116,
+   "center": [
+    -0.0144,
+    1.4494,
+    0.022
+   ],
+   "size": [
+    0.0223,
+    0.1156,
+    0.0299
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13346",
+     "name": "right sternohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1596"
+   ]
+  },
+  {
+   "id": "sternohyoid-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 3078,
+   "center": [
+    0.0144,
+    1.4494,
+    0.022
+   ],
+   "size": [
+    0.0225,
+    0.1156,
+    0.0297
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13347",
+     "name": "left sternohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1574"
+   ]
+  },
+  {
+   "id": "sternothyroid-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 2608,
+   "center": [
+    -0.0128,
+    1.4369,
+    0.0181
+   ],
+   "size": [
+    0.0191,
+    0.1139,
+    0.0447
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13350",
+     "name": "right sternothyroid"
+    }
+   ],
+   "elements": [
+    "FJ1597"
+   ]
+  },
+  {
+   "id": "sternothyroid-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 2590,
+   "center": [
+    0.0128,
+    1.4368,
+    0.0181
+   ],
+   "size": [
+    0.0191,
+    0.1137,
+    0.0446
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13351",
+     "name": "left sternothyroid"
+    }
+   ],
+   "elements": [
+    "FJ1575"
+   ]
+  },
+  {
+   "id": "thyrohyoid-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1450,
+   "center": [
+    -0.0133,
+    1.4915,
+    0.0092
+   ],
+   "size": [
+    0.0124,
+    0.0309,
+    0.0263
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13352",
+     "name": "right thyrohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1599"
+   ]
+  },
+  {
+   "id": "thyrohyoid-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1436,
+   "center": [
+    0.0133,
+    1.4915,
+    0.0092
+   ],
+   "size": [
+    0.0123,
+    0.0308,
+    0.0262
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13353",
+     "name": "left thyrohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1577"
+   ]
+  },
+  {
+   "id": "omohyoid-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 5414,
+   "center": [
+    -0.0587,
+    1.4507,
+    -0.0264
+   ],
+   "size": [
+    0.0931,
+    0.1093,
+    0.0958
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13348",
+     "name": "right omohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1586"
+   ]
+  },
+  {
+   "id": "omohyoid-l",
+   "layer": "muscles",
+   "triangles": 598,
+   "sourceTriangles": 5358,
+   "center": [
+    0.0586,
+    1.4507,
+    -0.0265
+   ],
+   "size": [
+    0.0932,
+    0.1093,
+    0.0956
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13349",
+     "name": "left omohyoid"
+    }
+   ],
+   "elements": [
+    "FJ1565"
+   ]
+  },
+  {
+   "id": "scalenus-posterior-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 2778,
+   "center": [
+    -0.0488,
+    1.4503,
+    -0.032
+   ],
+   "size": [
+    0.0492,
+    0.0615,
+    0.0253
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13388",
+     "name": "right scalenus posterior"
+    }
+   ],
+   "elements": [
+    "FJ1594"
+   ]
+  },
+  {
+   "id": "scalenus-posterior-l",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 2756,
+   "center": [
+    0.0488,
+    1.4503,
+    -0.032
+   ],
+   "size": [
+    0.0491,
+    0.0616,
+    0.0254
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13389",
+     "name": "left scalenus posterior"
+    }
+   ],
+   "elements": [
+    "FJ1572"
+   ]
+  },
+  {
+   "id": "longus-capitis-r",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 3956,
+   "center": [
+    -0.0139,
+    1.5193,
+    -0.0146
+   ],
+   "size": [
+    0.0245,
+    0.111,
+    0.0175
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46309",
+     "name": "right longus capitis"
+    }
+   ],
+   "elements": [
+    "FJ1582"
+   ]
+  },
+  {
+   "id": "longus-capitis-l",
+   "layer": "muscles",
+   "triangles": 598,
+   "sourceTriangles": 3898,
+   "center": [
+    0.0139,
+    1.5193,
+    -0.0145
+   ],
+   "size": [
+    0.0244,
+    0.1109,
+    0.0176
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46310",
+     "name": "left longus capitis"
+    }
+   ],
+   "elements": [
+    "FJ1561"
+   ]
+  },
+  {
+   "id": "subclavius-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1640,
+   "center": [
+    -0.0689,
+    1.4053,
+    0.0037
+   ],
+   "size": [
+    0.0702,
+    0.0311,
+    0.0608
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13412",
+     "name": "right subclavius"
+    }
+   ],
+   "elements": [
+    "FJ1460"
+   ]
+  },
+  {
+   "id": "subclavius-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1640,
+   "center": [
+    0.0702,
+    1.4052,
+    0.0037
+   ],
+   "size": [
+    0.0702,
+    0.0314,
+    0.0608
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA13411",
+     "name": "left subclavius"
+    }
+   ],
+   "elements": [
+    "FJ1460M"
+   ]
+  },
+  {
+   "id": "rectus-capitis-posterior-major-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1572,
+   "center": [
+    -0.0174,
+    1.5429,
+    -0.0633
+   ],
+   "size": [
+    0.037,
+    0.0476,
+    0.0257
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32530",
+     "name": "right rectus capitis posterior major"
+    }
+   ],
+   "elements": [
+    "FJ1589"
+   ]
+  },
+  {
+   "id": "rectus-capitis-posterior-major-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1566,
+   "center": [
+    0.0189,
+    1.5427,
+    -0.0633
+   ],
+   "size": [
+    0.0362,
+    0.048,
+    0.0259
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32531",
+     "name": "left rectus capitis posterior major"
+    }
+   ],
+   "elements": [
+    "FJ1567"
+   ]
+  },
+  {
+   "id": "rectus-capitis-posterior-minor-r",
+   "layer": "muscles",
+   "triangles": 300,
+   "sourceTriangles": 886,
+   "center": [
+    -0.0117,
+    1.5568,
+    -0.0698
+   ],
+   "size": [
+    0.0239,
+    0.0268,
+    0.0272
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32532",
+     "name": "right rectus capitis posterior minor"
+    }
+   ],
+   "elements": [
+    "FJ1590"
+   ]
+  },
+  {
+   "id": "rectus-capitis-posterior-minor-l",
+   "layer": "muscles",
+   "triangles": 300,
+   "sourceTriangles": 860,
+   "center": [
+    0.0127,
+    1.5569,
+    -0.0705
+   ],
+   "size": [
+    0.0242,
+    0.0268,
+    0.0257
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32533",
+     "name": "left rectus capitis posterior minor"
+    }
+   ],
+   "elements": [
+    "FJ1568"
+   ]
+  },
+  {
+   "id": "obliquus-capitis-superior-r",
+   "layer": "muscles",
+   "triangles": 386,
+   "sourceTriangles": 1410,
+   "center": [
+    -0.0354,
+    1.5582,
+    -0.0548
+   ],
+   "size": [
+    0.0138,
+    0.0229,
+    0.0507
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32534",
+     "name": "right obliquus capitis superior"
+    }
+   ],
+   "elements": [
+    "FJ1585"
+   ]
+  },
+  {
+   "id": "obliquus-capitis-superior-l",
+   "layer": "muscles",
+   "triangles": 388,
+   "sourceTriangles": 1418,
+   "center": [
+    0.0366,
+    1.5574,
+    -0.0551
+   ],
+   "size": [
+    0.0137,
+    0.0245,
+    0.0503
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32535",
+     "name": "left obliquus capitis superior"
+    }
+   ],
+   "elements": [
+    "FJ1564"
+   ]
+  },
+  {
+   "id": "obliquus-capitis-inferior-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1032,
+   "center": [
+    -0.0204,
+    1.5314,
+    -0.0452
+   ],
+   "size": [
+    0.0389,
+    0.0339,
+    0.0372
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32536",
+     "name": "right obliquus capitis inferior"
+    }
+   ],
+   "elements": [
+    "FJ1584"
+   ]
+  },
+  {
+   "id": "obliquus-capitis-inferior-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1044,
+   "center": [
+    0.0222,
+    1.5305,
+    -0.0454
+   ],
+   "size": [
+    0.042,
+    0.033,
+    0.0356
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA32537",
+     "name": "left obliquus capitis inferior"
+    }
+   ],
+   "elements": [
+    "FJ1563"
+   ]
+  },
+  {
+   "id": "posterior-cricoarytenoid-r",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 4812,
+   "center": [
+    -0.0062,
+    1.4758,
+    -0.0052
+   ],
+   "size": [
+    0.0091,
+    0.0143,
+    0.0057
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46577",
+     "name": "right posterior crico-arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2800"
+   ]
+  },
+  {
+   "id": "posterior-cricoarytenoid-l",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 4842,
+   "center": [
+    0.0062,
+    1.4758,
+    -0.0052
+   ],
+   "size": [
+    0.0091,
+    0.0143,
+    0.0057
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46578",
+     "name": "left posterior crico-arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2782"
+   ]
+  },
+  {
+   "id": "lateral-cricoarytenoid-r",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 6198,
+   "center": [
+    -0.0089,
+    1.4779,
+    0.0015
+   ],
+   "size": [
+    0.0045,
+    0.0108,
+    0.0101
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46580",
+     "name": "right lateral crico-arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2796"
+   ]
+  },
+  {
+   "id": "lateral-cricoarytenoid-l",
+   "layer": "muscles",
+   "triangles": 700,
+   "sourceTriangles": 6214,
+   "center": [
+    0.0088,
+    1.4779,
+    0.0015
+   ],
+   "size": [
+    0.0045,
+    0.0108,
+    0.01
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46581",
+     "name": "left lateral crico-arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2778"
+   ]
+  },
+  {
+   "id": "thyroarytenoid-r",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 16742,
+   "center": [
+    -0.0039,
+    1.4943,
+    0.0059
+   ],
+   "size": [
+    0.0085,
+    0.0276,
+    0.0216
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46589",
+     "name": "right thyro-arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2802",
+    "FJ2803"
+   ]
+  },
+  {
+   "id": "thyroarytenoid-l",
+   "layer": "muscles",
+   "triangles": 900,
+   "sourceTriangles": 15382,
+   "center": [
+    0.0039,
+    1.4943,
+    0.0059
+   ],
+   "size": [
+    0.0085,
+    0.0275,
+    0.0216
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46590",
+     "name": "left thyro-arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2784",
+    "FJ2785"
+   ]
+  },
+  {
+   "id": "vocalis-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1148,
+   "center": [
+    -0.0026,
+    1.4825,
+    0.0072
+   ],
+   "size": [
+    0.0016,
+    0.0014,
+    0.0141
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46592",
+     "name": "right vocalis"
+    }
+   ],
+   "elements": [
+    "FJ2806"
+   ]
+  },
+  {
+   "id": "vocalis-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1152,
+   "center": [
+    0.0026,
+    1.4825,
+    0.0072
+   ],
+   "size": [
+    0.0016,
+    0.0014,
+    0.0141
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46593",
+     "name": "left vocalis"
+    }
+   ],
+   "elements": [
+    "FJ2788"
+   ]
+  },
+  {
+   "id": "oblique-arytenoid-r",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 6084,
+   "center": [
+    0.0002,
+    1.485,
+    -0.0056
+   ],
+   "size": [
+    0.0129,
+    0.0066,
+    0.0031
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46584",
+     "name": "right oblique arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2798"
+   ]
+  },
+  {
+   "id": "oblique-arytenoid-l",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 6304,
+   "center": [
+    -0.0002,
+    1.485,
+    -0.0056
+   ],
+   "size": [
+    0.0129,
+    0.0066,
+    0.0031
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46585",
+     "name": "left oblique arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2780"
+   ]
+  },
+  {
+   "id": "transverse-arytenoid",
+   "layer": "muscles",
+   "triangles": 600,
+   "sourceTriangles": 6580,
+   "center": [
+    0,
+    1.4846,
+    -0.0045
+   ],
+   "size": [
+    0.0147,
+    0.0062,
+    0.0031
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA46582",
+     "name": "transverse arytenoid"
+    }
+   ],
+   "elements": [
+    "FJ2809"
+   ]
+  },
+  {
+   "id": "anconeus-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1278,
+   "center": [
+    -0.2172,
+    1.0884,
+    -0.0464
+   ],
+   "size": [
+    0.0229,
+    0.1012,
+    0.0251
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37705",
+     "name": "right anconeus"
+    }
+   ],
+   "elements": [
+    "FJ1485"
+   ]
+  },
+  {
+   "id": "anconeus-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1278,
+   "center": [
+    0.2185,
+    1.0884,
+    -0.0464
+   ],
+   "size": [
+    0.0229,
+    0.1012,
+    0.0251
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA37706",
+     "name": "left anconeus"
+    }
+   ],
+   "elements": [
+    "FJ1485M"
+   ]
+  },
+  {
+   "id": "gemellus-superior-r",
+   "layer": "muscles",
+   "triangles": 386,
+   "sourceTriangles": 402,
+   "center": [
+    -0.0846,
+    0.8898,
+    -0.0452
+   ],
+   "size": [
+    0.0799,
+    0.027,
+    0.0449
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22334",
+     "name": "right gemellus superior"
+    }
+   ],
+   "elements": [
+    "FJ1417"
+   ]
+  },
+  {
+   "id": "gemellus-superior-l",
+   "layer": "muscles",
+   "triangles": 384,
+   "sourceTriangles": 402,
+   "center": [
+    0.0859,
+    0.8898,
+    -0.0452
+   ],
+   "size": [
+    0.0799,
+    0.027,
+    0.0449
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22335",
+     "name": "left gemellus superior"
+    }
+   ],
+   "elements": [
+    "FJ1417M"
+   ]
+  },
+  {
+   "id": "gemellus-inferior-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 642,
+   "center": [
+    -0.0901,
+    0.87,
+    -0.0499
+   ],
+   "size": [
+    0.0703,
+    0.022,
+    0.0539
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22336",
+     "name": "right gemellus inferior"
+    }
+   ],
+   "elements": [
+    "FJ1416"
+   ]
+  },
+  {
+   "id": "gemellus-inferior-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 642,
+   "center": [
+    0.0913,
+    0.87,
+    -0.0499
+   ],
+   "size": [
+    0.0703,
+    0.022,
+    0.0539
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22337",
+     "name": "left gemellus inferior"
+    }
+   ],
+   "elements": [
+    "FJ1416M"
+   ]
+  },
+  {
+   "id": "plantaris-r",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 2512,
+   "center": [
+    -0.0694,
+    0.2794,
+    -0.0335
+   ],
+   "size": [
+    0.0611,
+    0.509,
+    0.063
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22560",
+     "name": "right plantaris"
+    }
+   ],
+   "elements": [
+    "FJ1429"
+   ]
+  },
+  {
+   "id": "plantaris-l",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 2512,
+   "center": [
+    0.0707,
+    0.2794,
+    -0.0336
+   ],
+   "size": [
+    0.0611,
+    0.5091,
+    0.0628
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22561",
+     "name": "left plantaris"
+    }
+   ],
+   "elements": [
+    "FJ1429M"
+   ]
+  },
+  {
+   "id": "fibularis-tertius-r",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 1416,
+   "center": [
+    -0.1043,
+    0.0905,
+    -0.0179
+   ],
+   "size": [
+    0.0301,
+    0.1328,
+    0.0398
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22550",
+     "name": "right fibularis tertius"
+    }
+   ],
+   "elements": [
+    "FJ1411"
+   ]
+  },
+  {
+   "id": "fibularis-tertius-l",
+   "layer": "muscles",
+   "triangles": 500,
+   "sourceTriangles": 1416,
+   "center": [
+    0.1056,
+    0.0905,
+    -0.0179
+   ],
+   "size": [
+    0.0301,
+    0.1328,
+    0.0398
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA22551",
+     "name": "left fibularis tertius"
+    }
+   ],
+   "elements": [
+    "FJ1411M"
+   ]
+  },
+  {
+   "id": "extensor-hallucis-brevis-r",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1230,
+   "center": [
+    -0.0967,
+    0.0477,
+    0.0373
+   ],
+   "size": [
+    0.014,
+    0.0459,
+    0.1198
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA51144",
+     "name": "right extensor hallucis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1407"
+   ]
+  },
+  {
+   "id": "extensor-hallucis-brevis-l",
+   "layer": "muscles",
+   "triangles": 400,
+   "sourceTriangles": 1230,
+   "center": [
+    0.098,
+    0.0477,
+    0.0373
+   ],
+   "size": [
+    0.014,
+    0.0459,
+    0.1198
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA51145",
+     "name": "left extensor hallucis brevis"
+    }
+   ],
+   "elements": [
+    "FJ1407M"
    ]
   },
   {
