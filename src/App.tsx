@@ -54,7 +54,7 @@ export function App() {
     <div className="stage">
       <Viewer panelOffset={panelOffset} />
       <LoadingStatus />
-      <TopBar onOpen={setSheet} active={sheet} compact={!wide} />
+      <TopBar onOpen={setSheet} active={sheet} compact={width < 900} />
       {!hideControls && (
         <>
           <LayerBar bottomOffset={bottomOffset} />

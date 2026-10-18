@@ -17,7 +17,7 @@ export function IconButton({ icon: Icon, label, onClick, pressed, className = ''
     return (
       <button
         type="button"
-        className={`flex min-w-[60px] flex-col items-center gap-1 rounded-xl px-1 py-1 text-[11px] text-muted transition-colors hover:text-ink disabled:opacity-40 aria-pressed:text-accent ${className}`}
+        className={`flex min-w-[56px] flex-col items-center gap-1 rounded-xl px-0.5 py-1 text-[11px] tracking-[-0.01em] text-muted transition-colors hover:text-ink disabled:opacity-40 aria-pressed:text-accent ${className}`}
         onClick={onClick}
         aria-label={label}
         aria-pressed={pressed}

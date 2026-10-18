@@ -78,9 +78,9 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
 
         {!standalone && (
           <div className="py-3 text-[13.5px] leading-relaxed text-ink/85">
-            <p className="font-medium">Als App installieren (iPhone)</p>
+            <p className="font-medium">Als App installieren (iPhone, iPad)</p>
             <p className="mt-1 text-muted">
-              In Safari auf <Share size={13} className="inline align-[-2px]" aria-label="Teilen" /> „Teilen“ tippen und „Zum Home-Bildschirm“ wählen. Anatomiq startet dann im Vollbild wie eine eigene App.
+              In Safari auf <Share size={13} className="inline align-[-2px]" aria-label="Teilen" /> „Teilen“ tippen (iPhone unten, iPad oben rechts neben der Adresse) und „Zum Home-Bildschirm“ wählen. Anatomiq startet dann im Vollbild wie eine eigene App.
             </p>
           </div>
         )}

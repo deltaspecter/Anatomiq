@@ -2,16 +2,17 @@
 
 Anatomiq ist ein interaktiver 3D-Anatomieatlas als **Progressive Web App**. Die App startet direkt im 3D-Modell des menschlichen Körpers: drehen, zoomen, Strukturen antippen, Informationen lesen, Ebenen ausblenden, tiefer schauen. Es gibt keine Startseite, keine Suchleiste und keine Listen als Hauptnavigation – navigiert wird am Modell selbst.
 
-Die App läuft im Browser auf iPhone, Tablet und Desktop und lässt sich in Safari über „Teilen → Zum Home-Bildschirm“ wie eine eigene App installieren.
+Die App läuft im Browser auf iPhone, iPad und Desktop und lässt sich in Safari über „Teilen → Zum Home-Bildschirm“ wie eine eigene App installieren.
 
 ## Stand dieser Version
 
 | Bereich | Status | Details |
 |---|---|---|
 | **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0), Lungenlappen aus der Referenzlunge des [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (CC BY 4.0): **416 einzeln antippbare Strukturen** in sechs Ebenen, rund 700 000 Dreiecke, zusammen 3,9 MB (meshopt-komprimiert). Männlicher Körper. |
-| **Navigation am Modell** | ✅ umgesetzt | Drehen (1 Finger / Maus), Pinch-Zoom und Verschieben (2 Finger), Mausrad-Zoom zum Zeiger, Grenzen für Zoom und Drehpunkt, Ausgangsansicht, feste Ansichten (vorn/rechts/hinten/links) |
+| **Navigation am Modell** | ✅ umgesetzt | Drehen (1 Finger / Maus / Apple Pencil), Pinch-Zoom und Verschieben (2 Finger), Mausrad- und Trackpad-Zoom zum Zeiger, Tastatur (Pfeiltasten, + / −, 0), Grenzen für Zoom und Drehpunkt, Ausgangsansicht, feste Ansichten (vorn/rechts/hinten/links) |
 | **Auswahl** | ✅ umgesetzt | Antippen wählt die vorderste deckend sichtbare Struktur (BVH-beschleunigtes Raycasting); Drehen/Zoomen löst nie eine Auswahl aus; Doppeltippen fokussiert; Hervorhebung durch Randleuchten; am Desktop zeigt ein Etikett den Namen unter dem Mauszeiger |
-| **Informationspanel** | ✅ umgesetzt | Bottom-Sheet (Hochformat) bzw. Seitenpanel (Querformat, Desktop); Name, Latein, Englisch, System, Region, Kurzfassung, Lage, Funktion, Aufbau, Ursprung/Ansatz/Innervation, Gelenke, Blutversorgung, Klinik, Fachbegriffe, Merksätze, verwandte Strukturen, Quellen, Modellherkunft (FMA-IDs) |
+| **iPad** | ✅ umgesetzt, 🟡 ungetestet am Gerät | Seitenpanel im Hoch- und Querformat, Bottom-Sheet in schmalen Split-View-Fenstern, fließender Wechsel bei Drehen und Stage Manager; Apple Pencil (Tippen, Schwebe-Etikett), Trackpad, Tastatur – siehe [docs/BEREITSTELLUNG.md](docs/BEREITSTELLUNG.md#auf-dem-ipad) |
+| **Informationspanel** | ✅ umgesetzt | Bottom-Sheet (iPhone hochkant, schmale Fenster) bzw. Seitenpanel (iPad, Querformat, Desktop); Name, Latein, Englisch, System, Region, Kurzfassung, Lage, Funktion, Aufbau, Ursprung/Ansatz/Innervation, Gelenke, Blutversorgung, Klinik, Fachbegriffe, Merksätze, verwandte Strukturen, Quellen, Modellherkunft (FMA-IDs) |
 | **Kamera** | ✅ umgesetzt | Sanfter Fokus auf die ausgewählte Struktur (abschaltbar), jede Berührung unterbricht Animationen; Schließen des Panels verändert die Ansicht nicht |
 | **Ebenen** | ✅ umgesetzt | Haut, Muskeln, Skelett, Organe, Gefäße, Nerven – je sichtbar / transparent / aus; transparente Strukturen lassen Fingertipps durch |
 | **Einzelstrukturen** | ✅ umgesetzt | Isolieren (auch mit verwandten Strukturen), transparent machen, ausblenden, Darstellung zurücksetzen |
@@ -47,7 +48,7 @@ Auf dem iPhone im selben WLAN: `npm run dev -- --host` und die angezeigte Netzwe
 | `npm run build` | Produktions-Build nach `dist/` (inkl. Service Worker) |
 | `npm run preview` | `dist/` mit Produktions-Headern ausliefern |
 | `npm test` | Unit- und Datentests (Vitest): jede Struktur ↔ Mesh, Sichtbarkeitslogik, Lernlogik, Kamera |
-| `npm run test:e2e` | Browsertest des Builds (31 Prüfungen: Start, Auswahl, Panel, Ebenen, Offline, defekte Modelle, Mobil …) |
+| `npm run test:e2e` | Browsertest des Builds (43 Prüfungen: Start, Auswahl, Panel, Ebenen, Offline, defekte Modelle, iPhone, iPad, Split View …) |
 | `npm run check` | Typprüfung und Tests (läuft mit Build und Browsertest auch in der CI, `.github/workflows/ci.yml`) |
 | `npm run model` | 3D-Modelle aus BodyParts3D neu erzeugen (lädt beim ersten Mal ~200 MB Rohdaten nach `.cache/`) |
 | `node scripts/render-icons.ts` | App-Icons aus den SVG-Vorlagen erzeugen |

@@ -1,7 +1,8 @@
 /**
  * Kamerasteuerung (camera-controls über drei):
  *   Ein Finger / linke Maustaste: drehen · Zwei Finger: Pinch-Zoom und verschieben · Mausrad: zoomen (zum Zeiger hin)
- *   Rechte Maustaste: verschieben
+ *   Rechte Maustaste: verschieben · Trackpad (iPad, Mac): zwei Finger scrollen oder Pinch zoomt
+ *   Tastatur (iPad mit Tastatur, Desktop): Pfeiltasten drehen, + / − zoomen, 0 Ausgangsansicht
  * Befehle aus dem Zustand (Zurücksetzen, feste Ansichten, Fokus auf eine Struktur) werden weich animiert;
  * jede Berührung unterbricht eine laufende Animation – der Nutzer behält immer die Kontrolle.
  *
@@ -29,7 +30,7 @@ export function CameraRig({ panelOffset }: { panelOffset: { x: number; y: number
   const size = useThree((s) => s.size)
   const invalidate = useThree((s) => s.invalidate)
   const command = useViewer((s) => s.command)
-  const offset = useRef({ x: 0, y: 0 })
+  const offset = useRef({ x: 0, y: 0, w: 0, h: 0 })
 
   const reset = (animate: boolean) => {
     const c = ref.current
@@ -85,7 +86,74 @@ export function CameraRig({ panelOffset }: { panelOffset: { x: number; y: number
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [command])
 
-  useEffect(() => invalidate(), [panelOffset.x, panelOffset.y, invalidate])
+  useEffect(() => invalidate(), [panelOffset.x, panelOffset.y, size.width, size.height, invalidate])
+
+  // Pinch auf dem Trackpad (Safari auf iPad und Mac meldet ihn als „gesture“-Ereignis, nicht als Touch).
+  // Bei Pinch mit den Fingern auf dem Bildschirm kommen dieselben Ereignisse zusätzlich – dort zoomt
+  // bereits camera-controls, daher wird dann nichts getan. Ebenso, wenn der Browser Strg+Mausrad schickt.
+  const el = useThree((s) => s.gl.domElement)
+  useEffect(() => {
+    const touches = new Set<number>()
+    let lastWheel = 0
+    let lastScale = 1
+    const down = (e: PointerEvent) => e.pointerType === 'touch' && touches.add(e.pointerId)
+    const up = (e: PointerEvent) => touches.delete(e.pointerId)
+    const wheel = () => (lastWheel = performance.now())
+    const start = (e: Event) => {
+      lastScale = (e as Event & { scale?: number }).scale ?? 1
+    }
+    const change = (e: Event) => {
+      const scale = (e as Event & { scale?: number }).scale
+      const c = ref.current
+      if (!c || !scale || touches.size || performance.now() - lastWheel < 300) return
+      c.dollyTo(c.distance * (lastScale / scale), false)
+      lastScale = scale
+      invalidate()
+    }
+    window.addEventListener('pointerdown', down, true)
+    window.addEventListener('pointerup', up, true)
+    window.addEventListener('pointercancel', up, true)
+    el.addEventListener('wheel', wheel, { passive: true })
+    el.addEventListener('gesturestart', start)
+    el.addEventListener('gesturechange', change)
+    return () => {
+      window.removeEventListener('pointerdown', down, true)
+      window.removeEventListener('pointerup', up, true)
+      window.removeEventListener('pointercancel', up, true)
+      el.removeEventListener('wheel', wheel)
+      el.removeEventListener('gesturestart', start)
+      el.removeEventListener('gesturechange', change)
+    }
+  }, [el, invalidate])
+
+  // Tastatur: nur wenn kein Eingabe-/Bedienelement den Fokus hat und keine Zusatztaste gedrückt ist
+  useEffect(() => {
+    const STEP = Math.PI / 12
+    const onKey = (e: KeyboardEvent) => {
+      const c = ref.current
+      const t = e.target as HTMLElement | null
+      if (!c || e.metaKey || e.ctrlKey || e.altKey || t?.closest('input, textarea, select, [role="dialog"], [contenteditable]')) return
+      if (t?.closest('button') && (e.key === 'Enter' || e.key === ' ')) return
+      const actions: Record<string, () => void> = {
+        ArrowLeft: () => c.rotate(STEP, 0, true),
+        ArrowRight: () => c.rotate(-STEP, 0, true),
+        ArrowUp: () => c.rotate(0, STEP / 2, true),
+        ArrowDown: () => c.rotate(0, -STEP / 2, true),
+        '+': () => c.dollyTo(c.distance / 1.25, true),
+        '=': () => c.dollyTo(c.distance / 1.25, true),
+        '-': () => c.dollyTo(c.distance * 1.25, true),
+        '0': () => reset(true),
+      }
+      const action = actions[e.key]
+      if (!action) return
+      e.preventDefault()
+      action()
+      invalidate()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [size.width, size.height])
 
   // Bildausschnitt bei geöffnetem Panel verschieben (weich)
   useFrame(() => {
@@ -93,7 +161,8 @@ export function CameraRig({ panelOffset }: { panelOffset: { x: number; y: number
     const dx = panelOffset.x - o.x
     const dy = panelOffset.y - o.y
     if (Math.abs(dx) < 0.5 && Math.abs(dy) < 0.5) {
-      if (o.x !== panelOffset.x || o.y !== panelOffset.y) {
+      // Auch nach Größenänderung (Drehen des iPads, Split View, Stage Manager) neu setzen
+      if (o.x !== panelOffset.x || o.y !== panelOffset.y || o.w !== size.width || o.h !== size.height) {
         o.x = panelOffset.x
         o.y = panelOffset.y
         apply()
@@ -105,6 +174,8 @@ export function CameraRig({ panelOffset }: { panelOffset: { x: number; y: number
     apply()
     invalidate()
     function apply() {
+      o.w = size.width
+      o.h = size.height
       if (o.x === 0 && o.y === 0) camera.clearViewOffset()
       else camera.setViewOffset(size.width, size.height, o.x, o.y, size.width, size.height)
     }

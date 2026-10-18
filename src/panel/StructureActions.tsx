@@ -17,7 +17,7 @@ export function StructureActions({ structure }: { structure: AnatomicalStructure
   const isHidden = override === 'hidden'
 
   return (
-    <div className="flex items-start justify-between gap-1 px-3" role="toolbar" aria-label="Aktionen zur Struktur">
+    <div className="flex items-start justify-between px-2.5" role="toolbar" aria-label="Aktionen zur Struktur">
       <IconButton icon={Crosshair} caption="Fokus" label="Kamera auf die Struktur ausrichten" onClick={() => viewer().camera({ kind: 'focus', id })} />
       <IconButton
         icon={ScanEye}

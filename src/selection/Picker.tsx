@@ -4,7 +4,8 @@
  * Pinch-Zoom lösen daher nie versehentlich eine Auswahl aus. Getroffen wird die vorderste
  * deckend sichtbare Struktur; durchscheinende und ausgeblendete Strukturen werden durchdrungen.
  * Doppeltippen richtet die Kamera auf die getroffene Struktur aus.
- * Mit der Maus zeigt ein Etikett den Namen der Struktur unter dem Zeiger (gedrosselt auf ein Bild).
+ * Mit Maus, Trackpad (iPad) oder schwebendem Apple Pencil zeigt ein Etikett den Namen der Struktur unter dem Zeiger
+ * (gedrosselt auf ein Bild). Ein Stift-Tippen wählt aus wie ein Finger.
  */
 import { useThree } from '@react-three/fiber'
 import { useEffect } from 'react'
@@ -42,7 +43,7 @@ export function Picker() {
 
     let hoverFrame = 0
     const move = (e: PointerEvent) => {
-      if (e.pointerType !== 'mouse') return
+      if (e.pointerType === 'touch') return
       if (e.buttons) {
         if (useViewer.getState().hover) useViewer.getState().setHover(null)
         return

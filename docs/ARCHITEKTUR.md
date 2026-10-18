@@ -54,7 +54,9 @@ Der Körper ist die Oberfläche. Die App rendert genau eine Ansicht – die 3D-S
 
 ## Kamera und Panel
 
-Öffnet sich das Panel, wird nicht die Kamera bewegt, sondern der **Bildausschnitt verschoben** (`PerspectiveCamera.setViewOffset`): Die ausgewählte Struktur rutscht über das Bottom-Sheet bzw. neben das Seitenpanel. Schließen stellt den Ausschnitt wieder her – die Kameraposition bleibt unverändert.
+Öffnet sich das Panel, wird nicht die Kamera bewegt, sondern der **Bildausschnitt verschoben** (`PerspectiveCamera.setViewOffset`): Die ausgewählte Struktur rutscht über das Bottom-Sheet bzw. neben das Seitenpanel. Schließen stellt den Ausschnitt wieder her – die Kameraposition bleibt unverändert. Ändert sich die Fenstergröße (iPad drehen, Split View, Stage Manager), wird der Ausschnitt mit der neuen Größe neu gesetzt.
+
+Welche Panelform gilt, entscheidet `src/ui/useLayout.ts` per Media Query: Seitenpanel ab 900 px Breite, ab 680 × 900 px (iPad hochkant) und im Querformat ab 640 px; sonst Bottom-Sheet (höchstens 600 px breit, mittig). Eingaben: Finger und Apple Pencil über Pointer Events (Tippen = kurz und ohne Bewegung), Schwebe-Etikett für Maus, Trackpad und schwebenden Stift, Trackpad-Pinch über Safaris `gesturechange` (nur wenn kein Finger auf dem Bildschirm liegt), Tastatur in `CameraRig`.
 
 ## Erweiterbarkeit
 

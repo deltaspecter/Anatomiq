@@ -1,7 +1,8 @@
 /**
  * Informationspanel zur ausgewählten Struktur.
- *   Schmale Bildschirme: Bottom-Sheet mit zwei Stufen (eingeklappt / ausgeklappt), per Griff ziehbar.
- *   Breite Bildschirme: Seitenpanel rechts.
+ *   Schmale Bildschirme: Bottom-Sheet mit zwei Stufen (eingeklappt / ausgeklappt), per Griff ziehbar;
+ *   auf schmalen Tablet-Fenstern höchstens SHEET_MAX_WIDTH breit und mittig.
+ *   Breite Bildschirme (Desktop, iPad): Seitenpanel rechts.
  * Das Panel liegt über der 3D-Ansicht; Schließen ändert die Kameraposition nicht.
  * Scrollen im Panel bewegt das Modell nicht (eigene Touch-Fläche, overscroll-behavior: contain).
  */
@@ -11,7 +12,7 @@ import { LAYERS } from '@/data/layers'
 import { getStructure } from '@/data/structures'
 import { REGION_LABELS, SIDE_LABELS, SYSTEM_LABELS, type AnatomicalStructure } from '@/data/types'
 import { useViewer } from '@/state/viewer'
-import { peekHeight, sidePanelWidth, useIsWide, useViewport } from '@/ui/useLayout'
+import { peekHeight, SHEET_MAX_WIDTH, sidePanelWidth, useIsWide, useViewport } from '@/ui/useLayout'
 import { StructureActions } from './StructureActions'
 import { StructureContent } from './StructureContent'
 
@@ -115,8 +116,8 @@ export function InfoPanel() {
   return (
     <section
       ref={sheetRef}
-      className="glass fade-in absolute inset-x-0 bottom-0 z-20 flex flex-col rounded-t-[28px] shadow-[0_-12px_40px_rgba(0,0,0,0.35)] transition-[height] duration-300 ease-out"
-      style={{ height: sheetHeight, paddingBottom: 'var(--safe-bottom)', background: full ? 'rgb(16 22 30 / 0.95)' : undefined }}
+      className="glass fade-in absolute inset-x-0 bottom-0 z-20 mx-auto flex flex-col rounded-t-[28px] shadow-[0_-12px_40px_rgba(0,0,0,0.35)] transition-[height] duration-300 ease-out"
+      style={{ height: sheetHeight, maxWidth: SHEET_MAX_WIDTH, paddingBottom: 'var(--safe-bottom)', background: full ? 'rgb(16 22 30 / 0.95)' : undefined }}
       aria-labelledby="panel-title"
     >
       <div

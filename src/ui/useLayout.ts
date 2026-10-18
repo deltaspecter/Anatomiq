@@ -1,10 +1,13 @@
 import { useSyncExternalStore } from 'react'
 
 /**
- * Breite Ansicht (Desktop, Tablet, Smartphone im Querformat): Informationspanel seitlich statt als Bottom-Sheet.
- * Im Querformat wäre ein Bottom-Sheet höher als der halbe Bildschirm und würde das Modell verdecken.
+ * Breite Ansicht: Informationspanel seitlich statt als Bottom-Sheet.
+ *   – Desktop und iPad im Querformat (ab 900 px Breite)
+ *   – iPad im Hochformat und große Split-View-/Stage-Manager-Fenster (ab 680 × 900 px): Der stehende
+ *     Körper ist schmal und hoch – daneben ist Platz, unter einem Bottom-Sheet würde er zur Hälfte verschwinden.
+ *   – Smartphone im Querformat (ab 640 px): Ein Bottom-Sheet wäre höher als der halbe Bildschirm.
  */
-const QUERY = '(min-width: 900px), (orientation: landscape) and (min-width: 640px)'
+const QUERY = '(min-width: 900px), (min-width: 680px) and (min-height: 900px), (orientation: landscape) and (min-width: 640px)'
 
 const subscribe = (cb: () => void) => {
   const mq = window.matchMedia(QUERY)
@@ -28,5 +31,7 @@ export function useViewport(): { width: number; height: number } {
 
 /** Höhe des eingeklappten Panels (Bottom-Sheet) in px */
 export const peekHeight = (viewportHeight: number) => Math.round(Math.min(Math.max(viewportHeight * 0.42, 250), 400))
-/** Breite des Seitenpanels: höchstens 400 px bzw. knapp die Hälfte des Bildschirms */
-export const sidePanelWidth = (viewportWidth: number) => Math.round(Math.min(400, viewportWidth * 0.46))
+/** Breite des Seitenpanels: knapp die Hälfte des Bildschirms, mindestens 320 px (lesbar), höchstens 400 px (große Displays 420 px) */
+export const sidePanelWidth = (viewportWidth: number) => Math.round(Math.min(viewportWidth >= 1200 ? 420 : 400, Math.max(320, viewportWidth * 0.46)))
+/** Größte Breite des Bottom-Sheets: auf schmalen Tablet-Fenstern (Split View) schwebt es mittig statt über die ganze Breite */
+export const SHEET_MAX_WIDTH = 600

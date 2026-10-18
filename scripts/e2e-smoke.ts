@@ -120,6 +120,10 @@ try {
   check(zoomed.distance < rotated.distance - 0.2, `Mausrad zoomt (${rotated.distance.toFixed(2)} → ${zoomed.distance.toFixed(2)} m)`)
   s = await snapshot(page)
   check(s.selectedId === null, 'Drehen löst keine Auswahl aus')
+  await page.keyboard.press('ArrowLeft')
+  await settle(page)
+  const keyed = (await snapshot(page)).camera!
+  check(Math.hypot(...keyed.position.map((v, i) => v - zoomed.position[i])) > 0.05, 'Pfeiltaste dreht die Kamera (Tastatur am iPad/Desktop)')
 
   // Ausgangsansicht, dann Leber antippen
   await page.getByRole('button', { name: /Ausgangsansicht/ }).click()
@@ -241,6 +245,44 @@ try {
   check(overflow <= 1, `Kein horizontales Überlaufen auf dem Smartphone (${overflow}px)`)
   check(mobileErrors.length === 0, `Mobil: keine Konsolenfehler${mobileErrors.length ? `: ${mobileErrors.join(' | ')}` : ''}`)
   await mobile.close()
+
+  // ── iPad (Hochformat, Querformat, Split View) ─────────────────
+  for (const [label, width, height] of [['iPad hoch', 820, 1180], ['iPad quer', 1180, 820]] as const) {
+    const tablet = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, serviceWorkers: 'block' })
+    const tp = await tablet.newPage()
+    const tabletErrors: string[] = []
+    tp.on('console', (msg) => msg.type() === 'error' && tabletErrors.push(msg.text()))
+    tp.on('pageerror', (err) => tabletErrors.push(String(err)))
+    await tp.goto(BASE, { waitUntil: 'domcontentloaded' })
+    await waitFor(tp, (v) => v.load.organs === 'ready' && v.load.skeleton === 'ready')
+    await tp.getByText('Verstanden').tap()
+    await settle(tp)
+    ;[x, y] = await screenPos(tp, 'liver')
+    await tp.touchscreen.tap(x, y)
+    s = await waitFor(tp, (v) => v.selectedId !== null)
+    check(s.selectedId === 'liver', `${label}: Antippen wählt die Leber (${s.selectedId})`)
+    const side = await tp.locator('aside[aria-labelledby="panel-title"]').boundingBox()
+    check(!!side && side.x > width * 0.5 && side.width >= 320, `${label}: Informationen im Seitenpanel, Modell bleibt links frei`)
+    check((await tp.getByText('Pfortader (V. portae').count()) > 0, `${label}: Seitenpanel zeigt alle Abschnitte ohne Ausklappen`)
+    await shot(tp, `ipad-${width}x${height}`)
+    if (width < height) {
+      // Split View / Stage Manager: Fenster wird schmaler → Bottom-Sheet, mittig und begrenzt breit
+      await tp.setViewportSize({ width: 694, height: 1024 })
+      await tp.waitForTimeout(400)
+      check((await tp.locator('aside[aria-labelledby="panel-title"]').count()) === 1, 'Split View 2/3: Seitenpanel bleibt')
+      await tp.setViewportSize({ width: 375, height: 1024 })
+      await tp.waitForTimeout(400)
+      const narrowSheet = await tp.locator('section[aria-labelledby="panel-title"]').boundingBox()
+      check(!!narrowSheet && narrowSheet.width <= 375 && narrowSheet.y > 1024 * 0.4, 'Split View 1/3: Bottom-Sheet statt Seitenpanel')
+      await tp.setViewportSize({ width: 1000, height: 700 })
+      await tp.waitForTimeout(400)
+      s = await snapshot(tp)
+      check(s.selectedId === 'liver' && (await tp.locator('aside[aria-labelledby="panel-title"]').count()) === 1, 'Fenstergröße ändern behält die Auswahl')
+    }
+    const tOverflow = await tp.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)
+    check(tOverflow <= 1 && tabletErrors.length === 0, `${label}: kein Überlaufen, keine Konsolenfehler${tabletErrors.length ? `: ${tabletErrors.join(' | ')}` : ''}`)
+    await tablet.close()
+  }
 } finally {
   await browser.close()
   server.kill()
