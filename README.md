@@ -8,7 +8,7 @@ Die App läuft im Browser auf iPhone, iPad und Desktop und lässt sich in Safari
 
 | Bereich | Status | Details |
 |---|---|---|
-| **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0), Lungenlappen aus der Referenzlunge des [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (CC BY 4.0): **416 einzeln antippbare Strukturen** in sechs Ebenen, rund 700 000 Dreiecke, zusammen 3,9 MB (meshopt-komprimiert). Männlicher Körper. |
+| **3D-Modell** | ✅ umgesetzt | Echte, segmentierte Anatomie aus [BodyParts3D](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) (DBCLS, CC BY 4.0), Lungenlappen, Sigma und Ohrspeicheldrüsen aus Referenzorganen des [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (CC BY 4.0): **421 einzeln antippbare Strukturen** in sechs Ebenen, rund 708 000 Dreiecke, zusammen 4,0 MB (meshopt-komprimiert). Männlicher Körper. |
 | **Navigation am Modell** | ✅ umgesetzt | Drehen (1 Finger / Maus / Apple Pencil), Pinch-Zoom und Verschieben (2 Finger), Mausrad- und Trackpad-Zoom zum Zeiger, Tastatur (Pfeiltasten, + / −, 0), Grenzen für Zoom und Drehpunkt, Ausgangsansicht, feste Ansichten (vorn/rechts/hinten/links) |
 | **Auswahl** | ✅ umgesetzt | Antippen wählt die vorderste deckend sichtbare Struktur (BVH-beschleunigtes Raycasting); Drehen/Zoomen löst nie eine Auswahl aus; Doppeltippen fokussiert; Hervorhebung durch Randleuchten; am Desktop zeigt ein Etikett den Namen unter dem Mauszeiger |
 | **iPad** | ✅ umgesetzt, 🟡 ungetestet am Gerät | Seitenpanel im Hoch- und Querformat, Bottom-Sheet in schmalen Split-View-Fenstern, fließender Wechsel bei Drehen und Stage Manager; Apple Pencil (Tippen, Schwebe-Etikett), Trackpad, Tastatur – siehe [docs/BEREITSTELLUNG.md](docs/BEREITSTELLUNG.md#auf-dem-ipad) |
@@ -16,11 +16,11 @@ Die App läuft im Browser auf iPhone, iPad und Desktop und lässt sich in Safari
 | **Kamera** | ✅ umgesetzt | Sanfter Fokus auf die ausgewählte Struktur (abschaltbar), jede Berührung unterbricht Animationen; Schließen des Panels verändert die Ansicht nicht |
 | **Ebenen** | ✅ umgesetzt | Haut, Muskeln, Skelett, Organe, Gefäße, Nerven – je sichtbar / transparent / aus; transparente Strukturen lassen Fingertipps durch |
 | **Einzelstrukturen** | ✅ umgesetzt | Isolieren (auch mit verwandten Strukturen), transparent machen, ausblenden, Darstellung zurücksetzen |
-| **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 416 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
+| **Inhalte** | 🟡 Erstfassung | Steckbriefe für alle 421 Strukturen, KI-gestützt nach Standardwerken erstellt, **noch nicht fachlich begutachtet** (siehe [docs/INHALTE.md](docs/INHALTE.md)) |
 | **Lernen** | ✅ umgesetzt | Favoriten, „Zuletzt angesehen“, Quiz „Finde die Struktur“ (Antippen im Modell) und Lernkarten mit Leitner-Wiederholung, wahlweise nach Thema (Skelett, Muskeln, Organe, Gefäße, Nerven); gefragt wird nur, was von außen sichtbar ist – alles lokal gespeichert |
 | **PWA / Offline** | ✅ umgesetzt | Manifest, Icons, Safe Areas, Service Worker; nach dem ersten Besuch offline nutzbar (Muskelebene nach erstem Laden) |
-| **Lunge** | 🟡 Näherung | Fünf Lungenlappen aus der HRA-Referenzlunge, auf den Bronchialbaum von BodyParts3D eingepasst (BodyParts3D selbst hat keine Lungenoberfläche); der Bronchialbaum ist darunter separat antippbar |
-| **Weitere Strukturen** | 🔜 geplant | u. a. Schilddrüse, periphere Nerven, Hand- und Fußmuskeln, Rectus abdominis, Latissimus dorsi, Sigma, weibliche Anatomie – siehe [docs/MODELL.md](docs/MODELL.md#was-fehlt) |
+| **Lunge, Sigma, Ohrspeicheldrüsen** | 🟡 Näherung | Fehlen in BodyParts3D; aus HRA-Referenzorganen übernommen und eingepasst – die Lungenlappen auf den Bronchialbaum (der darunter separat antippbar ist), Sigma und Ohrspeicheldrüsen über benachbarte Strukturen |
+| **Weitere Strukturen** | 🔜 geplant | u. a. Schilddrüse, periphere Nerven, Hand- und Fußmuskeln, Rectus abdominis, Latissimus dorsi, weibliche Anatomie – siehe [docs/MODELL.md](docs/MODELL.md#was-fehlt) |
 
 ## Schnellstart
 
@@ -81,6 +81,7 @@ Mehr dazu in [docs/ARCHITEKTUR.md](docs/ARCHITEKTUR.md).
 ## Lizenzen und Quellen
 
 - **Lungenlappen:** Browne, K.; Schlehlein, H. (2024): *3D Reference Organ for Lung, Male v1.4*, Human Reference Atlas, [doi:10.48539/HBM532.KLZD.394](https://doi.org/10.48539/HBM532.KLZD.394), CC BY 4.0 – skaliert und auf das BodyParts3D-Modell eingepasst.
+- **Sigma:** Browne, K.; Schlehlein, H. (2024): *3D Reference Organ for Large Intestine, Male v1.3*, [doi:10.48539/HBM487.ZKSN.693](https://doi.org/10.48539/HBM487.ZKSN.693); **Ohrspeicheldrüsen:** Schlehlein, H. (2024): *3D Reference Organ for Mouth, Male v1.0*, [doi:10.48539/HBM568.RFGM.978](https://doi.org/10.48539/HBM568.RFGM.978); beide Human Reference Atlas, CC BY 4.0, eingepasst.
 - **3D-Geometrie:** BodyParts3D, © The Database Center for Life Science, lizenziert unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (laut aktueller Lizenzseite des LSDB Archive; ältere Dateiköpfe nennen CC BY-SA 2.1 JP – Details und Umgang damit in [docs/MODELL.md](docs/MODELL.md#lizenz)). Für Anatomiq vereinfacht, zu Strukturen zusammengefasst und neu eingefärbt.
 - **Texte:** eigene Erstfassungen auf Grundlage anatomischer Standardwerke (Terminologia Anatomica, Prometheus, OpenStax Anatomy & Physiology, Gray’s Anatomy); Quellen stehen bei jeder Struktur.
 - **Schrift:** Inter (SIL Open Font License), lokal eingebunden.

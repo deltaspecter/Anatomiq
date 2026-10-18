@@ -9,7 +9,7 @@ export type ModelMesh = {
   id: string
   layer: LayerId
   /** Herkunft der Geometrie */
-  source: 'bodyparts3d' | 'hra-lung-male-v1.4'
+  source: 'bodyparts3d' | 'hra-lung' | 'hra-large-intestine' | 'hra-mouth'
   triangles: number
   sourceTriangles: number
   center: [number, number, number]

@@ -38,6 +38,16 @@ export const SOURCES: Record<string, SourceReference> = {
     title: 'Browne, K.; Schlehlein, H. (2024): 3D Reference Organ for Lung, Male v1.4. Human Reference Atlas (HuBMAP), CC BY 4.0 – Geometrie der Lungenlappen',
     url: 'https://doi.org/10.48539/HBM532.KLZD.394',
   },
+  'hra-large-intestine': {
+    id: 'hra-large-intestine',
+    title: 'Browne, K.; Schlehlein, H. (2024): 3D Reference Organ for Large Intestine, Male v1.3. Human Reference Atlas (HuBMAP), CC BY 4.0 – Geometrie des Sigmas',
+    url: 'https://doi.org/10.48539/HBM487.ZKSN.693',
+  },
+  'hra-mouth': {
+    id: 'hra-mouth',
+    title: 'Schlehlein, H. (2024): 3D Reference Organ for Mouth, Male v1.0. Human Reference Atlas (HuBMAP), CC BY 4.0 – Geometrie der Ohrspeicheldrüsen',
+    url: 'https://doi.org/10.48539/HBM568.RFGM.978',
+  },
   bodyparts3d: {
     id: 'bodyparts3d',
     title: 'BodyParts3D, © The Database Center for Life Science (DBCLS), CC BY 4.0 – 3D-Geometrie',

@@ -105,6 +105,17 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
             , CC BY 4.0 – skaliert und auf das BodyParts3D-Modell eingepasst.
           </p>
           <p>
+            <span className="text-ink/85">Sigma:</span> Browne, K.; Schlehlein, H. (2024): 3D Reference Organ for Large Intestine, Male v1.3,{' '}
+            <a className="underline" href="https://doi.org/10.48539/HBM487.ZKSN.693" target="_blank" rel="noopener noreferrer">
+              doi:10.48539/HBM487.ZKSN.693
+            </a>
+            ; <span className="text-ink/85">Ohrspeicheldrüsen:</span> Schlehlein, H. (2024): 3D Reference Organ for Mouth, Male v1.0,{' '}
+            <a className="underline" href="https://doi.org/10.48539/HBM568.RFGM.978" target="_blank" rel="noopener noreferrer">
+              doi:10.48539/HBM568.RFGM.978
+            </a>
+            ; beide Human Reference Atlas, CC BY 4.0, eingepasst.
+          </p>
+          <p>
             <span className="text-ink/85">Texte:</span> Erstfassungen, KI-gestützt auf Grundlage anatomischer Standardwerke erstellt und noch nicht fachlich begutachtet. Kein Ersatz für Lehrbuch oder ärztlichen Rat.
           </p>
           <p>

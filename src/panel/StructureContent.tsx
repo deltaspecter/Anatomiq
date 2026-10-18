@@ -4,7 +4,7 @@
  */
 import { Info, Layers, Lightbulb } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { modelMesh } from '@/data/model'
+import { modelMesh, type ModelMesh } from '@/data/model'
 import { SOURCES } from '@/data/sources'
 import { getStructure } from '@/data/structures'
 import { SIDE_LABELS, type AnatomicalStructure } from '@/data/types'
@@ -21,6 +21,13 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 }
 
 const label = (s: AnatomicalStructure) => (s.side ? `${s.nameDe} (${SIDE_LABELS[s.side]})` : s.nameDe)
+
+/** Herkunft der Geometrie, wenn sie nicht aus BodyParts3D stammt */
+const HRA_ATTRIBUTION: Record<Exclude<ModelMesh['source'], 'bodyparts3d'>, string> = {
+  'hra-lung': '3D-Geometrie: Human Reference Atlas, Referenzlunge (männlich, v1.4), CC BY 4.0 – auf den Bronchialbaum von BodyParts3D eingepasst (Näherung)',
+  'hra-large-intestine': '3D-Geometrie: Human Reference Atlas, Referenz-Dickdarm (männlich, v1.3), CC BY 4.0 – über die übrigen Dickdarmabschnitte in BodyParts3D eingepasst (Näherung)',
+  'hra-mouth': '3D-Geometrie: Human Reference Atlas, Referenzmodell Mund (männlich, v1.0), CC BY 4.0 – über Unterkiefer und Unterkieferdrüsen in BodyParts3D eingepasst (Näherung)',
+}
 
 export function StructureContent({ structure: s }: { structure: AnatomicalStructure }) {
   const related = s.relatedStructureIds.map((id) => getStructure(id)).filter((r): r is AnatomicalStructure => !!r)
@@ -139,9 +146,7 @@ export function StructureContent({ structure: s }: { structure: AnatomicalStruct
           </p>
           {mesh && (
             <p>
-              {mesh.source === 'bodyparts3d'
-                ? `3D-Geometrie: BodyParts3D (DBCLS, CC BY 4.0) · ${mesh.concepts.map((c) => `${c.fma} ${c.name}`).join(', ')}`
-                : '3D-Geometrie: Human Reference Atlas, Referenzlunge (männlich, v1.4), CC BY 4.0 – auf den Bronchialbaum von BodyParts3D eingepasst'}{' '}
+              {mesh.source === 'bodyparts3d' ? `3D-Geometrie: BodyParts3D (DBCLS, CC BY 4.0) · ${mesh.concepts.map((c) => `${c.fma} ${c.name}`).join(', ')}` : HRA_ATTRIBUTION[mesh.source]}{' '}
               · {mesh.triangles.toLocaleString('de-DE')} Dreiecke
             </p>
           )}

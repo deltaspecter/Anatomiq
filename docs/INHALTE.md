@@ -2,7 +2,7 @@
 
 ## Qualität und Prüfstatus
 
-Alle 416 Steckbriefe tragen den Status **„Erstfassung“** (`status: 'draft'`). Sie wurden mit Unterstützung eines KI-Sprachmodells auf Grundlage anatomischer Standardwerke formuliert und **nicht fachlich begutachtet**. Die App weist bei jeder Struktur darauf hin.
+Alle 421 Steckbriefe tragen den Status **„Erstfassung“** (`status: 'draft'`). Sie wurden mit Unterstützung eines KI-Sprachmodells auf Grundlage anatomischer Standardwerke formuliert und **nicht fachlich begutachtet**. Die App weist bei jeder Struktur darauf hin.
 
 Grundsätze beim Schreiben:
 
@@ -10,7 +10,7 @@ Grundsätze beim Schreiben:
 - **Lehrbuchwissen, keine Einzelfälle.** Ursprung, Ansatz, Innervation und Funktion der Muskeln folgen der in deutschen Lehrwerken üblichen Darstellung (v. a. Prometheus). Segmentangaben (z. B. C5–C6) sind die üblichen Hauptsegmente; Lehrbücher weichen hier um ein Segment voneinander ab.
 - **Zahlen als Richtwerte.** Größe, Gewicht, Volumen und Häufigkeiten sind typische Werte Erwachsener und so formuliert („etwa“, „meist“).
 - **Klinik vorsichtig.** Klinische Hinweise nennen bekannte Zusammenhänge zur Einordnung; sie sind keine Diagnose- oder Behandlungsempfehlung.
-- **Ehrlich zum Modell.** Wo das 3D-Modell von der Anatomie abweicht (Lungenlappen als eingepasste Näherung, Gefäße ohne Äste, nur unterer Abschnitt der inneren Drosselvene, zusammengefasste Knochengruppen), steht das im Text.
+- **Ehrlich zum Modell.** Wo das 3D-Modell von der Anatomie abweicht (Lungenlappen, Sigma und Ohrspeicheldrüsen als eingepasste Näherung, Gefäße ohne Äste, nur unterer Abschnitt der inneren Drosselvene, zusammengefasste Knochengruppen), steht das im Text.
 
 **Empfehlung vor einer Veröffentlichung für Lernende:** Durchsicht durch eine anatomisch qualifizierte Person; danach den Status je Struktur auf `reviewed` setzen und die Quellen um Seitenangaben ergänzen.
 

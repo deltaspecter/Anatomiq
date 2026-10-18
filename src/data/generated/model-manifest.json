@@ -1,5 +1,5 @@
 {
- "source": "BodyParts3D 4.0 (DBCLS), CC BY 4.0; Lungenlappen: HRA 3D Reference Organ Lung, Male v1.4 (Browne & Schlehlein 2024), CC BY 4.0",
+ "source": "BodyParts3D 4.0 (DBCLS), CC BY 4.0; Lungenlappen, Sigma, Ohrspeicheldrüsen: HRA 3D Reference Organs (Lung v1.4, Large Intestine v1.3, Mouth v1.0; male), CC BY 4.0",
  "layers": {
   "skin": {
    "file": "/models/skin.glb",
@@ -21,9 +21,9 @@
   },
   "organs": {
    "file": "/models/organs.glb",
-   "bytes": 659280,
-   "hash": "3b490543a1",
-   "triangles": 116410
+   "bytes": 698864,
+   "hash": "9d2ea278c4",
+   "triangles": 122409
   },
   "nervous": {
    "file": "/models/nervous.glb",
@@ -8273,7 +8273,7 @@
     0.1401,
     0.134
    ],
-   "source": "hra-lung-male-v1.4",
+   "source": "hra-lung",
    "concepts": [
     {
      "fma": "HRA",
@@ -8297,7 +8297,7 @@
     0.1069,
     0.1096
    ],
-   "source": "hra-lung-male-v1.4",
+   "source": "hra-lung",
    "concepts": [
     {
      "fma": "HRA",
@@ -8321,7 +8321,7 @@
     0.1817,
     0.1235
    ],
-   "source": "hra-lung-male-v1.4",
+   "source": "hra-lung",
    "concepts": [
     {
      "fma": "HRA",
@@ -8345,7 +8345,7 @@
     0.2322,
     0.1545
    ],
-   "source": "hra-lung-male-v1.4",
+   "source": "hra-lung",
    "concepts": [
     {
      "fma": "HRA",
@@ -8369,7 +8369,7 @@
     0.1848,
     0.1274
    ],
-   "source": "hra-lung-male-v1.4",
+   "source": "hra-lung",
    "concepts": [
     {
      "fma": "HRA",
@@ -8536,6 +8536,58 @@
    ]
   },
   {
+   "id": "arytenoid-cartilage-r",
+   "layer": "organs",
+   "triangles": 500,
+   "sourceTriangles": 540,
+   "center": [
+    -0.0046,
+    1.4857,
+    -0.0017
+   ],
+   "size": [
+    0.0055,
+    0.0081,
+    0.0073
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA55113",
+     "name": "right arytenoid cartilage"
+    }
+   ],
+   "elements": [
+    "FJ2792"
+   ]
+  },
+  {
+   "id": "arytenoid-cartilage-l",
+   "layer": "organs",
+   "triangles": 500,
+   "sourceTriangles": 536,
+   "center": [
+    0.0046,
+    1.4857,
+    -0.0017
+   ],
+   "size": [
+    0.0055,
+    0.0081,
+    0.0073
+   ],
+   "source": "bodyparts3d",
+   "concepts": [
+    {
+     "fma": "FMA55114",
+     "name": "left arytenoid cartilage"
+    }
+   ],
+   "elements": [
+    "FJ2775"
+   ]
+  },
+  {
    "id": "submandibular-gland-r",
    "layer": "organs",
    "triangles": 228,
@@ -8586,6 +8638,54 @@
    "elements": [
     "FJ2766"
    ]
+  },
+  {
+   "id": "parotid-gland-r",
+   "layer": "organs",
+   "triangles": 1500,
+   "sourceTriangles": 2982,
+   "center": [
+    -0.0477,
+    1.5452,
+    -0.0033
+   ],
+   "size": [
+    0.0291,
+    0.0718,
+    0.0622
+   ],
+   "source": "hra-mouth",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_parotid_gland_R"
+    }
+   ],
+   "elements": []
+  },
+  {
+   "id": "parotid-gland-l",
+   "layer": "organs",
+   "triangles": 1500,
+   "sourceTriangles": 3414,
+   "center": [
+    0.0453,
+    1.5433,
+    -0.002
+   ],
+   "size": [
+    0.0328,
+    0.0711,
+    0.0587
+   ],
+   "source": "hra-mouth",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_parotid_gland_L"
+    }
+   ],
+   "elements": []
   },
   {
    "id": "thymus",
@@ -9065,6 +9165,30 @@
    "elements": [
     "FJ2567"
    ]
+  },
+  {
+   "id": "sigmoid-colon",
+   "layer": "organs",
+   "triangles": 1999,
+   "sourceTriangles": 3694,
+   "center": [
+    -0.0097,
+    0.9183,
+    -0.0069
+   ],
+   "size": [
+    0.0984,
+    0.0534,
+    0.0737
+   ],
+   "source": "hra-large-intestine",
+   "concepts": [
+    {
+     "fma": "HRA",
+     "name": "VH_M_sigmoid_colon"
+    }
+   ],
+   "elements": []
   },
   {
    "id": "rectum",

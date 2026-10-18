@@ -19,6 +19,14 @@ import type { LayerId } from '../../src/data/layers.ts'
  *   BodyParts3D-Konzept den gesamten nachgeschalteten Gefäßbaum einschließt.
  */
 export type Source = string | RegExp | { own: string; within?: string }
+
+/** Referenzorgane des Human Reference Atlas (HuBMAP, CC BY 4.0), aus denen Strukturen ergänzt werden, die BodyParts3D fehlen */
+export const HRA_ORGANS = {
+  lung: { url: 'https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/3d-vh-m-lung.glb' },
+  'large-intestine': { url: 'https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-male/v1.3/assets/3d-sbu-m-large-intestine.glb' },
+  mouth: { url: 'https://cdn.humanatlas.io/digital-objects/ref-organ/mouth-male/v1.0/assets/3d-vh-m-mouth.glb' },
+} as const
+export type HraOrgan = keyof typeof HRA_ORGANS
 export type CatalogEntry = {
   id: string
   layer: LayerId
@@ -30,6 +38,11 @@ export type CatalogEntry = {
    * Knoten nach Namen, eingepasst auf den Bronchialbaum derselben Körperseite (siehe build-model.ts)
    */
   hra?: { nodes: RegExp; side: 'right' | 'left' }
+  /**
+   * Geometrie aus einem anderen HRA-Referenzorgan, eingepasst über Ankerstrukturen, die es in beiden Modellen gibt:
+   * Der Quader der HRA-Anker (anchorHra) wird achsenweise auf den Quader der BodyParts3D-Anker (anchorBp3d) abgebildet.
+   */
+  hraFit?: { organ: HraOrgan; nodes: RegExp; anchorHra: RegExp; anchorBp3d: string[] }
 }
 
 const SIDES = [
@@ -214,7 +227,16 @@ export const CATALOG: CatalogEntry[] = [
   ...one('epiglottis', 'organs', ['epiglottis'], 1200),
   ...one('thyroid-cartilage', 'organs', ['thyroid cartilage'], 1500),
   ...one('cricoid-cartilage', 'organs', ['cricoid cartilage'], 1200),
+  ...pair('arytenoid-cartilage', 'organs', ['{side} arytenoid cartilage'], 500),
   ...pair('submandibular-gland', 'organs', ['{side} submandibular gland'], 250),
+  // Ohrspeicheldrüsen fehlen in BodyParts3D: aus dem HRA-Mundmodell, eingepasst über Unterkiefer und Unterkieferdrüsen
+  ...SIDES.map(([suffix, side]): CatalogEntry => ({
+    id: `parotid-gland-${suffix}`,
+    layer: 'organs',
+    include: [],
+    budget: 1500,
+    hraFit: { organ: 'mouth', nodes: new RegExp(`^VH_M_parotid_gland_${suffix.toUpperCase()}$`), anchorHra: /^VH_M_(mandible|submandibular_gland_[RL])$/, anchorBp3d: ['mandible', 'right submandibular gland', 'left submandibular gland'] },
+  })),
   ...one('thymus', 'organs', ['thymus'], 1500),
   ...one('liver', 'organs', ['liver'], 12000),
   ...one('gallbladder', 'organs', ['gallbladder'], 1000),
@@ -229,6 +251,14 @@ export const CATALOG: CatalogEntry[] = [
   ...one('ascending-colon', 'organs', ['ascending colon'], 2000),
   ...one('transverse-colon', 'organs', ['transverse colon'], 2500),
   ...one('descending-colon', 'organs', ['descending colon'], 2000),
+  // Sigma fehlt in BodyParts3D: aus dem HRA-Dickdarm, eingepasst über die Dickdarmabschnitte, die beide Modelle haben
+  {
+    id: 'sigmoid-colon',
+    layer: 'organs',
+    include: [],
+    budget: 2000,
+    hraFit: { organ: 'large-intestine', nodes: /^VH_M_sigmoid_colon$/, anchorHra: /^VH_M_(ascending_colon|descending_colon|caecum|rectum)$/, anchorBp3d: ['ascending colon', 'descending colon', 'cecum', 'rectum'] },
+  },
   ...one('rectum', 'organs', ['rectum'], 1500),
   ...pair('kidney', 'organs', ['{side} kidney'], 1800),
   ...pair('adrenal-gland', 'organs', ['{side} adrenal gland'], 600),

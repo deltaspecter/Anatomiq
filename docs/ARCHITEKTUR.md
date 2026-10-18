@@ -44,11 +44,11 @@ Der Körper ist die Oberfläche. Die App rendert genau eine Ansicht – die 3D-S
 ## Darstellung und Leistung
 
 - **Rendern nur bei Bedarf** (`frameloop="demand"`): Ohne Bewegung entsteht kein neues Bild – wichtig für Akku und Wärme auf dem iPhone.
-- **Gemeinsame Materialien:** Materialien werden nach (Farbe, Zustand) zwischengespeichert; 416 Meshes teilen sich wenige Dutzend Materialien.
+- **Gemeinsame Materialien:** Materialien werden nach (Farbe, Zustand) zwischengespeichert; 421 Meshes teilen sich wenige Dutzend Materialien.
 - **Transparenz:** durchscheinende Strukturen schreiben nicht in den Tiefenpuffer, werden nach den deckenden gezeichnet (Haut zuletzt) und nutzen einen Fresnel-Anteil, damit Konturen erkennbar bleiben, ohne Inneres zu verdecken. Sie sind nicht antippbar – der Finger „greift durch“.
 - **Hervorhebung:** leuchtender Rand (Fresnel-Emission) statt Umfärben, damit die Eigenfarbe erhalten bleibt.
 - **Pixeldichte:** höchstens 2× (iPhones melden 3×). Bei „Automatisch“ misst `AdaptiveResolution` die Bildrate während Bewegungen und senkt die Pixeldichte stufenweise, wenn sie dauerhaft unter etwa 30 fps liegt. „Einfach“ rendert immer mit 1× und ohne Kantenglättung.
-- **Kompression:** Positionen 14 bit, Normalen 8 bit quantisiert, meshopt-Kompression – rund 700 000 Dreiecke in 3,9 MB.
+- **Kompression:** Positionen 14 bit, Normalen 8 bit quantisiert, meshopt-Kompression – rund 708 000 Dreiecke in 4,0 MB.
 - **GPU-Ressourcen:** Geometrien, BVHs und Materialien werden beim Abbau der Szene freigegeben (z. B. beim Wechsel der Qualitätsstufe).
 - **Fehler:** Ladefehler betreffen nur die jeweilige Ebene (mit „Erneut versuchen“); eine Fehlergrenze um die 3D-Ansicht fängt Abstürze ab; ohne WebGL erscheint eine verständliche Meldung.
 
