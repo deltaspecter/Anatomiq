@@ -86,7 +86,9 @@ async function settle(p: Page) {
 }
 const shot = async (p: Page, name: string) => SHOTS && p.screenshot({ path: `${SHOTS}/${name}.png` })
 
-const browser = await chromium.launch({ executablePath, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] })
+// Ohne festen Pfad (CI): vollständiges Chromium im neuen Headless-Modus statt der abgespeckten „Headless Shell“,
+// die Service Worker im Offline-Modus anders behandelt als echte Browser
+const browser = await chromium.launch({ executablePath, channel: executablePath ? undefined : 'chromium', args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] })
 try {
   // ── Desktop ───────────────────────────────────────────────────
   const context = await browser.newContext({ viewport: { width: 1280, height: 860 }, serviceWorkers: 'allow' })
@@ -129,10 +131,18 @@ try {
   await page.getByRole('button', { name: /Ausgangsansicht/ }).click()
   if (process.env.DEBUG) for (let i = 0; i < 5; i++) { await page.waitForTimeout(500); console.log('nach Reset', JSON.stringify((await snapshot(page)).camera)) }
   await settle(page)
-  let [x, y] = await screenPos(page, 'liver')
-  if (process.env.DEBUG) console.log('liver at', x, y, JSON.stringify((await snapshot(page)).camera))
-  await page.mouse.click(x, y)
-  s = await waitFor(page, (v) => v.selectedId !== null)
+  // Die Leber wird dort angetippt, wo sie sichtbar ist: Mittelpunkt, sonst etwas weiter rechts im Bild (Körper links)
+  let [x, y] = [0, 0]
+  for (const [dx, dy] of [[0, 0], [-25, -10], [-40, 0], [-30, 15]]) {
+    ;[x, y] = await screenPos(page, 'liver')
+    if (process.env.DEBUG) console.log('liver at', x, y, JSON.stringify((await snapshot(page)).camera))
+    await page.mouse.click(x + dx, y + dy)
+    s = await waitFor(page, (v) => v.selectedId !== null)
+    if (s.selectedId === 'liver') break
+    await page.keyboard.press('Escape')
+    await page.getByRole('button', { name: /Ausgangsansicht/ }).click()
+    await settle(page)
+  }
   check(s.selectedId === 'liver', `Antippen wählt die getroffene Struktur (${s.selectedId})`)
   check((await page.locator('#panel-title').textContent())?.trim() === 'Leber' && (await page.getByText('Hepar').count()) > 0, 'Panel zeigt Name und lateinischen Namen der Struktur')
   check((await page.getByText('Pfortader (V. portae').count()) > 0, 'Panel zeigt die Detailabschnitte (Blutversorgung)')
