@@ -29,4 +29,5 @@ export const modelMesh = (id: string): ModelMesh | undefined => byId.get(id)
 export const layerOf = (id: string): LayerId | undefined => byId.get(id)?.layer
 
 /** URL der Ebenendatei mit Inhalts-Hash, damit Browser und Service Worker nie eine veraltete Fassung verwenden */
-export const layerUrl = (layer: LayerId): string => `${LAYER_FILES[layer].file}?v=${LAYER_FILES[layer].hash}`
+/** URL einer Ebenendatei – relativ zum Basis-Pfad der App (z. B. „/Anatomiq/“ auf GitHub Pages) */
+export const layerUrl = (layer: LayerId): string => `${import.meta.env.BASE_URL}${LAYER_FILES[layer].file.replace(/^\//, '')}?v=${LAYER_FILES[layer].hash}`

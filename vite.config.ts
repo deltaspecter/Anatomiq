@@ -12,6 +12,7 @@ import { defineConfig, type Plugin } from 'vite'
  *  – VERSION: Hash über alle ausgelieferten Dateien (jede Änderung → neuer Service Worker)
  *  – PRECACHE: App-Hülle (HTML, Skripte, Stile, Schrift, Icons) und die Standard-Ebenen des Modells
  *  – MODELS: alle Modelldateien; Ebenen außerhalb des Precache (z. B. Muskeln) werden beim ersten Laden gespeichert
+ * Die Pfade in PRECACHE sind relativ; der Service Worker löst sie gegen seinen Scope auf (Basis-Pfad, z. B. /Anatomiq/).
  */
 function serviceWorkerPlugin(): Plugin {
   let outDir = 'dist'
@@ -43,7 +44,7 @@ function serviceWorkerPlugin(): Plugin {
         if (url.startsWith('/icons/') && url.endsWith('-source.svg')) continue
         // Muskelebene erst bei Bedarf (wird dann im Laufzeit-Cache gespeichert)
         if (url === '/models/muscles.glb') continue
-        precache.push(url)
+        precache.push(url.slice(1))
       }
       const template = readFileSync(fileURLToPath(new URL('./sw/service-worker.js', import.meta.url)), 'utf8')
       const sw = template.replaceAll('__VERSION__', hash.digest('hex').slice(0, 12)).replaceAll('__PRECACHE__', JSON.stringify(precache))
@@ -53,7 +54,11 @@ function serviceWorkerPlugin(): Plugin {
   }
 }
 
+/** Basis-Pfad der App: „/“ (eigene Domain, Render, Netlify) oder z. B. „/Anatomiq/“ (GitHub Pages) */
+const BASE = process.env.BASE_PATH ?? '/'
+
 export default defineConfig({
+  base: BASE,
   plugins: [react(), tailwindcss(), serviceWorkerPlugin()],
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },

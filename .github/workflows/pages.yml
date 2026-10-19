@@ -1,0 +1,53 @@
+# Veröffentlicht Anatomiq auf GitHub Pages (https://<konto>.github.io/<repository>/).
+# Läuft bei jedem Push auf den Hauptzweig und lässt sich unter „Actions“ auch von Hand starten.
+# Einmalig nötig: Repository → Settings → Pages → Source: „GitHub Actions“.
+name: Pages
+
+on:
+  push:
+    branches: [main, claude/anatomiq-3d-anatomy-app-g14ql5]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - id: pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - run: npm ci
+      - name: Typprüfung, Unit- und Datentests
+        run: npm run check
+      - name: Produktions-Build für den Pfad des Repositorys
+        run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

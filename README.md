@@ -4,6 +4,8 @@ Anatomiq ist ein interaktiver 3D-Anatomieatlas als **Progressive Web App**. Die 
 
 Die App läuft im Browser auf iPhone, iPad und Desktop und lässt sich in Safari über „Teilen → Zum Home-Bildschirm“ wie eine eigene App installieren.
 
+**➜ Öffnen: <https://deltaspecter.github.io/Anatomiq/>** (GitHub Pages, automatisch aus diesem Repository veröffentlicht)
+
 ## Stand dieser Version
 
 | Bereich | Status | Details |

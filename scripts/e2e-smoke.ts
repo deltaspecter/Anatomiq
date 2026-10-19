@@ -193,8 +193,9 @@ try {
   // Manifest, Header, Service Worker
   const manifestRes = await page.request.get(`${BASE}/manifest.webmanifest`)
   const webmanifest = (await manifestRes.json()) as { display: string; start_url: string; icons: { src: string; sizes: string }[] }
-  const iconsOk = await Promise.all(webmanifest.icons.map(async (i) => (await page.request.get(`${BASE}${i.src}`)).ok()))
-  check(webmanifest.display === 'standalone' && webmanifest.start_url === '/' && iconsOk.every(Boolean) && webmanifest.icons.some((i) => i.sizes === '512x512'), 'Web-App-Manifest gültig, Icons vorhanden')
+  // Pfade im Manifest sind relativ (Basis-Pfad-unabhängig, z. B. GitHub Pages unter /Anatomiq/)
+  const iconsOk = await Promise.all(webmanifest.icons.map(async (i) => (await page.request.get(new URL(i.src, `${BASE}/manifest.webmanifest`).href)).ok()))
+  check(webmanifest.display === 'standalone' && new URL(webmanifest.start_url, `${BASE}/manifest.webmanifest`).href === `${BASE}/` && iconsOk.every(Boolean) && webmanifest.icons.some((i) => i.sizes === '512x512'), 'Web-App-Manifest gültig, Icons vorhanden')
   check((await page.request.get(`${BASE}/icons/apple-touch-icon.png`)).ok(), 'Apple-Touch-Icon vorhanden')
   const html = await page.request.get(`${BASE}/`)
   check((html.headers()['content-security-policy'] ?? '').includes("script-src 'self' 'wasm-unsafe-eval'"), 'Content-Security-Policy gesetzt')

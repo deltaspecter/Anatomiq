@@ -9,7 +9,7 @@
  *
  * Strategien:
  *   Seitenaufrufe                  Netz zuerst (max. 4 s), sonst gespeicherte App-Hülle
- *   Modelldateien (/models/*.glb)  Speicher zuerst; die URL trägt einen Inhalts-Hash (?v=…), daher nie veraltet
+ *   Modelldateien (models/*.glb)  Speicher zuerst; die URL trägt einen Inhalts-Hash (?v=…), daher nie veraltet
  *   Übrige eigene Dateien          Speicher zuerst (Dateinamen mit Hash), sonst Netz
  *
  * Updates: Ein neuer Service Worker wartet, bis die App „Aktualisieren“ meldet (SKIP_WAITING).
@@ -20,9 +20,12 @@ const PRECACHE = __PRECACHE__
 const SHELL = `anatomiq-shell-${VERSION}`
 const MODELS = 'anatomiq-models'
 const NETWORK_TIMEOUT_MS = 4000
+/** Basis-Pfad der App (Scope des Service Workers), z. B. „/“ oder „/Anatomiq/“ */
+const BASE = new URL(self.registration.scope).pathname
+const PRECACHE_URLS = PRECACHE.map((path) => new URL(path, self.registration.scope).href)
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(SHELL).then((cache) => cache.addAll(PRECACHE)))
+  event.waitUntil(caches.open(SHELL).then((cache) => cache.addAll(PRECACHE_URLS)))
 })
 
 self.addEventListener('activate', (event) => {
@@ -97,9 +100,9 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return
   const url = new URL(request.url)
   if (url.origin !== self.location.origin) return
-  if (url.pathname === '/sw.js') return
+  if (url.pathname === `${BASE}sw.js`) return
 
-  if (request.mode === 'navigate') event.respondWith(networkFirst(request, '/index.html'))
-  else if (url.pathname.startsWith('/models/')) event.respondWith(modelFirst(request))
+  if (request.mode === 'navigate') event.respondWith(networkFirst(request, `${BASE}index.html`))
+  else if (url.pathname.startsWith(`${BASE}models/`)) event.respondWith(modelFirst(request))
   else event.respondWith(cacheFirst(request))
 })

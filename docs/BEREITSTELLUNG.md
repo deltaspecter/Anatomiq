@@ -1,6 +1,8 @@
 # Bereitstellung, Installation auf iPhone und iPad, Offline
 
-Anatomiq ist nach dem Build eine rein **statische Website** im Ordner `dist/` (rund 5 MB). Es gibt keinen Server-Code, keine Datenbank und keine API-Schlüssel. Jeder Hoster, der statische Dateien über **HTTPS** ausliefert und eigene Header erlaubt, ist geeignet.
+Anatomiq ist nach dem Build eine rein **statische Website** im Ordner `dist/` (rund 5 MB). Es gibt keinen Server-Code, keine Datenbank und keine API-Schlüssel. Jeder Hoster, der statische Dateien über **HTTPS** ausliefert, ist geeignet.
+
+**Veröffentlichte Fassung:** <https://deltaspecter.github.io/Anatomiq/> (GitHub Pages, wird bei jedem Push automatisch neu gebaut – siehe Abschnitt 3).
 
 ## 1. Lokal
 
@@ -24,8 +26,8 @@ npm run test:e2e   # Browsertest: Start, Auswahl, Panel, Ebenen, CSP, Service Wo
 | Anforderung | Warum |
 |---|---|
 | **HTTPS** | Service Worker und „Zum Home-Bildschirm“ funktionieren nur über HTTPS (oder `localhost`). |
-| **Auslieferung im Wurzelverzeichnis** einer (Sub-)Domain | Pfade wie `/models/…`, `/sw.js` und `start_url: "/"` sind absolut. Für einen Unterpfad (z. B. GitHub Pages `…/Anatomiq/`) müsste `base` in Vite angepasst werden. |
-| `Content-Security-Policy` mit `'wasm-unsafe-eval'` | Der meshopt-Decoder der Modelle nutzt WebAssembly. Ohne diese Freigabe laden die Modelle nicht. |
+| Basis-Pfad passend gebaut | Standard ist `/` (eigene Domain, Render, Netlify). Für einen Unterpfad wie bei GitHub Pages (`…/Anatomiq/`) mit `BASE_PATH=/Anatomiq/ npm run build` bauen; Manifest, Service Worker und Modellpfade richten sich danach. |
+| Falls eine `Content-Security-Policy` gesetzt wird: mit `'wasm-unsafe-eval'` | Der meshopt-Decoder der Modelle nutzt WebAssembly. Ohne diese Freigabe laden die Modelle nicht. |
 | `Cache-Control: no-cache` für `/sw.js`, `/index.html`, `/manifest.webmanifest` | Updates werden sofort erkannt. |
 | `Cache-Control: immutable` für `/assets/*` | Dateinamen enthalten einen Inhalts-Hash. |
 | `.glb` als `model/gltf-binary` | Manche Hoster kennen den Typ nicht; die App funktioniert auch mit `application/octet-stream`. |
@@ -33,6 +35,12 @@ npm run test:e2e   # Browsertest: Start, Auswahl, Panel, Ebenen, CSP, Service Wo
 Die maßgebliche Header-Liste steht in **`public/_headers`**; `npm run preview` wendet genau diese Regeln an.
 
 ## 3. Hosting-Varianten
+
+### GitHub Pages (eingerichtet)
+
+Der Workflow `.github/workflows/pages.yml` prüft (Typen, Tests), baut mit dem Basis-Pfad des Repositorys und veröffentlicht bei jedem Push auf den Hauptzweig. Einmalig muss Pages aktiviert sein: **Repository → Settings → Pages → Build and deployment → Source: „GitHub Actions“** (der Workflow versucht das selbst; falls die Berechtigung fehlt, einmal von Hand). Danach unter **Actions → Pages → Run workflow** starten oder einen Commit pushen.
+
+Einschränkung: GitHub Pages erlaubt keine eigenen Header – die Content-Security-Policy und die Cache-Regeln aus `public/_headers` gelten dort nicht (GitHub setzt eigene Cache-Zeiten von etwa 10 Minuten). Die App funktioniert trotzdem vollständig, Updates erscheinen nach spätestens einigen Minuten. Wer die strengeren Header möchte, nimmt Render, Netlify oder Cloudflare Pages.
 
 ### Render (Blueprint liegt bei)
 

@@ -3,7 +3,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/anatomiq-3d-anatomy-app-g14ql5]
   pull_request:
 
 permissions:
